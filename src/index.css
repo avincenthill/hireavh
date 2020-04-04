@@ -1,4 +1,26 @@
+:root {
+  /* Variables */
+  /* Colors */
+  --c_primary_black: #000002;
+  --c_primary_white: 	#f9f9f9;
+  --c_1: #ff0101;
+  --c_2: #fff001;
+  --c_3: #0101fd;
+  /* Fonts */
+  --f_default: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 body {
-    background-color: black;
-    color: white;
+  margin: 10vmin;
+    background-color: var(--c_primary_black);
+    color: var(--c_primary_white);
+    font-family: var(--f_default);
+}
+
+h1 {
+  color: var(--c_2);
+}
+
+h2 {
+  color: var(--c_1);
 }
