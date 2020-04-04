@@ -24,3 +24,7 @@ h1 {
 h2 {
   color: var(--c_1);
 }
+
+a {
+  color: var(--c_3);
+}
