@@ -6,7 +6,9 @@ function Header() {
   return (
     <div>
       <Nav isBottom={false}></Nav>
-      <div className="header-container"></div>
+      <div className="header-container">
+        <a href="/">Hire AVH!</a>
+      </div>
     </div>
   );
 }

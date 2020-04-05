@@ -1,0 +1,17 @@
+.resume-document {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-link {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-cta {
+  margin-bottom: var(--s_s);
+}

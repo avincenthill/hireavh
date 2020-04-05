@@ -18,8 +18,8 @@ import {
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import styleconfig from "../../styles/styleconfig";
-import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 function About() {
   return (
