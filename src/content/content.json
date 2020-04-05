@@ -1,7 +1,17 @@
 {
-  "title": "Hire AVH!",
-  "subtitle": "This is a subtitle",
-  "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "home": {
+    "title": "Hire AVH!",
+    "subtitle": "👋 Hi, I'm Alex!",
+    "p1": "Check out my projects to see how well I could contribute to your team.",
+    "p2": "I'm currently looking for opportunities with this tech and more!"
+  },
+  "nav": {
+    "links": [
+      {"title": "Projects"},
+      {"title": "Resume"},
+      {"title": "Contact"}
+    ]
+  },
   "notFound": {
     "title": "404 Not Found",
     "subtitle": "Return to home"

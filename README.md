@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Design
+
+### Icons
+
+Icons imported from `react-icons` (https://react-icons.netlify.com/#/icons/go).
+
 ## Available Scripts
 
 In the project directory, you can run:
