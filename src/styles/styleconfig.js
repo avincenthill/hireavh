@@ -17,6 +17,9 @@ const styles = {
       padding: ".5rem",
     },
   },
+  resume: {
+    height: window.screen.height * 0.5,
+  },
 };
 
 export default styles;

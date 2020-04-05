@@ -18,14 +18,12 @@ import {
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import styleconfig from "../../styles/styleconfig";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Page from "../Page/Page";
 
 function About() {
   return (
     <div className="about">
-      <Header></Header>
-      <div className="about-container">
+      <Page>
         <img src={headshot} alt="headshot"></img>
         <h2>{content.about.subtitle}</h2>
         <p>{content.about.p1}</p>
@@ -45,8 +43,7 @@ function About() {
             <FaUbuntu />
           </IconContext.Provider>
         </div>
-      </div>
-      <Footer></Footer>
+      </Page>
     </div>
   );
 }

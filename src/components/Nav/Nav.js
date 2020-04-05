@@ -41,9 +41,10 @@ class Nav extends React.Component {
             this.props.isBottom ? "nav-container-bottom" : "nav-container-top"
           }`}
         >
-          {content.nav.links.map((link) => {
+          {content.nav.links.map((link, index) => {
             return (
               <Link
+                key={index}
                 title={link.title}
                 path={`/${link.title.toLowerCase()}`}
               ></Link>

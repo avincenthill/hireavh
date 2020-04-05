@@ -1,19 +1,16 @@
 import React from "react";
 import content from "../../content/content";
 import Link from "../Link/Link";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Page from "../Page/Page";
 import "./NotFound.css";
 
 function NotFound() {
   return (
     <div>
-      <Header></Header>
-      <div className="notfound-container">
+      <Page>
         <h1>{content.notFound.title}</h1>
         <Link path="/" title={content.notFound.subtitle}></Link>
-      </div>
-      <Footer></Footer>
+      </Page>
     </div>
   );
 }

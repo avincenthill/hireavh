@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { Document, Page } from "react-pdf";
+import Page from "../Page/Page";
+import { Document, Page as PDFPage } from "react-pdf";
 import resume from "../../assets/pdf/avh_resume.pdf";
 import { pdfjs } from "react-pdf";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import content from "../../content/content";
+import styleconfig from "../../styles/styleconfig";
 import "./Resume.css";
 
 export default class Resume extends Component {
@@ -15,20 +15,20 @@ export default class Resume extends Component {
   render() {
     return (
       <div>
-        <Header></Header>
-        <div>
-          <Document className="resume-document" file={resume}>
-            <a
-              className="resume-link"
-              href={require("../../assets/pdf/avh_resume.pdf")}
-              download={content.resume.downloadName}
-            >
-              <Page pageNumber={1} height={window.screen.height * 0.5} />
-              <h3 className="resume-cta">{content.resume.cta}</h3>
-            </a>
-          </Document>
-        </div>
-        <Footer></Footer>
+        <Page>
+          <div>
+            <Document className="resume-document" file={resume}>
+              <a
+                className="resume-link"
+                href={require("../../assets/pdf/avh_resume.pdf")}
+                download={content.resume.downloadName}
+              >
+                <PDFPage pageNumber={1} height={styleconfig.resume.height} />
+                <h3 className="resume-cta">{content.resume.cta}</h3>
+              </a>
+            </Document>
+          </div>
+        </Page>
       </div>
     );
   }
