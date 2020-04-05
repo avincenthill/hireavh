@@ -10,6 +10,9 @@ Icons imported from `react-icons` (https://react-icons.netlify.com/#/icons/go).
 
 In the project directory, you can run:
 
+### `npm deploy`
+Syncs `master` branch to S3 bucket. You need to setup and authenticate AWS CLI first. See [https://medium.com/@wolovim/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af](https://medium.com/@wolovim/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af) for more info.
+
 ### `npm start`
 
 Runs the app in the development mode.<br />

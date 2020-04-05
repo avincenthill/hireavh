@@ -20,7 +20,8 @@
     "test": "jest --collect-coverage",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && aws s3 sync build/ s3://hire-avh"
   },
   "eslintConfig": {
     "extends": "react-app"
