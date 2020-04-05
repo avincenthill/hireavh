@@ -25,7 +25,7 @@ export default class Contact extends Component {
               <GoMail />
               <span>{content.contact.email}</span>
             </a>
-            <a href={`tel:+${content.contact.cell}`} className="contact">
+            <a href={`tel:+1-${content.contact.cell}`} className="contact">
               <GoDeviceMobile />
               <span>{content.contact.cell}</span>
             </a>
