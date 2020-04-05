@@ -7,9 +7,9 @@ function Header() {
   return (
     <div>
       <Nav isBottom={false}></Nav>
-      <div className="header-container">
-        <a href="/">{content.header.title}</a>
-      </div>
+      <a href="/" className="header-container">
+        {content.header.title}
+      </a>
     </div>
   );
 }

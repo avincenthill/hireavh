@@ -22,10 +22,10 @@ const content = {
     links: [{ title: "Resume" }, { title: "Contact" }, { title: "Projects" }],
   },
   header: {
-    title: "Hire AVH!",
+    title: "🏠",
   },
   footer: {
-    copywrite: `Copyright Alex Vincent-Hill ${currentDate.getFullYear()}`,
+    copywrite: `Copyright Alex Vincent-Hill ${currentDate.getFullYear()} - 🏠`,
   },
   notFound: {
     title: "🤦 That page is missing, sorry!",
