@@ -1,3 +1,40 @@
 .nav {
-  margin-bottom: 2rem;
+  background-color: var(--c_4);
+  position: absolute;
+}
+
+.nav-bottom {
+  bottom: 0;
+  right: 0;
+  margin-bottom: var(--s-s);
+  border-radius: var(--s-xs) 0 0 0;
+}
+
+.nav-top {
+  top: 0;
+  left: 0;
+  margin-top: var(--s-s);
+  border-radius: 0 0 var(--s-s) 0;
+}
+
+.nav-icon-bottom {
+  float: right;
+}
+
+.nav-icon-top {
+  float: left;
+}
+
+.nav-container {
+  padding: var(--s-xs);
+}
+
+.nav-container-bottom {
+  padding-right: var(--s-s);
+  border-radius: var(--s-s) 0 0 0;
+}
+
+.nav-container-top {
+  padding-right: var(--s-s);
+  border-radius: 0 0 var(--s-s) 0;
 }

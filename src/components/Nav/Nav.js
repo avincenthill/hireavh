@@ -1,14 +1,14 @@
 import React from "react";
-import content from "../../content/content.json";
-import { GoGrabber, GoChevronDown } from "react-icons/go";
+import content from "../../content/content";
+import { GoGrabber, GoChevronDown, GoChevronUp } from "react-icons/go";
 import Link from "../Link/Link";
 import { IconContext } from "react-icons";
 import styleconfig from "../../styles/styleconfig";
 import "./Nav.css";
 
 class Nav extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       isExpanded: false,
     };
@@ -21,7 +21,11 @@ class Nav extends React.Component {
 
   renderNotExpanded = () => {
     return (
-      <div>
+      <div
+        className={`nav-icon ${
+          this.props.isBottom ? "nav-icon-bottom" : "nav-icon-top"
+        }`}
+      >
         <IconContext.Provider value={{ style: styleconfig.icons.default }}>
           <GoGrabber onClick={this.handleClick} />
         </IconContext.Provider>
@@ -32,24 +36,27 @@ class Nav extends React.Component {
   renderExpanded = () => {
     return (
       <div>
-        <IconContext.Provider value={{ style: styleconfig.icons.default }}>
-          <GoChevronDown onClick={this.handleClick} />
-        </IconContext.Provider>
-        {content.nav.links.map((link) => {
-          return (
-            <Link
-              title={link.title}
-              path={`/${link.title.toLowerCase()}`}
-            ></Link>
-          );
-        })}
+        <div
+          className={`nav-container ${
+            this.props.isBottom ? "nav-container-bottom" : "nav-container-top"
+          }`}
+        >
+          {content.nav.links.map((link) => {
+            return (
+              <Link
+                title={link.title}
+                path={`/${link.title.toLowerCase()}`}
+              ></Link>
+            );
+          })}
+        </div>
       </div>
     );
   };
 
   render() {
     return (
-      <div class="nav">
+      <div className={`nav ${this.props.isBottom ? "nav-bottom" : "nav-top"}`}>
         {this.state.isExpanded
           ? this.renderExpanded()
           : this.renderNotExpanded()}

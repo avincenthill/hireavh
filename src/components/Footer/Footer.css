@@ -1,0 +1,13 @@
+.footer-container {
+  color: var(--c_2);
+  background-color: var(--c_4);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: var(--s-s);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-xs);
+}

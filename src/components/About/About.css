@@ -1,4 +1,28 @@
 img {
-  margin: 2rem;
+  margin: var(--s-s);
+  width: 200px;
+  height: 200px;
   border-radius: 100vmax;
+  border: var(--c_primary_white) solid .3rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 var(--s-s) 0 var(--s-s);
+}
+
+.about-icons-container {
+  margin-bottom: var(--s-s);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: min(75vw, 20rem);
+}
+
+p {
+  text-align: center;
 }
