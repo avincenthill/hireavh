@@ -10,9 +10,9 @@ class Link extends React.Component {
       <div>
         <h2>
           <a href={this.props.path}>
-            <IconContext.Provider value={{ style: styleconfig.icons.link }}>
-              <GoChevronRight></GoChevronRight>
-            </IconContext.Provider>
+            <IconContext.Provider
+              value={{ style: styleconfig.icons.link }}
+            ></IconContext.Provider>
             <span>{this.props.title}</span>
           </a>
         </h2>

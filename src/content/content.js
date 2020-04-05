@@ -25,7 +25,7 @@ const content = {
     title: "Hire AVH!",
   },
   footer: {
-    copywrite: `Copywrite Alex Vincent-Hill ${currentDate.getFullYear()}`,
+    copywrite: `Copyright Alex Vincent-Hill ${currentDate.getFullYear()}`,
   },
   notFound: {
     title: "🤦 That page is missing, sorry!",

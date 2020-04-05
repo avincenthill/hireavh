@@ -26,7 +26,7 @@ function About() {
       <Page>
         <img src={headshot} alt="headshot"></img>
         <h2>{content.about.subtitle}</h2>
-        <p>{content.about.p1}</p>
+        <p className="about-p">{content.about.p1}</p>
         <div className="about-icons-container">
           <IconContext.Provider value={{ style: styleconfig.icons.tech }}>
             <FaReact />
