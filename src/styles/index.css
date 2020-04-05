@@ -24,6 +24,7 @@ body {
   background-color: var(--c_primary_black);
   color: var(--c_primary_white);
   font-family: var(--f_default);
+  text-align: center;
 }
 
 h1 {

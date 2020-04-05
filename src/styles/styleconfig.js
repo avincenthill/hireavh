@@ -2,8 +2,8 @@ const styles = {
   icons: {
     default: {
       color: "var(--c_1)",
-      width: "4rem",
-      height: "4rem",
+      width: "3rem",
+      height: "3rem",
     },
     link: {
       color: "var(--c_2)",

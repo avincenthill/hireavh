@@ -1,6 +1,6 @@
 import React from "react";
 import content from "../../content/content";
-import { GoGrabber, GoChevronDown, GoChevronUp } from "react-icons/go";
+import { GoGrabber } from "react-icons/go";
 import Link from "../Link/Link";
 import { IconContext } from "react-icons";
 import styleconfig from "../../styles/styleconfig";

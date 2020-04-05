@@ -22,7 +22,3 @@ img {
   flex-wrap: wrap;
   width: min(75vw, 20rem);
 }
-
-p {
-  text-align: center;
-}

@@ -14,7 +14,7 @@
   top: 0;
   left: 0;
   margin-top: var(--s-s);
-  border-radius: 0 0 var(--s-s) 0;
+  border-radius: 0 0 var(--s-xs) 0;
 }
 
 .nav-icon-bottom {

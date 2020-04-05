@@ -13,7 +13,7 @@ const content = {
     copywrite: `Copywrite Alex Vincent-Hill ${currentDate.getFullYear()}`,
   },
   notFound: {
-    title: "404 Not Found",
+    title: "🤦 That page is missing, sorry!",
     subtitle: "Return",
   },
 };
