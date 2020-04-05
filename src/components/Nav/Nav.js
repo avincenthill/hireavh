@@ -14,15 +14,22 @@ class Nav extends React.Component {
     };
   }
 
-  handleClick = (e) => {
-    e.preventDefault();
+  closeNav = () => {
+    this.setState({ isExpanded: false });
+  };
+
+  toggleNav = () => {
     this.setState({ isExpanded: !this.state.isExpanded });
+  };
+
+  handleClick = (e) => {
+    this.toggleNav();
   };
 
   renderNotExpanded = () => {
     return (
       <div
-        className={`nav-icon ${
+        className={`nav-icon $
           this.props.isBottom ? "nav-icon-bottom" : "nav-icon-top"
         }`}
       >
