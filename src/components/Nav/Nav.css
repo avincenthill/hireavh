@@ -1,6 +1,7 @@
 .nav {
   background-color: var(--c-4);
   position: absolute;
+  z-index: var(--z-top);
 }
 
 .nav-bottom {

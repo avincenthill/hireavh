@@ -18,6 +18,8 @@
   --s-s: 2rem;
   --s-m: 5rem;
   --s-l: 10rem;
+  /* Elevation */
+  --z-top: 2;
 }
 
 body {

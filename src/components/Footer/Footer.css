@@ -1,7 +1,7 @@
 .footer-container {
   color: var(--c-2);
   background-color: var(--c-4);
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: var(--s-s);
@@ -10,4 +10,5 @@
   align-items: center;
   justify-content: center;
   font-size: var(--fs-xs);
+  z-index: var(--z-top);
 }
