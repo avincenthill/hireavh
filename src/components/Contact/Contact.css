@@ -1,17 +1,10 @@
-.contact-document {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contact {
+  margin: var(--s-xs);
+  background-color: var(--c-2);
+  width: min(80vw, var(--s-l)*2);
+  color: var(--c-black);
 }
 
-.contact-link {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-cta {
-  margin-bottom: var(--s_s);
+.contact-title {
+  margin-bottom: var(--s-xs);
 }

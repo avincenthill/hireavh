@@ -1,6 +1,6 @@
 .header-container {
-  color: var(--c_2);
-  background-color: var(--c_4);
+  color: var(--c-2);
+  background-color: var(--c-4);
   position: absolute;
   top: 0;
   width: 100%;

@@ -10,8 +10,19 @@ const content = {
     cta: "Click to download!",
     downloadName: `Resume_Alex Vincent-Hill_${currentDate.toDateString()}.pdf`,
   },
+  contact: {
+    name: `Alex "AVH" Vincent-Hill`,
+    email: "alexanderjvincenthill@gmail.com",
+    cell: "(541) 602-9122",
+    linkedin: "www.linkedin.com/in/avincenthill",
+    github: "www.github.com/avincenthill",
+    resume: "resume",
+  },
   nav: {
     links: [{ title: "Resume" }, { title: "Contact" }, { title: "Projects" }],
+  },
+  header: {
+    title: "Hire AVH!",
   },
   footer: {
     copywrite: `Copywrite Alex Vincent-Hill ${currentDate.getFullYear()}`,
