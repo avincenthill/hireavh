@@ -1,8 +1,14 @@
 .contact {
-  margin: var(--s-xs);
+  margin: calc(var(--s-xs)/2);
   background-color: var(--c-2);
-  width: min(80vw, var(--s-l)*2);
+  width: min(90vw, var(--s-l)*2.5);
   color: var(--c-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--s-xs);
+  box-shadow: inset 0 0 0 .3rem var(--c-1);
+  box-sizing: border-box;
 }
 
 .contact-title {
@@ -15,4 +21,14 @@
   height: 100px;
   border-radius: 100vmax;
   border: var(--c-1) solid .5rem;
+}
+
+.contact-button {
+  background-color: var(--c-1);
+  border: none;
+  border-radius: 0 var(--s-xs) var(--s-xs) 0;
+}
+
+.contact-a {
+  color: var(--c-black)
 }

@@ -18,8 +18,8 @@ const styles = {
     },
     contact: {
       color: "var(--c-black)",
-      width: "2.5rem",
-      height: "2.5rem",
+      width: "1rem",
+      height: "1rem",
       padding: ".5rem",
     },
   },
