@@ -6,6 +6,7 @@ import styleconfig from "../../styles/styleconfig";
 import { IconContext } from "react-icons";
 import { GoMail, GoDeviceMobile, GoFile } from "react-icons/go";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import headshot from "../../assets/img/headshot.png";
 import "./Contact.css";
 
 export default class Contact extends Component {
@@ -18,6 +19,7 @@ export default class Contact extends Component {
       <div>
         <Page>
           <IconContext.Provider value={{ style: styleconfig.icons.contact }}>
+            <img className="contact-img" src={headshot} alt="headshot"></img>
             <h2 className="contact-title">{content.contact.name}</h2>
             <a href={`mailto:${content.contact.email}`} className="contact">
               <GoMail />

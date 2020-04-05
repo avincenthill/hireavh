@@ -1,11 +1,3 @@
-img {
-  margin: var(--s-s);
-  width: 200px;
-  height: 200px;
-  border-radius: 100vmax;
-  border: var(  --c-white) solid .3rem;
-}
-
 .about-icons-container {
   margin-bottom: var(--s-s);
   display: flex;
@@ -15,5 +7,5 @@ img {
 }
 
 .about-p {
-  width: min(75vw, 15rem);
+  width: min(75vw, 20rem);
 }

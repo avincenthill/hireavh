@@ -8,3 +8,11 @@
 .contact-title {
   margin-bottom: var(--s-xs);
 }
+
+.contact-img {
+  margin: var(--s-s);
+  width: 100px;
+  height: 100px;
+  border-radius: 100vmax;
+  border: var(--c-1) solid .5rem;
+}
