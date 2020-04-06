@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Page from "components/Page/Page";
-import { pdfjs } from "react-pdf";
 import content from "content/content";
 import styleconfig from "styles/styleconfig";
 import { IconContext } from "react-icons";

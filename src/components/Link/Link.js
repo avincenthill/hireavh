@@ -1,7 +1,6 @@
 import React from "react";
 import styleconfig from "styles/styleconfig";
 import { IconContext } from "react-icons";
-import { GoChevronRight } from "react-icons/go";
 import "./Link.css";
 
 class Link extends React.Component {
