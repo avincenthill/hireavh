@@ -3,9 +3,9 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: min(70vw, 15rem);
+  width: 75vw;
 }
 
 .about-p {
-  width: min(75vw, 20rem);
+  width: 75vw;
 }
