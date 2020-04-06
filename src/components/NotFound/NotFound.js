@@ -1,7 +1,7 @@
 import React from "react";
-import content from "../../content/content";
-import Link from "../Link/Link";
-import Page from "../Page/Page";
+import content from "content/content";
+import Link from "components/Link/Link";
+import Page from "components/Page/Page";
 import "./NotFound.css";
 
 function NotFound() {

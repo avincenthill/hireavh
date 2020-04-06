@@ -1,5 +1,5 @@
 import React from "react";
-import content from "../../content/content";
+import content from "content/content";
 import "./About.css";
 import {
   FaReact,
@@ -16,9 +16,9 @@ import {
   FaUbuntu,
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import styleconfig from "../../styles/styleconfig";
-import Page from "../Page/Page";
-import Projects from "../Projects/Projects";
+import styleconfig from "styles/styleconfig";
+import Page from "components/Page/Page";
+import Projects from "components/Projects/Projects";
 
 function About() {
   return (

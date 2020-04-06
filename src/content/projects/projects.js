@@ -1,8 +1,8 @@
-import particles from "../../assets/img/projects/particles.png";
-import sorting from "../../assets/img/projects/sorting.png";
-import nsa from "../../assets/img/projects/nsa.png";
-import hilbert from "../../assets/img/projects/hilbert.png";
-import petals from "../../assets/img/projects/petals.png";
+import particles from "assets/img/projects/particles.png";
+import sorting from "assets/img/projects/sorting.png";
+import nsa from "assets/img/projects/nsa.png";
+import hilbert from "assets/img/projects/hilbert.png";
+import petals from "assets/img/projects/petals.png";
 
 const projects = {
   subtitle: "📦 Here are some of my projects!",

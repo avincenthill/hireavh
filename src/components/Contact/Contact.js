@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Page from "../Page/Page";
+import Page from "components/Page/Page";
 import { pdfjs } from "react-pdf";
-import content from "../../content/content";
-import styleconfig from "../../styles/styleconfig";
+import content from "content/content";
+import styleconfig from "styles/styleconfig";
 import { IconContext } from "react-icons";
 import {
   GoMail,
@@ -12,7 +12,7 @@ import {
 } from "react-icons/go";
 import { FaLinkedinIn, FaGithub, FaRegCopy } from "react-icons/fa";
 import ClipboardJS from "clipboard";
-import headshot from "../../assets/img/headshot.png";
+import headshot from "assets/img/headshot.png";
 import "./Contact.css";
 
 export default class Contact extends Component {
@@ -118,7 +118,7 @@ export default class Contact extends Component {
             {/* resume */}
             <a
               className="contact"
-              href={require("../../assets/pdf/avh_resume.pdf")}
+              href={require("assets/pdf/avh_resume.pdf")}
               download={content.resume.downloadName}
             >
               <GoFile />

@@ -1,7 +1,7 @@
 import React from "react";
-import content from "../../content/content";
-import Link from "../Link/Link";
-import "./Projects.css";
+import content from "content/content.js";
+import Link from "components/Link/Link";
+import "components/Projects/Projects.css";
 
 class Projects extends React.Component {
   renderProjects = () => {

@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import About from "../components/About/About";
-import NotFound from "../components/NotFound/NotFound";
-import Resume from "../components/Resume/Resume";
-import Contact from "../components/Contact/Contact";
+import About from "components/About/About";
+import NotFound from "components/NotFound/NotFound";
+import Resume from "components/Resume/Resume";
+import Contact from "components/Contact/Contact";
 
 const createRoutes = () => (
   <Router>

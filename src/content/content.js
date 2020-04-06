@@ -10,7 +10,7 @@ const content = {
   resume: {
     cta: "download 📥",
     downloadName: `Resume_Alex Vincent-Hill_${currentDate.toDateString()}.pdf`,
-    path: "../../assets/pdf/avh_resume.pdf",
+    path: "assets/pdf/avh_resume.pdf",
   },
   contact: {
     name: `👨‍💻 Alex "AVH" Vincent-Hill`,

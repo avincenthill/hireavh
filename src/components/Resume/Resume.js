@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Page from "../Page/Page";
+import Page from "components/Page/Page";
 import { Document, Page as PDFPage } from "react-pdf";
-import resume from "../../assets/pdf/avh_resume.pdf";
+import resume from "assets/pdf/avh_resume.pdf";
 import { pdfjs } from "react-pdf";
-import content from "../../content/content";
-import styleconfig from "../../styles/styleconfig";
+import content from "content/content";
+import styleconfig from "styles/styleconfig";
 import "./Resume.css";
 
 export default class Resume extends Component {
@@ -20,7 +20,7 @@ export default class Resume extends Component {
             <Document className="resume-document" file={resume}>
               <a
                 className="resume-link"
-                href={require("../../assets/pdf/avh_resume.pdf")}
+                href={require("assets/pdf/avh_resume.pdf")}
                 download={content.resume.downloadName}
               >
                 <PDFPage pageNumber={1} height={styleconfig.resume.height} />
