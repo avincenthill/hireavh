@@ -52,7 +52,7 @@
 }
 
 .project-emoji {
-  font-size: var(--fs-l);
+  font-size: calc(var(--fs-l)*1.5);
 }
 
 .project-info-container {
