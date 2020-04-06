@@ -47,7 +47,7 @@ const projects = {
       title: "marketing consulting",
       url: "/marketing",
       displayUrl: "hireavh.com/marketing",
-      description: "Super charging your business with Google Ads...",
+      description: "Super-charging your business with Google Ads...",
       img: {
         emoji: "💼",
       },
@@ -96,6 +96,16 @@ const projects = {
         hasImg: true,
         module: petals,
         emoji: "📦️",
+      },
+    },
+    // *************************************************************************
+    {
+      title: "online chess",
+      url: "https://lichess.org/@/avincenthill/perf/rapid",
+      displayUrl: "lichess.org",
+      description: "Challenge me on lichess.org...",
+      img: {
+        emoji: "♟️",
       },
     },
   ],
