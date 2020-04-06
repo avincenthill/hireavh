@@ -26,7 +26,7 @@ const content = {
     ],
   },
   header: {
-    title: "🏠",
+    title: "hireavh.com 🏠",
   },
   footer: {
     copywrite: `copyright Alex Vincent-Hill ${currentDate.getFullYear()} - 🏠`,
