@@ -3,6 +3,5 @@
   flex-direction: column;
   align-items: center;
   margin-top: var(--s-l);
-  height: 100vh;
   padding: 0 var(--s-s) 0 var(--s-s);
 }
