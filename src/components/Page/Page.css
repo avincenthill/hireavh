@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-top: var(--s-l);
   height: 100vh;
   padding: 0 var(--s-s) 0 var(--s-s);
 }

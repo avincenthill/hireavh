@@ -24,7 +24,7 @@ const styles = {
     },
   },
   resume: {
-    height: window.screen.height * 0.5,
+    height: window.screen.height * 0.6,
   },
 };
 

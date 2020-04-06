@@ -18,6 +18,7 @@ import {
 import { IconContext } from "react-icons";
 import styleconfig from "../../styles/styleconfig";
 import Page from "../Page/Page";
+import Projects from "../Projects/Projects";
 
 function About() {
   return (
@@ -41,6 +42,7 @@ function About() {
             <FaUbuntu />
           </IconContext.Provider>
         </div>
+        <Projects></Projects>
       </Page>
     </div>
   );

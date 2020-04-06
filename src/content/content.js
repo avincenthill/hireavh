@@ -1,28 +1,31 @@
+import projects from "./projects/projects";
+
 const currentDate = new Date();
 
 const content = {
   about: {
-    title: "Hire AVH!",
     subtitle: "👋 Hi, I'm AVH!",
     p1: "Hire me to help build your business with this tech and more!",
   },
   resume: {
     cta: "download 📥",
     downloadName: `Resume_Alex Vincent-Hill_${currentDate.toDateString()}.pdf`,
+    path: "../../assets/pdf/avh_resume.pdf",
   },
   contact: {
-    name: `Alex "AVH" Vincent-Hill`,
+    name: `👨‍💻 Alex "AVH" Vincent-Hill`,
     email: "alexanderjvincenthill@gmail.com",
     cell: "(541) 602-9122",
     linkedin: "www.linkedin.com/in/avincenthill",
     github: "www.github.com/avincenthill",
     resume: "resume",
   },
+  projects,
   nav: {
     links: [
+      { title: "🏠 home", path: "about" },
       { title: "📄 resume", path: "resume" },
       { title: "👨‍💻 contact", path: "contact" },
-      { title: "📦 projects", path: "projects" },
     ],
   },
   header: {
