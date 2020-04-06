@@ -7,7 +7,7 @@ const content = {
     p1: "Hire me to help build your business with this tech and more!",
   },
   resume: {
-    cta: "Click to download!",
+    cta: "download 📥",
     downloadName: `Resume_Alex Vincent-Hill_${currentDate.toDateString()}.pdf`,
   },
   contact: {
@@ -19,17 +19,21 @@ const content = {
     resume: "resume",
   },
   nav: {
-    links: [{ title: "Resume" }, { title: "Contact" }, { title: "Projects" }],
+    links: [
+      { title: "📄 resume", path: "resume" },
+      { title: "👨‍💻 contact", path: "contact" },
+      { title: "📦 projects", path: "projects" },
+    ],
   },
   header: {
     title: "🏠",
   },
   footer: {
-    copywrite: `Copyright Alex Vincent-Hill ${currentDate.getFullYear()} - 🏠`,
+    copywrite: `copyright Alex Vincent-Hill ${currentDate.getFullYear()} - 🏠`,
   },
   notFound: {
     title: "🤦 That page is missing, sorry!",
-    subtitle: "Return",
+    subtitle: "🏠 return",
   },
 };
 

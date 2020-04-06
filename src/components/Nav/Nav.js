@@ -14,6 +14,10 @@ class Nav extends React.Component {
     };
   }
 
+  createPath = (string) => {
+    return this.removeEmojis(string).toLowerCase();
+  };
+
   closeNav = () => {
     this.setState({ isExpanded: false });
   };
@@ -53,7 +57,7 @@ class Nav extends React.Component {
               <Link
                 key={index}
                 title={link.title}
-                path={`/${link.title.toLowerCase()}`}
+                path={`/${link.path}`}
               ></Link>
             );
           })}
