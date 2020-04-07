@@ -1,7 +1,7 @@
 .contact {
   margin: calc(var(--s-xs)/2);
   background-color: var(--c-black);
-  width: min(85vw, var(--s-xl));
+  width: var(--s-xl);
   color: var(--c-1);
   display: flex;
   align-items: center;

@@ -56,3 +56,18 @@ hr {
   width: var(--s-l);
   margin: var(--s-s) 0 var(--s-s) 0;
 }
+
+button {
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:active {
+  transform: scale(0.99);
+}
