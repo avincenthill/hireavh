@@ -33,5 +33,7 @@
 }
 
 .contact-a {
+  font-size: var(--fs-xxs);
+  text-decoration: none;
   color: var(--c-1)
 }
