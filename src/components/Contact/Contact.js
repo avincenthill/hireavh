@@ -116,7 +116,7 @@ export default class Contact extends Component {
 
             {/* resume */}
             <a
-              className="contact"
+              className="contact contact-a"
               href={require("assets/pdf/avh_resume.pdf")}
               download={content.resume.downloadName}
             >
