@@ -17,7 +17,7 @@ const styles = {
       padding: ".5rem",
     },
     contact: {
-      color: "var(--c-black)",
+      color: "var(--c-1)",
       width: "1rem",
       height: "1rem",
       padding: ".5rem",

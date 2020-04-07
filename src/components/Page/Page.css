@@ -2,6 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: var(--s-l);
+  margin-top: var(--s-m);
   padding: 0 var(--s-s) 0 var(--s-s);
 }

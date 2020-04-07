@@ -23,8 +23,9 @@ export default class Resume extends Component {
                 href={require("assets/pdf/avh_resume.pdf")}
                 download={content.resume.downloadName}
               >
+                <h3>{content.resume.cta}</h3>
                 <PDFPage pageNumber={1} height={styleconfig.resume.height} />
-                <h3 className="resume-cta">{content.resume.cta}</h3>
+                <h3>{content.resume.cta}</h3>
               </a>
             </Document>
           </div>

@@ -1,5 +1,5 @@
 .nav {
-  background-color: var(--c-4);
+  background-color: var(--c-black);
   position: absolute;
   z-index: var(--z-top);
 }
@@ -10,13 +10,18 @@
   right: 0;
   margin-bottom: var(--s-s);
   border-radius: var(--s-xs) 0 0 0;
+  border-top: var(--b-1) var(--c-1) solid;
+  border-left: var(--b-1) var(--c-1) solid;
 }
 
 .nav-top {
+  position: fixed;
   top: 0;
   left: 0;
   margin-top: var(--s-s);
   border-radius: 0 0 var(--s-xs) 0;
+  border-bottom: var(--b-1) var(--c-1) solid;
+  border-right: var(--b-1) var(--c-1) solid;
 }
 
 .nav-icon-bottom {

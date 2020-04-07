@@ -7,8 +7,8 @@ class Link extends React.Component {
   render() {
     return (
       <div>
-        <h2>
-          <a href={this.props.path}>
+        <h2 className="link">
+          <a className="link-a" href={this.props.path}>
             <IconContext.Provider
               value={{ style: styleconfig.icons.link }}
             ></IconContext.Provider>

@@ -1,9 +1,9 @@
-h2 {
-  margin-top: 0;
-  margin-bottom: 0;
+.link {
+  margin: 0;
+  margin-bottom: calc(var(--s-xs)/4);
+  text-align: left;
 }
 
-a {
-  display: flex;
-  align-items: center;
+.link-a {
+  color: var(--c-1);
 }

@@ -4,11 +4,12 @@ const currentDate = new Date();
 
 const content = {
   about: {
-    subtitle: "👋 Hi, I'm AVH!",
-    p1: "Hire me to help build your business with this tech and more!",
+    subtitle: "👋 Hi, I'm Alex (a.k.a. AVH the software engineer)",
+    subtitle2: "📦 Here are some of my projects!",
+    p1: "Contact me to help build your business!",
   },
   resume: {
-    cta: "download 📥",
+    cta: "📥 download",
     downloadName: `Resume_Alex Vincent-Hill_${currentDate.toDateString()}.pdf`,
     path: "assets/pdf/avh_resume.pdf",
   },
@@ -22,22 +23,25 @@ const content = {
   },
   projects,
   nav: {
-    links: [
-      { title: "🏠 home", path: "about" },
-      { title: "📄 resume", path: "resume" },
-      { title: "👨‍💻 contact", path: "contact" },
-    ],
+    links: {
+      home: { emoji: "🏠", path: "home" },
+      resume: { emoji: "📄", path: "resume" },
+      contact: { emoji: "📇", path: "contact" },
+    },
   },
-  header: {
-    title: "hireavh.com 🏠",
-  },
-  footer: {
-    copywrite: `copyright Alex Vincent-Hill ${currentDate.getFullYear()} - 🏠`,
-  },
-  notFound: {
-    title: "🤦 That page is missing, sorry!",
-    subtitle: "🏠 return",
-  },
+};
+
+content.notFound = {
+  title: "🤦 That page is missing, sorry!",
+  subtitle: `${content.nav.links.home.emoji} ${content.nav.links.home.path}`,
+};
+
+content.header = {
+  title: `${content.nav.links.home.emoji} ${content.nav.links.home.path}`,
+};
+
+content.footer = {
+  copywrite: `copyright Alex Vincent-Hill ${currentDate.getFullYear()} - ${content.header.title}`,
 };
 
 export default content;

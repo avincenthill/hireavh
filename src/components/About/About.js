@@ -19,6 +19,7 @@ import { IconContext } from "react-icons";
 import styleconfig from "styles/styleconfig";
 import Page from "components/Page/Page";
 import Projects from "components/Projects/Projects";
+import { NavList } from "components/Nav/Nav";
 
 function About() {
   return (
@@ -42,7 +43,10 @@ function About() {
             <FaUbuntu />
           </IconContext.Provider>
         </div>
-        <Projects></Projects>
+        <NavList></NavList>
+        <hr></hr>
+        <h2>{content.about.subtitle2}</h2>
+        <Projects projects={content.projects.data} ></Projects>
       </Page>
     </div>
   );

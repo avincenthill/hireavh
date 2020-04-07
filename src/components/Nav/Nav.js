@@ -52,15 +52,7 @@ class Nav extends React.Component {
             this.props.isBottom ? "nav-container-bottom" : "nav-container-top"
           }`}
         >
-          {content.nav.links.map((link, index) => {
-            return (
-              <Link
-                key={index}
-                title={link.title}
-                path={`/${link.path}`}
-              ></Link>
-            );
-          })}
+          <NavList></NavList>
         </div>
       </div>
     );
@@ -77,4 +69,24 @@ class Nav extends React.Component {
   }
 }
 
-export default Nav;
+class NavList extends React.Component {
+  render() {
+  return (
+    <div className="nav-list">
+      {Object.keys(content.nav.links).map((key, index) => {
+        let link = content.nav.links[key];
+        return (
+          <Link
+            key={index}
+            title={link.emoji + " " + link.path}
+            path={`/${link.path}`}
+          ></Link>
+        );
+        })
+      }
+    </div>
+  )
+}
+}
+
+export { Nav, NavList };

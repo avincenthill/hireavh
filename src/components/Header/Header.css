@@ -1,7 +1,7 @@
 .header-container {
-  color: var(--c-2);
-  background-color: var(--c-4);
-  position: absolute;
+  color: var(--c-1);
+  background-color: var(--c-black);
+  position: fixed;
   top: 0;
   width: 100%;
   height: var(--s-s);
@@ -9,6 +9,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: var(--fs-xs);
+  font-size: var(--fs-xxs);
   z-index: var(--z-top);
+  border-bottom: var(--b-1) var(--c-1) solid;
 }

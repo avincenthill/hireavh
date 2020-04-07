@@ -9,17 +9,25 @@
   --c-4: #147186;
   /* Fonts */
   --f-default: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --fs-xs: .75rem;
+  --fs-xxs: .75rem;
+  --fs-xs: 1rem;
   --fs-s: 1.5rem;
   --fs-m: 1.75rem;
   --fs-l: 3rem;
+  --fs-xl: 5rem;
   /* Spacing */
+  --s-xxxs: .1rem;
+  --s-xxs: .5rem;
   --s-xs: 1rem;
   --s-s: 2rem;
   --s-m: 5rem;
-  --s-l: 10rem;
+  --s-l: 12.4rem;
+  --s-xl: 20rem;
+  --s-xxl: 75rem;
   /* Elevation */
   --z-top: 2;
+  /* Border */
+  --b-1: .1rem;
 }
 
 body {
@@ -43,10 +51,8 @@ p {
   font-size: var(--fs-s);
 }
 
-a {
-  color: var(--c-1);
-}
-
 hr {
-  border: 1px var(--c-4) solid;
+  border: calc(var(--b-1)/2) var(--c-1) solid;
+  width: var(--s-l);
+  margin: var(--s-s) 0 var(--s-s) 0;
 }

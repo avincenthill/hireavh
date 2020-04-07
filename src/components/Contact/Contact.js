@@ -29,14 +29,14 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <div>
+      <div className="contact-container">
         <Page>
           <IconContext.Provider value={{ style: styleconfig.icons.contact }}>
             {/* headshot */}
             <img className="contact-img" src={headshot} alt="headshot"></img>
 
             {/* name */}
-            <h2 className="contact-title">{content.contact.name}</h2>
+            <h3 className="contact-title">{content.contact.name}</h3>
 
             {/* email */}
             <div className="contact">

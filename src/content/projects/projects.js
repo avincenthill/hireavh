@@ -5,8 +5,7 @@ import hilbert from "assets/img/projects/hilbert.png";
 import petals from "assets/img/projects/petals.png";
 
 const projects = {
-  subtitle: "📦 Here are some of my projects!",
-  projects: [
+  data: [
     // *************************************************************************
     {
       title: "particle simulation",
