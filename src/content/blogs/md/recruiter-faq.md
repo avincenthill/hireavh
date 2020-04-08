@@ -2,7 +2,7 @@
 ### 07 Apr 2020
 ##  
 ##  
-👋 Hi - I wanted to save you some time by answering some questions you may or may not have about me!
+👋 Hi! I wanted to save you some time by answering some questions you may or may not have about me!
 
 ## Email
 alexanderjvincenthill@gmail.com
@@ -43,10 +43,7 @@ Most of the jobs I'm interviewing for are in the San Francisco Bay Area, but I'm
 I'm open to any percentage of remote/work from home roles.
 
 ## Preference for Compensation
-Compensate me at market rates like coworkers with the same amount of experience please - I can't provide a hard number/range as this would change based on the company, role, and team.
+I'd like to be paid market rates similar to coworkers with the same amount of experience - I can't provide a hard number/range as this would change based on the company, role, and team.
 
 ## 🙏 Thanks for Reading!
 Hopefully this helps you move quickly on this role. Thank you again for all your help!
-##
-## 
-Alex Vincent-Hill

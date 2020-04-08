@@ -1,6 +1,7 @@
 import React from "react";
 import { Remarkable } from "remarkable";
 import Page from "components/Page/Page";
+import { NavList, Nav } from "components/Nav/Nav";
 import "./Post.css";
 
 class Post extends React.Component {
@@ -26,6 +27,11 @@ class Post extends React.Component {
     return (
       <Page>
         <div id="md-container">{this.renderMdFile()}</div>
+        <h2 className="post-signature">AVH</h2>
+        <hr></hr>
+        <div className="post-nav">
+          <NavList></NavList>
+        </div>
       </Page>
     );
   }

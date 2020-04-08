@@ -17,5 +17,17 @@
 
 #md-container {
   width: max(50%, var(--s-xl));
+  margin-bottom: var(--s-s);
+}
+
+.post-nav {
   margin-bottom: var(--s-xl);
+}
+
+.post-signature {
+  margin-top: 0;
+  margin-bottom: var(--s-m);
+  font-family: 'Nanum Brush Script', cursive;
+  font-weight: bold;
+  font-size: var(--fs-xl);
 }
