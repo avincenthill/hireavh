@@ -30,6 +30,7 @@
 .contact-button {
   background-color: var(--c-4);
   border-radius: 0 var(--s-xs) var(--s-xs) 0;
+  border: var(--c-1) solid var(--b-1);
 }
 
 .contact-a {
