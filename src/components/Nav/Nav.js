@@ -14,20 +14,17 @@ class Nav extends React.Component {
     };
   }
 
-  createPath = (string) => {
-    return this.removeEmojis(string).toLowerCase();
-  };
-
-  closeNav = () => {
-    this.setState({ isExpanded: false });
+  handleClick = (e) => {
+    if (!this.state.isExpanded) {
+      document.addEventListener('click', this.handleClick, false);
+    } else {
+      document.removeEventListener('click', this.handleClick, false);
+    }
+    this.toggleNav();
   };
 
   toggleNav = () => {
     this.setState({ isExpanded: !this.state.isExpanded });
-  };
-
-  handleClick = (e) => {
-    this.toggleNav();
   };
 
   renderNotExpanded = () => {
