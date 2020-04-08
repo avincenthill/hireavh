@@ -1,34 +1,42 @@
 import projects from "./projects/projects";
+import {blogs} from "./blogs/blogs";
 
 const currentDate = new Date();
 
 const content = {
-  about: {
-    subtitle: "👋 Hi, I'm Alex (a.k.a. AVH the software engineer)",
-    subtitle2: "📦 Here are some of my projects!",
-    p1: "Contact me to help build your business!",
-  },
-  resume: {
-    cta: "📥 download",
-    downloadName: `Resume_Alex Vincent-Hill_${currentDate.toDateString()}.pdf`,
-    path: "assets/pdf/avh_resume.pdf",
-  },
-  contact: {
-    name: `👨‍💻 Alex "AVH" Vincent-Hill`,
-    email: "alexanderjvincenthill@gmail.com",
-    cell: "(541) 602-9122",
-    linkedin: "www.linkedin.com/in/avincenthill",
-    github: "www.github.com/avincenthill",
-    resume: "resume",
-  },
   projects,
-  nav: {
-    links: {
-      home: { emoji: "🏠", path: "home" },
-      resume: { emoji: "📄", path: "resume" },
-      contact: { emoji: "📇", path: "contact" },
-    },
+  blogs,
+};
+
+content.nav = {
+  links: {
+    home: { emoji: "🏠", path: "home" },
+    blog: { emoji: "✍️", path: "blog" },
+    resume: { emoji: "📄", path: "resume" },
+    contact: { emoji: "📇", path: "contact" },
   },
+};
+
+content.about = {
+  subtitle: "👋 Hi, I'm Alex (a.k.a. AVH the software engineer)",
+  subtitle2: "📦 Here are some of my projects!",
+  p1: "Contact me to help build your business!",
+};
+
+
+content.contact = {
+  name: `👨‍💻 Alex "AVH" Vincent-Hill`,
+  email: "alexanderjvincenthill@gmail.com",
+  cell: "(541) 602-9122",
+  linkedin: "www.linkedin.com/in/avincenthill",
+  github: "www.github.com/avincenthill",
+  resume: "resume",
+};
+
+content.resume = {
+  cta: "📥 download",
+  downloadName: `Resume_Alex Vincent-Hill_${currentDate.toDateString()}.pdf`,
+  path: "assets/pdf/avh_resume.pdf",
 };
 
 content.notFound = {
