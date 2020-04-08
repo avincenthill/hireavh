@@ -8,7 +8,7 @@ Icons imported from [`react-icons`](https://react-icons.netlify.com/#/icons/go).
 
 ### Blogs
 
-Blogs are written in markdown and parsed with [`remarkable`](https://github.com/jonschlinkert/remarkable).
+Blogs are written in markdown and parsed with `remarkable` (https://github.com/jonschlinkert/remarkable).
 
 ## Available Scripts
 

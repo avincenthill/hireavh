@@ -1,5 +1,5 @@
 import projects from "./projects/projects";
-import {blogs} from "./blogs/blogs";
+import { blogs } from "./blogs/blogs";
 
 const currentDate = new Date();
 
@@ -18,11 +18,10 @@ content.nav = {
 };
 
 content.about = {
-  subtitle: "👋 Hi, I'm Alex (a.k.a. AVH the software engineer)",
+  subtitle: "👋 Hi, I'm Alex and I'm a software engineer",
   subtitle2: "📦 Here are some of my projects!",
-  p1: "Contact me to help build your business!",
+  p1: "Partner with me to help build your business!",
 };
-
 
 content.contact = {
   name: `👨‍💻 Alex "AVH" Vincent-Hill`,
@@ -49,7 +48,9 @@ content.header = {
 };
 
 content.footer = {
-  copywrite: `copyright Alex Vincent-Hill ${currentDate.getFullYear()} - ${content.header.title}`,
+  copywrite: `copyright Alex Vincent-Hill ${currentDate.getFullYear()} - ${
+    content.header.title
+  }`,
 };
 
 export default content;

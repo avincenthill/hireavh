@@ -8,6 +8,16 @@ const projects = {
   data: [
     // *************************************************************************
     {
+      title: "Recruiter FAQ",
+      url: "/blog/recruiter-faq",
+      displayUrl: "/blogs/recruiter-faq",
+      description: "Answers to common questions I get from recruiters",
+      img: {
+        emoji: "🤷",
+      },
+    },
+    // *************************************************************************
+    {
       title: "particle simulation",
       url: "https://github.com/avincenthill/particle_simulation",
       displayUrl: "github.com/avincenthill/particle_simulation",

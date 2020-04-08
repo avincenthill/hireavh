@@ -1,0 +1,21 @@
+#md-container h2,  #md-container h3, #md-container p, #md-container a, #md-container span, #md-container div{
+  text-align: left;
+  word-wrap: break-word;
+}
+
+#md-container h2 {
+  margin-top: var(--s-m);
+}
+
+#md-container a {
+  color: var(--c-4);
+}
+
+#md-container p {
+  font-size: calc(var(--fs-s)*.85);
+}
+
+#md-container {
+  width: max(50%, var(--s-xl));
+  margin-bottom: var(--s-xl);
+}
