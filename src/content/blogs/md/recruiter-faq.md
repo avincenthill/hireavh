@@ -40,7 +40,7 @@ No preference - the hiring manager, product, and team are better predictors of a
 Most of the jobs I'm interviewing for are in the San Francisco Bay Area, but I'm open to relocating to Seattle, New York, Western Europe or East Asia. I'm much more interested in what I'd be doing that where I'd be doing it.
 
 ## Preference for Remote Work
-I'm open to any percentage of remote/work from home roles.
+I'm open to any percentage of remote work.
 
 ## Preference for Compensation
 I'd like to be paid market rates similar to coworkers with the same amount of experience - I can't provide a hard number/range as this would change based on the company, role, and team.
