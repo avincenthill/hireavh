@@ -19,6 +19,7 @@
   justify-content: space-between;
   margin: auto;
   margin: var(--s-xs);
+  margin-bottom: var(--s-s);
   border-radius: var(--s-xs);
 }
 

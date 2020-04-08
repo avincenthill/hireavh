@@ -11,17 +11,17 @@ const projects = {
       title: "Recruiter FAQ",
       url: "/blog/recruiter-faq",
       displayUrl: "/blogs/recruiter-faq",
-      description: "Answers to common questions I get from recruiters",
+      description: "Answers to common questions I get from recruiters.",
       img: {
         emoji: "🤷",
       },
     },
     // *************************************************************************
     {
-      title: "particle simulation",
+      title: "Particle Simulation",
       url: "https://github.com/avincenthill/particle_simulation",
       displayUrl: "github.com/avincenthill/particle_simulation",
-      description: "A particle system simulation in Processing...",
+      description: "A particle system simulation in Processing.",
       img: {
         hasImg: true,
         module: particles,
@@ -30,7 +30,7 @@ const projects = {
     },
     // *************************************************************************
     {
-      title: "media automation",
+      title: "Media Automation",
       url:
         "https://marketingplatform.google.com/about/resources/fetch-and-aeg-presents-boost-efficiency-with-structured-information-files/",
       displayUrl: "marketingplatform.google.com",
@@ -41,10 +41,10 @@ const projects = {
     },
     // *************************************************************************
     {
-      title: "sorting algorithms",
+      title: "Sorting Algorithms",
       url: "/sorting",
       displayUrl: "hireavh.com/sorting",
-      description: "Sorting algos animated...",
+      description: "Animated bogosort!",
       img: {
         hasImg: true,
         module: sorting,
@@ -53,17 +53,17 @@ const projects = {
     },
     // *************************************************************************
     {
-      title: "marketing consulting",
+      title: "Marketing Consulting",
       url: "/marketing",
       displayUrl: "hireavh.com/marketing",
-      description: "Super-charging your business with Google Ads...",
+      description: "Super-charging your business with Google Ads!",
       img: {
         emoji: "💼",
       },
     },
     // *************************************************************************
     {
-      title: "AVH blog",
+      title: "AVH Blog",
       url: "/blog",
       displayUrl: "hireavh.com/blog",
       description: "My thoughts on the world...",
@@ -73,10 +73,10 @@ const projects = {
     },
     // *************************************************************************
     {
-      title: "educate yourself",
+      title: "Educate Yourself",
       url: "http://shirt.woot.com/offers/educate-yourself",
       displayUrl: "shirt.woot.com/offers/educate-yourself",
-      description: "Graphic design for woot.com...",
+      description: "Graphic design for woot.com.",
       img: {
         hasImg: true,
         module: nsa,
@@ -85,10 +85,10 @@ const projects = {
     },
     // *************************************************************************
     {
-      title: "grand hilbert",
+      title: "Grand Hilbert",
       url: "http://shirt.woot.com/offers/hilberts-grand-infinite-hotel",
       displayUrl: "shirt.woot.com/offers/hilberts-grand-infinite-hotel",
-      description: "Graphic design for woot.com...",
+      description: "Graphic design for woot.com.",
       img: {
         hasImg: true,
         module: hilbert,
@@ -97,10 +97,10 @@ const projects = {
     },
     // *************************************************************************
     {
-      title: "petals logo",
+      title: "Petals Logo",
       url: "http://www.pictureperfectpetals.com/about",
       displayUrl: "pictureperfectpetals.com",
-      description: "Graphic design for Picture Perfect Petals...",
+      description: "Graphic design for Picture Perfect Petals.",
       img: {
         hasImg: true,
         module: petals,
@@ -109,10 +109,10 @@ const projects = {
     },
     // *************************************************************************
     {
-      title: "online chess",
+      title: "Online chess",
       url: "https://lichess.org/@/avincenthill/perf/rapid",
       displayUrl: "lichess.org",
-      description: "Challenge me on lichess.org...",
+      description: "Challenge me on lichess.org!",
       img: {
         emoji: "♟️",
       },

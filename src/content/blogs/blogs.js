@@ -8,7 +8,7 @@ const blogs = {
     {
       title: "Recruiter FAQ",
       url: "blog/recruiter-faq",
-      description: "Answers to common questions I get from recruiters",
+      description: "Answers to common questions I get from recruiters.",
       md: recruiterFaq,
       img: {
         emoji: "🤷",
@@ -17,7 +17,7 @@ const blogs = {
     {
       title: "README.md",
       url: "blog/readme",
-      description: "The rendered readme for this web app (hireavh.com)",
+      description: "The rendered readme for this web app (hireavh.com).",
       md: readme,
       img: {
         emoji: "📒",
