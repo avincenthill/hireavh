@@ -116,14 +116,14 @@ export default class Contact extends Component {
 
             {/* site */}
             <div className="contact">
-              <a className="contact-a" href={`https://${content.contact.site}`}>
+              <a className="contact-a" href={`${content.contact.site.path}`}>
                 <FaFileCode />
               </a>
-              <a className="contact-a" href={`https://${content.contact.site}`}>
-                <span>{content.contact.site}</span>
+              <a className="contact-a" href={`${content.contact.site.path}`}>
+                <span>{content.contact.site.displayUrl}</span>
               </a>
               <button
-                data-clipboard-text={content.contact.site}
+                data-clipboard-text={content.contact.site.path}
                 className="contact-button contact-button-github"
               >
                 <FaRegCopy />

@@ -29,7 +29,10 @@ content.contact = {
   cell: "(541) 602-9122",
   linkedin: "linkedin.com/in/avincenthill",
   github: "github.com/avincenthill",
-  site: "hireavh.com",
+  site: {
+    path: "/home/",
+    displayUrl: "hireavh.com",
+  },
   resume: "resume",
 };
 
