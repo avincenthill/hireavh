@@ -27,8 +27,9 @@ content.contact = {
   name: `👨‍💻 Alex "AVH" Vincent-Hill`,
   email: "alexanderjvincenthill@gmail.com",
   cell: "(541) 602-9122",
-  linkedin: "www.linkedin.com/in/avincenthill",
-  github: "www.github.com/avincenthill",
+  linkedin: "linkedin.com/in/avincenthill",
+  github: "github.com/avincenthill",
+  site: "hireavh.com",
   resume: "resume",
 };
 

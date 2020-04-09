@@ -9,7 +9,7 @@ import {
   GoFile,
   GoCloudDownload,
 } from "react-icons/go";
-import { FaLinkedinIn, FaGithub, FaRegCopy } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaRegCopy, FaFileCode } from "react-icons/fa";
 import ClipboardJS from "clipboard";
 import headshot from "assets/img/headshot.png";
 import "./Contact.css";
@@ -108,6 +108,22 @@ export default class Contact extends Component {
               </a>
               <button
                 data-clipboard-text={content.contact.github}
+                className="contact-button contact-button-github"
+              >
+                <FaRegCopy />
+              </button>
+            </div>
+
+            {/* site */}
+            <div className="contact">
+              <a className="contact-a" href={`https://${content.contact.site}`}>
+                <FaFileCode />
+              </a>
+              <a className="contact-a" href={`https://${content.contact.site}`}>
+                <span>{content.contact.site}</span>
+              </a>
+              <button
+                data-clipboard-text={content.contact.site}
                 className="contact-button contact-button-github"
               >
                 <FaRegCopy />
