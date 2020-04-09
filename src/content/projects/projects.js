@@ -1,8 +1,8 @@
-import particles from "assets/img/projects/particles.png";
-import sorting from "assets/img/projects/sorting.png";
-import nsa from "assets/img/projects/nsa.png";
-import hilbert from "assets/img/projects/hilbert.png";
-import petals from "assets/img/projects/petals.png";
+import particles from "assets/img/projects/particles.jpg";
+import sorting from "assets/img/projects/sorting.jpg";
+import nsa from "assets/img/projects/nsa.jpg";
+import hilbert from "assets/img/projects/hilbert.jpg";
+import petals from "assets/img/projects/petals.jpg";
 
 const projects = {
   data: [
