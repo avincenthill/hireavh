@@ -46,4 +46,4 @@ I'm open to any percentage of remote work.
 I'd like to be paid market rates similar to coworkers with the same amount of experience - I can't provide a hard number/range as this would change based on the company, role, and team.
 
 ## 🙏 Thanks for Reading!
-Hopefully this helps you move quickly on this role. Thank you again for all your help!
+Hopefully this helps you move quickly. Thank you again for all your help!

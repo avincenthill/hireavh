@@ -109,7 +109,7 @@ const projects = {
     },
     // *************************************************************************
     {
-      title: "Online chess",
+      title: "Online Chess",
       url: "https://lichess.org/@/avincenthill/perf/rapid",
       displayUrl: "lichess.org",
       description: "Challenge me on lichess.org!",
