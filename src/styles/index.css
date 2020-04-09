@@ -9,7 +9,7 @@
   --c-4: #147186;
   /* Fonts */
   --f-default: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --f-script: 'Nanum Brush Script', cursive;
+  --f-script: 'Nanum Brush Script', "Helvetica Neue", Helvetica, Arial, sans-serif;
   --fs-xxs: .75rem;
   --fs-xs: 1rem;
   --fs-s: 1.5rem;

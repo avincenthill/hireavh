@@ -3,8 +3,16 @@
   word-wrap: break-word;
 }
 
+#md-container h1 {
+  margin-bottom: var(--s-xs);
+}
+
 #md-container h2 {
-  margin-top: var(--s-m);
+  margin-top: calc(var(--s-s)*1.5);
+}
+
+#md-container h3 {
+  margin-bottom: var(--s-m);
 }
 
 #md-container a {
@@ -13,6 +21,7 @@
 
 #md-container p {
   font-size: calc(var(--fs-s)*.85);
+  margin-top: var(--s-xxs);
 }
 
 #md-container {
