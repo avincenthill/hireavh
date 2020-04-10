@@ -1,7 +1,7 @@
 import React from "react";
 import { Remarkable } from "remarkable";
 import Page from "components/Page/Page";
-import { NavList, Nav } from "components/Nav/Nav";
+import { NavList } from "components/Nav/Nav";
 import "./Post.css";
 
 class Post extends React.Component {
