@@ -11,10 +11,6 @@
   margin-top: calc(var(--s-s)*1.5);
 }
 
-#md-container h3 {
-  margin-bottom: var(--s-m);
-}
-
 #md-container a {
   color: var(--c-4);
 }
