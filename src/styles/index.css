@@ -82,3 +82,8 @@ button:active {
 button:focus {
   outline-color: var(--c-4);
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
