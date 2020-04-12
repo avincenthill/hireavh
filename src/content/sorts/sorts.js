@@ -12,11 +12,11 @@ const sorts = {
       title: "Bubble Sort",
       emoji: "💭",
       fn: async (array, renderFn) => {
-        function swap(array, i, j) {
+        const swap = (array, i, j) => {
           let temp = array[i];
           array[i] = array[j];
           array[j] = temp;
-        }
+        };
         for (let i = 0; i < array.length; i++) {
           for (let j = 1; j < array.length; j++) {
             let hasSwapped = false;
@@ -33,6 +33,23 @@ const sorts = {
         }
         await renderFn(array);
       },
+      fnDisplayString: `const bubbleSort = (array) => {
+        const swap = (array, i, j) => {
+          let temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
+        }
+
+        for (let i = 0; i < array.length; i++) {
+          for (let j = 1; j < array.length; j++) {
+            if (array[j - 1] > array[j]) {
+              swap(array, j - 1, j);
+            }
+          }
+        }
+
+        return array;
+      }`,
       complexity: {
         time: {
           best: "Ω(n)",
@@ -62,6 +79,19 @@ const sorts = {
         }
         await renderFn(array);
       },
+      fnDisplayString: `const insertionSort = (array) => {
+        let i = 0,
+          j;
+        for (i + 1; i < array.length; i++) {
+          var temp = array[i];
+          for (j = i - 1; j >= 0 && array[j] > temp; j--) {
+            array[j + 1] = array[j];
+          }
+          array[j + 1] = temp;
+        }
+
+        return array;
+      }`,
       complexity: {
         time: {
           best: "Ω(n)",

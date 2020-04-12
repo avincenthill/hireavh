@@ -112,7 +112,7 @@ class Sort extends React.Component {
               language="javascript"
               style={customSyntaxHighlighterStyle}
             >
-              {sort.fn ? sort.fn.toString() : "loading code ..."}
+              {sort.fnDisplayString ? sort.fnDisplayString : "loading code ..."}
             </SyntaxHighlighter>
           </div>
           <table className="sort-table">
