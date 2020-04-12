@@ -8,7 +8,7 @@
 alexanderjvincenthill@gmail.com
 
 ## Phone
-(541) 602-9122. Unfortunately I can't take unscheduled calls - please email me scheduling requests!
+(541) 602-9122 - please email me to schedule a call!
 
 ## Resume
 See [here](/resume).
@@ -37,7 +37,7 @@ Full-stack or Frontend Software Engineer.
 No preference - the hiring manager, product, and team are better predictors of a good fit and a good experience for me.
 
 ## Preference for Relocation
-Most of the jobs I'm interviewing for are in the San Francisco Bay Area, but I'm open to relocating to Seattle, New York, Western Europe or East Asia. I'm much more interested in what I'd be doing that where I'd be doing it.
+Most of the jobs I'm interviewing for are in the San Francisco Bay Area, but I'm open to relocating to Seattle, New York, Western Europe or East Asia. I'm much more interested in what I'd be doing than where I'd be doing it.
 
 ## Preference for Remote Work
 I'm open to any percentage of remote work.
