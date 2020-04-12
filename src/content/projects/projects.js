@@ -52,8 +52,8 @@ const projects = {
     // *************************************************************************
     {
       title: "Marketing Consulting",
-      url: "/marketing",
-      displayUrl: "hireavh.com/marketing",
+      url: "/blog/marketing",
+      displayUrl: "hireavh.com/blog/marketing",
       description: "Super-charging your business with Google Ads!",
       img: {
         emoji: "💼",

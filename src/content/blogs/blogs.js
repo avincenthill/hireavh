@@ -1,5 +1,6 @@
 const recruiterFaq = require("./md/recruiter-faq.md");
 const readme = require("./md/README.md");
+const marketing = require("./md/marketing.md");
 
 const blogs = {
   title: "✍️ AVH blog",
@@ -12,6 +13,16 @@ const blogs = {
       md: recruiterFaq,
       img: {
         emoji: "🤷",
+      },
+    },
+    // *************************************************************************
+    {
+      title: "Marketing Consulting",
+      url: "blog/marketing",
+      description: "Super-charging your business with Google Ads!",
+      md: marketing,
+      img: {
+        emoji: "💼",
       },
     },
     // *************************************************************************
