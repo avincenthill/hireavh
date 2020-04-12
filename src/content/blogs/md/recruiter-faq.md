@@ -2,7 +2,7 @@
 ### 07 Apr 2020
 ##  
 ##  
-👋 Hi! I wanted to save you some time by answering some questions you may or may not have about me!
+👋 Hi! I wanted to save you some time by answering some questions you may have about me.
 
 ## Email
 alexanderjvincenthill@gmail.com
