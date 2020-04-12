@@ -1,5 +1,5 @@
+import sorts from "content/sorts/sorts";
 import particles from "assets/img/projects/particles.jpg";
-import sorting from "assets/img/projects/sorting.jpg";
 import nsa from "assets/img/projects/nsa.jpg";
 import hilbert from "assets/img/projects/hilbert.jpg";
 import petals from "assets/img/projects/petals.jpg";
@@ -41,14 +41,12 @@ const projects = {
     },
     // *************************************************************************
     {
-      title: "Sorting Algorithms",
+      title: sorts.title,
       url: "/sorting",
       displayUrl: "hireavh.com/sorting",
       description: "Animated bogosort!",
       img: {
-        hasImg: true,
-        module: sorting,
-        emoji: "📦",
+        emoji: sorts.emoji,
       },
     },
     // *************************************************************************

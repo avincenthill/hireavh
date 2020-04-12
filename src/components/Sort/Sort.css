@@ -1,0 +1,62 @@
+.sort-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sort-canvas-container {
+  height: min(calc(80vw/1.618),calc(var(--s-xl)*2/1.618));
+  width: min(80vw,calc(var(--s-xl)*2));
+}
+
+.sort-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.sort-button {
+  background-color: var(--c-black);
+  width: 100%;
+  border: var(--b-1) var(--c-1) solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sort-info-container {
+  font-size: var(--fs-m);
+  width: min(80vw,calc(var(--s-xl)*2));
+  border-radius: 0 0 var(--s-xs) var(--s-xs);
+  border: var(--b-1) var(--c-1) solid;
+  border-top: 0;
+  color: var(--c-white);
+  margin-bottom: var(--s-m);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sort-code-container {
+  width: 100%;
+  font-size: calc(var(--fs-xxs));
+  text-align: left;
+  overflow-x: scroll;
+
+}
+
+.sort-table {
+  width: var(--s-l);
+  font-size: var(--fs-xxs);
+  margin-bottom: var(--s-xs);
+  text-align: right;
+}
+
+.sort-table th{
+  font-weight: bold;
+}
+
+.sort-title {
+  margin: var(--s-xs);
+  margin-left: auto;
+  margin-left: auto;
+}

@@ -1,12 +1,13 @@
 :root {
-  /* Variables */
   /* Colors */
-      --c-black: #020a0d;
-    --c-white: 	#f5fbfd;
+  --c-black: #020a0d;
+  --c-white: #f5fbfd;
   --c-1: #c8eaf7;
   --c-2: #85d1ed;
   --c-3: #f7edc8;
   --c-4: #147186;
+  --c-5:#b67e72; 
+
   /* Fonts */
   --f-default: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --f-script: 'Nanum Brush Script', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -16,6 +17,7 @@
   --fs-m: 1.75rem;
   --fs-l: 3rem;
   --fs-xl: 5rem;
+
   /* Spacing */
   --s-xxxs: .1rem;
   --s-xxs: .5rem;
@@ -25,8 +27,10 @@
   --s-l: 12.4rem;
   --s-xl: 20rem;
   --s-xxl: 75rem;
+
   /* Elevation */
   --z-top: 2;
+
   /* Border */
   --b-1: .1rem;
 }
@@ -60,6 +64,7 @@ hr {
 }
 
 button {
+  padding: 0;
   border: none;
   margin: 0;
   text-decoration: none;
@@ -72,4 +77,8 @@ button {
 
 button:active {
   transform: scale(0.99);
+}
+
+button:focus {
+  outline-color: var(--c-4);
 }

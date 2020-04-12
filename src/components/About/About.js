@@ -46,7 +46,9 @@ function About() {
         <NavList></NavList>
         <hr></hr>
         <h2>{content.about.subtitle2}</h2>
-        <Projects projects={content.projects.data} ></Projects>
+        <Projects projects={content.projects.data}></Projects>
+        <NavList></NavList>
+        <hr></hr>
       </Page>
     </div>
   );

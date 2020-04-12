@@ -1,11 +1,13 @@
 import projects from "./projects/projects";
 import { blogs } from "./blogs/blogs";
+import sorts from "./sorts/sorts";
 
 const currentDate = new Date();
 
 const content = {
   projects,
   blogs,
+  sorts,
 };
 
 content.nav = {

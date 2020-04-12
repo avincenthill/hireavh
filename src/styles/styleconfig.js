@@ -1,4 +1,20 @@
+const getColorHash = (cssVar) => {
+  const hash = getComputedStyle(document.documentElement).getPropertyValue(
+    cssVar
+  );
+  return hash;
+};
+
 const styles = {
+  color: {
+    cblack: getColorHash("--c-black"),
+    cwhite: getColorHash("--c-white"),
+    c1: getColorHash("--c-1"),
+    c2: getColorHash("--c-2"),
+    c3: getColorHash("--c-3"),
+    c4: getColorHash("--c-4"),
+    c5: getColorHash("--c-5"),
+  },
   icons: {
     default: {
       color: "var(--c-1)",
@@ -25,6 +41,9 @@ const styles = {
   },
   resume: {
     height: window.screen.height * 0.6,
+  },
+  sort: {
+    sortDelay: 15,
   },
 };
 

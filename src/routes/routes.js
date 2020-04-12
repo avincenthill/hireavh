@@ -1,18 +1,24 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, useParams } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  useParams,
+} from "react-router-dom";
 import About from "components/About/About";
 import NotFound from "components/NotFound/NotFound";
 import Resume from "components/Resume/Resume";
 import Contact from "components/Contact/Contact";
 import Blog from "components/Blog/Blog";
 import Post from "components/Post/Post";
+import SortList from "components/SortList/SortList";
 import { lookupBlogFromUrl } from "content/blogs/blogs";
 
 const VariableBlogPost = () => {
   const { path } = useParams();
   const blog = lookupBlogFromUrl(path);
-  return blog ? (<Post blog={blog}></Post>) : (<NotFound></NotFound>)
-}
+  return blog ? <Post blog={blog}></Post> : <NotFound></NotFound>;
+};
 
 const createRoutes = () => (
   <Router>
@@ -22,6 +28,7 @@ const createRoutes = () => (
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/blog" component={Blog} />
       <Route exact path="/blog/:path" children={<VariableBlogPost />} />
+      <Route exact path="/sorting" component={SortList} />
       <Route component={NotFound} />
     </Switch>
   </Router>
