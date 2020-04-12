@@ -30,6 +30,16 @@ const projects = {
     },
     // *************************************************************************
     {
+      title: sorts.title,
+      url: "/sorting",
+      displayUrl: "hireavh.com/sorting",
+      description: "Animated bogosort!",
+      img: {
+        emoji: sorts.emoji,
+      },
+    },
+    // *************************************************************************
+    {
       title: "Media Automation",
       url:
         "https://marketingplatform.google.com/about/resources/fetch-and-aeg-presents-boost-efficiency-with-structured-information-files/",
@@ -37,16 +47,6 @@ const projects = {
       description: "100x'ing Google Ads campaign creation...",
       img: {
         emoji: "⚙️",
-      },
-    },
-    // *************************************************************************
-    {
-      title: sorts.title,
-      url: "/sorting",
-      displayUrl: "hireavh.com/sorting",
-      description: "Animated bogosort!",
-      img: {
-        emoji: sorts.emoji,
       },
     },
     // *************************************************************************
