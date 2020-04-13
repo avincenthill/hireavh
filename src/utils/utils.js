@@ -8,8 +8,9 @@ const utils = {
   @param {Array} an array containing the items
   https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
   */
-  shuffleArray: (a) => {
+  shuffleArray: (array) => {
     let j, x, i;
+    let a = [...array];
     for (i = a.length - 1; i > 0; i--) {
       j = Math.floor(Math.random() * (i + 1));
       x = a[i];

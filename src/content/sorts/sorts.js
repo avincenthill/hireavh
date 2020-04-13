@@ -1,7 +1,9 @@
+import utils from "utils/utils";
+
 const sorts = {
   title: "Sorting Algorithms",
   emoji: "📊",
-  numBars: 50,
+  numBars: 25,
   complexityHeader: "🧮 complexity",
   timeHeader: "🕒 time",
   spaceHeader: "🌌 space",
@@ -11,7 +13,7 @@ const sorts = {
       id: 1,
       title: "Bubble Sort",
       emoji: "💭",
-      fn: async (array, renderFn) => {
+      fn: (array, snapShotFn) => {
         const swap = (array, i, j) => {
           let temp = array[i];
           array[i] = array[j];
@@ -19,37 +21,33 @@ const sorts = {
         };
         for (let i = 0; i < array.length; i++) {
           for (let j = 1; j < array.length; j++) {
-            let hasSwapped = false;
             if (array[j - 1] > array[j]) {
               swap(array, j - 1, j);
-              hasSwapped = true;
-            }
-            if (hasSwapped) {
-              await renderFn(array);
+              snapShotFn(array, [i], [j], [j - 1]);
             } else {
-              await renderFn(array);
+              snapShotFn(array, [i], [j], null);
             }
           }
         }
-        await renderFn(array);
       },
-      fnDisplayString: `const bubbleSort = (array) => {
-        const swap = (array, i, j) => {
-          let temp = array[i];
-          array[i] = array[j];
-          array[j] = temp;
-        }
+      fnDisplayString: `
+        const bubbleSort = (array) => {
+          const swap = (array, i, j) => {
+            let temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+          }
 
-        for (let i = 0; i < array.length; i++) {
-          for (let j = 1; j < array.length; j++) {
-            if (array[j - 1] > array[j]) {
-              swap(array, j - 1, j);
+          for (let i = 0; i < array.length; i++) {
+            for (let j = 1; j < array.length; j++) {
+              if (array[j - 1] > array[j]) {
+                swap(array, j - 1, j);
+              }
             }
           }
-        }
 
-        return array;
-      }`,
+          return array;
+        }`,
       complexity: {
         time: {
           best: "Ω(n)",
@@ -66,32 +64,33 @@ const sorts = {
       id: 2,
       title: "Insertion Sort",
       emoji: "⬇️",
-      fn: async (array, renderFn) => {
-        let i = 0,
-          j;
-        for (i + 1; i < array.length; i++) {
-          var temp = array[i];
-          for (j = i - 1; j >= 0 && array[j] > temp; j--) {
+      fn: (array, snapShotFn) => {
+        let i, j, key;
+        for (i = 1; i < array.length; i += 1) {
+          key = array[i];
+          j = i - 1;
+          while (j >= 0 && array[j] > key) {
             array[j + 1] = array[j];
+            j -= 1;
+            snapShotFn(array, [i], [j], [j + 1]);
           }
-          array[j + 1] = temp;
-          await renderFn(array);
+          array[j + 1] = key;
+          snapShotFn(array, [i], [j]);
         }
-        await renderFn(array);
       },
-      fnDisplayString: `const insertionSort = (array) => {
-        let i = 0,
-          j;
-        for (i + 1; i < array.length; i++) {
-          var temp = array[i];
-          for (j = i - 1; j >= 0 && array[j] > temp; j--) {
-            array[j + 1] = array[j];
+      fnDisplayString: `
+        const insertionSort = (array) => {
+          let i, j, key;
+          for (i = 1; i < array.length; i += 1) {
+            key = array[i];
+            j = i - 1;
+            while (j >= 0 && array[j] > key) {
+              array[j + 1] = array[j];
+              j -= 1;
+            }
+            array[j + 1] = key;
           }
-          array[j + 1] = temp;
-        }
-
-        return array;
-      }`,
+        }`,
       complexity: {
         time: {
           best: "Ω(n)",
@@ -103,6 +102,55 @@ const sorts = {
         },
       },
     },
+    // *************************************************************************
+    {
+      id: 3,
+      title: "Bogo Sort",
+      emoji: "🤪",
+      fn: (array, snapShotFn) => {
+        const isSorted = (arr) => {
+          for (let i = 0; i < array.length; i += 1) {
+            snapShotFn(arr, [i], null, null);
+            if (i > 0 && arr[i - 1] > arr[i]) {
+              return false;
+            }
+          }
+          return true;
+        };
+        let counter = 0;
+        let newArray = [...array];
+        while (!isSorted(newArray) && counter < 100) {
+          newArray = utils.shuffleArray(newArray);
+          counter += 1;
+        }
+      },
+      fnDisplayString: `
+        const bogoSort = (array) => {
+          const isSorted = (arr) => {
+            for (let i = 0; i < array.length; i += 1) {
+              if (i > 0 && arr[i - 1] > arr[i]) {
+                return false;
+              }
+            }
+            return true;
+          };
+          
+          while (!isSorted(array)) {
+            array = utils.shuffleArray(array);
+          }
+        }`,
+      complexity: {
+        time: {
+          best: "Ω(n)",
+          avg: "Θ((n+1)!)",
+          worst: "O(∞)",
+        },
+        space: {
+          worst: "O(1)",
+        },
+      },
+    },
+    // *************************************************************************
   ],
 };
 

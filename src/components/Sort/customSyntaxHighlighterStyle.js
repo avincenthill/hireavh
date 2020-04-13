@@ -86,7 +86,8 @@ const customSyntaxHighlighterStyle = {
     display: "block",
     background: styles.color.cblack,
     color: styles.color.cwhite,
-    margin: "1rem",
+    margin: "0rem",
+    marginLeft: "-2.5rem",
   },
   "hljs-emphasis": {
     fontStyle: "italic",

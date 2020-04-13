@@ -38,12 +38,18 @@ const styles = {
       height: "1rem",
       padding: ".5rem",
     },
+    sort: {
+      color: "var(--c-1)",
+      width: "1.5rem",
+      height: "1.5rem",
+      padding: ".5rem",
+    },
   },
   resume: {
     height: window.screen.height * 0.6,
   },
   sort: {
-    sortDelay: 15,
+    delay: 50,
   },
 };
 
