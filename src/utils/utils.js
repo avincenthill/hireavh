@@ -4,7 +4,7 @@ const utils = {
     return new Promise((resolve) => setTimeout(resolve, milliseconds));
   },
   /*
-  shuffles array in place.
+  returns a new shuffled array
   @param {Array} an array containing the items
   https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
   */

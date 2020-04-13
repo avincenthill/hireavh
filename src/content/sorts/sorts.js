@@ -23,9 +23,9 @@ const sorts = {
           for (let j = 1; j < array.length; j++) {
             if (array[j - 1] > array[j]) {
               swap(array, j - 1, j);
-              snapShotFn(array, [i], [j], [j - 1]);
+              snapShotFn(array, [i], [j]);
             } else {
-              snapShotFn(array, [i], [j], null);
+              snapShotFn(array, [i], [j]);
             }
           }
         }
@@ -72,7 +72,7 @@ const sorts = {
           while (j >= 0 && array[j] > key) {
             array[j + 1] = array[j];
             j -= 1;
-            snapShotFn(array, [i], [j], [j + 1]);
+            snapShotFn(array, [i], [j]);
           }
           array[j + 1] = key;
           snapShotFn(array, [i], [j]);
@@ -90,6 +90,8 @@ const sorts = {
             }
             array[j + 1] = key;
           }
+
+          return array;
         }`,
       complexity: {
         time: {
@@ -110,7 +112,7 @@ const sorts = {
       fn: (array, snapShotFn) => {
         const isSorted = (arr) => {
           for (let i = 0; i < array.length; i += 1) {
-            snapShotFn(arr, [i], null, null);
+            snapShotFn(arr, [i]);
             if (i > 0 && arr[i - 1] > arr[i]) {
               return false;
             }
@@ -138,6 +140,8 @@ const sorts = {
           while (!isSorted(array)) {
             array = utils.shuffleArray(array);
           }
+
+          return array;
         }`,
       complexity: {
         time: {

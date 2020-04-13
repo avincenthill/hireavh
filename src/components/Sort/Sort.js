@@ -35,7 +35,8 @@ class Sort extends React.Component {
     const ctx = canvas.getContext("2d");
     this.setState({ canvas, ctx }, () => {
       this.clearCanvas();
-      this.renderFrame();
+      // don't style bars on initial render
+      this.renderFrame(false);
     });
   };
 
@@ -103,20 +104,20 @@ class Sort extends React.Component {
     this.setState({ currentFrame: 0 });
   };
 
-  renderSnapshot = (snapshot) => {
+  renderSnapshot = (snapshot, isStyled) => {
     const { canvas } = this.state;
     const { emph1, emph2, emph3, order } = snapshot;
     const array = order;
     this.clearCanvas();
     for (let i = 0; i < array.length; i++) {
       let color = styles.color.c1;
-      if (emph1 && emph1.includes(i)) {
+      if (isStyled && emph1 && emph1.includes(i)) {
         color = styles.color.c4;
       }
-      if (emph2 && emph2.includes(i)) {
+      if (isStyled && emph2 && emph2.includes(i)) {
         color = styles.color.c5;
       }
-      if (emph3 && emph3.includes(i)) {
+      if (isStyled && emph3 && emph3.includes(i)) {
         color = "red";
       }
       this.drawBar(
@@ -127,9 +128,9 @@ class Sort extends React.Component {
     }
   };
 
-  renderFrame = () => {
+  renderFrame = (isStyled) => {
     if (this.state.currentFrame < this.state.history.length) {
-      this.renderSnapshot(this.state.history[this.state.currentFrame]);
+      this.renderSnapshot(this.state.history[this.state.currentFrame], isStyled);
       this.setState({ currentFrame: this.state.currentFrame + 1 });
     }
   };
@@ -142,7 +143,7 @@ class Sort extends React.Component {
   startRendering = () => {
     if (!this.state.isRunning) {
       const interval = setInterval(() => {
-        this.renderFrame();
+        this.renderFrame(true);
       }, styles.sort.delay);
       this.setState({ interval, isRunning: true });
     } else {
@@ -159,7 +160,7 @@ class Sort extends React.Component {
   };
 
   stepThruSort = () => {
-    this.renderFrame();
+    this.renderFrame(true);
     this.stopRendering();
   };
 
