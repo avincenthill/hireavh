@@ -45,3 +45,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### `npm run updateblogreadme`
 
 Copies README.md into `src` so it can be imported, parsed, and rendered in the `/blog` section of the web app.
+
+### `npm run newcomponent`
+Copies `src/components/Default` directory and files and renames directory with input $NAME. For example, run `Name=MyNewComponentName npm run newcomponent` and find and replace `Default` -> `MyNewComponentName` and `default` -> `mynewcomponentname` within `/src/components/MyNewComponentName`.

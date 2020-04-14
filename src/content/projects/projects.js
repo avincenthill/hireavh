@@ -59,14 +59,44 @@ const projects = {
         emoji: "💼",
       },
     },
+     // *************************************************************************
+     {
+      title: "Dynamic Form",
+      url: "/dynamic-form",
+      displayUrl: "hireavh.com/form",
+      description: "Rendering a form based on input JSON.",
+      img: {
+        emoji: "📃",
+      },
+    },
     // *************************************************************************
     {
-      title: "AVH Blog",
-      url: "/blog",
-      displayUrl: "hireavh.com/blog",
-      description: "My thoughts on the world...",
+      title: "Leetcode Answers",
+      url: "https://github.com/avincenthill/leetcode-answers/tree/master/leetcode-answers",
+      displayUrl: "https://github.com/avincenthill/leetcode-answers/tree/master/leetcode-answers",
+      description: "A collection of my JS implementations from leetcode.com.",
       img: {
-        emoji: "✍️",
+        emoji: "🧩",
+      },
+    },
+      // *************************************************************************
+      {
+        title: "AVH Blog",
+        url: "/blog",
+        displayUrl: "hireavh.com/blog",
+        description: "My thoughts on the world...",
+        img: {
+          emoji: "✍️",
+        },
+      },
+    // *************************************************************************
+    {
+      title: "Online Chess",
+      url: "https://lichess.org/@/avincenthill/perf/rapid",
+      displayUrl: "lichess.org",
+      description: "Challenge me on lichess.org!",
+      img: {
+        emoji: "♟️",
       },
     },
     // *************************************************************************
@@ -103,16 +133,6 @@ const projects = {
         hasImg: true,
         module: petals,
         emoji: "📦️",
-      },
-    },
-    // *************************************************************************
-    {
-      title: "Online Chess",
-      url: "https://lichess.org/@/avincenthill/perf/rapid",
-      displayUrl: "lichess.org",
-      description: "Challenge me on lichess.org!",
-      img: {
-        emoji: "♟️",
       },
     },
   ],
