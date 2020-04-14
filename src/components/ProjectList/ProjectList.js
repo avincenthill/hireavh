@@ -10,8 +10,8 @@ class ProjectList extends React.Component {
     return (
       <div>
         <Page>
-          <h2 className="projectlist-title">{content.about.subtitle2}</h2>
-          <Projects projects={content.projects.data}></Projects>
+          <h2 className="projectlist-title">{this.props.title}</h2>
+          <Projects projects={this.props.projectData}></Projects>
           <NavList></NavList>
           <hr></hr>
         </Page>

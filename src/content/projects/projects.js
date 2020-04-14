@@ -1,10 +1,9 @@
 import sorts from "content/sorts/sorts";
 import particles from "assets/img/projects/particles.jpg";
-import nsa from "assets/img/projects/nsa.jpg";
-import hilbert from "assets/img/projects/hilbert.jpg";
-import petals from "assets/img/projects/petals.jpg";
+import graphicDesign from "./graphicDesign";
 
 const projects = {
+  title: "📦 Here are some of my projects!",
   data: [
     // *************************************************************************
     {
@@ -59,8 +58,8 @@ const projects = {
         emoji: "💼",
       },
     },
-     // *************************************************************************
-     {
+    // *************************************************************************
+    {
       title: "Dynamic Form",
       url: "/dynamic-form",
       displayUrl: "hireavh.com/form",
@@ -72,23 +71,35 @@ const projects = {
     // *************************************************************************
     {
       title: "Leetcode Answers",
-      url: "https://github.com/avincenthill/leetcode-answers/tree/master/leetcode-answers",
-      displayUrl: "https://github.com/avincenthill/leetcode-answers/tree/master/leetcode-answers",
+      url:
+        "https://github.com/avincenthill/leetcode-answers/tree/master/leetcode-answers",
+      displayUrl:
+        "https://github.com/avincenthill/leetcode-answers/tree/master/leetcode-answers",
       description: "A collection of my JS implementations from leetcode.com.",
       img: {
         emoji: "🧩",
       },
     },
-      // *************************************************************************
-      {
-        title: "AVH Blog",
-        url: "/blog",
-        displayUrl: "hireavh.com/blog",
-        description: "My thoughts on the world...",
-        img: {
-          emoji: "✍️",
-        },
+    // *************************************************************************
+    {
+      title: "AVH Blog",
+      url: "/blog",
+      displayUrl: "hireavh.com/blog",
+      description: "My thoughts on the world...",
+      img: {
+        emoji: "✍️",
       },
+    },
+    // *************************************************************************
+    {
+      title: "Graphic Design",
+      url: "/graphic-design",
+      displayUrl: "hireavh.com/graphic-design",
+      description: "A collection of my published work.",
+      img: {
+        emoji: "🎨",
+      },
+    },
     // *************************************************************************
     {
       title: "Online Chess",
@@ -99,43 +110,8 @@ const projects = {
         emoji: "♟️",
       },
     },
-    // *************************************************************************
-    {
-      title: "Educate Yourself",
-      url: "http://shirt.woot.com/offers/educate-yourself",
-      displayUrl: "shirt.woot.com/offers/educate-yourself",
-      description: "Graphic design for woot.com.",
-      img: {
-        hasImg: true,
-        module: nsa,
-        emoji: "📦️",
-      },
-    },
-    // *************************************************************************
-    {
-      title: "Grand Hilbert",
-      url: "http://shirt.woot.com/offers/hilberts-grand-infinite-hotel",
-      displayUrl: "shirt.woot.com/offers/hilberts-grand-infinite-hotel",
-      description: "Graphic design for woot.com.",
-      img: {
-        hasImg: true,
-        module: hilbert,
-        emoji: "📦️",
-      },
-    },
-    // *************************************************************************
-    {
-      title: "Petals Logo",
-      url: "http://www.pictureperfectpetals.com/about",
-      displayUrl: "pictureperfectpetals.com",
-      description: "Graphic design for Picture Perfect Petals.",
-      img: {
-        hasImg: true,
-        module: petals,
-        emoji: "📦️",
-      },
-    },
   ],
+  graphicDesign,
 };
 
 export default projects;

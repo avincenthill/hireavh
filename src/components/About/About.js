@@ -45,7 +45,7 @@ function About() {
         </div>
         <NavList></NavList>
         <hr></hr>
-        <h2>{content.about.subtitle2}</h2>
+        <h2>{content.projects.title}</h2>
         <Projects projects={content.projects.data}></Projects>
         <NavList></NavList>
         <hr></hr>

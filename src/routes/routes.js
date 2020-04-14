@@ -12,9 +12,10 @@ import Contact from "components/Contact/Contact";
 import Blog from "components/Blog/Blog";
 import Post from "components/Post/Post";
 import SortList from "components/SortList/SortList";
-import Default from "components/Default/Default";
-import ProjectList from "components/ProjectList/ProjectList"
+import Form from "components/Form/Form";
+import ProjectList from "components/ProjectList/ProjectList";
 import { lookupBlogFromUrl } from "content/blogs/blogs";
+import content from "content/content";
 
 const VariableBlogPost = () => {
   const { path } = useParams();
@@ -31,8 +32,27 @@ const createRoutes = () => (
       <Route exact path="/blog" component={Blog} />
       <Route exact path="/blog/:path" children={<VariableBlogPost />} />
       <Route exact path="/sorting" component={SortList} />
-      <Route exact path="/projects" component={ProjectList} />
-      <Route exact path="/dynamic-form" component={Default} />
+      <Route
+        exact
+        path="/projects"
+        render={(props) => (
+          <ProjectList
+            projectData={content.projects.data}
+            title={content.projects.title}
+          />
+        )}
+      />
+      <Route
+        exact
+        path="/graphic-design"
+        render={(props) => (
+          <ProjectList
+            projectData={content.projects.graphicDesign.data}
+            title={content.projects.graphicDesign.title}
+          />
+        )}
+      />
+      <Route exact path="/dynamic-form" component={Form} />
       <Route component={NotFound} />
     </Switch>
   </Router>
