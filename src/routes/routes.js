@@ -9,7 +9,6 @@ import About from "components/About/About";
 import NotFound from "components/NotFound/NotFound";
 import Resume from "components/Resume/Resume";
 import Contact from "components/Contact/Contact";
-import Blog from "components/Blog/Blog";
 import Post from "components/Post/Post";
 import SortList from "components/SortList/SortList";
 import Form from "components/Form/Form";
@@ -29,9 +28,18 @@ const createRoutes = () => (
       <Route exact path={["/", "/about", "/home"]} component={About} />
       <Route exact path="/resume" component={Resume} />
       <Route exact path="/contact" component={Contact} />
-      <Route exact path="/blog" component={Blog} />
       <Route exact path="/blog/:path" children={<VariableBlogPost />} />
       <Route exact path="/sorting" component={SortList} />
+      <Route
+        exact
+        path="/blog"
+        render={(props) => (
+          <ProjectList
+            projectData={content.blogs.data}
+            title={content.blogs.title}
+          />
+        )}
+      />
       <Route
         exact
         path="/projects"

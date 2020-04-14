@@ -3,7 +3,7 @@ const readme = require("./md/README.md");
 const marketing = require("./md/marketing.md");
 
 const blogs = {
-  title: "✍️ AVH blog",
+  title: "✍️ My markdown, rendered.",
   data: [
     // *************************************************************************
     {
@@ -27,9 +27,9 @@ const blogs = {
     },
     // *************************************************************************
     {
-      title: "README.md",
+      title: "hireavh.com How-to",
       url: "blog/readme",
-      description: "The rendered readme for this web app (hireavh.com).",
+      description: "The rendered README.md for this web app",
       md: readme,
       img: {
         emoji: "📒",
