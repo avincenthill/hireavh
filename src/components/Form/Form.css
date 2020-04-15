@@ -1,0 +1,61 @@
+.form-input {
+  height: var(--s-l);
+  font-size: var(--fs-xxs);
+  border: var(--c-1) solid var(--b-1);
+  border-radius: var(--s-xs);
+  color: var(--c-white);
+  background-color: var(--c-black);
+  margin-bottom: var(--s-s);
+  box-sizing: border-box;
+  padding: var(--s-xxs);
+}
+
+.form-container {
+  border: var(--c-1) solid var(--b-1);
+  border-radius: var(--s-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--s-s);
+}
+
+.form-error {
+  border: var(--c-5) solid var(--b-1);
+  color: var(--c-5);
+}
+
+.form-item {
+  width: min(var(--s-l),65vh);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: var(--s-xs);
+}
+
+.form-output {
+  text-overflow: wrap;
+  width: min(var(--s-xl),80vh);
+}
+
+.form-button {
+  background-color: var(--c-black);
+  border-radius: var(--s-xs);
+  border: var(--c-1) solid var(--b-1);
+  color: var(--c-1);
+  margin: var(--s-xs);
+  padding: var(--s-xxs);
+}
+
+.form-button:hover {
+  background-color: var(--c-4);
+  border: var(--c-black) solid var(--b-1);
+  color: var(--c-black);
+}
+
+.form-item label {
+  margin-bottom: var(--s-xxxs);
+}
+
+.form-title {
+  margin-bottom: var(--s-s);
+}

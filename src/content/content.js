@@ -1,6 +1,7 @@
 import projects from "./projects/projects";
 import { blogs } from "./blogs/blogs";
 import sorts from "./sorts/sorts";
+import form from "./form/form";
 
 const currentDate = new Date();
 
@@ -8,6 +9,7 @@ const content = {
   projects,
   blogs,
   sorts,
+  form,
 };
 
 content.nav = {
