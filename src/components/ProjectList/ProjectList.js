@@ -1,5 +1,4 @@
 import React from "react";
-import content from "content/content";
 import Page from "components/Page/Page";
 import { NavList } from "components/Nav/Nav";
 import Projects from "components/Projects/Projects";
