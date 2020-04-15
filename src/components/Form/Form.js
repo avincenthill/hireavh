@@ -5,6 +5,7 @@ import { NavList } from "components/Nav/Nav";
 import "./Form.css";
 
 const formContent = content.form;
+
 class Form extends React.Component {
   constructor(props) {
     super(props);
@@ -13,14 +14,16 @@ class Form extends React.Component {
       output: null,
       data: {},
     };
-    this.JSONError = "invalid json";
+    this.JSONError = formContent.invalidJSONError;
   }
 
   componentDidMount() {
+    // create empty output from placeholder config, check required fields
     this.setOutputData();
     this.setRequiredFields(this.state.config);
   }
 
+  // set the output object from current form config
   setOutputData = () => {
     if (this.state.config && Array.isArray(this.state.config)) {
       const data = {};
@@ -36,6 +39,7 @@ class Form extends React.Component {
     }
   };
 
+  // update output object based on current config
   handleInputChange = (event) => {
     const { id, value, checked } = event.target;
     const data = {
@@ -49,6 +53,7 @@ class Form extends React.Component {
     this.setState({ data });
   };
 
+  // push required names into state
   setRequiredFields = (config) => {
     const required = [];
     config.forEach((field) => {
@@ -59,6 +64,7 @@ class Form extends React.Component {
     this.setState({ required });
   };
 
+  // checks for valid json and update state on config input change
   handleConfigChange = (event) => {
     const { value } = event.target;
     let config;
@@ -72,6 +78,7 @@ class Form extends React.Component {
     this.setState({ config }, this.setOutputData);
   };
 
+  // sets output or alerts if required fields values are falsy
   handleSubmit = (event) => {
     event.preventDefault();
     if (this.areRequiredFieldsCompleted()) {

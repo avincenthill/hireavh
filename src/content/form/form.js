@@ -1,7 +1,7 @@
 import formConfig from "./formConfig";
 
 const form = {
-  title: "🚀 Dynamic Form",
+  title: "📃 Dynamic Form",
   inputTitle: "INPUT",
   outputTitle: "OUTPUT",
   formTitle: "FORM",
@@ -10,6 +10,7 @@ const form = {
   noItemsWarning: "😕 No form items to render.",
   noDataWarning: "🤔 No data returned yet.",
   requiredWarning: "🤨 Please complete the required fields: ",
+  invalidJSONError: "ERROR: invalid json",
   formConfig,
 };
 

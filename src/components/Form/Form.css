@@ -25,7 +25,7 @@
 }
 
 .form-item {
-  width: min(var(--s-l),65vh);
+  width: max(var(--s-m),45vw);
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -34,7 +34,7 @@
 
 .form-output {
   text-overflow: wrap;
-  width: min(var(--s-xl),80vh);
+  width: max(var(--s-m),80vw);
 }
 
 .form-button {
