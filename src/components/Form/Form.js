@@ -64,7 +64,7 @@ class Form extends React.Component {
     this.setState({ required });
   };
 
-  // checks for valid json and update state on config input change
+  // check for valid json and update state on config input change
   handleConfigChange = (event) => {
     const { value } = event.target;
     let config;
@@ -78,7 +78,7 @@ class Form extends React.Component {
     this.setState({ config }, this.setOutputData);
   };
 
-  // sets output or alerts if required fields values are falsy
+  // set output or alerts if required fields values are falsy
   handleSubmit = (event) => {
     event.preventDefault();
     if (this.areRequiredFieldsCompleted()) {
