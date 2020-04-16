@@ -25,7 +25,7 @@ For the last year, I built a customer platform for Zume Inc. to help customers u
 Before that, I worked on dynamic creative and media buying automation interfaces with React.js at a digital media agency called Fetch.
 
 ## Reason for Job Search
-My Full Stack Software Engineer position at Zume Inc. was [restructured](https://thespoon.tech/report-zume-to-lay-off-80-percent-of-its-staff/) along with 300 other people's positions on 13 Jan 2020. I have been job searching since then.
+My Full Stack Software Engineer position at Zume Inc. was [restructured](https://thespoon.tech/report-zume-to-lay-off-80-percent-of-its-staff/) along with 300 other people's positions on 13 Mar 2020. I have been job searching since then.
 
 ## Status of Job Search
 I'm in the middle stage - I've had a couple onsites and call/tech screen with different companies.
