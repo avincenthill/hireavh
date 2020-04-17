@@ -27,7 +27,6 @@ class Post extends React.Component {
     return (
       <Page>
         <div id="md-container">{this.renderMdFile()}</div>
-        <h2 className="post-signature">AVH</h2>
         <hr></hr>
         <div className="post-nav">
           <NavList></NavList>

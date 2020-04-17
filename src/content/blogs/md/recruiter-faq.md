@@ -4,6 +4,9 @@
 ##  
 👋 Hi! I wanted to save you some time by answering some questions you may have about me.
 
+## Name
+Alex "AVH" Vincent-Hill
+
 ## Email
 alexanderjvincenthill@gmail.com
 

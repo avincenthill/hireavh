@@ -28,11 +28,3 @@
 .post-nav {
   margin-bottom: var(--s-xl);
 }
-
-.post-signature {
-  margin-top: 0;
-  margin-bottom: var(--s-m);
-  font-family: var(--f-script);
-  font-weight: bold;
-  font-size: var(--fs-xl);
-}
