@@ -1,6 +1,7 @@
 import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import customSyntaxHighlighterStyle from "./customSyntaxHighlighterStyle";
+import Rainbow from "rainbowvis.js";
 import { IconContext } from "react-icons";
 import { FaStop, FaStepForward, FaUndo } from "react-icons/fa";
 import content from "content/content";
@@ -108,29 +109,33 @@ class Sort extends React.Component {
     const { canvas } = this.state;
     const { emph1, emph2, emph3, order } = snapshot;
     const array = order;
+    const { length } = array;
+    const max = Math.max(...array);
     this.clearCanvas();
-    for (let i = 0; i < array.length; i++) {
-      let color = styles.color.c1;
+    const rainbow = new Rainbow();
+    rainbow.setNumberRange(1, length);
+    for (let i = 0; i < length; i++) {
+      let barHeight = (array[i] / max) * canvas.height;
+      let color = `#${rainbow.colorAt(array[i])}`;
       if (isStyled && emph1 && emph1.includes(i)) {
-        color = styles.color.c4;
+        color = "white";
       }
       if (isStyled && emph2 && emph2.includes(i)) {
-        color = styles.color.c5;
+        color = "white";
       }
       if (isStyled && emph3 && emph3.includes(i)) {
-        color = "red";
+        color = "white";
       }
-      this.drawBar(
-        i,
-        (array[i] / Math.max(...array)) * canvas.height + canvas.height * 0.01,
-        color
-      );
+      this.drawBar(i, barHeight, color);
     }
   };
 
   renderFrame = (isStyled) => {
     if (this.state.currentFrame < this.state.history.length) {
-      this.renderSnapshot(this.state.history[this.state.currentFrame], isStyled);
+      this.renderSnapshot(
+        this.state.history[this.state.currentFrame],
+        isStyled
+      );
       this.setState({ currentFrame: this.state.currentFrame + 1 });
     }
   };
@@ -170,9 +175,7 @@ class Sort extends React.Component {
     this.initArray();
     this.initCanvas();
     this.initCurrentFrame();
-    this.setState({ isRunning: false }, () => {
-      this.startRendering();
-    });
+    this.setState({ isRunning: false });
   };
 
   render() {

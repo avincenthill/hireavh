@@ -49,7 +49,7 @@ const styles = {
     height: window.screen.height * 0.6,
   },
   sort: {
-    delay: 50,
+    delay: 25,
   },
 };
 
