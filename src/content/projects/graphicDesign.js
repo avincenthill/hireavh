@@ -3,7 +3,7 @@ import hilbert from "assets/img/projects/hilbert.jpg";
 import petals from "assets/img/projects/petals.jpg";
 
 const graphicDesign = {
-  title: "🎨 Check out my graphic design pieces!",
+  title: "🎨 Check out some of my graphic design pieces!",
   data: [
     // *************************************************************************
     {
