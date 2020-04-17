@@ -3,7 +3,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import customSyntaxHighlighterStyle from "./customSyntaxHighlighterStyle";
 import Rainbow from "rainbowvis.js";
 import { IconContext } from "react-icons";
-import { FaStop, FaStepForward, FaUndo } from "react-icons/fa";
+import { FaPlay, FaStop, FaStepForward, FaUndo } from "react-icons/fa";
 import content from "content/content";
 import styles from "styles/styleconfig";
 import utils from "utils/utils";
@@ -112,8 +112,12 @@ class Sort extends React.Component {
     const { length } = array;
     const max = Math.max(...array);
     this.clearCanvas();
+
+    // init spectrum to color bars based on height
     const rainbow = new Rainbow();
+    rainbow.setSpectrum("purple", "blue", "green", "yellow", "red");
     rainbow.setNumberRange(1, length);
+
     for (let i = 0; i < length; i++) {
       let barHeight = (array[i] / max) * canvas.height;
       let color = `#${rainbow.colorAt(array[i])}`;
@@ -182,30 +186,39 @@ class Sort extends React.Component {
     const { sort } = this.props;
     return (
       <div className="sort-container">
-        <div className="sort-canvas-container">
-          <canvas
-            className="sort-canvas"
-            ref="canvas"
-            onClick={
-              this.state.currentFrame < this.state.history.length
-                ? this.startSort
-                : this.restartSort
-            }
-          ></canvas>
-        </div>
-        <div className="sort-info-container">
-          <button
-            className="sort-button"
-            onClick={
-              this.state.currentFrame < this.state.history.length
-                ? this.startSort
-                : this.restartSort
-            }
-          >
-            <h2 className="sort-title">{sort.emoji + " " + sort.title}</h2>
-          </button>
-          <div className="sort-button-container">
-            <IconContext.Provider value={{ style: styles.icons.sort }}>
+        <IconContext.Provider value={{ style: styles.icons.sort }}>
+          <div className="sort-canvas-container">
+            <canvas
+              className="sort-canvas"
+              ref="canvas"
+              onClick={
+                this.state.currentFrame < this.state.history.length
+                  ? this.startSort
+                  : this.restartSort
+              }
+            ></canvas>
+          </div>
+          <div className="sort-info-container">
+            <button
+              className="sort-button"
+              onClick={
+                this.state.currentFrame < this.state.history.length
+                  ? this.startSort
+                  : this.restartSort
+              }
+            >
+              <h2 className="sort-title">{sort.emoji + " " + sort.title}</h2>
+              {this.state.currentFrame < this.state.history.length ? (
+                this.state.isRunning ? (
+                  <FaStop />
+                ) : (
+                  <FaPlay />
+                )
+              ) : (
+                <FaUndo />
+              )}
+            </button>
+            <div className="sort-button-container">
               <button className="sort-button" onClick={this.stopSort}>
                 <FaStop />
               </button>
@@ -215,41 +228,43 @@ class Sort extends React.Component {
               <button className="sort-button" onClick={this.restartSort}>
                 <FaUndo />
               </button>
-            </IconContext.Provider>
+            </div>
+            <div className="sort-code-container">
+              <SyntaxHighlighter
+                language="javascript"
+                style={customSyntaxHighlighterStyle}
+              >
+                {sort.fnDisplayString
+                  ? sort.fnDisplayString
+                  : "loading code ..."}
+              </SyntaxHighlighter>
+            </div>
+            <table className="sort-table">
+              <tbody>
+                <tr>
+                  <th>{content.sorts.complexityHeader}</th>
+                  <th>{content.sorts.timeHeader}</th>
+                  <th>{content.sorts.spaceHeader}</th>
+                </tr>
+                <tr>
+                  <td>best</td>
+                  <td>{sort.complexity.time.best}</td>
+                  <td>{sort.complexity.space.worst}</td>
+                </tr>
+                <tr>
+                  <td>avg</td>
+                  <td>{sort.complexity.time.avg}</td>
+                  <td>{sort.complexity.space.worst}</td>
+                </tr>
+                <tr>
+                  <td>worst</td>
+                  <td>{sort.complexity.time.worst}</td>
+                  <td>{sort.complexity.space.worst}</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div className="sort-code-container">
-            <SyntaxHighlighter
-              language="javascript"
-              style={customSyntaxHighlighterStyle}
-            >
-              {sort.fnDisplayString ? sort.fnDisplayString : "loading code ..."}
-            </SyntaxHighlighter>
-          </div>
-          <table className="sort-table">
-            <tbody>
-              <tr>
-                <th>{content.sorts.complexityHeader}</th>
-                <th>{content.sorts.timeHeader}</th>
-                <th>{content.sorts.spaceHeader}</th>
-              </tr>
-              <tr>
-                <td>best</td>
-                <td>{sort.complexity.time.best}</td>
-                <td>{sort.complexity.space.worst}</td>
-              </tr>
-              <tr>
-                <td>avg</td>
-                <td>{sort.complexity.time.avg}</td>
-                <td>{sort.complexity.space.worst}</td>
-              </tr>
-              <tr>
-                <td>worst</td>
-                <td>{sort.complexity.time.worst}</td>
-                <td>{sort.complexity.space.worst}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        </IconContext.Provider>
       </div>
     );
   }

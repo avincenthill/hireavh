@@ -1,10 +1,11 @@
 import utils from "utils/utils";
 
 const bogosort = {
-  id: 4,
+  id: 5,
   title: "Bogo Sort",
   emoji: "🤪",
   fn: (array, snapShotFn) => {
+    snapShotFn(array);
     const isSorted = (arr) => {
       for (let i = 0; i < array.length; i += 1) {
         snapShotFn(arr, [i]);

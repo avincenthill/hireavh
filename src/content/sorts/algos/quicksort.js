@@ -1,8 +1,9 @@
 const quicksort = {
-  id: 3,
+  id: 4,
   title: "Quick Sort",
   emoji: "🐇",
   fn: (array, snapShotFn) => {
+    snapShotFn(array);
     const partition = (arr, left, right) => {
       let pivot = arr[Math.floor((right + left) / 2)],
         i = left,

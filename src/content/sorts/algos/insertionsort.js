@@ -3,6 +3,8 @@ const insertionsort = {
   title: "Insertion Sort",
   emoji: "⬇️",
   fn: (array, snapShotFn) => {
+    snapShotFn(array);
+
     let i, j, key;
     for (i = 1; i < array.length; i += 1) {
       key = array[i];

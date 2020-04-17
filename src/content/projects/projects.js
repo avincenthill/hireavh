@@ -30,8 +30,8 @@ const projects = {
     // *************************************************************************
     {
       title: sorts.title,
-      url: "/sorting",
-      displayUrl: "hireavh.com/sorting",
+      url: "/sorting-algorithms",
+      displayUrl: "hireavh.com/sorting-algorithms",
       description: "Animated bogosort!",
       img: {
         emoji: sorts.emoji,

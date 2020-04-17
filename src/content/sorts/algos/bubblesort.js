@@ -3,6 +3,7 @@ const bubblesort = {
   title: "Bubble Sort",
   emoji: "💭",
   fn: (array, snapShotFn) => {
+    snapShotFn(array);
     const swap = (array, i, j) => {
       let temp = array[i];
       array[i] = array[j];
@@ -38,7 +39,7 @@ const bubblesort = {
 
       return array;
     }
-    
+
     const sortedArray = bubblesort(unsortedArray);
     `,
   complexity: {

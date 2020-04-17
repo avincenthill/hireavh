@@ -29,7 +29,7 @@ const createRoutes = () => (
       <Route exact path="/resume" component={Resume} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/blog/:path" children={<VariableBlogPost />} />
-      <Route exact path="/sorting" component={SortList} />
+      <Route exact path="/sorting-algorithms" component={SortList} />
       <Route
         exact
         path="/blog"
