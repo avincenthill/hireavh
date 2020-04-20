@@ -25,23 +25,30 @@ function About() {
   return (
     <div className="about">
       <Page>
-        <h2>{content.about.subtitle}</h2>
+        <h1 className="about-hero">{content.about.title1}</h1>
+        <h1>{content.about.title2}</h1>
         <p className="about-p">{content.about.p1}</p>
         <div className="about-icons-container">
-          <IconContext.Provider value={{ style: styleconfig.icons.tech }}>
-            <FaReact />
-            <FaJsSquare />
-            <FaNodeJs />
-            <FaVuejs />
-            <FaNpm />
-            <FaGit />
-            <FaCss3Alt />
-            <FaHtml5 />
-            <FaAws />
-            <FaAdobe />
-            <FaLinux />
-            <FaUbuntu />
-          </IconContext.Provider>
+          <div>
+            <IconContext.Provider value={{ style: styleconfig.icons.techHero }}>
+              <FaReact />
+              <FaJsSquare />
+              <FaNodeJs />
+            </IconContext.Provider>
+          </div>
+          <div>
+            <IconContext.Provider value={{ style: styleconfig.icons.tech }}>
+              <FaVuejs />
+              <FaNpm />
+              <FaGit />
+              <FaCss3Alt />
+              <FaHtml5 />
+              <FaAws />
+              <FaAdobe />
+              <FaLinux />
+              <FaUbuntu />
+            </IconContext.Provider>
+          </div>
         </div>
         <NavList></NavList>
         <hr></hr>

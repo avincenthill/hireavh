@@ -23,7 +23,8 @@ content.nav = {
 };
 
 content.about = {
-  subtitle: "👋 Hi, I'm Alex and I'm a software engineer",
+  title1: "👋 Hi",
+  title2: "I'm Alex and I'm a software engineer",
   p1: "Partner with me to help build your business!",
 };
 

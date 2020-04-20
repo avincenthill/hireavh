@@ -26,11 +26,17 @@ const styles = {
       width: "2rem",
       height: "2rem",
     },
+    techHero: {
+      color: "var(--c-1)",
+      width: "4rem",
+      height: "4rem",
+      padding: ".75rem",
+    },
     tech: {
       color: "var(--c-2)",
-      width: "2.5rem",
-      height: "2.5rem",
-      padding: ".5rem",
+      width: "1.5rem",
+      height: "1.5rem",
+      padding: ".25rem",
     },
     contact: {
       color: "var(--c-1)",
