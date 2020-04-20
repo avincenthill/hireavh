@@ -45,3 +45,10 @@
   padding-right: var(--s-s);
   border-radius: 0 0 var(--s-s) 0;
 }
+
+/* large devices */
+@media (min-width: 600px) {
+  .nav-bottom, .nav-top {
+    display: none;
+  }
+}
