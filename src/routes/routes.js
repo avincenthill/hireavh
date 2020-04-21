@@ -12,6 +12,8 @@ import Contact from "components/Contact/Contact";
 import Post from "components/Post/Post";
 import SortList from "components/SortList/SortList";
 import Form from "components/Form/Form";
+import Page from "components/Page/Page";
+import { NavList } from "components/Nav/Nav";
 import ProjectList from "components/ProjectList/ProjectList";
 import { lookupBlogFromUrl } from "content/blogs/blogs";
 import content from "content/content";
@@ -34,30 +36,42 @@ const createRoutes = () => (
         exact
         path="/blog"
         render={(props) => (
-          <ProjectList
-            projectData={content.blogs.data}
-            title={content.blogs.title}
-          />
+          <Page>
+            <ProjectList
+              projects={content.blogs.data}
+              title={content.blogs.title}
+            />
+            <NavList></NavList>
+            <hr></hr>
+          </Page>
         )}
       />
       <Route
         exact
         path="/projects"
         render={(props) => (
-          <ProjectList
-            projectData={content.projects.data}
-            title={content.projects.title}
-          />
+          <Page>
+            <ProjectList
+              projects={content.projects.data}
+              title={content.projects.title}
+            />
+            <NavList></NavList>
+            <hr></hr>
+          </Page>
         )}
       />
       <Route
         exact
         path="/graphic-design"
         render={(props) => (
-          <ProjectList
-            projectData={content.projects.graphicDesign.data}
-            title={content.projects.graphicDesign.title}
-          />
+          <Page>
+            <ProjectList
+              projects={content.projects.graphicDesign.data}
+              title={content.projects.graphicDesign.title}
+            />
+            <NavList></NavList>
+            <hr></hr>
+          </Page>
         )}
       />
       <Route exact path="/dynamic-form" component={Form} />

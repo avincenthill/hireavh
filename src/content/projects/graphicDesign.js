@@ -27,6 +27,7 @@ const graphicDesign = {
         hasImg: true,
         module: hilbert,
         emoji: "📦️",
+        isLightBackground: true,
       },
     },
     // *************************************************************************
@@ -39,6 +40,7 @@ const graphicDesign = {
         hasImg: true,
         module: petals,
         emoji: "📦️",
+        isLightBackground: true,
       },
     },
   ],

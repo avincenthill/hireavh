@@ -1,0 +1,9 @@
+.projects-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--s-s);
+  margin-bottom: var(--s-s);
+}

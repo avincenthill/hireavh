@@ -50,6 +50,20 @@ const styles = {
       height: "1.5rem",
       padding: ".5rem",
     },
+    project: {
+      color: "var(--c-1)",
+      width: "2rem",
+      height: "2rem",
+      padding: "0rem",
+    },
+    projectDark: {
+      color: "var(--c-black)",
+      backgroundColor: "white",
+      borderRadius: "100rem",
+      width: "2rem",
+      height: "2rem",
+      padding: ".5rem",
+    },
   },
   resume: {
     height: window.screen.height * 0.6,

@@ -18,7 +18,7 @@ import {
 import { IconContext } from "react-icons";
 import styleconfig from "styles/styleconfig";
 import Page from "components/Page/Page";
-import Projects from "components/Projects/Projects";
+import ProjectList from "components/ProjectList/ProjectList";
 import { NavList } from "components/Nav/Nav";
 
 function About() {
@@ -53,9 +53,7 @@ function About() {
         <NavList></NavList>
         <hr></hr>
         <h2>{content.projects.title}</h2>
-        <Projects projects={content.projects.data}></Projects>
-        <NavList></NavList>
-        <hr></hr>
+        <ProjectList projects={content.projects.data}></ProjectList>
       </Page>
     </div>
   );
