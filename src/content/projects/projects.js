@@ -11,7 +11,7 @@ const projects = {
       url: "/blog/recruiter-faq",
       displayUrl: "/blogs/recruiter-faq",
       description: "Answers to common questions I get from recruiters.",
-      longDescription: `This is an attempt to save recruiters and myself some time - I'd noticed I kept having the same 30 minute intro call with recruiters and wanted to provide a resource to conduct this info-transfer asynchronysly. I still want to talk to you!`,
+      longDescription: `This is an attempt to save recruiters and myself some time - I'd noticed I kept having the same 30 minute intro call with recruiters and wanted to provide a resource to conduct this info-transfer asynchronously. I still want to talk to you!`,
       img: {
         emoji: "🤷",
       },

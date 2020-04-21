@@ -14,3 +14,7 @@
 .about-hero {
   margin-bottom: var(--s-xs);
 }
+
+.about-hero-2 {
+  margin-top: 0;
+}

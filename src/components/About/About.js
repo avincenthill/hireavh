@@ -26,7 +26,7 @@ function About() {
     <div className="about">
       <Page>
         <h1 className="about-hero">{content.about.title1}</h1>
-        <h1>{content.about.title2}</h1>
+        <h1 className="about-hero-2">{content.about.title2}</h1>
         <p className="about-p">{content.about.p1}</p>
         <div className="about-icons-container">
           <div>
