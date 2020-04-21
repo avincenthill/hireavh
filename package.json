@@ -22,10 +22,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --collect-coverage",
-    "lint": "eslint .",
+    "lint": "eslint src/**/*.js",
     "lint:fix": "eslint --fix .",
     "eject": "react-scripts eject",
-    "deploy": "git stash && npm run test && npm run build && aws s3 sync build/ s3://hire-avh --delete",
+    "deploy": "git stash && npm run lint && npm run test && npm run build && aws s3 sync build/ s3://hire-avh --delete",
     "updateblogreadme": "cp README.md ./src/content/blogs/md/README.md",
     "newcomponent": "mkdir ${PWD}/src/components/${NAME:-NewComponent}/ && cp -a ${PWD}/src/components/Default/ ${PWD}/src/components/${NAME:-NewComponent}/"
   },

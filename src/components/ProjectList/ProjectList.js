@@ -10,7 +10,6 @@ class ProjectList extends React.Component {
   };
 
   render() {
-    console.log(this.props);
     return (
       <div>
         <h2 className="projectlist-title">{this.props.title}</h2>
