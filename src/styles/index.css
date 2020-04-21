@@ -32,6 +32,11 @@
 
   /* Border */
   --b-1: .1rem;
+
+  --hover-light:hover {
+    transform: translateY(var(--s-xxs));
+    transform: scale(1.1);
+  }
 }
 
 body {
@@ -86,4 +91,15 @@ button:focus {
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
+}
+
+/* global on-hover effects for buttons */
+.button-hover:hover {
+  transform: translateY(var(--s-xs));
+  transform: scale(1.2);
+}
+
+.button-hover-light:hover {
+  transform: translateY(var(--s-xxs));
+  transform: scale(1.05);
 }

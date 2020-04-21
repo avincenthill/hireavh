@@ -39,7 +39,7 @@ export default class Contact extends Component {
             <h3 className="contact-title">{content.contact.name}</h3>
 
             {/* email */}
-            <div className="contact">
+            <div className="contact button-hover-light">
               <a className="contact-a" href={`mailto:${content.contact.email}`}>
                 <GoMail />
               </a>
@@ -55,7 +55,7 @@ export default class Contact extends Component {
             </div>
 
             {/* cell */}
-            <div className="contact">
+            <div className="contact button-hover-light">
               <a className="contact-a" href={`tel:+1-${content.contact.cell}`}>
                 <GoDeviceMobile />
               </a>
@@ -71,7 +71,7 @@ export default class Contact extends Component {
             </div>
 
             {/* linkedin */}
-            <div className="contact">
+            <div className="contact button-hover-light">
               <a
                 className="contact-a"
                 href={`https://${content.contact.linkedin}`}
@@ -93,7 +93,7 @@ export default class Contact extends Component {
             </div>
 
             {/* github */}
-            <div className="contact">
+            <div className="contact button-hover-light">
               <a
                 className="contact-a"
                 href={`https://${content.contact.github}`}
@@ -115,7 +115,7 @@ export default class Contact extends Component {
             </div>
 
             {/* site */}
-            <div className="contact">
+            <div className="contact button-hover-light">
               <a className="contact-a" href={`${content.contact.site.path}`}>
                 <FaFileCode />
               </a>
@@ -132,7 +132,7 @@ export default class Contact extends Component {
 
             {/* resume */}
             <a
-              className="contact contact-a"
+              className="contact button-hover-light contact-a"
               href={require("assets/pdf/avh_resume.pdf")}
               download={content.resume.downloadName}
             >

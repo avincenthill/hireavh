@@ -25,11 +25,11 @@ class Project extends React.Component {
     };
     if (!this.state.isShowingLongDescription) {
       return (
-        <div className="project-container">
+        <div className="project-container button-hover-light">
           {project.longDescription ? (
             <button
               onClick={this.toggleLongDescription}
-              className="project-expand-button"
+              className="project-expand-button button-hover"
             >
               <IconContext.Provider
                 value={
@@ -69,10 +69,10 @@ class Project extends React.Component {
       );
     } else {
       return (
-        <div className="project-container">
+        <div className="project-container button-hover-light">
           <button
             onClick={this.toggleLongDescription}
-            className="project-expand-button"
+            className="project-expand-button button-hover"
           >
             <IconContext.Provider
               value={

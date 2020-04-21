@@ -50,3 +50,6 @@ I'd like to be paid market rates similar to coworkers with the same amount of ex
 
 ## 🙏 Thanks for Reading!
 Hopefully this helps you move quickly. Thank you again for all your help!
+##  
+##  
+Alex "AVH"

@@ -10,6 +10,7 @@ const blogs = {
       title: "Recruiter FAQ",
       url: "blog/recruiter-faq",
       description: "Answers to common questions I get from recruiters.",
+      longDescription: `This is an attempt to save recruiters and myself some time. I'd noticed I kept having the same 30 minute intro call with recruiters and wanted to provide an asynchronous resource for this info. I still would love to talk to you!`,
       md: recruiterFaq,
       img: {
         emoji: "🤷",

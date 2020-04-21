@@ -35,7 +35,7 @@ content.contact = {
   linkedin: "linkedin.com/in/avincenthill",
   github: "github.com/avincenthill",
   site: {
-    path: "/home/",
+    path: "/home",
     displayUrl: "hireavh.com",
   },
   resume: "resume",
