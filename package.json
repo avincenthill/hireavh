@@ -22,7 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --collect-coverage",
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint 'src/**/*.{js,jsx}'",
     "lint:fix": "eslint --fix .",
     "eject": "react-scripts eject",
     "deploy": "git stash && npm run lint && npm run test && npm run build && aws s3 sync build/ s3://hire-avh --delete",
@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",

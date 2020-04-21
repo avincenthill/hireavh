@@ -12,7 +12,9 @@ class Post extends React.Component {
       .then((mdString) => {
         this.setState((state) => ({ ...state, mdString }));
       })
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        // TBD throw error
+      });
   }
 
   renderMdFile = () => {
