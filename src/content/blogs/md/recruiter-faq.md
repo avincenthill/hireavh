@@ -37,7 +37,7 @@ I'm in the middle stage - I've had a couple onsites and call/tech screen with di
 Full-stack or Frontend Software Engineer. I'm most proficient with React.js, although I also have experience in Vue.js and Angular. Media and technology industries interest me the most, although I'm open to others.
 
 ## Preference for Company Size
-No preference - the hiring manager, product, and team are better predictors of a good fit and a good experience for me.
+I'm comfortable with companies of all sizes!
 
 ## Preference for Relocation
 Most of the jobs I'm interviewing for are in the San Francisco Bay Area, but I'm open to relocating to Seattle, New York, Western Europe or East Asia. I'm much more interested in what I'd be doing than where I'd be doing it.
