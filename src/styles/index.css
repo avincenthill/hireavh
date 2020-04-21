@@ -6,7 +6,7 @@
   --c-2: #85d1ed;
   --c-3: #f7edc8;
   --c-4: #147186;
-  --c-5:#b67e72; 
+  --c-5:#b67e72;
 
   /* Fonts */
   --f-default: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -93,13 +93,16 @@ button:focus {
   background: transparent;
 }
 
-/* global on-hover effects for buttons */
-.button-hover:hover {
-  transform: translateY(var(--s-xs));
-  transform: scale(1.2);
-}
+/* large devices */
+@media (min-width: 600px) {
+  /* global on-hover effects for buttons */
+  .button-hover:hover {
+    transform: translateY(var(--s-xs));
+    transform: scale(1.2);
+  }
 
-.button-hover-light:hover {
-  transform: translateY(var(--s-xxs));
-  transform: scale(1.05);
+  .button-hover-light:hover {
+    transform: translateY(var(--s-xxs));
+    transform: scale(1.05);
+  }
 }
