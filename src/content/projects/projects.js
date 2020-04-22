@@ -22,6 +22,7 @@ const projects = {
       url: "https://github.com/avincenthill/particle_simulation",
       displayUrl: "github.com/avincenthill/particle_simulation",
       description: "A particle system simulation in Processing.",
+      longDescription: `This is a personal project where I model chemical and physical reactions (chemical equilibria, fission, classical collisions, etc) with Processing/Java and render the simulation using PeasyCam. Clicking this link will take you to the source code - you need to install Processing in order to run it.`,
       img: {
         hasImg: true,
         module: particles,
@@ -34,6 +35,7 @@ const projects = {
       url: "/sorting-algorithms",
       displayUrl: "hireavh.com/sorting-algorithms",
       description: "Animated bogosort!",
+      longDescription: `You can see common sorting algorithms rendered with HTML canvas here. This is a personal project that I'm continuing to expand on as I study more sorting algorithms. It's open source, just like this website!`,
       img: {
         emoji: sorts.emoji,
       },
@@ -45,6 +47,7 @@ const projects = {
         "https://marketingplatform.google.com/about/resources/fetch-and-aeg-presents-boost-efficiency-with-structured-information-files/",
       displayUrl: "marketingplatform.google.com",
       description: "100x'ing Google Ads campaign creation...",
+      longDescription: `This is a link to a case study Google/Doubleclick wrote about digital ad campaign creation automation work I led at Fetch circa 2017-2018.`,
       img: {
         emoji: "⚙️",
       },
