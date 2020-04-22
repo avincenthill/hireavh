@@ -25,7 +25,7 @@ I'm a US citizen.
 ## Recent Work Experience
 For the last year, I built a customer platform for Zume Inc. to help customers use Zume's food-truck fleet logistics services as a Full Stack Software Engineer. This project was 75% frontend in Vue.js and 25% backend with Node.js microservices and Postgres databases. I also built a Message Bus Node.js library over a Kafka implementation to enable services to produce and consume events to each other.
 
-Before that, I worked on dynamic creative and media buying automation interfaces with React.js at a digital media agency called Fetch.
+Before that, I worked on dynamic creative and [media buying automation](https://marketingplatform.google.com/about/resources/fetch-and-aeg-presents-boost-efficiency-with-structured-information-files/) interfaces with React.js at a digital media agency called Fetch.
 
 ## Reason for Job Search
 My Full Stack Software Engineer position at Zume Inc. was [restructured](https://thespoon.tech/report-zume-to-lay-off-80-percent-of-its-staff/) along with 300 other people's positions on 13 Mar 2020. I have been job searching since then.
