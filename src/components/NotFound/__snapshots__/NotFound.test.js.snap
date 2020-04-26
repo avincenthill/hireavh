@@ -195,3 +195,199 @@ exports[`NotFound snapshot matches the last saved snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`NotFound snapshot should match the last saved snapshot 1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        className="nav nav-top"
+      >
+        <div
+          className="nav-icon $
+          this.props.isBottom ? \\"nav-icon-bottom\\" : \\"nav-icon-top\\"
+        }"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "var(--c-1)",
+                "height": "3rem",
+                "width": "3rem",
+              }
+            }
+            viewBox="0 0 8 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <a
+        className="header-container"
+        href="/about"
+      >
+        <div
+          className="header-switch-theme"
+        >
+          <div
+            className="toggle-switch"
+          >
+            <input
+              className="toggle-switch-checkbox"
+              defaultChecked={true}
+              id="toggle-switch-theme"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="toggle-switch-label"
+              htmlFor="toggle-switch-theme"
+            >
+              <span
+                className="toggle-switch-inner"
+                data-no="🌙"
+                data-yes="☀️"
+              />
+            </label>
+          </div>
+        </div>
+        🏠 about
+      </a>
+    </div>
+    <div
+      className="page-container"
+    >
+      <h1>
+        🤦 That page is missing, sorry!
+      </h1>
+      <div
+        className="nav-list"
+      >
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/about"
+            >
+              <span>
+                🏠 about
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/blog"
+            >
+              <span>
+                ✍️ blog
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/projects"
+            >
+              <span>
+                📦 projects
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/resume"
+            >
+              <span>
+                📄 resume
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/contact"
+            >
+              <span>
+                📇 contact
+              </span>
+            </a>
+          </h2>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div>
+      <div
+        className="nav nav-bottom"
+      >
+        <div
+          className="nav-icon $
+          this.props.isBottom ? \\"nav-icon-bottom\\" : \\"nav-icon-top\\"
+        }"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "var(--c-1)",
+                "height": "3rem",
+                "width": "3rem",
+              }
+            }
+            viewBox="0 0 8 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <a
+        className="footer-container"
+        href="/about"
+      >
+        <span>
+          copyright Alex Vincent-Hill 2020 - 🏠 about
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;

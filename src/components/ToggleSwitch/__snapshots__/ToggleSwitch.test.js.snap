@@ -20,3 +20,24 @@ exports[`ToggleSwitch snapshot matches the last saved snapshot 1`] = `
   </label>
 </div>
 `;
+
+exports[`ToggleSwitch snapshot should match the last saved snapshot 1`] = `
+<div
+  className="toggle-switch"
+>
+  <input
+    className="toggle-switch-checkbox"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="toggle-switch-label"
+  >
+    <span
+      className="toggle-switch-inner"
+      data-no="1"
+      data-yes="0"
+    />
+  </label>
+</div>
+`;
