@@ -29,10 +29,12 @@ class Form extends React.Component {
       const data = {};
       this.state.config.forEach((item) => {
         let element = document.getElementById(item.name);
-        if (element.type === "checkbox") {
-          data[item.name] = element.checked;
-        } else {
-          data[item.name] = element.value;
+        if (element) {
+          if (element.type === "checkbox") {
+            data[item.name] = element.checked;
+          } else {
+            data[item.name] = element.value;
+          }
         }
       });
       this.setState({ data });
