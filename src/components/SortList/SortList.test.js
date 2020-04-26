@@ -6,7 +6,7 @@ import SortList from "./SortList";
 // TBD mock list of sorts
 // describe("SortList", () => {
 //   describe("snapshot", () => {
-//     it("matches the last saved snapshot", () => {
+//     it("should match the last saved snapshot", () => {
 //       const tree = renderer.create(<SortList />).toJSON();
 //       expect(tree).toMatchSnapshot();
 //     });

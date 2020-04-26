@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 describe("Footer", () => {
   describe("snapshot", () => {
-    it("matches the last saved snapshot", () => {
+    it("should match the last saved snapshot", () => {
       const tree = renderer.create(<Footer />).toJSON();
       expect(tree).toMatchSnapshot();
     });

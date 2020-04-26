@@ -6,7 +6,7 @@ import content from "content/content";
 
 describe("Form", () => {
   describe("snapshot", () => {
-    it("matches the last saved snapshot", () => {
+    it("should match the last saved snapshot", () => {
       const tree = renderer.create(<Form />).toJSON();
       expect(tree).toMatchSnapshot();
     });

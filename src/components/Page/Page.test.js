@@ -5,7 +5,7 @@ import Page from "./Page";
 
 describe("Page", () => {
   describe("snapshot", () => {
-    it("matches the last saved snapshot", () => {
+    it("should match the last saved snapshot", () => {
       const tree = renderer.create(<Page />).toJSON();
       expect(tree).toMatchSnapshot();
     });

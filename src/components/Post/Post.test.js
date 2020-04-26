@@ -16,7 +16,7 @@ describe("Post", () => {
   };
 
   describe("snapshot", () => {
-    it("matches the last saved snapshot", () => {
+    it("should match the last saved snapshot", () => {
       const tree = renderer.create(<Post blog={fakeBlog} />).toJSON();
       expect(tree).toMatchSnapshot();
     });

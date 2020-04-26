@@ -5,7 +5,7 @@ import Default from "./Default";
 
 describe("Default", () => {
   describe("snapshot", () => {
-    it("matches the last saved snapshot", () => {
+    it("should match the last saved snapshot", () => {
       const tree = renderer.create(<Default />).toJSON();
       expect(tree).toMatchSnapshot();
     });
