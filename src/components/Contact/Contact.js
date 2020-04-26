@@ -33,11 +33,14 @@ export default class Contact extends Component {
       <div className="contact-container">
         <Page>
           <IconContext.Provider
-            value={
-              utils.isDarkTheme()
-                ? { style: styleconfig.icons.contact }
-                : { style: styleconfig.icons.contactLight }
-            }
+            value={{
+              style: {
+                ...styleconfig.icons.s,
+                ...(utils.isDarkTheme()
+                  ? styleconfig.icons.contact
+                  : styleconfig.icons.contactLight),
+              },
+            }}
           >
             {/* headshot */}
             <img className="contact-img" src={headshot} alt="headshot"></img>

@@ -16,9 +16,9 @@ class Nav extends React.Component {
 
   handleClick = (e) => {
     if (!this.state.isExpanded) {
-      document.addEventListener('click', this.handleClick, false);
+      document.addEventListener("click", this.handleClick, false);
     } else {
-      document.removeEventListener('click', this.handleClick, false);
+      document.removeEventListener("click", this.handleClick, false);
     }
     this.toggleNav();
   };
@@ -34,7 +34,11 @@ class Nav extends React.Component {
           this.props.isBottom ? "nav-icon-bottom" : "nav-icon-top"
         }`}
       >
-        <IconContext.Provider value={{ style: styleconfig.icons.default }}>
+        <IconContext.Provider
+          value={{
+            style: { ...styleconfig.icons.l, ...styleconfig.icons.nav },
+          }}
+        >
           <GoGrabber onClick={this.handleClick} />
         </IconContext.Provider>
       </div>
@@ -68,22 +72,21 @@ class Nav extends React.Component {
 
 class NavList extends React.Component {
   render() {
-  return (
-    <div className="nav-list">
-      {Object.keys(content.nav.links).map((key, index) => {
-        let link = content.nav.links[key];
-        return (
-          <Link
-            key={index}
-            title={link.emoji + " " + link.path}
-            path={`/${link.path}`}
-          ></Link>
-        );
-        })
-      }
-    </div>
-  )
-}
+    return (
+      <div className="nav-list">
+        {Object.keys(content.nav.links).map((key, index) => {
+          let link = content.nav.links[key];
+          return (
+            <Link
+              key={index}
+              title={link.emoji + " " + link.path}
+              path={`/${link.path}`}
+            ></Link>
+          );
+        })}
+      </div>
+    );
+  }
 }
 
 export { Nav, NavList };

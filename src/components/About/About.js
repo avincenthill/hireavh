@@ -30,14 +30,28 @@ function About() {
         <p className="about-p">{content.about.p1}</p>
         <div className="about-icons-container">
           <div>
-            <IconContext.Provider value={{ style: styleconfig.icons.techHero }}>
+            <IconContext.Provider
+              value={{
+                style: {
+                  ...styleconfig.icons.xl,
+                  ...styleconfig.icons.techHero,
+                },
+              }}
+            >
               <FaReact />
               <FaJsSquare />
               <FaNodeJs />
             </IconContext.Provider>
           </div>
           <div>
-            <IconContext.Provider value={{ style: styleconfig.icons.tech }}>
+            <IconContext.Provider
+              value={{
+                style: {
+                  ...styleconfig.icons.s,
+                  ...styleconfig.icons.tech,
+                },
+              }}
+            >
               <FaVuejs />
               <FaNpm />
               <FaGit />

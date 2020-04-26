@@ -1,8 +1,8 @@
 import React from "react";
 import { Nav } from "components/Nav/Nav";
 import content from "content/content";
-import ToggleSwitch from "components/ToggleSwitch/ToggleSwitch";
 import utils from "utils/utils";
+import ToggleSwitch from "components/ToggleSwitch/ToggleSwitch";
 import "./Header.css";
 
 class Header extends React.Component {
@@ -16,7 +16,6 @@ class Header extends React.Component {
               id="toggle-switch-theme"
               onChange={() => {
                 utils.toggleTheme();
-                this.forceUpdate();
               }}
               defaultChecked={utils.isDarkTheme()}
               text={content.header.switchOptions}

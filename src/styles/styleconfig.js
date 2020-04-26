@@ -1,52 +1,49 @@
 const styles = {
   icons: {
-    default: {
-      color: "var(--c-1)",
+    s: {
+      width: "var(--s-xs)",
+      height: "var(--s-xs)",
+    },
+    m: {
+      width: "var(--s-s)",
+      height: "var(--s-s)",
+    },
+    l: {
       width: "3rem",
       height: "3rem",
     },
-    link: {
-      color: "var(--c-2)",
-      width: "2rem",
-      height: "2rem",
+    xl: {
+      width: "4rem",
+      height: "4rem",
+    },
+    nav: {
+      color: "var(--c-1)",
     },
     techHero: {
       color: "var(--c-1)",
-      width: "4rem",
-      height: "4rem",
       padding: ".75rem",
     },
     tech: {
       color: "var(--c-2)",
-      width: "1.5rem",
-      height: "1.5rem",
       padding: ".25rem",
     },
     contact: {
       color: "var(--c-1)",
-      width: "1rem",
-      height: "1rem",
       padding: ".5rem",
     },
     contactLight: {
       color: "var(--c-white)",
-      width: "1rem",
-      height: "1rem",
       padding: ".5rem",
     },
     sort: {
       color: "var(--c-1)",
-      width: "1.5rem",
-      height: "1.5rem",
       padding: ".5rem",
     },
     project: {
       color: "var(--c-black)",
       backgroundColor: "var(--c-1)",
       borderRadius: "100rem",
-      width: "2rem",
-      height: "2rem",
-      padding: ".25rem",
+      padding: "var(--b-1)",
     },
   },
   resume: {

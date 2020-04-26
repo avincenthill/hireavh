@@ -35,7 +35,7 @@ const createRoutes = () => (
       <Route
         exact
         path="/blog"
-        render={(props) => (
+        render={() => (
           <Page>
             <ProjectList
               projects={content.blogs.data}
@@ -49,7 +49,7 @@ const createRoutes = () => (
       <Route
         exact
         path="/projects"
-        render={(props) => (
+        render={() => (
           <Page>
             <ProjectList
               projects={content.projects.data}
@@ -63,7 +63,7 @@ const createRoutes = () => (
       <Route
         exact
         path="/graphic-design"
-        render={(props) => (
+        render={() => (
           <Page>
             <ProjectList
               projects={content.projects.graphicDesign.data}

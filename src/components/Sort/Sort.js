@@ -5,7 +5,7 @@ import Rainbow from "rainbowvis.js";
 import { IconContext } from "react-icons";
 import { FaPlay, FaStop, FaStepForward, FaUndo } from "react-icons/fa";
 import content from "content/content";
-import styles from "styles/styleconfig";
+import styleconfig from "styles/styleconfig";
 import utils from "utils/utils";
 import "./Sort.css";
 
@@ -153,7 +153,7 @@ class Sort extends React.Component {
     if (!this.state.isRunning) {
       const interval = setInterval(() => {
         this.renderFrame(true);
-      }, styles.sort.delay);
+      }, styleconfig.sort.delay);
       this.setState({ interval, isRunning: true });
     } else {
       this.stopRendering();
@@ -186,7 +186,14 @@ class Sort extends React.Component {
     const { sort } = this.props;
     return (
       <div className="sort-container">
-        <IconContext.Provider value={{ style: styles.icons.sort }}>
+        <IconContext.Provider
+          value={{
+            style: {
+              ...styleconfig.icons.m,
+              ...styleconfig.icons.sort,
+            },
+          }}
+        >
           <div className="sort-canvas-container">
             <canvas
               className="sort-canvas"
