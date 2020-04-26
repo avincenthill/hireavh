@@ -145,6 +145,7 @@ class Form extends React.Component {
       <div>
         <Page>
           <h2 className="form-title">{formContent.title}</h2>
+          <p className="form-description">{formContent.description}</p>
           <div className="form-item">
             <label>{formContent.inputTitle}</label>
             <textarea

@@ -19,9 +19,10 @@ const blogs = {
     // *************************************************************************
     {
       title: "Marketing Consulting",
-      url: "blog/marketing",
+      url: "/blog/marketing",
+      displayUrl: "hireavh.com/blog/marketing",
       description: "Super-charging your business with Google Ads!",
-      md: marketing,
+      longDescription: `Here is a short description of the digital marketing services that I can offer to businesses. Contact me for more info!`,
       img: {
         emoji: "💼",
       },
@@ -31,6 +32,7 @@ const blogs = {
       title: "hireavh.com How-to",
       url: "blog/readme",
       description: "The rendered README.md for this web app",
+      longDescription: `I decided to render the README.md for this website since it was already in markdown. If you'd like to see an example of how I write technical documentation, just click!`,
       md: readme,
       img: {
         emoji: "📒",

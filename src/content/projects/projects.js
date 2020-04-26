@@ -1,4 +1,5 @@
 import sorts from "content/sorts/sorts";
+import form from "content/form/form";
 import particles from "assets/img/projects/particles.jpg";
 import graphicDesign from "./graphicDesign";
 
@@ -54,20 +55,11 @@ const projects = {
     },
     // *************************************************************************
     {
-      title: "Marketing Consulting",
-      url: "/blog/marketing",
-      displayUrl: "hireavh.com/blog/marketing",
-      description: "Super-charging your business with Google Ads!",
-      img: {
-        emoji: "💼",
-      },
-    },
-    // *************************************************************************
-    {
       title: "Dynamic Form",
       url: "/dynamic-form",
       displayUrl: "hireavh.com/form",
       description: "Rendering a form based on input JSON.",
+      longDescription: form.description,
       img: {
         emoji: "📃",
       },
@@ -80,6 +72,7 @@ const projects = {
       displayUrl:
         "https://github.com/avincenthill/leetcode-answers/tree/master/leetcode-answers",
       description: "A collection of my JS implementations from leetcode.com.",
+      longDescription: `This is the GitHub repo where I control my answers to leetcode questions, mostly implemented in JavaScript. I've tried to also include data about runtime and memory after they were run successfully in the application.`,
       img: {
         emoji: "🧩",
       },
@@ -90,6 +83,7 @@ const projects = {
       url: "/blog",
       displayUrl: "hireavh.com/blog",
       description: "My thoughts on the world...",
+      longDescription: `This is an eclectic collection of my written work. I don't blog that often but if I want to personally publish something I do it here.`,
       img: {
         emoji: "✍️",
       },
@@ -100,6 +94,7 @@ const projects = {
       url: "/graphic-design",
       displayUrl: "hireavh.com/graphic-design",
       description: "A collection of my published work.",
+      longDescription: `There are some of my graphic design pieces in the field. I'm experienced with Adobe Photoshop and Illustrator and love to make things look nice!`,
       img: {
         emoji: "🎨",
       },
@@ -110,6 +105,7 @@ const projects = {
       url: "https://lichess.org/@/avincenthill/perf/rapid",
       displayUrl: "lichess.org",
       description: "Challenge me on lichess.org!",
+      longDescription: `I like to play chess in my spare time - here is a link to my profile on lichess.org!`,
       img: {
         emoji: "♟️",
       },

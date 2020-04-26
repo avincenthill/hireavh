@@ -59,3 +59,9 @@
 .form-title {
   margin-bottom: var(--s-s);
 }
+
+.form-description {
+  text-align: left;
+  width: max(var(--s-m),80vw);
+  margin-bottom: var(--s-m);
+}
