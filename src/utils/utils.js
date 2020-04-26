@@ -24,7 +24,7 @@ utils.shuffleArray = (array) => {
 
 utils.isDarkTheme = () => {
   const currentTheme = localStorage.getItem("theme");
-  return currentTheme === null || currentTheme === "dark";
+  return currentTheme === null || currentTheme !== "light";
 };
 
 utils.toggleTheme = () => {

@@ -104,7 +104,7 @@ styles.themeColors = new Map([
   ],
 ]);
 
-const invertColor = (hex) => {
+styles.invertColor = (hex) => {
   // from https://stackoverflow.com/questions/35969656/how-can-i-generate-the-opposite-color-according-to-current-color
   function padZero(str, len) {
     len = len || 2;
@@ -129,7 +129,7 @@ const invertColor = (hex) => {
 styles.themeColors.forEach((color, key) => {
   // set light theme colors by inverting dark colors if not explicitly defined above
   let value = styles.themeColors.get(key);
-  value.light = value.light ? value.light : invertColor(color.dark);
+  value.light = value.light ? value.light : styles.invertColor(color.dark);
   styles.themeColors.set("light", value);
 });
 
