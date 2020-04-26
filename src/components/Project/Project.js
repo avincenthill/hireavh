@@ -32,11 +32,7 @@ class Project extends React.Component {
               className="project-expand-button button-hover"
             >
               <IconContext.Provider
-                value={
-                  project.img.isLightBackground
-                    ? { style: styleconfig.icons.projectDark }
-                    : { style: styleconfig.icons.project }
-                }
+                value={{ style: styleconfig.icons.project }}
               >
                 {this.state.isShowingLongDescription ? (
                   <FaArrowAltCircleLeft />
@@ -74,13 +70,7 @@ class Project extends React.Component {
             onClick={this.toggleLongDescription}
             className="project-expand-button button-hover"
           >
-            <IconContext.Provider
-              value={
-                project.img.isLightBackground
-                  ? { style: styleconfig.icons.projectDark }
-                  : { style: styleconfig.icons.project }
-              }
-            >
+            <IconContext.Provider value={{ style: styleconfig.icons.project }}>
               {this.state.isShowingLongDescription ? (
                 <FaArrowAltCircleLeft />
               ) : (

@@ -50,4 +50,8 @@ utils.getColor = (name) => {
     : styles.themeColors.get(name).light;
 };
 
+utils.getDarkColor = (name) => {
+  return styles.themeColors.get(name).dark;
+};
+
 export default utils;

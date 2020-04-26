@@ -41,14 +41,8 @@ const styles = {
       padding: ".5rem",
     },
     project: {
-      color: "var(--c-1)",
-      width: "2rem",
-      height: "2rem",
-      padding: "0rem",
-    },
-    projectDark: {
       color: "var(--c-black)",
-      backgroundColor: "var(--c-white)",
+      backgroundColor: "var(--c-1)",
       borderRadius: "100rem",
       width: "2rem",
       height: "2rem",
