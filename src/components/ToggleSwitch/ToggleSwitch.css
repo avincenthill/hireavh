@@ -1,0 +1,48 @@
+.toggle-switch {
+  width: var(--s-s);
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  text-align: left;
+  height: var(--s-s);
+  font-size: var(--fs-xs);
+}
+.toggle-switch-checkbox {
+  display: none;
+}
+.toggle-switch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+.toggle-switch-inner {
+  display: block;
+  text-align: center;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.toggle-switch-inner::before, .toggle-switch-inner::after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: var(--s-s);
+  line-height: 1.95rem;
+  box-sizing: border-box;
+}
+.toggle-switch-inner::after {
+  background-color: var(--c-1);
+}
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-inner {
+  margin-left: 0;
+}
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
+  right: 0;
+}
+.toggle-switch-inner::before {
+  content: attr(data-yes);
+}
+.toggle-switch-inner::after {
+  content: attr(data-no);
+}

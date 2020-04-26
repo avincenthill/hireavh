@@ -54,6 +54,7 @@ content.notFound = {
 
 content.header = {
   title: `${content.nav.links.home.emoji} ${content.nav.links.home.path}`,
+  switchOptions: ["☀️", "🌙"],
 };
 
 content.footer = {

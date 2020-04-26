@@ -46,7 +46,7 @@ class Sort extends React.Component {
     const { canvas, ctx } = this.state;
     ctx.beginPath();
     ctx.rect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = styles.color.cblack;
+    ctx.fillStyle = utils.getColor("--c-black");
     ctx.fill();
     ctx.closePath();
   }

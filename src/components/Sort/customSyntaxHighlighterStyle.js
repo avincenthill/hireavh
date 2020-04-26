@@ -1,91 +1,91 @@
-import styles from "styles/styleconfig";
+import utils from "utils/utils";
 
 const customSyntaxHighlighterStyle = {
   "hljs-comment": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-quote": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-variable": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-template-variable": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-tag": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-name": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-selector-id": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-selector-class": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-regexp": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-deletion": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-number": {
-    color: styles.color.c3,
+    color: utils.getColor("--c-3"),
   },
   "hljs-built_in": {
-    color: styles.color.c3,
+    color: utils.getColor("--c-3"),
   },
   "hljs-builtin-name": {
-    color: styles.color.c3,
+    color: utils.getColor("--c-3"),
   },
   "hljs-literal": {
-    color: styles.color.c3,
+    color: utils.getColor("--c-3"),
   },
   "hljs-type": {
-    color: styles.color.c3,
+    color: utils.getColor("--c-3"),
   },
   "hljs-params": {
-    color: styles.color.c3,
+    color: utils.getColor("--c-3"),
   },
   "hljs-meta": {
-    color: styles.color.c3,
+    color: utils.getColor("--c-3"),
   },
   "hljs-link": {
-    color: styles.color.c3,
+    color: utils.getColor("--c-3"),
   },
   "hljs-attribute": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-string": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-symbol": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-bullet": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-addition": {
-    color: styles.color.c1,
+    color: utils.getColor("--c-1"),
   },
   "hljs-title": {
-    color: styles.color.c2,
+    color: utils.getColor("--c-2"),
   },
   "hljs-section": {
-    color: styles.color.c2,
+    color: utils.getColor("--c-2"),
   },
   "hljs-keyword": {
-    color: styles.color.c5,
+    color: utils.getColor("--c-5"),
   },
   "hljs-selector-tag": {
-    color: styles.color.c5,
+    color: utils.getColor("--c-5"),
   },
   hljs: {
     display: "block",
-    background: styles.color.cblack,
-    color: styles.color.cwhite,
+    background: utils.getColor("--c-black"),
+    color: utils.getColor("--c-white"),
     margin: "0rem",
     marginLeft: "-1rem",
   },

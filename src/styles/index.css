@@ -1,13 +1,4 @@
 :root {
-  /* Colors */
-  --c-black: #020a0d;
-  --c-white: #f5fbfd;
-  --c-1: #c8eaf7;
-  --c-2: #85d1ed;
-  --c-3: #f7edc8;
-  --c-4: #147186;
-  --c-5:#b67e72;
-
   /* Fonts */
   --f-default: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --fs-xxs: .75rem;
@@ -28,7 +19,8 @@
   --s-xxl: 75rem;
 
   /* Elevation */
-  --z-top: 2;
+  --z-middle: 2;
+  --z-top: 3;
 
   /* Border */
   --b-1: .1rem;
