@@ -22,6 +22,7 @@ const bubblesort = {
       }
     }
     snapShotFn(array);
+    return array;
   },
   fnDisplayString: `
     const bubbleSort = (array) => {

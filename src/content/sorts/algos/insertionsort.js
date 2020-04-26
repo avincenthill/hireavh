@@ -20,6 +20,7 @@ const insertionsort = {
       snapShotFn(array, [i], [j]);
     }
     snapShotFn(array);
+    return array;
   },
   fnDisplayString: `
     const insertionSort = (array) => {

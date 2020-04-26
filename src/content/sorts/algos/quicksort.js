@@ -46,6 +46,7 @@ const quicksort = {
 
     const sortedArray = quickSort(array, 0, array.length - 1);
     snapShotFn(sortedArray);
+    return sortedArray;
   },
   fnDisplayString: `
     const partition = (arr, left, right) => {
