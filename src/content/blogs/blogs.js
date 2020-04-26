@@ -19,7 +19,7 @@ const blogs = {
     // *************************************************************************
     {
       title: "Marketing Consulting",
-      url: "/blog/marketing",
+      url: "blog/marketing",
       displayUrl: "hireavh.com/blog/marketing",
       description: "Maximizing your ROI with Google Ads!",
       longDescription: `Here is a short description of the digital marketing services that I can offer to businesses. Contact me for more info!`,
