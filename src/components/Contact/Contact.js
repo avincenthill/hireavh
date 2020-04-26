@@ -12,6 +12,7 @@ import {
 import { FaLinkedinIn, FaGithub, FaRegCopy, FaFileCode } from "react-icons/fa";
 import ClipboardJS from "clipboard";
 import headshot from "assets/img/headshot.png";
+import utils from "utils/utils";
 import "./Contact.css";
 
 export default class Contact extends Component {
@@ -31,7 +32,13 @@ export default class Contact extends Component {
     return (
       <div className="contact-container">
         <Page>
-          <IconContext.Provider value={{ style: styleconfig.icons.contact }}>
+          <IconContext.Provider
+            value={
+              utils.isDarkTheme()
+                ? { style: styleconfig.icons.contact }
+                : { style: styleconfig.icons.contactLight }
+            }
+          >
             {/* headshot */}
             <img className="contact-img" src={headshot} alt="headshot"></img>
 

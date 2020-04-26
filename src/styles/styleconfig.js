@@ -28,6 +28,12 @@ const styles = {
       height: "1rem",
       padding: ".5rem",
     },
+    contactLight: {
+      color: "var(--c-white)",
+      width: "1rem",
+      height: "1rem",
+      padding: ".5rem",
+    },
     sort: {
       color: "var(--c-1)",
       width: "1.5rem",
