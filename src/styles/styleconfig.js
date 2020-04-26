@@ -136,7 +136,7 @@ const invertColor = (hex) => {
 };
 
 styles.themeColors.forEach((color, key) => {
-  // set light theme colors by inverting dark colors
+  // set light theme colors by inverting dark colors if not explicitly defined above
   let value = styles.themeColors.get(key);
   value.light = value.light ? value.light : invertColor(color.dark);
   styles.themeColors.set("light", value);

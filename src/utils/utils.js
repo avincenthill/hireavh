@@ -37,16 +37,11 @@ utils.toggleTheme = () => {
 };
 
 utils.renderTheme = () => {
+  const isLight = !utils.isDarkTheme();
   let root = document.documentElement;
-  if (!utils.isDarkTheme()) {
-    styles.themeColors.forEach((color, key) => {
-      root.style.setProperty(key, color.light);
-    });
-  } else {
-    styles.themeColors.forEach((color, key) => {
-      root.style.setProperty(key, color.dark);
-    });
-  }
+  styles.themeColors.forEach((color, key) => {
+    root.style.setProperty(key, isLight ? color.light : color.dark);
+  });
 };
 
 utils.getColor = (name) => {
