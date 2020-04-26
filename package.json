@@ -73,6 +73,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "jest --collect-coverage",
+    "updatesnapshots": "jest --updateSnapshot",
     "lint": "eslint 'src/**/*.{js,jsx}'",
     "lint:fix": "eslint --fix .",
     "deploy": "git stash && npm run lint && npm run test && npm run build && aws s3 sync build/ s3://hire-avh --delete --recursive --cache-control max-age=36000",

@@ -1,19 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link snapshot matches the last saved snapshot 1`] = `
-<div>
-  <h2
-    className="link"
-  >
-    <a
-      className="link-a"
-    >
-      <span />
-    </a>
-  </h2>
-</div>
-`;
-
 exports[`Link snapshot should match the last saved snapshot 1`] = `
 <div>
   <h2
