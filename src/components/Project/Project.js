@@ -20,13 +20,16 @@ class Project extends React.Component {
 
   render() {
     const { project } = this.props;
-    const backgroundImgStyle = {
-      backgroundImage: `url(${project.img.module})`,
-    };
+    let backgroundImgStyle;
+    if (project && project.img) {
+      backgroundImgStyle = {
+        backgroundImage: `url(${project.img.module})`,
+      };
+    }
     if (!this.state.isShowingLongDescription) {
       return (
         <div className="project-container button-hover-light">
-          {project.longDescription ? (
+          {project && project.longDescription ? (
             <button
               onClick={this.toggleLongDescription}
               className="project-expand-button button-hover"
@@ -47,17 +50,19 @@ class Project extends React.Component {
               </IconContext.Provider>
             </button>
           ) : null}
-          <a href={project.url} className="project-img-container">
-            {project.img.hasImg ? (
-              <div
-                className="project-img"
-                style={backgroundImgStyle}
-                alt={project.img.emoji}
-              ></div>
-            ) : (
-              <span className="project-emoji">{project.img.emoji}</span>
-            )}
-          </a>
+          {project ? (
+            <a href={project.url} className="project-img-container">
+              {project.img.hasImg ? (
+                <div
+                  className="project-img"
+                  style={backgroundImgStyle}
+                  alt={project.img.emoji}
+                ></div>
+              ) : (
+                <span className="project-emoji">{project.img.emoji}</span>
+              )}
+            </a>
+          ) : null}
           <div className="project-info-container">
             <h2 className="project-title">
               <a className="project-title-link" href={project.url}>
@@ -90,17 +95,19 @@ class Project extends React.Component {
               )}
             </IconContext.Provider>
           </button>
-          <a href={project.url} className="project-img-container">
-            {project.img.hasImg ? (
-              <div
-                className="project-img"
-                style={backgroundImgStyle}
-                alt={project.img.emoji}
-              ></div>
-            ) : (
-              <span className="project-emoji">{project.img.emoji}</span>
-            )}
-          </a>
+          {project ? (
+            <a href={project.url} className="project-img-container">
+              {project.img.hasImg ? (
+                <div
+                  className="project-img"
+                  style={backgroundImgStyle}
+                  alt={project.img.emoji}
+                ></div>
+              ) : (
+                <span className="project-emoji">{project.img.emoji}</span>
+              )}
+            </a>
+          ) : null}
           <div className="project-info-container">
             <p className="project-info-long-description">
               {project.longDescription}

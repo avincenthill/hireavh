@@ -1,7 +1,13 @@
-// import React from 'react';
-// import { render } from '@testing-library/react';
-// import App from './App';
+import React from "react";
+// import { shallow } from "enzyme";
+import renderer from "react-test-renderer";
+import Contact from "./Contact";
 
-it("adds correctly", () => {
-  expect(1+1).toEqual(2);
+describe("Contact", () => {
+  describe("snapshot", () => {
+    it("matches the last saved snapshot", () => {
+      const tree = renderer.create(<Contact />).toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

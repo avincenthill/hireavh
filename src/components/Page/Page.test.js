@@ -1,7 +1,13 @@
-// import React from 'react';
-// import { render } from '@testing-library/react';
-// import App from './App';
+import React from "react";
+// import { shallow } from "enzyme";
+import renderer from "react-test-renderer";
+import Page from "./Page";
 
-it("adds correctly", () => {
-  expect(1+1).toEqual(2);
+describe("Page", () => {
+  describe("snapshot", () => {
+    it("matches the last saved snapshot", () => {
+      const tree = renderer.create(<Page />).toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

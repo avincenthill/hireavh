@@ -1,7 +1,13 @@
-// import React from 'react';
-// import { render } from '@testing-library/react';
-// import Default from './Default';
+import React from "react";
+// import { shallow } from "enzyme";
+import renderer from "react-test-renderer";
+import ToggleSwitch from "./ToggleSwitch";
 
-it("adds correctly", () => {
-  expect(1+1).toEqual(2);
+describe("ToggleSwitch", () => {
+  describe("snapshot", () => {
+    it("matches the last saved snapshot", () => {
+      const tree = renderer.create(<ToggleSwitch text={["0", "1"]} />).toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

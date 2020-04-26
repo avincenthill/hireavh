@@ -1,0 +1,382 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form snapshot matches the last saved snapshot 1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        className="nav nav-top"
+      >
+        <div
+          className="nav-icon $
+          this.props.isBottom ? \\"nav-icon-bottom\\" : \\"nav-icon-top\\"
+        }"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "var(--c-1)",
+                "height": "3rem",
+                "width": "3rem",
+              }
+            }
+            viewBox="0 0 8 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <a
+        className="header-container"
+        href="/about"
+      >
+        <div
+          className="header-switch-theme"
+        >
+          <div
+            className="toggle-switch"
+          >
+            <input
+              className="toggle-switch-checkbox"
+              defaultChecked={true}
+              id="toggle-switch-theme"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="toggle-switch-label"
+              htmlFor="toggle-switch-theme"
+            >
+              <span
+                className="toggle-switch-inner"
+                data-no="🌙"
+                data-yes="☀️"
+              />
+            </label>
+          </div>
+        </div>
+        🏠 about
+      </a>
+    </div>
+    <div
+      className="page-container"
+    >
+      <h2
+        className="form-title"
+      >
+        📃 Dynamic Form
+      </h2>
+      <p
+        className="form-description"
+      >
+        PERSONAL PROJECT: This form renders input fields based on user-inputted JSON. This was implemented as a React.js test for an interview and I decided to deploy it due to the frequency I get asked to make something like this while applying for jobs.
+      </p>
+      <div
+        className="form-item"
+      >
+        <label>
+          INPUT
+        </label>
+        <textarea
+          className="form-input"
+          defaultValue="[
+  {
+    \\"tag\\": \\"input\\",
+    \\"name\\": \\"first_name\\",
+    \\"type\\": \\"text\\",
+    \\"human_label\\": \\"First Name\\",
+    \\"is_required\\": \\"true\\"
+  },
+  {
+    \\"tag\\": \\"input\\",
+    \\"name\\": \\"last_name\\",
+    \\"type\\": \\"text\\",
+    \\"human_label\\": \\"Last Name\\"
+  },
+  {
+    \\"tag\\": \\"input\\",
+    \\"name\\": \\"email\\",
+    \\"type\\": \\"email\\",
+    \\"human_label\\": \\"Email Address\\"
+  },
+  {
+    \\"tag\\": \\"input\\",
+    \\"name\\": \\"phone_number\\",
+    \\"type\\": \\"text\\",
+    \\"human_label\\": \\"Phone Number\\"
+  },
+  {
+    \\"tag\\": \\"input\\",
+    \\"name\\": \\"job_title\\",
+    \\"type\\": \\"text\\",
+    \\"human_label\\": \\"Job Title\\"
+  },
+  {
+    \\"tag\\": \\"input\\",
+    \\"name\\": \\"date_of_birth\\",
+    \\"type\\": \\"date\\",
+    \\"human_label\\": \\"Date of Birth\\"
+  },
+  {
+    \\"tag\\": \\"input\\",
+    \\"name\\": \\"parental_consent\\",
+    \\"type\\": \\"checkbox\\",
+    \\"human_label\\": \\"Parental Consent\\",
+    \\"conditional\\": {
+      \\"name\\": \\"date_of_birth\\"
+    }
+  }
+]"
+          id="config"
+          onChange={[Function]}
+        />
+      </div>
+      <form
+        className="form-container"
+        onSubmit={[Function]}
+      >
+        <h3>
+          FORM
+        </h3>
+        <div
+          className="form-item"
+        >
+          <label>
+            First Name
+            *
+          </label>
+          <input
+            id="first_name"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="form-item"
+        >
+          <label>
+            Last Name
+            
+          </label>
+          <input
+            id="last_name"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="form-item"
+        >
+          <label>
+            Email Address
+            
+          </label>
+          <input
+            id="email"
+            onChange={[Function]}
+            type="email"
+          />
+        </div>
+        <div
+          className="form-item"
+        >
+          <label>
+            Phone Number
+            
+          </label>
+          <input
+            id="phone_number"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="form-item"
+        >
+          <label>
+            Job Title
+            
+          </label>
+          <input
+            id="job_title"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="form-item"
+        >
+          <label>
+            Date of Birth
+            
+          </label>
+          <input
+            id="date_of_birth"
+            onChange={[Function]}
+            type="date"
+          />
+        </div>
+        <div
+          className="form-item"
+        >
+          <label>
+            Parental Consent
+            
+          </label>
+          <input
+            id="parental_consent"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </div>
+        <button
+          className="form-button"
+          type="submit"
+        >
+          SUBMIT
+        </button>
+      </form>
+      <div
+        className="form-item"
+      >
+        <label>
+          OUTPUT
+        </label>
+        <textarea
+          className="form-input"
+          readOnly={true}
+          value="🤔 No data returned yet."
+        />
+      </div>
+      <hr />
+      <div
+        className="nav-list"
+      >
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/about"
+            >
+              <span>
+                🏠 about
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/blog"
+            >
+              <span>
+                ✍️ blog
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/projects"
+            >
+              <span>
+                📦 projects
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/resume"
+            >
+              <span>
+                📄 resume
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/contact"
+            >
+              <span>
+                📇 contact
+              </span>
+            </a>
+          </h2>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div>
+      <div
+        className="nav nav-bottom"
+      >
+        <div
+          className="nav-icon $
+          this.props.isBottom ? \\"nav-icon-bottom\\" : \\"nav-icon-top\\"
+        }"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "var(--c-1)",
+                "height": "3rem",
+                "width": "3rem",
+              }
+            }
+            viewBox="0 0 8 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <a
+        className="footer-container"
+        href="/about"
+      >
+        <span>
+          copyright Alex Vincent-Hill 2020 - 🏠 about
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;

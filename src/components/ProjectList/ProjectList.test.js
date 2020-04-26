@@ -1,7 +1,13 @@
-// import React from 'react';
-// import { render } from '@testing-library/react';
-// import ProjectList from './ProjectList';
+import React from "react";
+// import { shallow } from "enzyme";
+import renderer from "react-test-renderer";
+import ProjectList from "./ProjectList";
 
-it("adds correctly", () => {
-  expect(1+1).toEqual(2);
+describe("ProjectList", () => {
+  describe("snapshot", () => {
+    it("matches the last saved snapshot", () => {
+      const tree = renderer.create(<ProjectList />).toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

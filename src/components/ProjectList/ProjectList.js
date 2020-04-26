@@ -4,9 +4,11 @@ import "./ProjectList.css";
 
 class ProjectList extends React.Component {
   renderProjects = (projects) => {
-    return projects.map((project, index) => {
-      return <Project project={project} key={index}></Project>;
-    });
+    if (projects) {
+      return projects.map((project, index) => {
+        return <Project project={project} key={index}></Project>;
+      });
+    }
   };
 
   render() {
