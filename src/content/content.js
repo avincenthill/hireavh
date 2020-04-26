@@ -49,7 +49,6 @@ content.resume = {
 
 content.notFound = {
   title: "🤦 That page is missing, sorry!",
-  subtitle: `${content.nav.links.home.emoji} ${content.nav.links.home.path}`,
 };
 
 content.header = {
