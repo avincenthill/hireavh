@@ -80,6 +80,7 @@ styles.themeColors = new Map([
   [
     "--c-2",
     {
+      dark: "#85d1ed",
       light: "#143886",
     },
   ],
