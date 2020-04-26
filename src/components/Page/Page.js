@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "components/Header/Header";
 import Footer from "components/Footer/Footer";
-import utils from "utils/utils";
 import "./Page.css";
 
 class Page extends React.Component {

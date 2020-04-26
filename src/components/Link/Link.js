@@ -1,5 +1,4 @@
 import React from "react";
-import styleconfig from "styles/styleconfig";
 import "./Link.css";
 
 class Link extends React.Component {
