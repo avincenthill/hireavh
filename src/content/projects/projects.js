@@ -36,7 +36,7 @@ const projects = {
       url: "/sorting-algorithms",
       displayUrl: "hireavh.com/sorting-algorithms",
       description: "Animated bogosort!",
-      longDescription: `You can see common sorting algorithms rendered with HTML canvas here. This is a personal project that I'm continuing to expand on as I study more sorting algorithms. It's open source, just like this website!`,
+      longDescription: sorts.description,
       img: {
         emoji: sorts.emoji,
       },

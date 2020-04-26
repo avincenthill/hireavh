@@ -4,6 +4,7 @@ const bogosort = {
   id: 5,
   title: "Bogo Sort",
   emoji: "🤪",
+  description: "shuffle the list and check whether it is sorted, yolo",
   fn: (array, snapShotFn) => {
     snapShotFn(array);
     const isSorted = (arr) => {

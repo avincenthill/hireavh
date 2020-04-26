@@ -2,6 +2,8 @@ const quicksort = {
   id: 4,
   title: "Quick Sort",
   emoji: "🐇",
+  description:
+    "select a 'pivot' element from the array and partition the other elements into two sub-arrays, according to whether they are less than or greater than the pivot, then sort the sub-arrays recursively",
   fn: (array, snapShotFn) => {
     snapShotFn(array);
     const partition = (arr, left, right) => {

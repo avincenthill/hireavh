@@ -20,6 +20,7 @@ class SortList extends React.Component {
           <h2 className="sortlist-title">
             {content.sorts.emoji + " " + content.sorts.title}
           </h2>
+          <p className="sortlist-description">{content.sorts.description}</p>
           {this.renderSorts()}
           <NavList></NavList>
           <hr></hr>

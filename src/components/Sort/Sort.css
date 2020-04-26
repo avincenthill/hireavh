@@ -64,3 +64,8 @@
   display: flex;
   width: 100%;
 }
+
+.sort-description {
+  margin: var(--s-xs);
+  text-align: left;
+}

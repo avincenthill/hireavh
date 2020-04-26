@@ -229,6 +229,7 @@ class Sort extends React.Component {
                 <FaUndo />
               </button>
             </div>
+            <p class="sort-description">{sort.description}</p>
             <div className="sort-code-container">
               <SyntaxHighlighter
                 language="javascript"

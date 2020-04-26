@@ -2,6 +2,8 @@ const bubblesort = {
   id: 1,
   title: "Bubble Sort",
   emoji: "💭",
+  description:
+    "repeatedly step through the list, compare adjacent elements and swap them if they are in the wrong order",
   fn: (array, snapShotFn) => {
     snapShotFn(array);
     const swap = (array, i, j) => {

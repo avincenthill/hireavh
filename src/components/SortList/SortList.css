@@ -1,3 +1,10 @@
 .sortlist-title {
+  margin-bottom: var(--s-s);
+}
+
+.sortlist-description {
+  text-align: left;
+  width: max(var(--s-m),80vw);
+  margin: 0;
   margin-bottom: var(--s-m);
 }

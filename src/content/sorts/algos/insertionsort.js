@@ -2,6 +2,8 @@ const insertionsort = {
   id: 2,
   title: "Insertion Sort",
   emoji: "⬇️",
+  description:
+    "each iteration, remove one element from the input data, find the location it belongs within the sorted list, and insert it there",
   fn: (array, snapShotFn) => {
     snapShotFn(array);
 
