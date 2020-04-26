@@ -49,7 +49,6 @@
   color: var(--c-black);
   border-radius: 0 0 var(--s-xs) var(--s-xs);
   background-color: var(--c-1);
-  overflow: auto;
 }
 
 .project-description {
