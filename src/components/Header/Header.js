@@ -10,7 +10,7 @@ class Header extends React.Component {
     return (
       <div>
         <Nav isBottom={false}></Nav>
-        <a href="/" className="header-container">
+        <a href="/about" className="header-container">
           <div className="header-switch-theme">
             <ToggleSwitch
               id="toggle-switch-theme"

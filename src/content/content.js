@@ -14,7 +14,7 @@ const content = {
 
 content.nav = {
   links: {
-    home: { emoji: "🏠", path: "home" },
+    home: { emoji: "🏠", path: "about" },
     blog: { emoji: "✍️", path: "blog" },
     projects: { emoji: "📦", path: "projects" },
     resume: { emoji: "📄", path: "resume" },

@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div>
       <Nav isBottom={true}></Nav>
-      <a href="/" className="footer-container">
+      <a href="/about" className="footer-container">
         <span>{content.footer.copywrite}</span>
       </a>
     </div>
