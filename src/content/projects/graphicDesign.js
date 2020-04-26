@@ -12,7 +12,7 @@ const graphicDesign = {
       displayUrl: "shirt.woot.com/offers/educate-yourself",
       description: "Graphic design for woot.com.",
       longDescription:
-        "I created this liberty-themed t-shirt after the Snowden NSA leaks. It's my most-popular graphic design product, with over 3,000 sold!",
+        "A liberty themed t-shirt design following the Snowden NSA leaks.  To date it is my most popular graphic design, with over 3,000 sold!",
       img: {
         hasImg: true,
         module: nsa,
@@ -26,7 +26,7 @@ const graphicDesign = {
       displayUrl: "shirt.woot.com/offers/hilberts-grand-infinite-hotel",
       description: "Graphic design for woot.com.",
       longDescription:
-        "Here is a Wes Anderson-inspired nerdy math joke t-shirt I designed about the number theory thought-experiment Hilbert's Paradox of the Grand Hotel https://en.wikipedia.org/wiki/Hilbert%27s_paradox_of_the_Grand_Hotel",
+        "A Wes Anderson-inspired math joke t-shirt design about the number theory thought-experiment: Hilbert’s Paradox of the Grand Hotel.",
       img: {
         hasImg: true,
         module: hilbert,
@@ -40,7 +40,7 @@ const graphicDesign = {
       displayUrl: "pictureperfectpetals.com",
       description: "Graphic design for Picture Perfect Petals.",
       longDescription:
-        "This is a logo I made for a florist. You can see it on the top-left of his landing page.",
+        "A logo design for a florist, currently live on his landing page.",
       img: {
         hasImg: true,
         module: petals,

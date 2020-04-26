@@ -2,7 +2,7 @@ import formConfig from "./formConfig";
 
 const form = {
   title: "📃 Dynamic Form",
-  description: `This form renders input fields based on user-inputted JSON. This was implemented as a React.js test for an interview and I decided to deploy it due to the frequency I get asked to do something like this on interviews.`,
+  description: `PERSONAL PROJECT: This form renders input fields based on user-inputted JSON. This was implemented as a React.js test for an interview and I decided to deploy it due to the frequency I get asked to make something like this while applying for jobs.`,
   inputTitle: "INPUT",
   outputTitle: "OUTPUT",
   formTitle: "FORM",

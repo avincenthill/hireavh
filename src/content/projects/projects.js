@@ -1,4 +1,5 @@
 import sorts from "content/sorts/sorts";
+import { blogs } from "content/blogs/blogs";
 import form from "content/form/form";
 import particles from "assets/img/projects/particles.jpg";
 import graphicDesign from "./graphicDesign";
@@ -7,23 +8,15 @@ const projects = {
   title: "📦 Here are some of my projects!",
   data: [
     // *************************************************************************
-    {
-      title: "Recruiter FAQ",
-      url: "/blog/recruiter-faq",
-      displayUrl: "/blogs/recruiter-faq",
-      description: "Answers to common questions I get from recruiters.",
-      longDescription: `This is an attempt to save recruiters and myself some time. I'd noticed I kept having the same 30 minute intro call with recruiters and wanted to provide an asynchronous resource for this info. I still would love to talk to you!`,
-      img: {
-        emoji: "🤷",
-      },
-    },
+    // Recruiter FAQ
+    blogs.data[0],
     // *************************************************************************
     {
       title: "Particle Simulation",
       url: "https://github.com/avincenthill/particle_simulation",
       displayUrl: "github.com/avincenthill/particle_simulation",
       description: "A particle system simulation in Processing.",
-      longDescription: `This is a personal project where I model chemical and physical reactions (chemical equilibria, fission, classical collisions, etc) with Processing/Java and render the simulation using PeasyCam. Clicking this link will take you to the source code - you need to install Processing in order to run it.`,
+      longDescription: `PERSONAL PROJECT: Modeling chemical and physical reactions (chemical equilibria, fission, classical collisions, etc) with Processing/Java and rendering the simulation using PeasyCam. This link will lead to the source code, and you will need to install Processing to run it.`,
       img: {
         hasImg: true,
         module: particles,
@@ -48,11 +41,14 @@ const projects = {
         "https://marketingplatform.google.com/about/resources/fetch-and-aeg-presents-boost-efficiency-with-structured-information-files/",
       displayUrl: "marketingplatform.google.com",
       description: "100x'ing Google Ads campaign creation...",
-      longDescription: `This is a link to a case study Google/Doubleclick wrote about digital ad campaign creation automation work I led at Fetch circa 2017-2018.`,
+      longDescription: `FETCH: Unprecedented work that I led which automated the creation of digital ad campaigns and featured in a case study written by Google.`,
       img: {
         emoji: "⚙️",
       },
     },
+    // *************************************************************************
+    // Marketing Consulting
+    blogs.data[1],
     // *************************************************************************
     {
       title: "Dynamic Form",
@@ -72,20 +68,9 @@ const projects = {
       displayUrl:
         "https://github.com/avincenthill/leetcode-answers/tree/master/leetcode-answers",
       description: "A collection of my JS implementations from leetcode.com.",
-      longDescription: `This is the GitHub repo where I control my answers to leetcode questions, mostly implemented in JavaScript. I've tried to also include data about runtime and memory after they were run successfully in the application.`,
+      longDescription: `PERSONAL PROJECT: This is the GitHub repo where I control my answers to leetcode questions, mostly implemented in JavaScript. I've tried to also include data about runtime and memory after they were run successfully in the application.`,
       img: {
         emoji: "🧩",
-      },
-    },
-    // *************************************************************************
-    {
-      title: "AVH Blog",
-      url: "/blog",
-      displayUrl: "hireavh.com/blog",
-      description: "My thoughts on the world...",
-      longDescription: `This is an eclectic collection of my written work. I don't blog that often but if I want to personally publish something I do it here.`,
-      img: {
-        emoji: "✍️",
       },
     },
     // *************************************************************************
