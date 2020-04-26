@@ -76,7 +76,7 @@
     "updatesnapshots": "jest --updateSnapshot",
     "lint": "eslint 'src/**/*.{js,jsx}'",
     "lint:fix": "eslint --fix .",
-    "deploy": "git stash && npm run lint && npm run test && npm run build && aws s3 sync build/ s3://hire-avh --delete --recursive --cache-control max-age=36000",
+    "deploy": "git stash && npm run lint && npm run test && npm run build && aws s3 sync build/ s3://hire-avh --delete --recursive --cache-control max-age=2500",
     "updateblogreadme": "cp README.md ./src/content/blogs/md/README.md",
     "newcomponent": "mkdir ${PWD}/src/components/${NAME:-NewComponent}/ && cp -a ${PWD}/src/components/Default/ ${PWD}/src/components/${NAME:-NewComponent}/"
   },
