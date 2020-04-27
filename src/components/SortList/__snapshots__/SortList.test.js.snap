@@ -1,0 +1,1879 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SortList snapshot should match the last saved snapshot 1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        className="nav nav-top"
+      >
+        <div
+          className="nav-icon $
+          this.props.isBottom ? \\"nav-icon-bottom\\" : \\"nav-icon-top\\"
+        }"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "var(--c-1)",
+                "height": "3rem",
+                "width": "3rem",
+              }
+            }
+            viewBox="0 0 8 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <a
+        className="header-container"
+        href="/about"
+      >
+        <div
+          className="header-switch-theme"
+        >
+          <div
+            className="toggle-switch"
+          >
+            <input
+              className="toggle-switch-checkbox"
+              defaultChecked={true}
+              id="toggle-switch-theme"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="toggle-switch-label"
+              htmlFor="toggle-switch-theme"
+            >
+              <span
+                className="toggle-switch-inner"
+                data-no="🌙"
+                data-yes="☀️"
+              />
+            </label>
+          </div>
+        </div>
+        🏠 about
+      </a>
+    </div>
+    <div
+      className="page-container"
+    >
+      <h2
+        className="sortlist-title"
+      >
+        📊 Sorting Algorithms
+      </h2>
+      <p
+        className="sortlist-description"
+      >
+        PERSONAL PROJECT: Common sorting algorithms rendered with HTML canvas.  This project continues to expand as I study sorting algorithms more.  It is open source, just like this website!
+      </p>
+      <div
+        className="sort-container"
+      >
+        <div
+          className="sort-canvas-container"
+        >
+          <canvas
+            className="sort-canvas"
+            onClick={[Function]}
+          />
+        </div>
+        <div
+          className="sort-info-container"
+        >
+          <button
+            className="sort-button"
+            onClick={[Function]}
+          >
+            <h2
+              className="sort-title"
+            >
+              💭 Bubble Sort
+            </h2>
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": "var(--c-1)",
+                  "height": "var(--s-s)",
+                  "padding": ".5rem",
+                  "width": "var(--s-s)",
+                }
+              }
+              viewBox="0 0 448 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+              />
+            </svg>
+          </button>
+          <div
+            className="sort-button-container"
+          >
+            <button
+              className="sort-button"
+              onClick={[Function]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "var(--c-1)",
+                    "height": "var(--s-s)",
+                    "padding": ".5rem",
+                    "width": "var(--s-s)",
+                  }
+                }
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"
+                />
+              </svg>
+            </button>
+            <button
+              className="sort-button"
+              onClick={[Function]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "var(--c-1)",
+                    "height": "var(--s-s)",
+                    "padding": ".5rem",
+                    "width": "var(--s-s)",
+                  }
+                }
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M384 44v424c0 6.6-5.4 12-12 12h-48c-6.6 0-12-5.4-12-12V291.6l-195.5 181C95.9 489.7 64 475.4 64 448V64c0-27.4 31.9-41.7 52.5-24.6L312 219.3V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12z"
+                />
+              </svg>
+            </button>
+            <button
+              className="sort-button"
+              onClick={[Function]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "var(--c-1)",
+                    "height": "var(--s-s)",
+                    "padding": ".5rem",
+                    "width": "var(--s-s)",
+                  }
+                }
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M212.333 224.333H12c-6.627 0-12-5.373-12-12V12C0 5.373 5.373 0 12 0h48c6.627 0 12 5.373 12 12v78.112C117.773 39.279 184.26 7.47 258.175 8.007c136.906.994 246.448 111.623 246.157 248.532C504.041 393.258 393.12 504 256.333 504c-64.089 0-122.496-24.313-166.51-64.215-5.099-4.622-5.334-12.554-.467-17.42l33.967-33.967c4.474-4.474 11.662-4.717 16.401-.525C170.76 415.336 211.58 432 256.333 432c97.268 0 176-78.716 176-176 0-97.267-78.716-176-176-176-58.496 0-110.28 28.476-142.274 72.333h98.274c6.627 0 12 5.373 12 12v48c0 6.627-5.373 12-12 12z"
+                />
+              </svg>
+            </button>
+          </div>
+          <p
+            class="sort-description"
+          >
+            repeatedly step through the list, compare adjacent elements and swap them if they are in the wrong order
+          </p>
+          <div
+            className="sort-code-container"
+          >
+            <pre
+              style={
+                Object {
+                  "background": "#020a0d",
+                  "color": "#f5fbfd",
+                  "display": "block",
+                  "margin": "0rem",
+                  "marginLeft": "-1rem",
+                }
+              }
+            >
+              <code>
+                
+    
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  const
+                </span>
+                 bubbleSort = 
+                <span
+                  className="hljs-function"
+                  style={Object {}}
+                >
+                  (
+                  <span
+                    style={
+                      Object {
+                        "color": "#f7edc8",
+                      }
+                    }
+                  >
+                    array
+                  </span>
+                  ) =&gt;
+                </span>
+                 {
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  const
+                </span>
+                 swap = 
+                <span
+                  className="hljs-function"
+                  style={Object {}}
+                >
+                  (
+                  <span
+                    style={
+                      Object {
+                        "color": "#f7edc8",
+                      }
+                    }
+                  >
+                    array, i, j
+                  </span>
+                  ) =&gt;
+                </span>
+                 {
+        
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  let
+                </span>
+                 temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+      }
+
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  for
+                </span>
+                 (
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  let
+                </span>
+                 i = 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  0
+                </span>
+                ; i &lt; array.length; i++) {
+        
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  for
+                </span>
+                 (
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  let
+                </span>
+                 j = 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                ; j &lt; array.length; j++) {
+          
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  if
+                </span>
+                 (array[j - 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                ] &gt; array[j]) {
+            swap(array, j - 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                , j);
+          }
+        }
+      }
+
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  return
+                </span>
+                 array;
+    }
+
+    
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  const
+                </span>
+                 sortedArray = bubblesort(unsortedArray);
+    
+              </code>
+            </pre>
+          </div>
+          <table
+            className="sort-table"
+          >
+            <tbody>
+              <tr>
+                <th>
+                  🧮 complexity
+                </th>
+                <th>
+                  🕒 time
+                </th>
+                <th>
+                  🌌 space
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  best
+                </td>
+                <td>
+                  Ω(n)
+                </td>
+                <td>
+                  O(1)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  avg
+                </td>
+                <td>
+                  Θ(n^2)
+                </td>
+                <td>
+                  O(1)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  worst
+                </td>
+                <td>
+                  O(n^2)
+                </td>
+                <td>
+                  O(1)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        className="sort-container"
+      >
+        <div
+          className="sort-canvas-container"
+        >
+          <canvas
+            className="sort-canvas"
+            onClick={[Function]}
+          />
+        </div>
+        <div
+          className="sort-info-container"
+        >
+          <button
+            className="sort-button"
+            onClick={[Function]}
+          >
+            <h2
+              className="sort-title"
+            >
+              ⬇️ Insertion Sort
+            </h2>
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": "var(--c-1)",
+                  "height": "var(--s-s)",
+                  "padding": ".5rem",
+                  "width": "var(--s-s)",
+                }
+              }
+              viewBox="0 0 448 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+              />
+            </svg>
+          </button>
+          <div
+            className="sort-button-container"
+          >
+            <button
+              className="sort-button"
+              onClick={[Function]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "var(--c-1)",
+                    "height": "var(--s-s)",
+                    "padding": ".5rem",
+                    "width": "var(--s-s)",
+                  }
+                }
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"
+                />
+              </svg>
+            </button>
+            <button
+              className="sort-button"
+              onClick={[Function]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "var(--c-1)",
+                    "height": "var(--s-s)",
+                    "padding": ".5rem",
+                    "width": "var(--s-s)",
+                  }
+                }
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M384 44v424c0 6.6-5.4 12-12 12h-48c-6.6 0-12-5.4-12-12V291.6l-195.5 181C95.9 489.7 64 475.4 64 448V64c0-27.4 31.9-41.7 52.5-24.6L312 219.3V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12z"
+                />
+              </svg>
+            </button>
+            <button
+              className="sort-button"
+              onClick={[Function]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "var(--c-1)",
+                    "height": "var(--s-s)",
+                    "padding": ".5rem",
+                    "width": "var(--s-s)",
+                  }
+                }
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M212.333 224.333H12c-6.627 0-12-5.373-12-12V12C0 5.373 5.373 0 12 0h48c6.627 0 12 5.373 12 12v78.112C117.773 39.279 184.26 7.47 258.175 8.007c136.906.994 246.448 111.623 246.157 248.532C504.041 393.258 393.12 504 256.333 504c-64.089 0-122.496-24.313-166.51-64.215-5.099-4.622-5.334-12.554-.467-17.42l33.967-33.967c4.474-4.474 11.662-4.717 16.401-.525C170.76 415.336 211.58 432 256.333 432c97.268 0 176-78.716 176-176 0-97.267-78.716-176-176-176-58.496 0-110.28 28.476-142.274 72.333h98.274c6.627 0 12 5.373 12 12v48c0 6.627-5.373 12-12 12z"
+                />
+              </svg>
+            </button>
+          </div>
+          <p
+            class="sort-description"
+          >
+            each iteration, remove one element from the input data, find the location it belongs within the sorted list, and insert it there
+          </p>
+          <div
+            className="sort-code-container"
+          >
+            <pre
+              style={
+                Object {
+                  "background": "#020a0d",
+                  "color": "#f5fbfd",
+                  "display": "block",
+                  "margin": "0rem",
+                  "marginLeft": "-1rem",
+                }
+              }
+            >
+              <code>
+                
+    
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  const
+                </span>
+                 insertionSort = 
+                <span
+                  className="hljs-function"
+                  style={Object {}}
+                >
+                  (
+                  <span
+                    style={
+                      Object {
+                        "color": "#f7edc8",
+                      }
+                    }
+                  >
+                    array
+                  </span>
+                  ) =&gt;
+                </span>
+                 {
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  let
+                </span>
+                 i, j, key;
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  for
+                </span>
+                 (i = 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                ; i &lt; array.length; i += 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                ) {
+        key = array[i];
+        j = i - 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                ;
+        
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  while
+                </span>
+                 (j &gt;= 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  0
+                </span>
+                 && array[j] &gt; key) {
+          array[j + 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                ] = array[j];
+          j -= 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                ;
+        }
+        array[j + 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                ] = key;
+      }
+
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  return
+                </span>
+                 array;
+    }
+    
+    
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  const
+                </span>
+                 sortedArray = insertionSort(unsortedArray);
+    
+              </code>
+            </pre>
+          </div>
+          <table
+            className="sort-table"
+          >
+            <tbody>
+              <tr>
+                <th>
+                  🧮 complexity
+                </th>
+                <th>
+                  🕒 time
+                </th>
+                <th>
+                  🌌 space
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  best
+                </td>
+                <td>
+                  Ω(n)
+                </td>
+                <td>
+                  O(1)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  avg
+                </td>
+                <td>
+                  Θ(n^2)
+                </td>
+                <td>
+                  O(1)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  worst
+                </td>
+                <td>
+                  O(n^2)
+                </td>
+                <td>
+                  O(1)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        className="sort-container"
+      >
+        <div
+          className="sort-canvas-container"
+        >
+          <canvas
+            className="sort-canvas"
+            onClick={[Function]}
+          />
+        </div>
+        <div
+          className="sort-info-container"
+        >
+          <button
+            className="sort-button"
+            onClick={[Function]}
+          >
+            <h2
+              className="sort-title"
+            >
+              🐇 Quick Sort
+            </h2>
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": "var(--c-1)",
+                  "height": "var(--s-s)",
+                  "padding": ".5rem",
+                  "width": "var(--s-s)",
+                }
+              }
+              viewBox="0 0 448 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+              />
+            </svg>
+          </button>
+          <div
+            className="sort-button-container"
+          >
+            <button
+              className="sort-button"
+              onClick={[Function]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "var(--c-1)",
+                    "height": "var(--s-s)",
+                    "padding": ".5rem",
+                    "width": "var(--s-s)",
+                  }
+                }
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"
+                />
+              </svg>
+            </button>
+            <button
+              className="sort-button"
+              onClick={[Function]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "var(--c-1)",
+                    "height": "var(--s-s)",
+                    "padding": ".5rem",
+                    "width": "var(--s-s)",
+                  }
+                }
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M384 44v424c0 6.6-5.4 12-12 12h-48c-6.6 0-12-5.4-12-12V291.6l-195.5 181C95.9 489.7 64 475.4 64 448V64c0-27.4 31.9-41.7 52.5-24.6L312 219.3V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12z"
+                />
+              </svg>
+            </button>
+            <button
+              className="sort-button"
+              onClick={[Function]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "var(--c-1)",
+                    "height": "var(--s-s)",
+                    "padding": ".5rem",
+                    "width": "var(--s-s)",
+                  }
+                }
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M212.333 224.333H12c-6.627 0-12-5.373-12-12V12C0 5.373 5.373 0 12 0h48c6.627 0 12 5.373 12 12v78.112C117.773 39.279 184.26 7.47 258.175 8.007c136.906.994 246.448 111.623 246.157 248.532C504.041 393.258 393.12 504 256.333 504c-64.089 0-122.496-24.313-166.51-64.215-5.099-4.622-5.334-12.554-.467-17.42l33.967-33.967c4.474-4.474 11.662-4.717 16.401-.525C170.76 415.336 211.58 432 256.333 432c97.268 0 176-78.716 176-176 0-97.267-78.716-176-176-176-58.496 0-110.28 28.476-142.274 72.333h98.274c6.627 0 12 5.373 12 12v48c0 6.627-5.373 12-12 12z"
+                />
+              </svg>
+            </button>
+          </div>
+          <p
+            class="sort-description"
+          >
+            select a 'pivot' element from the array and partition the other elements into two sub-arrays, according to whether they are less than or greater than the pivot, then sort the sub-arrays recursively
+          </p>
+          <div
+            className="sort-code-container"
+          >
+            <pre
+              style={
+                Object {
+                  "background": "#020a0d",
+                  "color": "#f5fbfd",
+                  "display": "block",
+                  "margin": "0rem",
+                  "marginLeft": "-1rem",
+                }
+              }
+            >
+              <code>
+                
+    
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  const
+                </span>
+                 partition = 
+                <span
+                  className="hljs-function"
+                  style={Object {}}
+                >
+                  (
+                  <span
+                    style={
+                      Object {
+                        "color": "#f7edc8",
+                      }
+                    }
+                  >
+                    arr, left, right
+                  </span>
+                  ) =&gt;
+                </span>
+                 {
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  let
+                </span>
+                 pivot = arr[
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  Math
+                </span>
+                .floor((right + left) / 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  2
+                </span>
+                )],
+        i = left,
+        j = right;
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  while
+                </span>
+                 (i &lt;= j) {
+        
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  while
+                </span>
+                 (arr[i] &lt; pivot) {
+          i++;
+        }
+        
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  while
+                </span>
+                 (arr[j] &gt; pivot) {
+          j--;
+        }
+        
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  if
+                </span>
+                 (i &lt;= j) {
+          
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  const
+                </span>
+                 temp = arr[i];
+          arr[i] = arr[j];
+          arr[j] = temp;
+          i++;
+          j--;
+        }
+      }
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  return
+                </span>
+                 i;
+    }
+
+    
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  const
+                </span>
+                 quickSort = 
+                <span
+                  className="hljs-function"
+                  style={Object {}}
+                >
+                  (
+                  <span
+                    style={
+                      Object {
+                        "color": "#f7edc8",
+                      }
+                    }
+                  >
+                    arr, left, right
+                  </span>
+                  ) =&gt;
+                </span>
+                 {
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  let
+                </span>
+                 index;
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  if
+                </span>
+                 (arr.length &gt; 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                ) {
+        index = partition(arr, left, right);
+        
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  if
+                </span>
+                 (left &lt; index - 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                ) {
+          quickSort(arr, left, index - 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                );
+        }
+        
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  if
+                </span>
+                 (index &lt; right) {
+          quickSort(arr, index, right);
+        }
+      }
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  return
+                </span>
+                 arr;
+    }
+
+    
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  const
+                </span>
+                 sortedArray = quicksort(unsortedArray,
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  0
+                </span>
+                ,unsortedArray.length
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  -1
+                </span>
+                );
+    
+              </code>
+            </pre>
+          </div>
+          <table
+            className="sort-table"
+          >
+            <tbody>
+              <tr>
+                <th>
+                  🧮 complexity
+                </th>
+                <th>
+                  🕒 time
+                </th>
+                <th>
+                  🌌 space
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  best
+                </td>
+                <td>
+                  Ω(n*log(n))
+                </td>
+                <td>
+                  O(log(n))
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  avg
+                </td>
+                <td>
+                  Θ(n*log(n))
+                </td>
+                <td>
+                  O(log(n))
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  worst
+                </td>
+                <td>
+                  O(n^2)
+                </td>
+                <td>
+                  O(log(n))
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        className="sort-container"
+      >
+        <div
+          className="sort-canvas-container"
+        >
+          <canvas
+            className="sort-canvas"
+            onClick={[Function]}
+          />
+        </div>
+        <div
+          className="sort-info-container"
+        >
+          <button
+            className="sort-button"
+            onClick={[Function]}
+          >
+            <h2
+              className="sort-title"
+            >
+              🤪 Bogo Sort
+            </h2>
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": "var(--c-1)",
+                  "height": "var(--s-s)",
+                  "padding": ".5rem",
+                  "width": "var(--s-s)",
+                }
+              }
+              viewBox="0 0 448 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+              />
+            </svg>
+          </button>
+          <div
+            className="sort-button-container"
+          >
+            <button
+              className="sort-button"
+              onClick={[Function]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "var(--c-1)",
+                    "height": "var(--s-s)",
+                    "padding": ".5rem",
+                    "width": "var(--s-s)",
+                  }
+                }
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"
+                />
+              </svg>
+            </button>
+            <button
+              className="sort-button"
+              onClick={[Function]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "var(--c-1)",
+                    "height": "var(--s-s)",
+                    "padding": ".5rem",
+                    "width": "var(--s-s)",
+                  }
+                }
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M384 44v424c0 6.6-5.4 12-12 12h-48c-6.6 0-12-5.4-12-12V291.6l-195.5 181C95.9 489.7 64 475.4 64 448V64c0-27.4 31.9-41.7 52.5-24.6L312 219.3V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12z"
+                />
+              </svg>
+            </button>
+            <button
+              className="sort-button"
+              onClick={[Function]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "var(--c-1)",
+                    "height": "var(--s-s)",
+                    "padding": ".5rem",
+                    "width": "var(--s-s)",
+                  }
+                }
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M212.333 224.333H12c-6.627 0-12-5.373-12-12V12C0 5.373 5.373 0 12 0h48c6.627 0 12 5.373 12 12v78.112C117.773 39.279 184.26 7.47 258.175 8.007c136.906.994 246.448 111.623 246.157 248.532C504.041 393.258 393.12 504 256.333 504c-64.089 0-122.496-24.313-166.51-64.215-5.099-4.622-5.334-12.554-.467-17.42l33.967-33.967c4.474-4.474 11.662-4.717 16.401-.525C170.76 415.336 211.58 432 256.333 432c97.268 0 176-78.716 176-176 0-97.267-78.716-176-176-176-58.496 0-110.28 28.476-142.274 72.333h98.274c6.627 0 12 5.373 12 12v48c0 6.627-5.373 12-12 12z"
+                />
+              </svg>
+            </button>
+          </div>
+          <p
+            class="sort-description"
+          >
+            shuffle the list and check whether it is sorted, yolo
+          </p>
+          <div
+            className="sort-code-container"
+          >
+            <pre
+              style={
+                Object {
+                  "background": "#020a0d",
+                  "color": "#f5fbfd",
+                  "display": "block",
+                  "margin": "0rem",
+                  "marginLeft": "-1rem",
+                }
+              }
+            >
+              <code>
+                
+    
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  const
+                </span>
+                 bogoSort = 
+                <span
+                  className="hljs-function"
+                  style={Object {}}
+                >
+                  (
+                  <span
+                    style={
+                      Object {
+                        "color": "#f7edc8",
+                      }
+                    }
+                  >
+                    array
+                  </span>
+                  ) =&gt;
+                </span>
+                 {
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  const
+                </span>
+                 isSorted = 
+                <span
+                  className="hljs-function"
+                  style={Object {}}
+                >
+                  (
+                  <span
+                    style={
+                      Object {
+                        "color": "#f7edc8",
+                      }
+                    }
+                  >
+                    arr
+                  </span>
+                  ) =&gt;
+                </span>
+                 {
+        
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  for
+                </span>
+                 (
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  let
+                </span>
+                 i = 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  0
+                </span>
+                ; i &lt; array.length; i += 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                ) {
+          
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  if
+                </span>
+                 (i &gt; 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  0
+                </span>
+                 && arr[i - 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  1
+                </span>
+                ] &gt; arr[i]) {
+            
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  return
+                </span>
+                 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  false
+                </span>
+                ;
+          }
+        }
+        
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  return
+                </span>
+                 
+                <span
+                  style={
+                    Object {
+                      "color": "#f7edc8",
+                    }
+                  }
+                >
+                  true
+                </span>
+                ;
+      };
+
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  while
+                </span>
+                 (!isSorted(array)) {
+        array = utils.shuffleArray(array);
+      }
+
+      
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  return
+                </span>
+                 array;
+    }
+
+    
+                <span
+                  style={
+                    Object {
+                      "color": "#b67e72",
+                    }
+                  }
+                >
+                  const
+                </span>
+                 sortedArray = bogosort(unsortedArray);
+    
+              </code>
+            </pre>
+          </div>
+          <table
+            className="sort-table"
+          >
+            <tbody>
+              <tr>
+                <th>
+                  🧮 complexity
+                </th>
+                <th>
+                  🕒 time
+                </th>
+                <th>
+                  🌌 space
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  best
+                </td>
+                <td>
+                  Ω(n)
+                </td>
+                <td>
+                  O(1)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  avg
+                </td>
+                <td>
+                  Θ((n+1)!)
+                </td>
+                <td>
+                  O(1)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  worst
+                </td>
+                <td>
+                  O(∞)
+                </td>
+                <td>
+                  O(1)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        className="nav-list"
+      >
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/about"
+            >
+              <span>
+                🏠 about
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/blog"
+            >
+              <span>
+                ✍️ blog
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/projects"
+            >
+              <span>
+                📦 projects
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/resume"
+            >
+              <span>
+                📄 resume
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/contact"
+            >
+              <span>
+                📇 contact
+              </span>
+            </a>
+          </h2>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div>
+      <div
+        className="nav nav-bottom"
+      >
+        <div
+          className="nav-icon $
+          this.props.isBottom ? \\"nav-icon-bottom\\" : \\"nav-icon-top\\"
+        }"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "var(--c-1)",
+                "height": "3rem",
+                "width": "3rem",
+              }
+            }
+            viewBox="0 0 8 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <a
+        className="footer-container"
+        href="/about"
+      >
+        <span>
+          copyright Alex Vincent-Hill 2020 - 🏠 about
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;

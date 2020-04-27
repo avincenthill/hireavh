@@ -30,11 +30,11 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   ProjectList.js                  |      100 |       75 |      100 |      100 |                |
  src/components/Resume/           |      100 |      100 |      100 |      100 |                |
   Resume.js                       |      100 |      100 |      100 |      100 |                |
- src/components/Sort/             |     1.03 |        0 |        0 |     1.04 |                |
-  Sort.js                         |        0 |        0 |        0 |        0 |... 182,186,187 |
+ src/components/Sort/             |    33.67 |    29.03 |    36.36 |    34.02 |                |
+  Sort.js                         |    32.99 |    29.03 |    36.36 |    33.33 |... 182,183,184 |
   customSyntaxHighlighterStyle.js |      100 |      100 |      100 |      100 |                |
- src/components/SortList/         |        0 |      100 |        0 |        0 |                |
-  SortList.js                     |        0 |      100 |        0 |        0 |  9,10,11,12,17 |
+ src/components/SortList/         |      100 |      100 |      100 |      100 |                |
+  SortList.js                     |      100 |      100 |      100 |      100 |                |
  src/components/ToggleSwitch/     |       50 |        0 |       50 |       60 |                |
   ToggleSwitch.js                 |       50 |        0 |       50 |       60 |           9,12 |
  src/content/                     |      100 |      100 |      100 |      100 |                |
@@ -49,8 +49,8 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   projects.js                     |      100 |      100 |      100 |      100 |                |
  src/content/sorts/               |      100 |      100 |      100 |      100 |                |
   sorts.js                        |      100 |      100 |      100 |      100 |                |
- src/content/sorts/algos/         |    82.43 |    66.67 |       75 |     83.1 |                |
-  bogosort.js                     |     7.14 |        0 |        0 |     7.69 |... 20,21,22,23 |
+ src/content/sorts/algos/         |    98.65 |      100 |      100 |    98.59 |                |
+  bogosort.js                     |    92.86 |      100 |      100 |    92.31 |             17 |
   bubblesort.js                   |      100 |      100 |      100 |      100 |                |
   insertionsort.js                |      100 |      100 |      100 |      100 |                |
   quicksort.js                    |      100 |      100 |      100 |      100 |                |
@@ -58,9 +58,9 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   routes.js                       |       40 |        0 |    33.33 |       40 |... 27,51,65,79 |
  src/styles/                      |    94.44 |       75 |      100 |    94.44 |                |
   styleconfig.js                  |    94.44 |       75 |      100 |    94.44 |            119 |
- src/utils/                       |       70 |      100 |    66.67 |    72.41 |                |
-  utils.js                        |       70 |      100 |    66.67 |    72.41 |... 18,19,20,22 |
+ src/utils/                       |    93.33 |      100 |    77.78 |    96.55 |                |
+  utils.js                        |    93.33 |      100 |    77.78 |    96.55 |              6 |
 ----------------------------------|----------|----------|----------|----------|----------------|
-All files                         |    53.63 |    44.36 |    52.34 |    53.97 |                |
+All files                         |    67.96 |    54.81 |    65.42 |    68.34 |                |
 ----------------------------------|----------|----------|----------|----------|----------------|
 

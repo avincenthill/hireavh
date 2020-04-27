@@ -30,15 +30,17 @@ class Sort extends React.Component {
   initCanvas = () => {
     // get ref and context of canvas
     const { canvas } = this.refs;
-    // set offset height and width to fill container
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
-    const ctx = canvas.getContext("2d");
-    this.setState({ canvas, ctx }, () => {
-      this.clearCanvas();
-      // don't style bars on initial render
-      this.renderFrame(false);
-    });
+    if (canvas) {
+      // set offset height and width to fill container
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+      const ctx = canvas.getContext("2d");
+      this.setState({ canvas, ctx }, () => {
+        this.clearCanvas();
+        // don't style bars on initial render
+        this.renderFrame(false);
+      });
+    }
   };
 
   clearCanvas() {
