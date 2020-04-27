@@ -209,7 +209,7 @@ class Sort extends React.Component {
           </div>
           <div className="sort-info-container">
             <button
-              className="sort-button"
+              className="sort-button sort-button-top"
               onClick={
                 this.state.currentFrame < this.state.history.length
                   ? this.startSort

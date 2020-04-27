@@ -7,6 +7,9 @@
 .sort-canvas-container {
   height: min(calc(80vw/1.618),calc(var(--s-xl)*2/1.618));
   width: min(80vw,calc(var(--s-xl)*2));
+  border-top: var(--b-1) var(--c-1) solid;
+  border-left: var(--b-1) var(--c-1) solid;
+  border-right: var(--b-1) var(--c-1) solid;
 }
 
 .sort-canvas {
@@ -15,10 +18,15 @@
   height: 100%;
 }
 
+.sort-button-top {
+  border-top: var(--b-1) var(--c-1) solid;
+}
+
+
 .sort-button {
   background-color: var(--c-black);
   width: 100%;
-  border: var(--b-1) var(--c-1) solid;
+  border-bottom: var(--b-1) var(--c-1) solid;
   display: flex;
   align-items: center;
   justify-content: space-around;

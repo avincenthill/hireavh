@@ -76,6 +76,7 @@ button:active {
 }
 
 button:focus {
+  outline: thin dotted;
   outline-color: var(--c-4);
 }
 
