@@ -96,7 +96,7 @@ exports[`SortList snapshot should match the last saved snapshot 1`] = `
           className="sort-info-container"
         >
           <button
-            className="sort-button"
+            className="sort-button sort-button-top"
             onClick={[Function]}
           >
             <h2
@@ -493,7 +493,7 @@ exports[`SortList snapshot should match the last saved snapshot 1`] = `
           className="sort-info-container"
         >
           <button
-            className="sort-button"
+            className="sort-button sort-button-top"
             onClick={[Function]}
           >
             <h2
@@ -860,7 +860,7 @@ exports[`SortList snapshot should match the last saved snapshot 1`] = `
           className="sort-info-container"
         >
           <button
-            className="sort-button"
+            className="sort-button sort-button-top"
             onClick={[Function]}
           >
             <h2
@@ -1355,7 +1355,7 @@ exports[`SortList snapshot should match the last saved snapshot 1`] = `
           className="sort-info-container"
         >
           <button
-            className="sort-button"
+            className="sort-button sort-button-top"
             onClick={[Function]}
           >
             <h2
