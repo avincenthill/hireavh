@@ -37,7 +37,9 @@ class App extends React.Component {
     return (
       <Router>
         <Switch>
-          <Route exact path={["/", "/about", "/home"]} component={About} />
+          <Route exact path={"/"} component={About} />
+          <Route exact path={"/home"} component={About} />
+          <Route exact path={"/about"} component={About} />
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/blog/:path" children={<VariableBlogPost />} />

@@ -1,6 +1,7 @@
 const recruiterFaq = require("./md/recruiter-faq.md");
 const readme = require("./md/README.md");
 const marketing = require("./md/marketing.md");
+const coverage = require("./md/coverage.md");
 
 const blogs = {
   title: "✍️ My markdown, rendered.",
@@ -30,15 +31,25 @@ const blogs = {
     },
     // *************************************************************************
     {
-      title: "hireavh.com How-to",
+      title: "hireavh.com README.md",
       url: "blog/readme",
-      description: "The rendered README.md for this web app",
       longDescription: `I decided to render the README.md for this website since it was already in markdown. If you'd like to see an example of how I write technical documentation, just click!`,
       md: readme,
       img: {
         emoji: "📒",
       },
     },
+    // *************************************************************************
+    {
+      title: "hireavh.com Test Coverage Report",
+      url: "blog/test-coverage",
+      longDescription: `This is the current test coverage for the website you are currently using. Jest and Enzyme are used to unit test this application and Istanbul is used to create the report.`,
+      md: coverage,
+      img: {
+        emoji: "🧪",
+      },
+    },
+    // *************************************************************************
   ],
 };
 

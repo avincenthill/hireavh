@@ -20,6 +20,12 @@
   margin-top: var(--s-xxs);
 }
 
+#md-container table {
+  font-size: calc(max(var(--fs-xxs)*.5, 1.1vw));
+  text-align: right;
+  margin: auto;
+}
+
 #md-container {
   width: max(50%, var(--s-xl));
   margin-bottom: var(--s-s);
