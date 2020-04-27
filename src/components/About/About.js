@@ -1,25 +1,25 @@
-import React from "react";
-import content from "content/content";
 import "./About.css";
 import {
-  FaReact,
-  FaJsSquare,
-  FaNodeJs,
-  FaVuejs,
-  FaGit,
-  FaNpm,
-  FaCss3Alt,
-  FaHtml5,
-  FaAws,
   FaAdobe,
+  FaAws,
+  FaCss3Alt,
+  FaGit,
+  FaHtml5,
+  FaJsSquare,
   FaLinux,
+  FaNodeJs,
+  FaNpm,
+  FaReact,
   FaUbuntu,
+  FaVuejs,
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import styleconfig from "styles/styleconfig";
+import { NavList } from "components/Nav/Nav";
 import Page from "components/Page/Page";
 import ProjectList from "components/ProjectList/ProjectList";
-import { NavList } from "components/Nav/Nav";
+import React from "react";
+import content from "content/content";
+import styleconfig from "styles/styleconfig";
 
 function About() {
   return (

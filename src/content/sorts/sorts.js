@@ -1,7 +1,7 @@
+import bogosort from "./algos/bogosort";
 import bubblesort from "./algos/bubblesort";
 import insertionsort from "./algos/insertionsort";
 import quicksort from "./algos/quicksort";
-import bogosort from "./algos/bogosort";
 
 // data from https://www.bigocheatsheet.com/
 const sorts = {

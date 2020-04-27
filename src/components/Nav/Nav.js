@@ -1,10 +1,10 @@
+import "./Nav.css";
+import { GoGrabber } from "react-icons/go";
+import { IconContext } from "react-icons";
+import Link from "components/Link/Link";
 import React from "react";
 import content from "content/content";
-import { GoGrabber } from "react-icons/go";
-import Link from "components/Link/Link";
-import { IconContext } from "react-icons";
 import styleconfig from "styles/styleconfig";
-import "./Nav.css";
 
 class Nav extends React.Component {
   constructor(props) {

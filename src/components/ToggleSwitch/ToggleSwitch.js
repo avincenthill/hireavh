@@ -1,5 +1,5 @@
-import React from "react";
 import "./ToggleSwitch.css";
+import React from "react";
 
 class ToggleSwitch extends React.Component {
   state = {

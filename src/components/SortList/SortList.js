@@ -1,9 +1,9 @@
-import React from "react";
-import content from "content/content";
-import Page from "components/Page/Page";
-import Sort from "components/Sort/Sort";
-import { NavList } from "components/Nav/Nav";
 import "./SortList.css";
+import { NavList } from "components/Nav/Nav";
+import Page from "components/Page/Page";
+import React from "react";
+import Sort from "components/Sort/Sort";
+import content from "content/content";
 
 class SortList extends React.Component {
   renderSorts = () => {

@@ -1,5 +1,5 @@
-import nsa from "assets/img/projects/nsa.jpg";
 import hilbert from "assets/img/projects/hilbert.jpg";
+import nsa from "assets/img/projects/nsa.jpg";
 import petals from "assets/img/projects/petals.jpg";
 
 const graphicDesign = {

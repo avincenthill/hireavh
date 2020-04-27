@@ -1,7 +1,7 @@
-import React from "react";
-import Header from "components/Header/Header";
-import Footer from "components/Footer/Footer";
 import "./Page.css";
+import Footer from "components/Footer/Footer";
+import Header from "components/Header/Header";
+import React from "react";
 
 class Page extends React.Component {
   render() {

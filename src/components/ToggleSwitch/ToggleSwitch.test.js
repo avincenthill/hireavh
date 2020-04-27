@@ -1,7 +1,7 @@
 import React from "react";
 // import { shallow } from "enzyme";
-import renderer from "react-test-renderer";
 import ToggleSwitch from "./ToggleSwitch";
+import renderer from "react-test-renderer";
 
 describe("ToggleSwitch", () => {
   describe("snapshot", () => {

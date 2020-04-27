@@ -1,7 +1,7 @@
 import React from "react";
 // import { shallow } from "enzyme";
-import renderer from "react-test-renderer";
 import SortList from "./SortList";
+import renderer from "react-test-renderer";
 
 // TBD mock list of sorts
 // describe("SortList", () => {

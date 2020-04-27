@@ -1,7 +1,7 @@
-import projects from "./projects/projects";
 import { blogs } from "./blogs/blogs";
-import sorts from "./sorts/sorts";
 import form from "./form/form";
+import projects from "./projects/projects";
+import sorts from "./sorts/sorts";
 
 const currentDate = new Date();
 

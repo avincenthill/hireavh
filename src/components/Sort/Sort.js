@@ -1,13 +1,13 @@
+import "./Sort.css";
+import { FaPlay, FaStepForward, FaStop, FaUndo } from "react-icons/fa";
+import { IconContext } from "react-icons";
+import Rainbow from "rainbowvis.js";
 import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import customSyntaxHighlighterStyle from "./customSyntaxHighlighterStyle";
-import Rainbow from "rainbowvis.js";
-import { IconContext } from "react-icons";
-import { FaPlay, FaStop, FaStepForward, FaUndo } from "react-icons/fa";
 import content from "content/content";
+import customSyntaxHighlighterStyle from "./customSyntaxHighlighterStyle";
 import styleconfig from "styles/styleconfig";
 import utils from "utils/utils";
-import "./Sort.css";
 
 class Sort extends React.Component {
   constructor(props) {

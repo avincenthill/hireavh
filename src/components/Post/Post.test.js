@@ -1,7 +1,7 @@
+import Post from "./Post";
 import React from "react";
 // import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
-import Post from "./Post";
 
 describe("Post", () => {
   const fakeBlog = {

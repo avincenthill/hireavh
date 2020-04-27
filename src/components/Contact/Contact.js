@@ -1,19 +1,19 @@
-import React, { Component } from "react";
-import Page from "components/Page/Page";
-import content from "content/content";
-import styleconfig from "styles/styleconfig";
-import { IconContext } from "react-icons";
+import "./Contact.css";
+import { FaFileCode, FaGithub, FaLinkedinIn, FaRegCopy } from "react-icons/fa";
 import {
-  GoMail,
+  GoCloudDownload,
   GoDeviceMobile,
   GoFile,
-  GoCloudDownload,
+  GoMail,
 } from "react-icons/go";
-import { FaLinkedinIn, FaGithub, FaRegCopy, FaFileCode } from "react-icons/fa";
+import React, { Component } from "react";
 import ClipboardJS from "clipboard";
+import { IconContext } from "react-icons";
+import Page from "components/Page/Page";
+import content from "content/content";
 import headshot from "assets/img/headshot.png";
+import styleconfig from "styles/styleconfig";
 import utils from "utils/utils";
-import "./Contact.css";
 
 export default class Contact extends Component {
   componentDidMount() {

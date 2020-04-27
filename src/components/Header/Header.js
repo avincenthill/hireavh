@@ -1,9 +1,9 @@
-import React from "react";
+import "./Header.css";
 import { Nav } from "components/Nav/Nav";
+import React from "react";
+import ToggleSwitch from "components/ToggleSwitch/ToggleSwitch";
 import content from "content/content";
 import utils from "utils/utils";
-import ToggleSwitch from "components/ToggleSwitch/ToggleSwitch";
-import "./Header.css";
 
 class Header extends React.Component {
   render() {

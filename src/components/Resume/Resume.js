@@ -1,11 +1,11 @@
+import "./Resume.css";
+import { Document, Page as PDFPage } from "react-pdf";
 import React, { Component } from "react";
 import Page from "components/Page/Page";
-import { Document, Page as PDFPage } from "react-pdf";
-import resume from "assets/pdf/avh_resume.pdf";
-import { pdfjs } from "react-pdf";
 import content from "content/content";
+import { pdfjs } from "react-pdf";
+import resume from "assets/pdf/avh_resume.pdf";
 import styleconfig from "styles/styleconfig";
-import "./Resume.css";
 
 export default class Resume extends Component {
   componentDidMount() {

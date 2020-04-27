@@ -1,7 +1,7 @@
+import Project from "./Project";
 import React from "react";
 // import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
-import Project from "./Project";
 
 describe("Project", () => {
   const fakeProject = {

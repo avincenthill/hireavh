@@ -1,8 +1,8 @@
+import "./Post.css";
+import { NavList } from "components/Nav/Nav";
+import Page from "components/Page/Page";
 import React from "react";
 import { Remarkable } from "remarkable";
-import Page from "components/Page/Page";
-import { NavList } from "components/Nav/Nav";
-import "./Post.css";
 
 class Post extends React.Component {
   constructor(props) {

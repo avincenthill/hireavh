@@ -1,8 +1,8 @@
-import React from "react";
-import content from "content/content";
+import "./NotFound.css";
 import { NavList } from "components/Nav/Nav";
 import Page from "components/Page/Page";
-import "./NotFound.css";
+import React from "react";
+import content from "content/content";
 
 function NotFound() {
   return (

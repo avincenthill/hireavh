@@ -1,5 +1,5 @@
-import utils from "./utils";
 import styles from "styles/styleconfig";
+import utils from "./utils";
 
 describe("utils", () => {
   describe("color themes", () => {

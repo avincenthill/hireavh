@@ -1,6 +1,6 @@
-import React from "react";
-import Project from "components/Project/Project";
 import "./ProjectList.css";
+import Project from "components/Project/Project";
+import React from "react";
 
 class ProjectList extends React.Component {
   renderProjects = (projects) => {

@@ -1,8 +1,8 @@
-import sorts from "content/sorts/sorts";
 import { blogs } from "content/blogs/blogs";
 import form from "content/form/form";
-import particles from "assets/img/projects/particles.jpg";
 import graphicDesign from "./graphicDesign";
+import particles from "assets/img/projects/particles.jpg";
+import sorts from "content/sorts/sorts";
 
 const projects = {
   title: "📦 Here are some of my projects!",

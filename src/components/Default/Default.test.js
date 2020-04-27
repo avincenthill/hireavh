@@ -1,7 +1,7 @@
+import Default from "./Default";
 import React from "react";
 // import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
-import Default from "./Default";
 
 describe("Default", () => {
   describe("snapshot", () => {
