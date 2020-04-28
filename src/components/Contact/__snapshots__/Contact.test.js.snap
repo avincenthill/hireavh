@@ -407,7 +407,7 @@ exports[`Contact snapshot should match the last saved snapshot 1`] = `
       </div>
       <a
         className="contact button-hover-light contact-a"
-        download="Resume_Alex_AVH_Vincent-Hill_Sun Apr 26 2020.pdf"
+        download="Resume_Alex_AVH_Vincent-Hill.pdf"
         href="avh_resume.pdf"
       >
         <svg

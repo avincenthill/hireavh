@@ -43,7 +43,7 @@ content.contact = {
 
 content.resume = {
   cta: "📥 download",
-  downloadName: `Resume_Alex_AVH_Vincent-Hill_${currentDate.toDateString()}.pdf`,
+  downloadName: `Resume_Alex_AVH_Vincent-Hill.pdf`,
   path: "assets/pdf/avh_resume.pdf",
 };
 
