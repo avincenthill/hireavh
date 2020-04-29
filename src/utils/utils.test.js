@@ -2,6 +2,17 @@ import styles from "styles/styleconfig";
 import utils from "./utils";
 
 describe("utils", () => {
+  describe("utility functions", () => {
+    describe("sleep()", () => {
+      it("should sleep correctly", async () => {
+        const durationInMs = 10;
+        const before = new Date();
+        await utils.sleep(durationInMs);
+        const after = new Date();
+        expect(after - before).toBeGreaterThanOrEqual(durationInMs);
+      });
+    });
+  });
   describe("color themes", () => {
     class LocalStorageMock {
       constructor() {

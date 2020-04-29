@@ -131,10 +131,7 @@ exports[`Form snapshot should match the last saved snapshot 1`] = `
     \\"tag\\": \\"input\\",
     \\"name\\": \\"parental_consent\\",
     \\"type\\": \\"checkbox\\",
-    \\"human_label\\": \\"Parental Consent\\",
-    \\"conditional\\": {
-      \\"name\\": \\"date_of_birth\\"
-    }
+    \\"human_label\\": \\"Parental Consent\\"
   }
 ]"
           id="config"

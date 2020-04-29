@@ -41,16 +41,6 @@ const formConfig = [
     name: "parental_consent",
     type: "checkbox",
     human_label: "Parental Consent",
-    conditional: {
-      name: "date_of_birth",
-      show_if: (value) => {
-        const now = new Date();
-        return (
-          value >=
-          new Date(now.getFullYear() - 13, now.getMonth(), now.getDate())
-        );
-      },
-    },
   },
 ];
 
