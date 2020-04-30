@@ -5,30 +5,39 @@ import React from "react";
 import { Remarkable } from "remarkable";
 
 class Post extends React.Component {
-  constructor(props) {
-    super(props);
-    fetch(this.props.blog.md)
-      .then((res) => res.text())
-      .then((mdString) => {
-        this.setState((state) => ({ ...state, mdString }));
-      })
-      .catch((err) => {
-        // TBD throw error
-      });
-  }
+  componentDidMount = async () => {
+    const mdString = await this.fetchMd();
+    this.setState({ mdString });
+  };
 
-  renderMdFile = () => {
-    if (this.state && this.state.mdString) {
+  fetchMd = async () => {
+    try {
+      const res = await fetch(this.props.blog.md);
+      const mdString = await res.text();
+      return mdString;
+    } catch (err) {
+      throw new Error(err);
+    }
+  };
+
+  renderMdString = () => {
+    if (
+      this.state &&
+      this.state.mdString &&
+      typeof this.state.mdString === "string"
+    ) {
       const remarkable = new Remarkable();
       const html = remarkable.render(this.state.mdString);
-      return <div dangerouslySetInnerHTML={{ __html: html }} />;
+      return (
+        <div data-testid="md-html" dangerouslySetInnerHTML={{ __html: html }} />
+      );
     }
   };
 
   render() {
     return (
       <Page>
-        <div id="md-container">{this.renderMdFile()}</div>
+        <div id="md-container">{this.renderMdString()}</div>
         <hr></hr>
         <div className="post-nav">
           <NavList></NavList>
