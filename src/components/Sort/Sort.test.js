@@ -194,6 +194,58 @@ describe("Sort", () => {
       });
     });
 
+    describe("clearHistory()", () => {
+      it("should change state.history to an empty array", () => {
+        instance.state.history = [1, 2, 3, 4];
+        instance.clearHistory.mockRestore();
+        instance.clearHistory();
+
+        expect(instance.state.history.length).toBe(0);
+      });
+    });
+
+    describe("initCurrentFrame()", () => {
+      it("should set state.currentFrame to 0", () => {
+        instance.state.currentFrame = 5;
+        instance.initCurrentFrame.mockRestore();
+        instance.initCurrentFrame();
+
+        expect(instance.state.currentFrame).toBe(0);
+      });
+    });
+
+    describe("renderSnapshot()", () => {
+      let order, emph1, emph2, emph3, fakeSnapshot;
+
+      beforeEach(() => {
+        instance.state.canvas = {};
+        instance.state.canvas.height = 1;
+        order = [2, 3, 4, 1, 4];
+        emph1 = 1;
+        emph2 = 2;
+        emph3 = 3;
+        fakeSnapshot = {
+          order,
+          emph1,
+          emph2,
+          emph3,
+        };
+      });
+
+      it("should call clearCanvas", () => {
+        instance.renderSnapshot.mockRestore();
+        instance.renderSnapshot(fakeSnapshot);
+
+        expect(spies.clearCanvas).toHaveBeenCalledTimes(1);
+      });
+      it("should call drawBar for every bar", () => {
+        instance.renderSnapshot.mockRestore();
+        instance.renderSnapshot(fakeSnapshot);
+
+        expect(spies.drawBar).toHaveBeenCalledTimes(order.length);
+      });
+    });
+
     describe("stopRendering()", () => {
       it("should change state to stopped", () => {
         instance.state.isRunning = true;
