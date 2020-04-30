@@ -48,6 +48,7 @@ describe("Post", () => {
         expect(fakeFetchMd).toHaveBeenCalledTimes(1);
       });
     });
+
     describe("render", () => {
       it("should call renderMdFile", () => {
         const renderMdString = jest.spyOn(instance, "renderMdString");

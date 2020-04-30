@@ -22,8 +22,9 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   NotFound.js                     |      100 |      100 |      100 |      100 |                |
  src/components/Page/             |      100 |      100 |      100 |      100 |                |
   Page.js                         |      100 |      100 |      100 |      100 |                |
- src/components/Post/             |       80 |      100 |      100 |       80 |                |
+ src/components/Post/             |    68.42 |    71.43 |       80 |    68.42 |                |
   Post.js                         |       80 |      100 |      100 |       80 |       16,17,19 |
+  VariableBlogPost.js             |       25 |        0 |        0 |       25 |          7,8,9 |
  src/components/Project/          |       80 |       50 |    66.67 |       80 |                |
   Project.js                      |       80 |       50 |    66.67 |       80 |          16,77 |
  src/components/ProjectList/      |      100 |       75 |      100 |      100 |                |
@@ -54,8 +55,8 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   bubblesort.js                   |      100 |      100 |      100 |      100 |                |
   insertionsort.js                |      100 |      100 |      100 |      100 |                |
   quicksort.js                    |      100 |      100 |      100 |      100 |                |
- src/routes/                      |       40 |        0 |    33.33 |       40 |                |
-  routes.js                       |       40 |        0 |    33.33 |       40 |... 27,51,65,79 |
+ src/routes/                      |       50 |      100 |       40 |       50 |                |
+  routes.js                       |       50 |      100 |       40 |       50 |       47,64,80 |
  src/styles/                      |      100 |      100 |      100 |      100 |                |
   styleconfig.js                  |      100 |      100 |      100 |      100 |                |
  src/utils/                       |      100 |      100 |      100 |      100 |                |
