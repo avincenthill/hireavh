@@ -11,7 +11,7 @@ describe("Form", () => {
       expect(tree).toMatchSnapshot();
     });
   });
-  describe("lifecycle", () => {
+  describe("lifecycle methods", () => {
     let wrapper;
     beforeEach(() => {
       wrapper = shallow(<Form />);
@@ -19,13 +19,13 @@ describe("Form", () => {
     afterEach(() => {
       wrapper.unmount();
     });
-    describe("constructor", () => {
+    describe("constructor()", () => {
       it("should instantiate with the default config", () => {
         const instance = wrapper.instance();
         expect(instance.state.config).toEqual(content.form.formConfig);
       });
     });
-    describe("componentDidMount", () => {
+    describe("componentDidMount()", () => {
       it("should call setOutputData", () => {
         const instance = wrapper.instance();
         const setOutputDataSpy = jest.spyOn(instance, "setOutputData");

@@ -24,7 +24,7 @@ describe("Post", () => {
     });
   });
 
-  describe("lifecycle", () => {
+  describe("lifecycle methods", () => {
     let wrapper;
     let instance;
     let fakeFetchMd;
@@ -42,14 +42,14 @@ describe("Post", () => {
       wrapper.unmount();
     });
 
-    describe("componentDidMount", () => {
+    describe("componentDidMount()", () => {
       it("should call fetchMd", async () => {
         await instance.componentDidMount();
         expect(fakeFetchMd).toHaveBeenCalledTimes(1);
       });
     });
 
-    describe("render", () => {
+    describe("render()", () => {
       it("should call renderMdFile", () => {
         const renderMdString = jest.spyOn(instance, "renderMdString");
         instance.render();

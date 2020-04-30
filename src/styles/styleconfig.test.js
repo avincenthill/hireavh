@@ -1,7 +1,7 @@
 import styles from "./styleconfig";
 
 describe("styleconfig", () => {
-  describe("color themes", () => {
+  describe("methods", () => {
     describe("invertColor()", () => {
       const invertedColorTuples = [
         ["#3366cc", "#cc9933"],

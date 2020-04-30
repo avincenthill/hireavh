@@ -27,9 +27,13 @@ class Sort extends React.Component {
     this.initCanvas();
   }
 
+  getRefs = (prop) => {
+    return this.refs[prop];
+  };
+
   initCanvas = () => {
     // get ref and context of canvas
-    const { canvas } = this.refs;
+    const canvas = this.getRefs("canvas");
     if (canvas) {
       // set offset height and width to fill container
       canvas.width = canvas.offsetWidth;
@@ -87,7 +91,7 @@ class Sort extends React.Component {
     ctx.closePath();
   };
 
-  takeSnapshot = async (array, emph1, emph2, emph3) => {
+  takeSnapshot = (array, emph1, emph2, emph3) => {
     const newSnapshot = {
       order: [...array],
       emph1,
@@ -162,14 +166,6 @@ class Sort extends React.Component {
     }
   };
 
-  startSort = () => {
-    this.startRendering();
-  };
-
-  stopSort = () => {
-    this.stopRendering();
-  };
-
   stepThruSort = () => {
     this.renderFrame(true);
     this.stopRendering();
@@ -202,7 +198,7 @@ class Sort extends React.Component {
               ref="canvas"
               onClick={
                 this.state.currentFrame < this.state.history.length
-                  ? this.startSort
+                  ? this.startRendering
                   : this.restartSort
               }
             ></canvas>
@@ -212,7 +208,7 @@ class Sort extends React.Component {
               className="sort-button sort-button-top"
               onClick={
                 this.state.currentFrame < this.state.history.length
-                  ? this.startSort
+                  ? this.startRendering
                   : this.restartSort
               }
             >
@@ -228,7 +224,7 @@ class Sort extends React.Component {
               )}
             </button>
             <div className="sort-button-container">
-              <button className="sort-button" onClick={this.stopSort}>
+              <button className="sort-button" onClick={this.stopRendering}>
                 <FaStop />
               </button>
               <button className="sort-button" onClick={this.stepThruSort}>
