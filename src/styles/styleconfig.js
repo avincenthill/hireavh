@@ -91,8 +91,8 @@ styles.themeColors = new Map([
   [
     "--c-4",
     {
-      dark: "#147186",
-      light: "#143886",
+      dark: "#861338",
+      light: "#DAB8C3",
     },
   ],
   [
