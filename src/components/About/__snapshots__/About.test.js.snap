@@ -75,6 +75,7 @@ exports[`About snapshot should match the last saved snapshot 1`] = `
     >
       <h1
         className="about-hero"
+        data-testid="about-hero"
       >
         👋 Hi there -
       </h1>
