@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -12,7 +11,6 @@
     "@typescript-eslint/parser": "^2.10.0",
     "babel-eslint": "10.1.0",
     "babel-jest": "^24.9.0",
-    "babel-loader": "8.1.0",
     "babel-plugin-named-asset-import": "^0.3.6",
     "babel-preset-react-app": "^9.1.2",
     "camelcase": "^5.3.1",
@@ -64,7 +62,6 @@
     "terser-webpack-plugin": "2.3.5",
     "ts-pnp": "1.1.6",
     "url-loader": "2.3.0",
-    "webpack": "4.42.0",
     "webpack-dev-server": "3.10.3",
     "webpack-manifest-plugin": "2.2.0",
     "workbox-webpack-plugin": "4.3.1"
@@ -74,7 +71,8 @@
     "build": "node scripts/build.js",
     "test": "jest --collect-coverage && npm run printcoverage",
     "test:unit": "npm run test",
-    "test:int": "cypress run --browser chrome --spec 'cypress/integration/integration.spec.js'",
+    "test:int": "cypress run",
+    "test:int:chrome": "cypress run --browser chrome",
     "test:integration": "npm run test:int",
     "printcoverage": "istanbul report --include coverage/coverage-final.json text > src/content/blogs/md/coverage.md && tail -n +2 src/content/blogs/md/coverage.md > src/content/blogs/md/coverage.md.tmp && mv src/content/blogs/md/coverage.md.tmp src/content/blogs/md/coverage.md && ghead -n -1 src/content/blogs/md/coverage.md > src/content/blogs/md/coverage.md.tmp && mv src/content/blogs/md/coverage.md.tmp src/content/blogs/md/coverage.md",
     "updatesnapshots": "jest --updateSnapshot",
@@ -101,7 +99,11 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.6",
+    "@cypress/webpack-preprocessor": "^5.1.2",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
     "cypress": "^4.5.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
@@ -113,7 +115,8 @@
     "eslint-plugin-react-hooks": "^2.5.0",
     "istanbul": "^0.4.5",
     "prettier": "^2.0.2",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0"
   },
   "jest": {
     "roots": [
