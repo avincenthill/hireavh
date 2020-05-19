@@ -1,7 +1,5 @@
 const analytics = {
   init: () => {
-    // eslint-disable-next-line
-    console.table("i firedx");
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
