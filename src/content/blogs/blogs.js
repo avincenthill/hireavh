@@ -55,23 +55,22 @@ const blogs = {
 
 /*
 BLOG LOOKUP
-lookup blog object based on path (from variable route)
-this is a hack-job CMS where each blog index in `data`
-has id = index in the array and blogLookup is the map
-of paths to ids
+turn array of blog info into object with paths as keys and blog info as values,
+use lookupBlogFromUrl to get blog object with url
 */
 const cleanupPath = (path) => {
   return path.replace("blog/", "").replace("-", "");
 };
-const blogPaths = blogs.data.map((blog) => cleanupPath(blog.url));
 
-const blogLookup = {};
-blogPaths.forEach((path, index) => {
-  blogLookup[path] = index;
-});
+const lookupBlogFromUrl = (path, json) => {
+  const blogLookup = {};
+  json.data
+    .map((blog) => cleanupPath(blog.url))
+    .forEach((path, index) => {
+      blogLookup[path] = index;
+    });
 
-const lookupBlogFromUrl = (path) => {
-  return blogs.data[blogLookup[cleanupPath(path)]];
+  return json.data[blogLookup[cleanupPath(path)]];
 };
 
 export { blogs, lookupBlogFromUrl };
