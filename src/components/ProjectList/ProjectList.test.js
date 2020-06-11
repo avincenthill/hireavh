@@ -1,6 +1,5 @@
 import ProjectList from "./ProjectList";
 import React from "react";
-// import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 
 describe("ProjectList", () => {

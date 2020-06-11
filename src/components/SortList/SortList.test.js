@@ -1,5 +1,5 @@
 import React from "react";
-// import { shallow } from "enzyme";
+
 import SortList from "./SortList";
 import renderer from "react-test-renderer";
 
