@@ -1,4 +1,3 @@
-import styles from "styles/styleconfig";
 import utils from "./utils";
 
 describe("utils", () => {
@@ -82,6 +81,23 @@ describe("utils", () => {
         expect(utils.getDarkColor("--c-3")).toBe("#f7edc8");
         utils.toggleTheme();
         expect(utils.getDarkColor("--c-3")).toBe("#f7edc8");
+      });
+    });
+
+    describe("getIconStyles()", () => {
+      it("should get the correct icon styles when dark theme is on", () => {
+        expect(utils.getIconStyles("contact").color).toBe("var(--c-1)");
+      });
+
+      it("should get the correct icon styles when light theme is on", () => {
+        utils.toggleTheme();
+        expect(utils.getIconStyles("contact").color).toBe("var(--c-white)");
+      });
+
+      it("should return an empty object on bad inputs", () => {
+        expect(Object.keys(utils.getIconStyles("asdfasdf")).length).toBe(0);
+        utils.toggleTheme();
+        expect(Object.keys(utils.getIconStyles("asdfasdf")).length).toBe(0);
       });
     });
   });

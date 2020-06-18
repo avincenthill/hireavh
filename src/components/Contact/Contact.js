@@ -36,9 +36,7 @@ export default class Contact extends Component {
             value={{
               style: {
                 ...styleconfig.icons.s,
-                ...(utils.isDarkTheme()
-                  ? styleconfig.icons.contact
-                  : styleconfig.icons.contactLight),
+                ...utils.getIconStyles("contact"),
               },
             }}
           >

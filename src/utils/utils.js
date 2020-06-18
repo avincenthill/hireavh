@@ -54,4 +54,12 @@ utils.getDarkColor = (name) => {
   return styles.themeColors.get(name).dark;
 };
 
+utils.getIconStyles = (name) => {
+  if (utils.isDarkTheme()) {
+    return styles.icons[name] ? styles.icons[name] : {};
+  } else {
+    return styles.icons.light[name] ? styles.icons.light[name] : {};
+  }
+};
+
 export default utils;

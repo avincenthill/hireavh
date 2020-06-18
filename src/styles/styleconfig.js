@@ -31,10 +31,6 @@ const styles = {
       color: "var(--c-1)",
       padding: ".5rem",
     },
-    contactLight: {
-      color: "var(--c-white)",
-      padding: ".5rem",
-    },
     sort: {
       color: "var(--c-1)",
       padding: ".5rem",
@@ -44,6 +40,12 @@ const styles = {
       backgroundColor: "var(--c-1)",
       borderRadius: "100rem",
       padding: "var(--b-1)",
+    },
+    light: {
+      contact: {
+        color: "var(--c-white)",
+        padding: ".5rem",
+      },
     },
   },
   resume: {
