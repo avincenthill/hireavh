@@ -2,8 +2,8 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
 ----------------------------------|----------|----------|----------|----------|----------------|
  src/                             |        0 |      100 |      100 |        0 |                |
   index.js                        |        0 |      100 |      100 |        0 |            6,8 |
- src/analytics/                   |        0 |        0 |        0 |        0 |                |
-  index.js                        |        0 |        0 |        0 |        0 |      1,3,5,7,8 |
+ src/analytics/                   |      100 |      100 |      100 |      100 |                |
+  index.js                        |      100 |      100 |      100 |      100 |                |
  src/components/About/            |      100 |      100 |      100 |      100 |                |
   About.js                        |      100 |      100 |      100 |      100 |                |
  src/components/Contact/          |      100 |       50 |      100 |      100 |                |
@@ -27,10 +27,10 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
  src/components/Post/             |    68.42 |    71.43 |       80 |    68.42 |                |
   Post.js                         |       80 |      100 |      100 |       80 |       16,17,19 |
   VariableBlogPost.js             |       25 |        0 |        0 |       25 |          7,8,9 |
- src/components/Project/          |       80 |       50 |    66.67 |       80 |                |
-  Project.js                      |       80 |       50 |    66.67 |       80 |          16,77 |
- src/components/ProjectList/      |      100 |       75 |      100 |      100 |                |
-  ProjectList.js                  |      100 |       75 |      100 |      100 |                |
+ src/components/Project/          |       80 |    45.45 |    66.67 |       80 |                |
+  Project.js                      |       80 |    45.45 |    66.67 |       80 |          16,77 |
+ src/components/ProjectList/      |       60 |       50 |    66.67 |       60 |                |
+  ProjectList.js                  |       60 |       50 |    66.67 |       60 |            8,9 |
  src/components/Resume/           |      100 |      100 |      100 |      100 |                |
   Resume.js                       |      100 |      100 |      100 |      100 |                |
  src/components/Sort/             |     62.5 |    51.61 |    66.67 |    62.11 |                |
@@ -64,6 +64,6 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
  src/utils/                       |      100 |      100 |      100 |      100 |                |
   utils.js                        |      100 |      100 |      100 |      100 |                |
 ----------------------------------|----------|----------|----------|----------|----------------|
-All files                         |    76.53 |    62.32 |    76.92 |    76.42 |                |
+All files                         |     77.3 |    62.32 |    77.88 |     77.2 |                |
 ----------------------------------|----------|----------|----------|----------|----------------|
 

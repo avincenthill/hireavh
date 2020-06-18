@@ -1,10 +1,10 @@
 const analytics = {
-  init: () => {
+  init: (date) => {
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag("js", new Date());
+    gtag("js", date);
     gtag("config", "UA-164620923-1");
   },
 };
