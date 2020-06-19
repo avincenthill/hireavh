@@ -287,5 +287,23 @@ describe("Sort", () => {
         });
       });
     }
+
+    describe("bogosort", () => {
+      let sort = sorts.data.filter((sort) => {
+        return sort.title === "Bogo Sort";
+      })[0];
+
+      let testArray = [1, 2, 3, 4, 5];
+
+      it("should work for a sorted array", () => {
+        let sortedTestArray = sort.fn(testArray, () => {});
+        sortedTestArray.forEach((element, index) => {
+          let prevElement = sortedTestArray[index - 1];
+          if (prevElement) {
+            expect(element).toBeGreaterThanOrEqual(sortedTestArray[index - 1]);
+          }
+        });
+      });
+    });
   });
 });

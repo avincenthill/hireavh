@@ -22,6 +22,7 @@ const bogosort = {
       newArray = utils.shuffleArray(newArray);
       counter += 1;
     }
+    return newArray;
   },
   fnDisplayString: `
     const bogoSort = (array) => {
