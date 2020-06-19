@@ -3,7 +3,7 @@ import React from "react";
 
 class ToggleSwitch extends React.Component {
   state = {
-    checked: this.props.defaultChecked,
+    checked: this.props.defaultChecked || false,
   };
   onChange = (e) => {
     this.setState({

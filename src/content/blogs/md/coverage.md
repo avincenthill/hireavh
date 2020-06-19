@@ -38,8 +38,8 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   customSyntaxHighlighterStyle.js |      100 |      100 |      100 |      100 |                |
  src/components/SortList/         |      100 |      100 |      100 |      100 |                |
   SortList.js                     |      100 |      100 |      100 |      100 |                |
- src/components/ToggleSwitch/     |       50 |        0 |       50 |       60 |                |
-  ToggleSwitch.js                 |       50 |        0 |       50 |       60 |           9,12 |
+ src/components/ToggleSwitch/     |      100 |      100 |      100 |      100 |                |
+  ToggleSwitch.js                 |      100 |      100 |      100 |      100 |                |
  src/content/                     |      100 |      100 |      100 |      100 |                |
   content.js                      |      100 |      100 |      100 |      100 |                |
  src/content/blogs/               |      100 |      100 |      100 |      100 |                |
@@ -64,6 +64,6 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
  src/utils/                       |      100 |      100 |      100 |      100 |                |
   utils.js                        |      100 |      100 |      100 |      100 |                |
 ----------------------------------|----------|----------|----------|----------|----------------|
-All files                         |    77.53 |    64.08 |     78.1 |    77.44 |                |
+All files                         |    78.28 |    65.97 |    79.05 |    77.95 |                |
 ----------------------------------|----------|----------|----------|----------|----------------|
 
