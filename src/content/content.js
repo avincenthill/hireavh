@@ -39,6 +39,7 @@ content.contact = {
     displayUrl: "hireavh.com",
   },
   resume: "resume",
+  cta: "Buy me a coffee:",
 };
 
 content.resume = {

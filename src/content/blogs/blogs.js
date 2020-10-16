@@ -1,4 +1,4 @@
-const recruiterFaq = require("./md/recruiter-faq.md");
+// const recruiterFaq = require("./md/recruiter-faq.md");
 const readme = require("./md/README.md");
 const marketing = require("./md/marketing.md");
 const coverage = require("./md/coverage.md");
@@ -7,16 +7,17 @@ const blogs = {
   title: "✍️ My markdown, rendered.",
   data: [
     // *************************************************************************
-    {
-      title: "Recruiter FAQ",
-      url: "blog/recruiter-faq",
-      description: "Answers to common questions I get from recruiters.",
-      longDescription: `An attempt to save you, the recruiter, some time, with a centralized resource answering the most common questions I receive during screening calls.  I'm looking forward to speaking with you further!`,
-      md: recruiterFaq,
-      img: {
-        emoji: "🤷",
-      },
-    },
+    // TBD: DEPRECATED, rewrite for next job search when necessary
+    // {
+    //   title: "Recruiter FAQ",
+    //   url: "blog/recruiter-faq",
+    //   description: "Answers to common questions I get from recruiters.",
+    //   longDescription: `An attempt to save you, the recruiter, some time, with a centralized resource answering the most common questions I receive during screening calls.  I'm looking forward to speaking with you further!`,
+    //   md: recruiterFaq,
+    //   img: {
+    //     emoji: "🤷",
+    //   },
+    // },
     // *************************************************************************
     {
       title: "Marketing Consulting",

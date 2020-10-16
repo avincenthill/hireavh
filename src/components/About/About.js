@@ -48,7 +48,7 @@ function About() {
             <IconContext.Provider
               value={{
                 style: {
-                  ...styleconfig.icons.s,
+                  ...styleconfig.icons.m,
                   ...styleconfig.icons.tech,
                 },
               }}

@@ -11,7 +11,6 @@ import ClipboardJS from "clipboard";
 import { IconContext } from "react-icons";
 import Page from "components/Page/Page";
 import content from "content/content";
-import headshot from "assets/img/headshot.png";
 import styleconfig from "styles/styleconfig";
 import utils from "utils/utils";
 
@@ -40,9 +39,6 @@ export default class Contact extends Component {
               },
             }}
           >
-            {/* headshot */}
-            <img className="contact-img" src={headshot} alt="headshot"></img>
-
             {/* name */}
             <h3 className="contact-title">{content.contact.name}</h3>
 
@@ -56,22 +52,6 @@ export default class Contact extends Component {
               </a>
               <button
                 data-clipboard-text={content.contact.email}
-                className="contact-button contact-button-linkedin"
-              >
-                <FaRegCopy />
-              </button>
-            </div>
-
-            {/* cell */}
-            <div className="contact button-hover-light">
-              <a className="contact-a" href={`tel:+1-${content.contact.cell}`}>
-                <GoDeviceMobile />
-              </a>
-              <a className="contact-a" href={`tel:+1-${content.contact.cell}`}>
-                <span>{content.contact.cell}</span>
-              </a>
-              <button
-                data-clipboard-text={content.contact.cell}
                 className="contact-button contact-button-linkedin"
               >
                 <FaRegCopy />
@@ -122,22 +102,6 @@ export default class Contact extends Component {
               </button>
             </div>
 
-            {/* site */}
-            <div className="contact button-hover-light">
-              <a className="contact-a" href={`${content.contact.site.path}`}>
-                <FaFileCode />
-              </a>
-              <a className="contact-a" href={`${content.contact.site.path}`}>
-                <span>{content.contact.site.displayUrl}</span>
-              </a>
-              <button
-                data-clipboard-text={content.contact.site.path}
-                className="contact-button contact-button-github"
-              >
-                <FaRegCopy />
-              </button>
-            </div>
-
             {/* resume */}
             <a
               className="contact button-hover-light contact-a"
@@ -150,6 +114,19 @@ export default class Contact extends Component {
                 <GoCloudDownload />
               </button>
             </a>
+            <div>
+            <br />
+            <b>{content.contact.cta}</b>
+            <br />
+            <br />
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations" />
+<input type="hidden" name="business" value={content.contact.email} />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+          </div>
           </IconContext.Provider>
         </Page>
       </div>

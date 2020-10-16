@@ -9,7 +9,8 @@ const projects = {
   data: [
     // *************************************************************************
     // Recruiter FAQ
-    blogs.data[0],
+    // TBD: DEPRECATED, rewrite for next job search when necessary
+    // blogs.data[0],
     // *************************************************************************
     {
       title: "Particle Simulation",
@@ -48,7 +49,7 @@ const projects = {
     },
     // *************************************************************************
     // Marketing Consulting
-    blogs.data[1],
+    blogs.data[0],
     // *************************************************************************
     {
       title: "Dynamic Form",
