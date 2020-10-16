@@ -1,4 +1,4 @@
-import styles from "styles/styleconfig";
+import styles from 'styles/styleconfig';
 const utils = {};
 
 //set timeouts to run functions in time percievable to humans
@@ -23,16 +23,16 @@ utils.shuffleArray = (array) => {
 };
 
 utils.isDarkTheme = () => {
-  const currentTheme = localStorage.getItem("theme");
-  return currentTheme === null || currentTheme !== "light";
+  const currentTheme = localStorage.getItem('theme');
+  return currentTheme === null || currentTheme !== 'light';
 };
 
 utils.toggleTheme = () => {
-  let newTheme = "dark";
+  let newTheme = 'dark';
   if (utils.isDarkTheme()) {
-    newTheme = "light";
+    newTheme = 'light';
   }
-  localStorage.setItem("theme", newTheme);
+  localStorage.setItem('theme', newTheme);
   utils.renderTheme();
 };
 

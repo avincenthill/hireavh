@@ -1,9 +1,9 @@
-import "./SortList.css";
-import { NavList } from "components/Nav/Nav";
-import Page from "components/Page/Page";
-import React from "react";
-import Sort from "components/Sort/Sort";
-import content from "content/content";
+import './SortList.css';
+import { NavList } from 'components/Nav/Nav';
+import Page from 'components/Page/Page';
+import React from 'react';
+import Sort from 'components/Sort/Sort';
+import content from 'content/content';
 
 class SortList extends React.Component {
   renderSorts = () => {
@@ -18,7 +18,7 @@ class SortList extends React.Component {
       <div>
         <Page>
           <h2 className="sortlist-title">
-            {content.sorts.emoji + " " + content.sorts.title}
+            {content.sorts.emoji + ' ' + content.sorts.title}
           </h2>
           <p className="sortlist-description">{content.sorts.description}</p>
           {this.renderSorts()}

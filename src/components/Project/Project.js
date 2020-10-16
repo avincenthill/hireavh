@@ -1,8 +1,8 @@
-import "components/Project/Project.css";
-import { FaArrowAltCircleLeft, FaQuestionCircle } from "react-icons/fa";
-import { IconContext } from "react-icons";
-import React from "react";
-import styleconfig from "styles/styleconfig";
+import 'components/Project/Project.css';
+import { FaArrowAltCircleLeft, FaQuestionCircle } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
+import React from 'react';
+import styleconfig from 'styles/styleconfig';
 
 class Project extends React.Component {
   constructor(props) {

@@ -1,19 +1,19 @@
-import "styles/index.css";
-import "normalize.css";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import About from "components/About/About";
-import Contact from "components/Contact/Contact";
-import Form from "components/Form/Form";
-import { NavList } from "components/Nav/Nav";
-import NotFound from "components/NotFound/NotFound";
-import Page from "components/Page/Page";
-import ProjectList from "components/ProjectList/ProjectList";
-import React from "react";
-import Resume from "components/Resume/Resume";
-import SortList from "components/SortList/SortList";
-import VariableBlogPost from "components/Post/VariableBlogPost";
-import content from "content/content";
-import utils from "utils/utils";
+import 'styles/index.css';
+import 'normalize.css';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import About from 'components/About/About';
+import Contact from 'components/Contact/Contact';
+import Form from 'components/Form/Form';
+import { NavList } from 'components/Nav/Nav';
+import NotFound from 'components/NotFound/NotFound';
+import Page from 'components/Page/Page';
+import ProjectList from 'components/ProjectList/ProjectList';
+import React from 'react';
+import Resume from 'components/Resume/Resume';
+import SortList from 'components/SortList/SortList';
+import VariableBlogPost from 'components/Post/VariableBlogPost';
+import content from 'content/content';
+import utils from 'utils/utils';
 
 class App extends React.Component {
   constructor() {
@@ -26,9 +26,9 @@ class App extends React.Component {
       <Router>
         <Switch>
           {/* /about */}
-          <Route exact path={"/"} component={About} />
-          <Route exact path={"/home"} component={About} />
-          <Route exact path={"/about"} component={About} />
+          <Route exact path={'/'} component={About} />
+          <Route exact path={'/home'} component={About} />
+          <Route exact path={'/about'} component={About} />
 
           {/* /resume */}
           <Route exact path="/resume" component={Resume} />

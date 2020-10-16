@@ -1,20 +1,20 @@
-import React from "react";
-import Sort from "components/Sort/Sort";
-import renderer from "react-test-renderer";
-import { shallow } from "enzyme";
-import sorts from "content/sorts/sorts";
+import React from 'react';
+import Sort from 'components/Sort/Sort';
+import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
+import sorts from 'content/sorts/sorts';
 
-describe("Sort", () => {
+describe('Sort', () => {
   const testSortData = sorts.data[0];
 
-  describe("snapshot", () => {
-    it("should match the last saved snapshot", () => {
+  describe('snapshot', () => {
+    it('should match the last saved snapshot', () => {
       const tree = renderer.create(<Sort sort={testSortData} />).toJSON();
       expect(tree).toMatchSnapshot();
     });
   });
 
-  describe("lifecycle methods", () => {
+  describe('lifecycle methods', () => {
     let wrapper;
     let instance;
 
@@ -29,8 +29,8 @@ describe("Sort", () => {
       wrapper.unmount();
     });
 
-    describe("constructor()", () => {
-      it("should instantiate with default state", () => {
+    describe('constructor()', () => {
+      it('should instantiate with default state', () => {
         const defaultState = {
           canvas: null,
           ctx: null,
@@ -45,21 +45,21 @@ describe("Sort", () => {
       });
     });
 
-    describe("componentDidMount()", () => {
-      it("should call initArray", () => {
-        const initArraySpy = jest.spyOn(instance, "initArray");
+    describe('componentDidMount()', () => {
+      it('should call initArray', () => {
+        const initArraySpy = jest.spyOn(instance, 'initArray');
         instance.componentDidMount();
         expect(initArraySpy).toHaveBeenCalledTimes(1);
       });
-      it("should call initCanvas", () => {
-        const initCanvasSpy = jest.spyOn(instance, "initCanvas");
+      it('should call initCanvas', () => {
+        const initCanvasSpy = jest.spyOn(instance, 'initCanvas');
         instance.componentDidMount();
         expect(initCanvasSpy).toHaveBeenCalledTimes(1);
       });
     });
   });
 
-  describe("methods", () => {
+  describe('methods', () => {
     let wrapper;
     let instance;
     let spies;
@@ -68,20 +68,20 @@ describe("Sort", () => {
     // you will have to mockRestore() to call and test
     const createSpies = (inst) => {
       const methods = [
-        "initCanvas",
-        "clearCanvas",
-        "initArray",
-        "createHistory",
-        "drawBar",
-        "takeSnapshot",
-        "clearHistory",
-        "initCurrentFrame",
-        "renderSnapshot",
-        "renderFrame",
-        "stopRendering",
-        "startRendering",
-        "stepThruSort",
-        "restartSort",
+        'initCanvas',
+        'clearCanvas',
+        'initArray',
+        'createHistory',
+        'drawBar',
+        'takeSnapshot',
+        'clearHistory',
+        'initCurrentFrame',
+        'renderSnapshot',
+        'renderFrame',
+        'stopRendering',
+        'startRendering',
+        'stepThruSort',
+        'restartSort',
       ];
       const spies = {};
       for (let method of methods) {
@@ -98,7 +98,7 @@ describe("Sort", () => {
       instance = wrapper.instance();
 
       // mock setState synchronously
-      jest.spyOn(instance, "setState").mockImplementation((newState, cb) => {
+      jest.spyOn(instance, 'setState').mockImplementation((newState, cb) => {
         instance.state = { ...instance.state, ...newState };
         if (cb) {
           cb();
@@ -113,25 +113,25 @@ describe("Sort", () => {
       wrapper.unmount();
     });
 
-    describe("initCanvas()", () => {
+    describe('initCanvas()', () => {
       let mockGetRefs = (prop) => {
         return {
           offsetWidth: 100,
           offsetHeight: 100,
           getContext: () => {
-            return "fakeCtx";
+            return 'fakeCtx';
           },
         };
       };
-      it("should call clearCanvas", () => {
-        jest.spyOn(instance, "getRefs").mockImplementation(mockGetRefs);
+      it('should call clearCanvas', () => {
+        jest.spyOn(instance, 'getRefs').mockImplementation(mockGetRefs);
         instance.initCanvas.mockRestore();
         instance.initCanvas();
 
         expect(spies.clearCanvas).toHaveBeenCalledTimes(1);
       });
-      it("should call renderFrame", () => {
-        jest.spyOn(instance, "getRefs").mockImplementation(mockGetRefs);
+      it('should call renderFrame', () => {
+        jest.spyOn(instance, 'getRefs').mockImplementation(mockGetRefs);
         instance.initCanvas.mockRestore();
         instance.initCanvas();
 
@@ -139,14 +139,14 @@ describe("Sort", () => {
       });
     });
 
-    describe("initArray()", () => {
-      it("should store an array in state", () => {
+    describe('initArray()', () => {
+      it('should store an array in state', () => {
         instance.initArray.mockRestore();
         instance.initArray();
 
         expect(instance.state.array.length).toBe(sorts.numBars);
       });
-      it("should call createHistory", () => {
+      it('should call createHistory', () => {
         instance.initArray.mockRestore();
         instance.initArray();
 
@@ -154,10 +154,10 @@ describe("Sort", () => {
       });
     });
 
-    describe("createHistory()", () => {
-      it("should call props.sort.fn with array in state and snapshot fn", () => {
+    describe('createHistory()', () => {
+      it('should call props.sort.fn with array in state and snapshot fn', () => {
         const spyPropsSortFn = jest
-          .spyOn(testSortData, "fn")
+          .spyOn(testSortData, 'fn')
           .mockImplementation(() => {});
         instance.componentDidMount();
         instance.createHistory.mockRestore();
@@ -173,8 +173,8 @@ describe("Sort", () => {
       });
     });
 
-    describe("takeSnapshot()", () => {
-      it("should push a snapshot object to history in state", () => {
+    describe('takeSnapshot()', () => {
+      it('should push a snapshot object to history in state', () => {
         const order = [2, 3, 4, 1, 4];
         const emph1 = 1;
         const emph2 = 2;
@@ -194,8 +194,8 @@ describe("Sort", () => {
       });
     });
 
-    describe("clearHistory()", () => {
-      it("should change state.history to an empty array", () => {
+    describe('clearHistory()', () => {
+      it('should change state.history to an empty array', () => {
         instance.state.history = [1, 2, 3, 4];
         instance.clearHistory.mockRestore();
         instance.clearHistory();
@@ -204,8 +204,8 @@ describe("Sort", () => {
       });
     });
 
-    describe("initCurrentFrame()", () => {
-      it("should set state.currentFrame to 0", () => {
+    describe('initCurrentFrame()', () => {
+      it('should set state.currentFrame to 0', () => {
         instance.state.currentFrame = 5;
         instance.initCurrentFrame.mockRestore();
         instance.initCurrentFrame();
@@ -214,7 +214,7 @@ describe("Sort", () => {
       });
     });
 
-    describe("renderSnapshot()", () => {
+    describe('renderSnapshot()', () => {
       let order, emph1, emph2, emph3, fakeSnapshot;
 
       beforeEach(() => {
@@ -232,13 +232,13 @@ describe("Sort", () => {
         };
       });
 
-      it("should call clearCanvas", () => {
+      it('should call clearCanvas', () => {
         instance.renderSnapshot.mockRestore();
         instance.renderSnapshot(fakeSnapshot);
 
         expect(spies.clearCanvas).toHaveBeenCalledTimes(1);
       });
-      it("should call drawBar for every bar", () => {
+      it('should call drawBar for every bar', () => {
         instance.renderSnapshot.mockRestore();
         instance.renderSnapshot(fakeSnapshot);
 
@@ -246,8 +246,8 @@ describe("Sort", () => {
       });
     });
 
-    describe("stopRendering()", () => {
-      it("should change state to stopped", () => {
+    describe('stopRendering()', () => {
+      it('should change state to stopped', () => {
         instance.state.isRunning = true;
         instance.stopRendering.mockRestore();
         instance.stopRendering();
@@ -257,7 +257,7 @@ describe("Sort", () => {
     });
   });
 
-  describe("sorting algorithms", () => {
+  describe('sorting algorithms', () => {
     // test first 3 algos in sorts.data
     for (let i = 0; i < 3; i += 1) {
       let sort = sorts.data[i];
@@ -288,14 +288,14 @@ describe("Sort", () => {
       });
     }
 
-    describe("bogosort", () => {
+    describe('bogosort', () => {
       let sort = sorts.data.filter((sort) => {
-        return sort.title === "Bogo Sort";
+        return sort.title === 'Bogo Sort';
       })[0];
 
       let testArray = [1, 2, 3, 4, 5];
 
-      it("should work for a sorted array", () => {
+      it('should work for a sorted array', () => {
         let sortedTestArray = sort.fn(testArray, () => {});
         sortedTestArray.forEach((element, index) => {
           let prevElement = sortedTestArray[index - 1];

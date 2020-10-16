@@ -12,7 +12,7 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-const webpack = require("@cypress/webpack-preprocessor");
+const webpack = require('@cypress/webpack-preprocessor');
 
 /**
  * @type {Cypress.PluginConfig}
@@ -32,10 +32,10 @@ module.exports = (on, config) => {
 
   // console.log(webpackOptions);
 
-  on("file:preprocessor", webpack(options));
+  on('file:preprocessor', webpack(options));
 
   // console.log out messages from test files
-  on("task", {
+  on('task', {
     log(message) {
       // eslint-disable-next-line
       console.log(message);

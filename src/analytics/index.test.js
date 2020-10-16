@@ -1,15 +1,15 @@
-import analytics from ".";
+import analytics from '.';
 
-describe("analytics", () => {
-  describe("init", () => {
-    it("should push the correct data to datalayer", () => {
+describe('analytics', () => {
+  describe('init', () => {
+    it('should push the correct data to datalayer', () => {
       const mockDataLayer = [];
       window.dataLayer = mockDataLayer;
       const date = new Date();
       // TBD make google analytics property id env var
       const data = [
-        ["js", date],
-        ["config", "UA-164620923-1"],
+        ['js', date],
+        ['config', 'UA-164620923-1'],
       ];
       analytics.init(date);
 
@@ -21,7 +21,7 @@ describe("analytics", () => {
       });
     });
 
-    it("should instantiate an array if window.dataLayer is undefined", () => {
+    it('should instantiate an array if window.dataLayer is undefined', () => {
       const mockDataLayer = undefined;
       window.dataLayer = mockDataLayer;
 

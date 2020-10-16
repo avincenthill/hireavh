@@ -166,9 +166,9 @@ exports[`About snapshot should match the last saved snapshot 1`] = `
             style={
               Object {
                 "color": "var(--c-2)",
-                "height": "var(--s-xs)",
+                "height": "var(--s-s)",
                 "padding": ".25rem",
-                "width": "var(--s-xs)",
+                "width": "var(--s-s)",
               }
             }
             viewBox="0 0 448 512"
@@ -187,9 +187,9 @@ exports[`About snapshot should match the last saved snapshot 1`] = `
             style={
               Object {
                 "color": "var(--c-2)",
-                "height": "var(--s-xs)",
+                "height": "var(--s-s)",
                 "padding": ".25rem",
-                "width": "var(--s-xs)",
+                "width": "var(--s-s)",
               }
             }
             viewBox="0 0 576 512"
@@ -208,9 +208,9 @@ exports[`About snapshot should match the last saved snapshot 1`] = `
             style={
               Object {
                 "color": "var(--c-2)",
-                "height": "var(--s-xs)",
+                "height": "var(--s-s)",
                 "padding": ".25rem",
-                "width": "var(--s-xs)",
+                "width": "var(--s-s)",
               }
             }
             viewBox="0 0 512 512"
@@ -229,9 +229,9 @@ exports[`About snapshot should match the last saved snapshot 1`] = `
             style={
               Object {
                 "color": "var(--c-2)",
-                "height": "var(--s-xs)",
+                "height": "var(--s-s)",
                 "padding": ".25rem",
-                "width": "var(--s-xs)",
+                "width": "var(--s-s)",
               }
             }
             viewBox="0 0 384 512"
@@ -250,9 +250,9 @@ exports[`About snapshot should match the last saved snapshot 1`] = `
             style={
               Object {
                 "color": "var(--c-2)",
-                "height": "var(--s-xs)",
+                "height": "var(--s-s)",
                 "padding": ".25rem",
-                "width": "var(--s-xs)",
+                "width": "var(--s-s)",
               }
             }
             viewBox="0 0 384 512"
@@ -271,9 +271,9 @@ exports[`About snapshot should match the last saved snapshot 1`] = `
             style={
               Object {
                 "color": "var(--c-2)",
-                "height": "var(--s-xs)",
+                "height": "var(--s-s)",
                 "padding": ".25rem",
-                "width": "var(--s-xs)",
+                "width": "var(--s-s)",
               }
             }
             viewBox="0 0 640 512"
@@ -292,9 +292,9 @@ exports[`About snapshot should match the last saved snapshot 1`] = `
             style={
               Object {
                 "color": "var(--c-2)",
-                "height": "var(--s-xs)",
+                "height": "var(--s-s)",
                 "padding": ".25rem",
-                "width": "var(--s-xs)",
+                "width": "var(--s-s)",
               }
             }
             viewBox="0 0 512 512"
@@ -313,9 +313,9 @@ exports[`About snapshot should match the last saved snapshot 1`] = `
             style={
               Object {
                 "color": "var(--c-2)",
-                "height": "var(--s-xs)",
+                "height": "var(--s-s)",
                 "padding": ".25rem",
-                "width": "var(--s-xs)",
+                "width": "var(--s-s)",
               }
             }
             viewBox="0 0 448 512"
@@ -334,9 +334,9 @@ exports[`About snapshot should match the last saved snapshot 1`] = `
             style={
               Object {
                 "color": "var(--c-2)",
-                "height": "var(--s-xs)",
+                "height": "var(--s-s)",
                 "padding": ".25rem",
-                "width": "var(--s-xs)",
+                "width": "var(--s-s)",
               }
             }
             viewBox="0 0 496 512"

@@ -1,9 +1,9 @@
 const insertionsort = {
   id: 2,
-  title: "Insertion Sort",
-  emoji: "⬇️",
+  title: 'Insertion Sort',
+  emoji: '⬇️',
   description:
-    "each iteration, remove one element from the input data, find the location it belongs within the sorted list, and insert it there",
+    'each iteration, remove one element from the input data, find the location it belongs within the sorted list, and insert it there',
   fn: (array, snapShotFn) => {
     snapShotFn(array);
 
@@ -42,12 +42,12 @@ const insertionsort = {
     `,
   complexity: {
     time: {
-      best: "Ω(n)",
-      avg: "Θ(n^2)",
-      worst: "O(n^2)",
+      best: 'Ω(n)',
+      avg: 'Θ(n^2)',
+      worst: 'O(n^2)',
     },
     space: {
-      worst: "O(1)",
+      worst: 'O(1)',
     },
   },
 };

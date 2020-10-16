@@ -1,14 +1,14 @@
-import styles from "./styleconfig";
+import styles from './styleconfig';
 
-describe("styleconfig", () => {
-  describe("methods", () => {
-    describe("invertColor()", () => {
+describe('styleconfig', () => {
+  describe('methods', () => {
+    describe('invertColor()', () => {
       const invertedColorTuples = [
-        ["#3366cc", "#cc9933"],
-        ["#A3c7ff", "#5c3800"],
-        ["#000000", "#ffffff"],
-        ["000000", "#ffffff"],
-        ["#000", "#ffffff"],
+        ['#3366cc', '#cc9933'],
+        ['#A3c7ff', '#5c3800'],
+        ['#000000', '#ffffff'],
+        ['000000', '#ffffff'],
+        ['#000', '#ffffff'],
       ];
       invertedColorTuples.forEach((colorTuples) => {
         it(`should correctly invert the color ${colorTuples[0]}`, () => {

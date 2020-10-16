@@ -1,13 +1,13 @@
-import "./Sort.css";
-import { FaPlay, FaStepForward, FaStop, FaUndo } from "react-icons/fa";
-import { IconContext } from "react-icons";
-import Rainbow from "rainbowvis.js";
-import React from "react";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import content from "content/content";
-import customSyntaxHighlighterStyle from "./customSyntaxHighlighterStyle";
-import styleconfig from "styles/styleconfig";
-import utils from "utils/utils";
+import './Sort.css';
+import { FaPlay, FaStepForward, FaStop, FaUndo } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
+import Rainbow from 'rainbowvis.js';
+import React from 'react';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import content from 'content/content';
+import customSyntaxHighlighterStyle from './customSyntaxHighlighterStyle';
+import styleconfig from 'styles/styleconfig';
+import utils from 'utils/utils';
 
 class Sort extends React.Component {
   constructor(props) {
@@ -33,12 +33,12 @@ class Sort extends React.Component {
 
   initCanvas = () => {
     // get ref and context of canvas
-    const canvas = this.getRefs("canvas");
+    const canvas = this.getRefs('canvas');
     if (canvas) {
       // set offset height and width to fill container
       canvas.width = canvas.offsetWidth;
       canvas.height = canvas.offsetHeight;
-      const ctx = canvas.getContext("2d");
+      const ctx = canvas.getContext('2d');
       this.setState({ canvas, ctx }, () => {
         this.clearCanvas();
         // don't style bars on initial render
@@ -52,7 +52,7 @@ class Sort extends React.Component {
     const { canvas, ctx } = this.state;
     ctx.beginPath();
     ctx.rect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = utils.getDarkColor("--c-black");
+    ctx.fillStyle = utils.getDarkColor('--c-black');
     ctx.fill();
     ctx.closePath();
   }
@@ -121,20 +121,20 @@ class Sort extends React.Component {
 
     // init spectrum to color bars based on height
     const rainbow = new Rainbow();
-    rainbow.setSpectrum("purple", "blue", "green", "yellow", "red");
+    rainbow.setSpectrum('purple', 'blue', 'green', 'yellow', 'red');
     rainbow.setNumberRange(1, length);
 
     for (let i = 0; i < length; i++) {
       let barHeight = (array[i] / max) * canvas.height;
       let color = `#${rainbow.colorAt(array[i])}`;
       if (isStyled && emph1 && emph1.includes(i)) {
-        color = "white";
+        color = 'white';
       }
       if (isStyled && emph2 && emph2.includes(i)) {
-        color = "white";
+        color = 'white';
       }
       if (isStyled && emph3 && emph3.includes(i)) {
-        color = "white";
+        color = 'white';
       }
       this.drawBar(i, barHeight, color);
     }
@@ -212,7 +212,7 @@ class Sort extends React.Component {
                   : this.restartSort
               }
             >
-              <h2 className="sort-title">{sort.emoji + " " + sort.title}</h2>
+              <h2 className="sort-title">{sort.emoji + ' ' + sort.title}</h2>
               {this.state.currentFrame < this.state.history.length ? (
                 this.state.isRunning ? (
                   <FaStop />
@@ -242,7 +242,7 @@ class Sort extends React.Component {
               >
                 {sort.fnDisplayString
                   ? sort.fnDisplayString
-                  : "loading code ..."}
+                  : 'loading code ...'}
               </SyntaxHighlighter>
             </div>
             <table className="sort-table">

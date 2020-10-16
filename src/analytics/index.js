@@ -4,8 +4,8 @@ const analytics = {
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag("js", date);
-    gtag("config", "UA-164620923-1");
+    gtag('js', date);
+    gtag('config', 'UA-164620923-1');
   },
 };
 

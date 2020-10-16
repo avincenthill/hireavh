@@ -1,10 +1,10 @@
 // const recruiterFaq = require("./md/recruiter-faq.md");
-const readme = require("./md/README.md");
-const marketing = require("./md/marketing.md");
-const coverage = require("./md/coverage.md");
+const readme = require('./md/README.md');
+const marketing = require('./md/marketing.md');
+const coverage = require('./md/coverage.md');
 
 const blogs = {
-  title: "✍️ My markdown, rendered.",
+  title: '✍️ My markdown, rendered.',
   data: [
     // *************************************************************************
     // TBD: DEPRECATED, rewrite for next job search when necessary
@@ -20,34 +20,34 @@ const blogs = {
     // },
     // *************************************************************************
     {
-      title: "Marketing Consulting",
-      url: "blog/marketing",
-      displayUrl: "hireavh.com/blog/marketing",
-      description: "Maximizing your ROI with Google Ads!",
+      title: 'Marketing Consulting',
+      url: 'blog/marketing',
+      displayUrl: 'hireavh.com/blog/marketing',
+      description: 'Maximizing your ROI with Google Ads!',
       longDescription: `Here is a short description of the digital marketing services that I can offer to businesses. Contact me for more info!`,
       md: marketing,
       img: {
-        emoji: "💼",
+        emoji: '💼',
       },
     },
     // *************************************************************************
     {
-      title: "hireavh.com README.md",
-      url: "blog/readme",
+      title: 'hireavh.com README.md',
+      url: 'blog/readme',
       longDescription: `I decided to render the README.md for this website since it was already in markdown. If you'd like to see an example of how I write technical documentation, just click!`,
       md: readme,
       img: {
-        emoji: "📒",
+        emoji: '📒',
       },
     },
     // *************************************************************************
     {
-      title: "hireavh.com Test Coverage Report",
-      url: "blog/test-coverage",
+      title: 'hireavh.com Test Coverage Report',
+      url: 'blog/test-coverage',
       longDescription: `This is the current test coverage for the website you are currently using. Jest and Enzyme are used to unit test this application and Istanbul is used to create the report.`,
       md: coverage,
       img: {
-        emoji: "🧪",
+        emoji: '🧪',
       },
     },
     // *************************************************************************
@@ -60,7 +60,7 @@ turn array of blog info into object with paths as keys and blog info as values,
 use lookupBlogFromUrl to get blog object with url
 */
 const cleanupPath = (path) => {
-  return path.replace("blog/", "").replace("-", "");
+  return path.replace('blog/', '').replace('-', '');
 };
 
 const lookupBlogFromUrl = (path, json) => {

@@ -1,9 +1,9 @@
 const bubblesort = {
   id: 1,
-  title: "Bubble Sort",
-  emoji: "💭",
+  title: 'Bubble Sort',
+  emoji: '💭',
   description:
-    "repeatedly step through the list, compare adjacent elements and swap them if they are in the wrong order",
+    'repeatedly step through the list, compare adjacent elements and swap them if they are in the wrong order',
   fn: (array, snapShotFn) => {
     snapShotFn(array);
     const swap = (array, i, j) => {
@@ -47,12 +47,12 @@ const bubblesort = {
     `,
   complexity: {
     time: {
-      best: "Ω(n)",
-      avg: "Θ(n^2)",
-      worst: "O(n^2)",
+      best: 'Ω(n)',
+      avg: 'Θ(n^2)',
+      worst: 'O(n^2)',
     },
     space: {
-      worst: "O(1)",
+      worst: 'O(1)',
     },
   },
 };

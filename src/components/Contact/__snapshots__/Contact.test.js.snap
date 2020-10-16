@@ -73,11 +73,6 @@ exports[`Contact snapshot should match the last saved snapshot 1`] = `
     <div
       className="page-container"
     >
-      <img
-        alt="headshot"
-        className="contact-img"
-        src="headshot.png"
-      />
       <h3
         className="contact-title"
       >
@@ -124,71 +119,6 @@ exports[`Contact snapshot should match the last saved snapshot 1`] = `
         <button
           className="contact-button contact-button-linkedin"
           data-clipboard-text="alexanderjvincenthill@gmail.com"
-        >
-          <svg
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": "var(--c-1)",
-                "height": "var(--s-xs)",
-                "padding": ".5rem",
-                "width": "var(--s-xs)",
-              }
-            }
-            viewBox="0 0 448 512"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"
-            />
-          </svg>
-        </button>
-      </div>
-      <div
-        className="contact button-hover-light"
-      >
-        <a
-          className="contact-a"
-          href="tel:+1-(541) 602-9122"
-        >
-          <svg
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": "var(--c-1)",
-                "height": "var(--s-xs)",
-                "padding": ".5rem",
-                "width": "var(--s-xs)",
-              }
-            }
-            viewBox="0 0 10 16"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9 0H1C.45 0 0 .45 0 1v14c0 .55.45 1 1 1h8c.55 0 1-.45 1-1V1c0-.55-.45-1-1-1zM5 15.3c-.72 0-1.3-.58-1.3-1.3 0-.72.58-1.3 1.3-1.3.72 0 1.3.58 1.3 1.3 0 .72-.58 1.3-1.3 1.3zM9 12H1V2h8v10z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </a>
-        <a
-          className="contact-a"
-          href="tel:+1-(541) 602-9122"
-        >
-          <span>
-            (541) 602-9122
-          </span>
-        </a>
-        <button
-          className="contact-button contact-button-linkedin"
-          data-clipboard-text="(541) 602-9122"
         >
           <svg
             fill="currentColor"
@@ -341,70 +271,6 @@ exports[`Contact snapshot should match the last saved snapshot 1`] = `
           </svg>
         </button>
       </div>
-      <div
-        className="contact button-hover-light"
-      >
-        <a
-          className="contact-a"
-          href="/home"
-        >
-          <svg
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": "var(--c-1)",
-                "height": "var(--s-xs)",
-                "padding": ".5rem",
-                "width": "var(--s-xs)",
-              }
-            }
-            viewBox="0 0 384 512"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M384 121.941V128H256V0h6.059c6.365 0 12.47 2.529 16.971 7.029l97.941 97.941A24.005 24.005 0 0 1 384 121.941zM248 160c-13.2 0-24-10.8-24-24V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248zM123.206 400.505a5.4 5.4 0 0 1-7.633.246l-64.866-60.812a5.4 5.4 0 0 1 0-7.879l64.866-60.812a5.4 5.4 0 0 1 7.633.246l19.579 20.885a5.4 5.4 0 0 1-.372 7.747L101.65 336l40.763 35.874a5.4 5.4 0 0 1 .372 7.747l-19.579 20.884zm51.295 50.479l-27.453-7.97a5.402 5.402 0 0 1-3.681-6.692l61.44-211.626a5.402 5.402 0 0 1 6.692-3.681l27.452 7.97a5.4 5.4 0 0 1 3.68 6.692l-61.44 211.626a5.397 5.397 0 0 1-6.69 3.681zm160.792-111.045l-64.866 60.812a5.4 5.4 0 0 1-7.633-.246l-19.58-20.885a5.4 5.4 0 0 1 .372-7.747L284.35 336l-40.763-35.874a5.4 5.4 0 0 1-.372-7.747l19.58-20.885a5.4 5.4 0 0 1 7.633-.246l64.866 60.812a5.4 5.4 0 0 1-.001 7.879z"
-            />
-          </svg>
-        </a>
-        <a
-          className="contact-a"
-          href="/home"
-        >
-          <span>
-            hireavh.com
-          </span>
-        </a>
-        <button
-          className="contact-button contact-button-github"
-          data-clipboard-text="/home"
-        >
-          <svg
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": "var(--c-1)",
-                "height": "var(--s-xs)",
-                "padding": ".5rem",
-                "width": "var(--s-xs)",
-              }
-            }
-            viewBox="0 0 448 512"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"
-            />
-          </svg>
-        </button>
-      </div>
       <a
         className="contact button-hover-light contact-a"
         download="Resume_Alex_AVH_Vincent-Hill.pdf"
@@ -462,6 +328,50 @@ exports[`Contact snapshot should match the last saved snapshot 1`] = `
           </svg>
         </button>
       </a>
+      <div>
+        <br />
+        <b>
+          Buy me a coffee:
+        </b>
+        <br />
+        <br />
+        <form
+          action="https://www.paypal.com/donate"
+          method="post"
+          target="_top"
+        >
+          <input
+            name="cmd"
+            type="hidden"
+            value="_donations"
+          />
+          <input
+            name="business"
+            type="hidden"
+            value="alexanderjvincenthill@gmail.com"
+          />
+          <input
+            name="currency_code"
+            type="hidden"
+            value="USD"
+          />
+          <input
+            alt="Donate with PayPal button"
+            border="0"
+            name="submit"
+            src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+            title="PayPal - The safer, easier way to pay online!"
+            type="image"
+          />
+          <img
+            alt=""
+            border="0"
+            height="1"
+            src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+            width="1"
+          />
+        </form>
+      </div>
     </div>
     <div>
       <div

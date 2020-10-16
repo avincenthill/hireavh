@@ -1,10 +1,10 @@
-import NotFound from "./NotFound";
-import React from "react";
-import renderer from "react-test-renderer";
+import NotFound from './NotFound';
+import React from 'react';
+import renderer from 'react-test-renderer';
 
-describe("NotFound", () => {
-  describe("snapshot", () => {
-    it("should match the last saved snapshot", () => {
+describe('NotFound', () => {
+  describe('snapshot', () => {
+    it('should match the last saved snapshot', () => {
       const tree = renderer.create(<NotFound />).toJSON();
       expect(tree).toMatchSnapshot();
     });

@@ -1,7 +1,7 @@
-import "./Default.css";
-import { NavList } from "components/Nav/Nav";
-import Page from "components/Page/Page";
-import React from "react";
+import './Default.css';
+import { NavList } from 'components/Nav/Nav';
+import Page from 'components/Page/Page';
+import React from 'react';
 // import content from "content/content";
 
 class Default extends React.Component {

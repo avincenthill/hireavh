@@ -1,4 +1,4 @@
-import "./About.css";
+import './About.css';
 import {
   FaAdobe,
   FaAws,
@@ -12,13 +12,13 @@ import {
   FaReact,
   FaUbuntu,
   FaVuejs,
-} from "react-icons/fa";
-import { IconContext } from "react-icons";
-import { NavList } from "components/Nav/Nav";
-import Page from "components/Page/Page";
-import React from "react";
-import content from "content/content";
-import styleconfig from "styles/styleconfig";
+} from 'react-icons/fa';
+import { IconContext } from 'react-icons';
+import { NavList } from 'components/Nav/Nav';
+import Page from 'components/Page/Page';
+import React from 'react';
+import content from 'content/content';
+import styleconfig from 'styles/styleconfig';
 
 function About() {
   return (

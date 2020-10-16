@@ -1,10 +1,10 @@
-import "./Nav.css";
-import { GoGrabber } from "react-icons/go";
-import { IconContext } from "react-icons";
-import Link from "components/Link/Link";
-import React from "react";
-import content from "content/content";
-import styleconfig from "styles/styleconfig";
+import './Nav.css';
+import { GoGrabber } from 'react-icons/go';
+import { IconContext } from 'react-icons';
+import Link from 'components/Link/Link';
+import React from 'react';
+import content from 'content/content';
+import styleconfig from 'styles/styleconfig';
 
 class Nav extends React.Component {
   constructor(props) {
@@ -16,9 +16,9 @@ class Nav extends React.Component {
 
   handleClick = (e) => {
     if (!this.state.isExpanded) {
-      document.addEventListener("click", this.handleClick, false);
+      document.addEventListener('click', this.handleClick, false);
     } else {
-      document.removeEventListener("click", this.handleClick, false);
+      document.removeEventListener('click', this.handleClick, false);
     }
     this.toggleNav();
   };
@@ -50,7 +50,7 @@ class Nav extends React.Component {
       <div>
         <div
           className={`nav-container ${
-            this.props.isBottom ? "nav-container-bottom" : "nav-container-top"
+            this.props.isBottom ? 'nav-container-bottom' : 'nav-container-top'
           }`}
         >
           <NavList></NavList>
@@ -61,7 +61,7 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <div className={`nav ${this.props.isBottom ? "nav-bottom" : "nav-top"}`}>
+      <div className={`nav ${this.props.isBottom ? 'nav-bottom' : 'nav-top'}`}>
         {this.state.isExpanded
           ? this.renderExpanded()
           : this.renderNotExpanded()}
@@ -79,7 +79,7 @@ class NavList extends React.Component {
           return (
             <Link
               key={index}
-              title={link.emoji + " " + link.path}
+              title={link.emoji + ' ' + link.path}
               path={`/${link.path}`}
             ></Link>
           );

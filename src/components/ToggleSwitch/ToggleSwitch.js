@@ -1,5 +1,5 @@
-import "./ToggleSwitch.css";
-import React from "react";
+import './ToggleSwitch.css';
+import React from 'react';
 
 class ToggleSwitch extends React.Component {
   state = {
@@ -9,7 +9,7 @@ class ToggleSwitch extends React.Component {
     this.setState({
       checked: e.target.checked,
     });
-    if (typeof this.props.onChange === "function") this.props.onChange();
+    if (typeof this.props.onChange === 'function') this.props.onChange();
   };
   render() {
     return (

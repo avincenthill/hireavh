@@ -5,8 +5,8 @@
 }
 
 .sort-canvas-container {
-  height: min(calc(80vw/1.618),calc(var(--s-xl)*2/1.618));
-  width: min(80vw,calc(var(--s-xl)*2));
+  height: min(calc(80vw / 1.618), calc(var(--s-xl) * 2 / 1.618));
+  width: min(80vw, calc(var(--s-xl) * 2));
   border-top: var(--b-1) var(--c-1) solid;
   border-left: var(--b-1) var(--c-1) solid;
   border-right: var(--b-1) var(--c-1) solid;
@@ -22,7 +22,6 @@
   border-top: var(--b-1) var(--c-1) solid;
 }
 
-
 .sort-button {
   background-color: var(--c-black);
   width: 100%;
@@ -34,7 +33,7 @@
 
 .sort-info-container {
   font-size: var(--fs-m);
-  width: min(80vw,calc(var(--s-xl)*2));
+  width: min(80vw, calc(var(--s-xl) * 2));
   border-radius: 0 0 var(--s-xs) var(--s-xs);
   border: var(--b-1) var(--c-1) solid;
   border-top: 0;
@@ -60,7 +59,7 @@
   text-align: center;
 }
 
-.sort-table th{
+.sort-table th {
   font-weight: bold;
 }
 

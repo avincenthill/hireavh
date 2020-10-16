@@ -1,8 +1,8 @@
-import "./Post.css";
-import { NavList } from "components/Nav/Nav";
-import Page from "components/Page/Page";
-import React from "react";
-import { Remarkable } from "remarkable";
+import './Post.css';
+import { NavList } from 'components/Nav/Nav';
+import Page from 'components/Page/Page';
+import React from 'react';
+import { Remarkable } from 'remarkable';
 
 class Post extends React.Component {
   componentDidMount = async () => {
@@ -24,7 +24,7 @@ class Post extends React.Component {
     if (
       this.state &&
       this.state.mdString &&
-      typeof this.state.mdString === "string"
+      typeof this.state.mdString === 'string'
     ) {
       const remarkable = new Remarkable();
       const html = remarkable.render(this.state.mdString);

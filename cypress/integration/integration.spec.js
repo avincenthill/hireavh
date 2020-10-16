@@ -1,16 +1,16 @@
-describe("routing", () => {
+describe('routing', () => {
   const paths = [
-    "/",
-    "/home",
-    "about",
-    "/resume",
-    "/contact",
-    "/sorting-algorithms",
-    "/blog",
-    "/blog/recruiter-faq",
-    "/projects",
-    "/graphic-design",
-    "/dynamic-form",
+    '/',
+    '/home',
+    'about',
+    '/resume',
+    '/contact',
+    '/sorting-algorithms',
+    '/blog',
+    // '/blog/recruiter-faq',
+    '/projects',
+    '/graphic-design',
+    '/dynamic-form',
   ];
 
   paths.forEach((path) => {

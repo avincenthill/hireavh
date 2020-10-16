@@ -75,6 +75,7 @@
     "test:int": "cypress run",
     "test:int:chrome": "cypress run --browser chrome",
     "test:integration": "npm run test:int",
+    "test:snap": "npm run updatesnapshots",
     "printcoverage": "istanbul report --include coverage/coverage-final.json text > src/content/blogs/md/coverage.md && tail -n +2 src/content/blogs/md/coverage.md > src/content/blogs/md/coverage.md.tmp && mv src/content/blogs/md/coverage.md.tmp src/content/blogs/md/coverage.md && ghead -n -1 src/content/blogs/md/coverage.md > src/content/blogs/md/coverage.md.tmp && mv src/content/blogs/md/coverage.md.tmp src/content/blogs/md/coverage.md",
     "updatesnapshots": "jest --updateSnapshot",
     "updatesnaps": "jest --updateSnapshot",
@@ -148,7 +149,7 @@
       "^.+\\.module\\.(css|sass|scss)$"
     ],
     "modulePaths": [
-      "/Users/avincenthill/Projects/hireavh/src"
+      "src"
     ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web",

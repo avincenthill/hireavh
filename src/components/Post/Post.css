@@ -1,4 +1,9 @@
-#md-container h2,  #md-container h3, #md-container p, #md-container a, #md-container span, #md-container div{
+#md-container h2,
+#md-container h3,
+#md-container p,
+#md-container a,
+#md-container span,
+#md-container div {
   text-align: left;
   word-wrap: break-word;
 }
@@ -8,7 +13,7 @@
 }
 
 #md-container h2 {
-  margin-top: calc(var(--s-s)*1.5);
+  margin-top: calc(var(--s-s) * 1.5);
 }
 
 #md-container a {
@@ -16,12 +21,12 @@
 }
 
 #md-container p {
-  font-size: calc(var(--fs-s)*.85);
+  font-size: calc(var(--fs-s) * 0.85);
   margin-top: var(--s-xxs);
 }
 
 #md-container table {
-  font-size: calc(max(var(--fs-xxs)*.5, 1.1vw));
+  font-size: calc(max(var(--fs-xxs) * 0.5, 1.1vw));
   text-align: right;
   margin: auto;
 }

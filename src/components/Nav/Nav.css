@@ -48,7 +48,8 @@
 
 /* large devices */
 @media (min-width: 600px) {
-  .nav-bottom, .nav-top {
+  .nav-bottom,
+  .nav-top {
     display: none;
   }
 }

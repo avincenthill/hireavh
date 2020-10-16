@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
   width: var(--s-xl);
-  height: calc(var(--s-l)/2);
+  height: calc(var(--s-l) / 2);
   border-radius: var(--s-xs) var(--s-xs) 0 0;
   border: var(--b-1) var(--c-1) solid;
   text-decoration: none;
@@ -43,7 +43,7 @@
   align-items: center;
   justify-content: center;
   width: var(--s-xl);
-  height: calc(var(--s-l)/2);
+  height: calc(var(--s-l) / 2);
   border: var(--b-1) var(--c-1) solid;
   border-top: 0;
   color: var(--c-black);
@@ -73,16 +73,16 @@
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
-  cursor:pointer;
+  cursor: pointer;
   overflow: hidden;
-  outline:none;
+  outline: none;
   color: white;
   width: var(--s-m);
   height: var(--s-m);
 }
 
 .project-info-long-description {
-  width: calc(var(--s-xl)*.9);
+  width: calc(var(--s-xl) * 0.9);
   overflow-wrap: break-word;
   text-align: left;
   font-size: var(--fs-xxs);

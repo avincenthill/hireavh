@@ -1,5 +1,5 @@
-import "./Link.css";
-import React from "react";
+import './Link.css';
+import React from 'react';
 
 class Link extends React.Component {
   render() {

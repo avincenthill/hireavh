@@ -1,10 +1,10 @@
-import utils from "utils/utils";
+import utils from 'utils/utils';
 
 const bogosort = {
   id: 5,
-  title: "Bogo Sort",
-  emoji: "🤪",
-  description: "shuffle the list and check whether it is sorted, yolo",
+  title: 'Bogo Sort',
+  emoji: '🤪',
+  description: 'shuffle the list and check whether it is sorted, yolo',
   fn: (array, snapShotFn) => {
     snapShotFn(array);
     const isSorted = (arr) => {
@@ -46,12 +46,12 @@ const bogosort = {
     `,
   complexity: {
     time: {
-      best: "Ω(n)",
-      avg: "Θ((n+1)!)",
-      worst: "O(∞)",
+      best: 'Ω(n)',
+      avg: 'Θ((n+1)!)',
+      worst: 'O(∞)',
     },
     space: {
-      worst: "O(1)",
+      worst: 'O(1)',
     },
   },
 };

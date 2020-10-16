@@ -1,8 +1,8 @@
-import "./Form.css";
-import { NavList } from "components/Nav/Nav";
-import Page from "components/Page/Page";
-import React from "react";
-import content from "content/content";
+import './Form.css';
+import { NavList } from 'components/Nav/Nav';
+import Page from 'components/Page/Page';
+import React from 'react';
+import content from 'content/content';
 
 const formContent = content.form;
 
@@ -30,7 +30,7 @@ class Form extends React.Component {
       this.state.config.forEach((item) => {
         let element = document.getElementById(item.name);
         if (element) {
-          if (element.type === "checkbox") {
+          if (element.type === 'checkbox') {
             data[item.name] = element.checked;
           } else {
             data[item.name] = element.value;
@@ -47,7 +47,7 @@ class Form extends React.Component {
     const data = {
       ...this.state.data,
     };
-    if (event.target.type === "checkbox") {
+    if (event.target.type === 'checkbox') {
       data[id] = checked;
     } else {
       data[id] = value;
@@ -86,7 +86,7 @@ class Form extends React.Component {
     if (this.areRequiredFieldsCompleted()) {
       this.setState({ output: this.state.data });
     } else {
-      alert(formContent.requiredWarning + this.state.required.join(", "));
+      alert(formContent.requiredWarning + this.state.required.join(', '));
     }
   };
 
@@ -129,7 +129,7 @@ class Form extends React.Component {
           <div className="form-item" key={index}>
             <label>
               {item.human_label}
-              {item.is_required ? "*" : ""}
+              {item.is_required ? '*' : ''}
             </label>
             <input
               id={item.name}
