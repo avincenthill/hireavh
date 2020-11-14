@@ -56,8 +56,8 @@ const projects = {
       url: '/todo',
       displayUrl: 'hireavh.com/todo',
       description:
-        'A dopamine triggering todo list persisting in localStorage.',
-      longDescription: "That's about all!",
+        'A dopamine-triggering daily to-do list with selections persisting in localStorage.',
+      longDescription: "Tasks get cleared at midnight or when you clear localStorage. That's about all!",
       img: {
         emoji: '☑️',
       },
