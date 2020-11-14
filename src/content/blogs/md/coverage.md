@@ -38,6 +38,8 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   customSyntaxHighlighterStyle.js |      100 |      100 |      100 |      100 |                |
  src/components/SortList/         |      100 |      100 |      100 |      100 |                |
   SortList.js                     |      100 |      100 |      100 |      100 |                |
+ src/components/Todo/             |    61.11 |    46.67 |    63.64 |    61.11 |                |
+  Todo.js                         |    61.11 |    46.67 |    63.64 |    61.11 |... 124,125,126 |
  src/components/ToggleSwitch/     |      100 |      100 |      100 |      100 |                |
   ToggleSwitch.js                 |      100 |      100 |      100 |      100 |                |
  src/content/                     |      100 |      100 |      100 |      100 |                |
@@ -58,12 +60,12 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   insertionsort.js                |      100 |      100 |      100 |      100 |                |
   quicksort.js                    |      100 |      100 |      100 |      100 |                |
  src/routes/                      |       50 |      100 |       40 |       50 |                |
-  routes.js                       |       50 |      100 |       40 |       50 |       47,64,80 |
+  routes.js                       |       50 |      100 |       40 |       50 |       48,65,81 |
  src/styles/                      |      100 |      100 |      100 |      100 |                |
   styleconfig.js                  |      100 |      100 |      100 |      100 |                |
  src/utils/                       |      100 |      100 |      100 |      100 |                |
   utils.js                        |      100 |      100 |      100 |      100 |                |
 ----------------------------------|----------|----------|----------|----------|----------------|
-All files                         |    78.54 |    65.97 |    79.05 |    78.21 |                |
+All files                         |    77.08 |    64.15 |    77.59 |    76.76 |                |
 ----------------------------------|----------|----------|----------|----------|----------------|
 

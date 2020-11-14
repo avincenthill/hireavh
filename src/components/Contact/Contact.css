@@ -19,14 +19,6 @@
   margin-bottom: var(--s-xs);
 }
 
-.contact-img {
-  margin-top: var(--s-s);
-  width: 100px;
-  height: 100px;
-  border-radius: 100vmax;
-  border: var(--c-1) solid var(--b-1);
-}
-
 .contact-button {
   background-color: var(--c-4);
   border-radius: 0 var(--s-xs) var(--s-xs) 0;

@@ -11,6 +11,7 @@ import ProjectList from 'components/ProjectList/ProjectList';
 import React from 'react';
 import Resume from 'components/Resume/Resume';
 import SortList from 'components/SortList/SortList';
+import Todo from 'components/Todo/Todo';
 import VariableBlogPost from 'components/Post/VariableBlogPost';
 import content from 'content/content';
 import utils from 'utils/utils';
@@ -90,6 +91,9 @@ class App extends React.Component {
 
           {/* /dynamic-form */}
           <Route exact path="/dynamic-form" component={Form} />
+
+          {/* /todo */}
+          <Route exact path="/todo" component={Todo} />
 
           {/* /404 */}
           <Route component={NotFound} />

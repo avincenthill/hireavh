@@ -52,6 +52,18 @@ const projects = {
     blogs.data[0],
     // *************************************************************************
     {
+      title: 'Todo List',
+      url: '/todo',
+      displayUrl: 'hireavh.com/todo',
+      description:
+        'A dopamine triggering todo list persisting in localStorage.',
+      longDescription: "That's about all!",
+      img: {
+        emoji: '☑️',
+      },
+    },
+    // *************************************************************************
+    {
       title: 'Dynamic Form',
       url: '/dynamic-form',
       displayUrl: 'hireavh.com/form',

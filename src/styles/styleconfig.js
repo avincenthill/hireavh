@@ -31,6 +31,10 @@ const styles = {
       color: 'var(--c-1)',
       padding: '.5rem',
     },
+    todo: {
+      color: 'var(--c-white)',
+      padding: '.5rem',
+    },
     sort: {
       color: 'var(--c-1)',
       padding: '.5rem',
