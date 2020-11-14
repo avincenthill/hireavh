@@ -2,6 +2,7 @@ import './Todo.css';
 import {
   FaBed,
   FaBroom,
+  FaCheckCircle,
   FaRunning,
   FaTooth,
   FaUserFriends,
@@ -91,7 +92,7 @@ export default class Todo extends Component {
           onClick={this.handleClick}
           className={`todo button-hover-light todo-${todoBool}`}
         >
-          {this.state.todoInfoArr[index].icon}
+          {!todoBool ? this.state.todoInfoArr[index].icon : (<FaCheckCircle />)}
           <span className="todo-item">
             {this.state.todoInfoArr[index].title}
           </span>
