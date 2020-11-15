@@ -57,7 +57,8 @@ const projects = {
       displayUrl: 'hireavh.com/todo',
       description:
         'A dopamine-triggering daily to-do list with selections persisting in localStorage.',
-      longDescription: "Tasks get cleared at midnight or when you clear localStorage. That's about all!",
+      longDescription:
+        "Tasks get cleared on date day-changes or when you clear localStorage. That's about all!",
       img: {
         emoji: '☑️',
       },

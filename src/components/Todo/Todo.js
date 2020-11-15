@@ -5,6 +5,7 @@ import {
   FaGlassCheers,
   FaRunning,
   FaTooth,
+  FaTrophy,
   FaUserFriends,
 } from 'react-icons/fa';
 import React, { Component } from 'react';
@@ -70,7 +71,7 @@ export default class Todo extends Component {
   handleResetClick = () => {
     this.playResetSound();
     this.resetTodoArr();
-  }
+  };
 
   resetTodoArr = () => {
     const todoArr = Array(this.state.todoInfoArr.length).fill(false);
@@ -113,15 +114,15 @@ export default class Todo extends Component {
   };
 
   playResetSound = () => {
-    this.playSound('resetSound', .1);
+    this.playSound('resetSound', 0.1);
   };
 
   playSuccessSound = () => {
-    this.playSound('successSound', .6);
+    this.playSound('successSound', 0.6);
   };
 
   playCheckSound = () => {
-    this.playSound('checkSound', .5);
+    this.playSound('checkSound', 0.5);
   };
 
   renderArrayOfTodos() {
@@ -136,7 +137,7 @@ export default class Todo extends Component {
           className={`todo button-hover-light todo-${todoBool}`}
         >
           <span className="todo-icon">
-            {!todoBool ? this.state.todoInfoArr[index].icon : (<FaCheckCircle />)}
+            {!todoBool ? this.state.todoInfoArr[index].icon : <FaCheckCircle />}
           </span>
           <span className="todo-item">
             {this.state.todoInfoArr[index].title}
@@ -146,45 +147,12 @@ export default class Todo extends Component {
     });
   }
 
-  renderConfetti() {
-    const todoArr = JSON.parse(localStorage.getItem('todoArr'));
-    if (
-      todoArr.some((element) => {
-        return !element;
-      })
-    ) {
-      return null;
-    }
-
-    function getRandomInt(min, max) {
-      min = Math.ceil(min);
-      max = Math.floor(max);
-      return Math.floor(Math.random() * (max - min) + min); // maximum is exclusive and the minimum is inclusive
-    }
-
-    return (
-      <div className="container">
-        {Array(10)
-          .fill(true)
-          .map((el, index) => {
-            let randDist = getRandomInt(-5, 6);
-            let randTime = getRandomInt(-5, 1) * Math.random() - 0.5;
-            return (
-              <div
-                className="confetti"
-                key={index}
-                style={{
-                  '--noise-dist': `${randDist}vmin`,
-                  '--noise-time': `${randTime}s`,
-                }}
-              ></div>
-            );
-          })}
-      </div>
-    );
-  }
-
   render() {
+    const todoArr = JSON.parse(localStorage.getItem('todoArr'));
+    const areSomeFalse = todoArr.some((element) => {
+      return !element;
+    });
+
     return (
       <div className="todo-container">
         <Page>
@@ -195,9 +163,20 @@ export default class Todo extends Component {
                 ...utils.getIconStyles('todo'),
               },
             }}
-            >
+          >
+            {!areSomeFalse ? (
+              <IconContext.Provider
+                value={{
+                  style: {
+                    ...styleconfig.icons.l,
+                    ...utils.getIconStyles('todo'),
+                  },
+                }}
+              >
+                <FaTrophy />
+              </IconContext.Provider>
+            ) : null}
             <h3 className="todo-title">{new Date().toDateString()}</h3>
-            {this.renderConfetti()}
             {this.props ? this.renderArrayOfTodos() : null}
             <button
               id="2"

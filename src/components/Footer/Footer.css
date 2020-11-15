@@ -5,6 +5,8 @@
   bottom: 0;
   width: 100%;
   height: var(--s-s);
+  min-height: var(--s-s);
+  max-height: var(--s-s);
   display: flex;
   flex-direction: column;
   align-items: center;
