@@ -45,7 +45,7 @@
   transition: 0.25s ease-out;
   -moz-transition: 0.25s ease-out;
   -webkit-transition: 0.25s ease-out;
-  margin-left: var(--s-s);
+  margin-left: var(--s-xs);
 }
 
 .todo-item {

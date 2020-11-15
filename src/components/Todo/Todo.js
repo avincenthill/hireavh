@@ -29,7 +29,8 @@ export default class Todo extends Component {
       );
     }
 
-    const todoInfoArr = [
+    // TBD: add condition tasks based on day of week
+    const todoTaskArray = [
       {
         title: 'EXERCISE',
         icon: <FaRunning />,
@@ -52,7 +53,7 @@ export default class Todo extends Component {
       },
     ];
     this.state = {
-      todoInfoArr,
+      todoTaskArray,
     };
 
     const lastSeen = JSON.parse(localStorage.getItem('lastSeen'));
@@ -63,7 +64,7 @@ export default class Todo extends Component {
     }
 
     let todoArr = JSON.parse(localStorage.getItem('todoArr'));
-    if (!todoArr || todoArr.length !== todoInfoArr.length) {
+    if (!todoArr || todoArr.length !== todoTaskArray.length) {
       this.resetTodoArr();
     }
   }
@@ -74,7 +75,7 @@ export default class Todo extends Component {
   };
 
   resetTodoArr = () => {
-    const todoArr = Array(this.state.todoInfoArr.length).fill(false);
+    const todoArr = Array(this.state.todoTaskArray.length).fill(false);
     localStorage.setItem('todoArr', JSON.stringify(todoArr));
     this.forceUpdate();
   };
@@ -137,10 +138,10 @@ export default class Todo extends Component {
           className={`todo button-hover-light todo-${todoBool}`}
         >
           <span className="todo-icon">
-            {!todoBool ? this.state.todoInfoArr[index].icon : <FaCheckCircle />}
+            {!todoBool ? this.state.todoTaskArray[index].icon : <FaCheckCircle />}
           </span>
           <span className="todo-item">
-            {this.state.todoInfoArr[index].title}
+            {this.state.todoTaskArray[index].title}
           </span>
         </button>
       );
@@ -159,22 +160,13 @@ export default class Todo extends Component {
           <IconContext.Provider
             value={{
               style: {
-                ...styleconfig.icons.m,
+                ...styleconfig.icons.l,
                 ...utils.getIconStyles('todo'),
               },
             }}
           >
             {!areSomeFalse ? (
-              <IconContext.Provider
-                value={{
-                  style: {
-                    ...styleconfig.icons.l,
-                    ...utils.getIconStyles('todo'),
-                  },
-                }}
-              >
                 <FaTrophy />
-              </IconContext.Provider>
             ) : null}
             <h3 className="todo-title">{new Date().toDateString()}</h3>
             {this.props ? this.renderArrayOfTodos() : null}
