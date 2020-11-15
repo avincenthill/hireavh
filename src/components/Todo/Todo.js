@@ -1,8 +1,8 @@
 import './Todo.css';
 import {
-  FaBed,
   FaBroom,
   FaCheckCircle,
+  FaGlassCheers,
   FaRunning,
   FaTooth,
   FaUserFriends,
@@ -35,8 +35,8 @@ export default class Todo extends Component {
         icon: <FaBroom />,
       },
       {
-        title: 'MAKE BED',
-        icon: <FaBed />,
+        title: 'WASH DISHES',
+        icon: <FaGlassCheers />,
       },
       {
         title: 'REACH OUT',
@@ -64,6 +64,11 @@ export default class Todo extends Component {
     }
   }
 
+  handleResetClick = () => {
+    this.playResetSound();
+    this.resetTodoArr();
+  }
+
   resetTodoArr = () => {
     const todoArr = Array(this.state.todoInfoArr.length).fill(false);
     localStorage.setItem('todoArr', JSON.stringify(todoArr));
@@ -73,12 +78,43 @@ export default class Todo extends Component {
   handleClick = (e) => {
     const todoArr = JSON.parse(localStorage.getItem('todoArr'));
     const id = parseInt(e.target.id, 10);
+    const newBool = !todoArr[id];
+    todoArr[id] = newBool;
 
-    // TBD parse value and play appropriate sounds
-
-    todoArr[id] = !todoArr[id];
+    // play appropriate sounds based on state
+    this.playSound(newBool, todoArr);
     localStorage.setItem('todoArr', JSON.stringify(todoArr));
     this.forceUpdate();
+  };
+
+  playSound = (selectedBool, todoArrBool) => {
+    const areSomeFalse = todoArrBool.some((element) => {
+      return !element;
+    });
+    if (areSomeFalse) {
+      if (selectedBool) {
+        this.playCheckSound();
+      } else {
+        this.playResetSound();
+      }
+    } else {
+      this.playSuccessSound();
+    }
+  };
+
+  playResetSound = () => {
+    // eslint-disable-next-line
+    console.log('reset');
+  };
+
+  playSuccessSound = () => {
+    // eslint-disable-next-line
+    console.log('success');
+  };
+
+  playCheckSound = () => {
+    // eslint-disable-next-line
+    console.log('check');
   };
 
   renderArrayOfTodos() {
@@ -92,7 +128,9 @@ export default class Todo extends Component {
           onClick={this.handleClick}
           className={`todo button-hover-light todo-${todoBool}`}
         >
-          {!todoBool ? this.state.todoInfoArr[index].icon : (<FaCheckCircle />)}
+          <span className="todo-icon">
+            {!todoBool ? this.state.todoInfoArr[index].icon : (<FaCheckCircle />)}
+          </span>
           <span className="todo-item">
             {this.state.todoInfoArr[index].title}
           </span>
@@ -142,7 +180,6 @@ export default class Todo extends Component {
   render() {
     return (
       <div className="todo-container">
-        {this.renderConfetti()}
         <Page>
           <IconContext.Provider
             value={{
@@ -151,17 +188,16 @@ export default class Todo extends Component {
                 ...utils.getIconStyles('todo'),
               },
             }}
-          >
+            >
             <h3 className="todo-title">{new Date().toDateString()}</h3>
-
+            {this.renderConfetti()}
             {this.props ? this.renderArrayOfTodos() : null}
-
             <button
               id="2"
-              className="todo button-hover-light todo-resetBtn"
-              onClick={this.resetTodoArr}
+              className="todo todo-reset button-hover-light todo-resetBtn"
+              onClick={this.handleResetClick}
             >
-              <span className="todo-item">RESET</span>
+              <span className="todo-item-reset">RESET</span>
             </button>
           </IconContext.Provider>
         </Page>
