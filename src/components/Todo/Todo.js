@@ -10,8 +10,11 @@ import {
 import React, { Component } from 'react';
 import { IconContext } from 'react-icons';
 import Page from 'components/Page/Page';
+import checkSound from 'assets/sounds/check.mp3';
 // import content from 'content/content'; // TBD pull out page content
+import resetSound from 'assets/sounds/reset.mp3';
 import styleconfig from 'styles/styleconfig';
+import successSound from 'assets/sounds/success.mp3';
 import utils from 'utils/utils';
 
 export default class Todo extends Component {
@@ -82,12 +85,12 @@ export default class Todo extends Component {
     todoArr[id] = newBool;
 
     // play appropriate sounds based on state
-    this.playSound(newBool, todoArr);
+    this.pickAndPlaySound(newBool, todoArr);
     localStorage.setItem('todoArr', JSON.stringify(todoArr));
     this.forceUpdate();
   };
 
-  playSound = (selectedBool, todoArrBool) => {
+  pickAndPlaySound = (selectedBool, todoArrBool) => {
     const areSomeFalse = todoArrBool.some((element) => {
       return !element;
     });
@@ -102,19 +105,23 @@ export default class Todo extends Component {
     }
   };
 
+  playSound = (soundElClass, volume) => {
+    const audioEl = document.getElementsByClassName(soundElClass)[0];
+    audioEl.volume = volume;
+    audioEl.currentTime = 0;
+    audioEl.play();
+  };
+
   playResetSound = () => {
-    // eslint-disable-next-line
-    console.log('reset');
+    this.playSound('resetSound', .1);
   };
 
   playSuccessSound = () => {
-    // eslint-disable-next-line
-    console.log('success');
+    this.playSound('successSound', .6);
   };
 
   playCheckSound = () => {
-    // eslint-disable-next-line
-    console.log('check');
+    this.playSound('checkSound', .5);
   };
 
   renderArrayOfTodos() {
@@ -198,6 +205,15 @@ export default class Todo extends Component {
               onClick={this.handleResetClick}
             >
               <span className="todo-item-reset">RESET</span>
+              <audio className="checkSound">
+                <source src={checkSound}></source>
+              </audio>
+              <audio className="successSound">
+                <source src={successSound}></source>
+              </audio>
+              <audio className="resetSound">
+                <source src={resetSound}></source>
+              </audio>
             </button>
           </IconContext.Provider>
         </Page>
