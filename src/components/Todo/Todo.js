@@ -1,11 +1,17 @@
 import './Todo.css';
 import {
+  FaBookOpen,
   FaBroom,
   FaCheckCircle,
+  FaCode,
   FaGlassCheers,
+  FaHandPaper,
+  FaMailBulk,
+  FaPills,
   FaRunning,
   FaTooth,
   FaTrophy,
+  FaTshirt,
   FaUserFriends,
 } from 'react-icons/fa';
 import React, { Component } from 'react';
@@ -36,6 +42,18 @@ export default class Todo extends Component {
         icon: <FaRunning />,
       },
       {
+        title: 'LEETCODE',
+        icon: <FaCode />,
+      },
+      {
+        title: 'EMAIL',
+        icon: <FaMailBulk />,
+      },
+      {
+        title: 'STUDY',
+        icon: <FaBookOpen />,
+      },
+      {
         title: 'CLEAN APT',
         icon: <FaBroom />,
       },
@@ -48,10 +66,23 @@ export default class Todo extends Component {
         icon: <FaUserFriends />,
       },
       {
+        title: 'GET REJECTED',
+        icon: <FaHandPaper />,
+      },
+      {
+        title: 'TAKE MULTIVITAMIN',
+        icon: <FaPills />,
+      },
+      {
+        title: 'PREP TOMORROW',
+        icon: <FaTshirt />,
+      },
+      {
         title: 'NIGHT HYGIENE',
         icon: <FaTooth />,
       },
     ];
+
     this.state = {
       todoTaskArray,
     };
@@ -138,7 +169,11 @@ export default class Todo extends Component {
           className={`todo button-hover-light todo-${todoBool}`}
         >
           <span className="todo-icon">
-            {!todoBool ? this.state.todoTaskArray[index].icon : <FaCheckCircle />}
+            {!todoBool ? (
+              this.state.todoTaskArray[index].icon
+            ) : (
+              <FaCheckCircle />
+            )}
           </span>
           <span className="todo-item">
             {this.state.todoTaskArray[index].title}
@@ -165,9 +200,7 @@ export default class Todo extends Component {
               },
             }}
           >
-            {!areSomeFalse ? (
-                <FaTrophy />
-            ) : null}
+            {!areSomeFalse ? <FaTrophy /> : null}
             <h3 className="todo-title">{new Date().toDateString()}</h3>
             {this.props ? this.renderArrayOfTodos() : null}
             <button
