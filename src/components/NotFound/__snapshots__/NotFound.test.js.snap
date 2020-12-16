@@ -71,7 +71,9 @@ exports[`NotFound snapshot should match the last saved snapshot 1`] = `
     <div
       className="page-container"
     >
-      <h1>
+      <h1
+        className="notFound-title"
+      >
         🤦 That page is missing, sorry!
       </h1>
       <div

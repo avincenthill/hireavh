@@ -4,6 +4,10 @@ import Header from 'components/Header/Header';
 import React from 'react';
 
 class Page extends React.Component {
+  componentDidMount() {
+    document.title = "avh" + location.pathname;
+  }
+
   render() {
     return (
       <div>

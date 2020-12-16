@@ -76,7 +76,7 @@ exports[`Todo snapshot should match the last saved snapshot 1`] = `
       <h3
         className="todo-title"
       >
-        Tue Dec 15 2020
+        Wed Dec 16 2020
       </h3>
       <button
         className="todo button-hover-light todo-false"

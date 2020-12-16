@@ -8,7 +8,7 @@ function NotFound() {
   return (
     <div>
       <Page>
-        <h1>{content.notFound.title}</h1>
+        <h1 className="notFound-title">{content.notFound.title}</h1>
         <NavList></NavList>
         <hr></hr>
       </Page>
