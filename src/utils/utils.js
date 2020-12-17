@@ -5,6 +5,7 @@ const utils = {};
 utils.sleep = (milliseconds) => {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
 };
+
 /*
   return a new shuffled array
   @param {Array} an array containing the items

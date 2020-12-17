@@ -94,11 +94,15 @@ export default class Todo extends Component {
       this.resetTodoArr();
     }
 
-    let todoArr = JSON.parse(localStorage.getItem('todoArr'));
+    let todoArr = this.getTodoArr();
     if (!todoArr || todoArr.length !== todoTaskArray.length) {
       this.resetTodoArr();
     }
   }
+
+  getTodoArr = () => {
+    return JSON.parse(localStorage.getItem('todoArr'));
+  };
 
   handleResetClick = () => {
     this.playResetSound();
@@ -112,21 +116,20 @@ export default class Todo extends Component {
   };
 
   handleClick = (e) => {
-    const todoArr = JSON.parse(localStorage.getItem('todoArr'));
+    const todoArr = this.getTodoArr();
     const id = parseInt(e.target.id, 10);
     const newBool = !todoArr[id];
     todoArr[id] = newBool;
-
-    // play appropriate sounds based on state
-    this.pickAndPlaySound(newBool, todoArr);
     localStorage.setItem('todoArr', JSON.stringify(todoArr));
     this.forceUpdate();
+    this.handleTodoListState(newBool, todoArr);
   };
 
-  pickAndPlaySound = (selectedBool, todoArrBool) => {
+  handleTodoListState = (selectedBool, todoArrBool) => {
     const areSomeFalse = todoArrBool.some((element) => {
       return !element;
     });
+
     if (areSomeFalse) {
       if (selectedBool) {
         this.playCheckSound();
@@ -134,7 +137,8 @@ export default class Todo extends Component {
         this.playResetSound();
       }
     } else {
-      this.playSuccessSound();
+      this.playCheckSound();
+      this.animateSuccess();
     }
   };
 
@@ -157,8 +161,30 @@ export default class Todo extends Component {
     this.playSound('checkSound', 0.5);
   };
 
+  animateSuccess = async () => {
+    const todoArr = this.getTodoArr();
+    const todoArrLen = todoArr.length;
+    const delay = 50;
+
+    for (let i = 0; i < todoArrLen; i += 1) {
+      todoArr[i] = false;
+      localStorage.setItem('todoArr', JSON.stringify(todoArr));
+      this.forceUpdate();
+      await utils.sleep(delay);
+    }
+
+    for (let i = 0; i < todoArrLen; i += 1) {
+      todoArr[i] = true;
+      localStorage.setItem('todoArr', JSON.stringify(todoArr));
+      this.forceUpdate();
+      await utils.sleep(delay);
+    }
+
+    this.playSuccessSound();
+  };
+
   renderArrayOfTodos() {
-    const todoArr = JSON.parse(localStorage.getItem('todoArr'));
+    const todoArr = this.getTodoArr();
 
     return todoArr.map((todoBool, index) => {
       return (
@@ -184,13 +210,13 @@ export default class Todo extends Component {
   }
 
   render() {
-    const todoArr = JSON.parse(localStorage.getItem('todoArr'));
+    const todoArr = this.getTodoArr();
     const areSomeFalse = todoArr.some((element) => {
       return !element;
     });
 
     return (
-      <div className="todo-container">
+      <div className="todolist-container">
         <Page>
           <IconContext.Provider
             value={{
@@ -200,9 +226,23 @@ export default class Todo extends Component {
               },
             }}
           >
-            {!areSomeFalse ? <FaTrophy /> : null}
             <h3 className="todo-title">{new Date().toDateString()}</h3>
-            {this.props ? this.renderArrayOfTodos() : null}
+            {this.props ? (
+              <div className="todo-container">{this.renderArrayOfTodos()}</div>
+            ) : null}
+            {!areSomeFalse ? (
+              <span className="todo-trophy">
+                <IconContext.Provider
+                  value={{
+                    style: {
+                      ...styleconfig.icons.xl,
+                    },
+                  }}
+                >
+                  <FaTrophy />
+                </IconContext.Provider>
+              </span>
+            ) : null}
             <button
               id="2"
               className="todo todo-reset button-hover-light todo-resetBtn"
@@ -219,6 +259,7 @@ export default class Todo extends Component {
                 <source src={resetSound}></source>
               </audio>
             </button>
+            <h3 className="todo-title">{new Date().toDateString()}</h3>
           </IconContext.Provider>
         </Page>
       </div>
