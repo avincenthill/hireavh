@@ -30,8 +30,6 @@ module.exports = (on, config) => {
     },
   };
 
-  // console.log(webpackOptions);
-
   on('file:preprocessor', webpack(options));
 
   // console.log out messages from test files
