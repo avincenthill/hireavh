@@ -77,10 +77,6 @@ export default class Todo extends Component {
         title: 'PREP TOMORROW',
         icon: <FaTshirt />,
       },
-      {
-        title: 'NIGHT HYGIENE',
-        icon: <FaTooth />,
-      },
     ];
 
     this.state = {
