@@ -39,7 +39,7 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
  src/components/SortList/         |      100 |      100 |      100 |      100 |                |
   SortList.js                     |      100 |      100 |      100 |      100 |                |
  src/components/Todo/             |    41.67 |     38.1 |    41.18 |    42.86 |                |
-  Todo.js                         |    41.67 |     38.1 |    41.18 |    42.86 |... 179,180,183 |
+  Todo.js                         |    41.67 |     38.1 |    41.18 |    42.86 |... 175,176,179 |
  src/components/ToggleSwitch/     |      100 |      100 |      100 |      100 |                |
   ToggleSwitch.js                 |      100 |      100 |      100 |      100 |                |
  src/content/                     |      100 |      100 |      100 |      100 |                |
