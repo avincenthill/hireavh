@@ -85,10 +85,16 @@
   color: var(--c-1);
 }
 
-.todo-resetBtn {
+.todo-reset-btn {
   margin-top: var(--s-s);
 }
 
 .todo-trophy {
   margin: var(--s-s);
+}
+
+@media only screen and (min-width: 600px) {
+  .todo-bottom-date {
+    display: none;
+  }
 }

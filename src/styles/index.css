@@ -25,6 +25,7 @@
   /* Border */
   --b-1: 0.1rem;
 
+  /* Button effects */
   --hover-light:hover {
     transform: translateY(var(--s-xxs));
     transform: scale(1.1);

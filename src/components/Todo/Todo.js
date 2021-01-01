@@ -241,7 +241,7 @@ export default class Todo extends Component {
             ) : null}
             <button
               id="2"
-              className="todo todo-reset button-hover-light todo-resetBtn"
+              className="todo todo-reset button-hover-light todo-reset-btn"
               onClick={this.handleResetClick}
             >
               <span className="todo-item-reset">RESET</span>
@@ -255,7 +255,7 @@ export default class Todo extends Component {
                 <source src={resetSound}></source>
               </audio>
             </button>
-            <h3 className="todo-title">{new Date().toDateString()}</h3>
+            <h3 className="todo-title todo-bottom-date">{new Date().toDateString()}</h3>
           </IconContext.Provider>
         </Page>
       </div>
