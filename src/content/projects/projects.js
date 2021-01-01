@@ -78,11 +78,11 @@ const projects = {
     {
       title: 'Leetcode Answers',
       url:
-        'https://github.com/avincenthill/leetcode-answers/tree/master/leetcode-answers',
+        'https://leetcode.com/avincenthill/',
       displayUrl:
-        'https://github.com/avincenthill/leetcode-answers/tree/master/leetcode-answers',
-      description: 'A collection of my JS implementations from leetcode.com.',
-      longDescription: `PERSONAL PROJECT: This is the GitHub repo where I control my answers to leetcode questions, mostly implemented in JavaScript. I've tried to also include data about runtime and memory after they were run successfully in the application.`,
+        'https://leetcode.com/avincenthill/',
+      description: 'My progress through LeetCode questions.',
+      longDescription: `This represents the practice I've done with algorithm questions on leetcode.com, mostly in JavaScript.`,
       img: {
         emoji: '🧩',
       },
