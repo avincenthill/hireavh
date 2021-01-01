@@ -76,7 +76,7 @@ exports[`Todo snapshot should match the last saved snapshot 1`] = `
       <h3
         className="todo-title"
       >
-        Thu Dec 24 2020
+        Thu Dec 31 2020
       </h3>
       <div
         className="todo-container"
@@ -443,7 +443,7 @@ exports[`Todo snapshot should match the last saved snapshot 1`] = `
         </button>
       </div>
       <button
-        className="todo todo-reset button-hover-light todo-resetBtn"
+        className="todo todo-reset button-hover-light todo-reset-btn"
         id="2"
         onClick={[Function]}
       >
@@ -475,9 +475,9 @@ exports[`Todo snapshot should match the last saved snapshot 1`] = `
         </audio>
       </button>
       <h3
-        className="todo-title"
+        className="todo-title todo-bottom-date"
       >
-        Thu Dec 24 2020
+        Thu Dec 31 2020
       </h3>
     </div>
     <div>
