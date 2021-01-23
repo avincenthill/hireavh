@@ -58,7 +58,7 @@ export default class Todo extends Component {
         icon: <FaBroom />,
       },
       {
-        title: 'WASH DISHES',
+        title: 'DO DISHES',
         icon: <FaGlassCheers />,
       },
       {
@@ -96,6 +96,14 @@ export default class Todo extends Component {
     }
   }
 
+  componentDidMount() {
+    this._mounted = true;
+  }
+
+  componentWillUnmount() {
+    this._mounted = false;
+  }
+
   getTodoArr = () => {
     return JSON.parse(localStorage.getItem('todoArr'));
   };
@@ -108,7 +116,7 @@ export default class Todo extends Component {
   resetTodoArr = () => {
     const todoArr = Array(this.state.todoTaskArray.length).fill(false);
     localStorage.setItem('todoArr', JSON.stringify(todoArr));
-    this.forceUpdate();
+    if (this._mounted) this.forceUpdate();
   };
 
   handleClick = (e) => {
@@ -117,7 +125,7 @@ export default class Todo extends Component {
     const newBool = !todoArr[id];
     todoArr[id] = newBool;
     localStorage.setItem('todoArr', JSON.stringify(todoArr));
-    this.forceUpdate();
+    if (this._mounted) this.forceUpdate();
     this.handleTodoListState(newBool, todoArr);
   };
 
@@ -165,14 +173,14 @@ export default class Todo extends Component {
     for (let i = 0; i < todoArrLen; i += 1) {
       todoArr[i] = false;
       localStorage.setItem('todoArr', JSON.stringify(todoArr));
-      this.forceUpdate();
+      if (this._mounted) this.forceUpdate();
       await utils.sleep(delay);
     }
 
     for (let i = 0; i < todoArrLen; i += 1) {
       todoArr[i] = true;
       localStorage.setItem('todoArr', JSON.stringify(todoArr));
-      this.forceUpdate();
+      if (this._mounted) this.forceUpdate();
       await utils.sleep(delay);
     }
 
@@ -255,7 +263,9 @@ export default class Todo extends Component {
                 <source src={resetSound}></source>
               </audio>
             </button>
-            <h3 className="todo-title todo-bottom-date">{new Date().toDateString()}</h3>
+            <h3 className="todo-title todo-bottom-date">
+              {new Date().toDateString()}
+            </h3>
           </IconContext.Provider>
         </Page>
       </div>

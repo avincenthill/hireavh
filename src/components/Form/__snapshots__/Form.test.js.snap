@@ -76,16 +76,38 @@ exports[`Form snapshot should match the last saved snapshot 1`] = `
       >
         📃 Dynamic Form
       </h2>
+      <br />
       <p
         className="form-description"
       >
-        PERSONAL PROJECT: This form renders input fields based on user-inputted JSON. This was implemented as a React.js test for an interview and I decided to deploy it due to the frequency I get asked to make something like this while applying for jobs.
+        PERSONAL PROJECT: This form renders inputs based on a configuration array of JSON, for example:
       </p>
+      <br />
+      <div
+        className="form-description"
+      >
+        [
+    {
+      "tag": "input",
+      "name": "first_name",
+      "type": "text",
+      "human_label": "First Name",
+      "is_required": "true"
+    }
+  ]
+      </div>
+      <br />
+      <p
+        className="form-description"
+      >
+        It outputs JSON when the form is submitted. This was implemented as a React.js test for an interview and I decided to deploy it due to the frequency I get asked to make something like this while applying for jobs.
+      </p>
+      <br />
       <div
         className="form-item"
       >
         <label>
-          INPUT
+          JSON CONFIG
         </label>
         <textarea
           className="form-input"
@@ -142,8 +164,10 @@ exports[`Form snapshot should match the last saved snapshot 1`] = `
         className="form-container"
         onSubmit={[Function]}
       >
-        <h3>
-          FORM
+        <h3
+          className="form-subtitle"
+        >
+          DYNAMIC FORM
         </h3>
         <div
           className="form-item"
@@ -247,7 +271,7 @@ exports[`Form snapshot should match the last saved snapshot 1`] = `
         className="form-item"
       >
         <label>
-          OUTPUT
+          FORM DATA
         </label>
         <textarea
           className="form-input"
@@ -370,7 +394,7 @@ exports[`Form snapshot should match the last saved snapshot 1`] = `
         href="/about"
       >
         <span>
-          copyright Alex Vincent-Hill 2020 - 🏠 about
+          copyright Alex Vincent-Hill 2021 - 🏠 about
         </span>
       </a>
     </div>

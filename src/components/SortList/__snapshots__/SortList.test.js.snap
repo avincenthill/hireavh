@@ -209,7 +209,7 @@ exports[`SortList snapshot should match the last saved snapshot 1`] = `
             </button>
           </div>
           <p
-            class="sort-description"
+            className="sort-description"
           >
             repeatedly step through the list, compare adjacent elements and swap them if they are in the wrong order
           </p>
@@ -606,7 +606,7 @@ exports[`SortList snapshot should match the last saved snapshot 1`] = `
             </button>
           </div>
           <p
-            class="sort-description"
+            className="sort-description"
           >
             each iteration, remove one element from the input data, find the location it belongs within the sorted list, and insert it there
           </p>
@@ -973,7 +973,7 @@ exports[`SortList snapshot should match the last saved snapshot 1`] = `
             </button>
           </div>
           <p
-            class="sort-description"
+            className="sort-description"
           >
             select a 'pivot' element from the array and partition the other elements into two sub-arrays, according to whether they are less than or greater than the pivot, then sort the sub-arrays recursively
           </p>
@@ -1468,7 +1468,7 @@ exports[`SortList snapshot should match the last saved snapshot 1`] = `
             </button>
           </div>
           <p
-            class="sort-description"
+            className="sort-description"
           >
             shuffle the list and check whether it is sorted, yolo
           </p>
@@ -1870,7 +1870,7 @@ exports[`SortList snapshot should match the last saved snapshot 1`] = `
         href="/about"
       >
         <span>
-          copyright Alex Vincent-Hill 2020 - 🏠 about
+          copyright Alex Vincent-Hill 2021 - 🏠 about
         </span>
       </a>
     </div>

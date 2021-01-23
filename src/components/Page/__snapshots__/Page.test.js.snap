@@ -108,7 +108,7 @@ exports[`Page snapshot should match the last saved snapshot 1`] = `
       href="/about"
     >
       <span>
-        copyright Alex Vincent-Hill 2020 - 🏠 about
+        copyright Alex Vincent-Hill 2021 - 🏠 about
       </span>
     </a>
   </div>

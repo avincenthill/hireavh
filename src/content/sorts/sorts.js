@@ -8,7 +8,7 @@ const sorts = {
   title: 'Sorting Algorithms',
   description: `PERSONAL PROJECT: Common sorting algorithms rendered with HTML canvas.  This project continues to expand as I study sorting algorithms more.  It is open source, just like this website!`,
   emoji: '📊',
-  numBars: 100,
+  numBars: 50,
   complexityHeader: '🧮 complexity',
   timeHeader: '🕒 time',
   spaceHeader: '🌌 space',

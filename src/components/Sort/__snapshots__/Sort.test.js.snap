@@ -129,7 +129,7 @@ exports[`Sort snapshot should match the last saved snapshot 1`] = `
       </button>
     </div>
     <p
-      class="sort-description"
+      className="sort-description"
     >
       repeatedly step through the list, compare adjacent elements and swap them if they are in the wrong order
     </p>

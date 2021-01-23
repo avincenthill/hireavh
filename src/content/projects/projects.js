@@ -77,10 +77,8 @@ const projects = {
     // *************************************************************************
     {
       title: 'Leetcode Answers',
-      url:
-        'https://leetcode.com/avincenthill/',
-      displayUrl:
-        'https://leetcode.com/avincenthill/',
+      url: 'https://leetcode.com/avincenthill/',
+      displayUrl: 'https://leetcode.com/avincenthill/',
       description: 'My progress through LeetCode questions.',
       longDescription: `This represents the practice I've done with algorithm questions on leetcode.com, mostly in JavaScript.`,
       img: {

@@ -108,10 +108,36 @@ class Form extends React.Component {
         </form>
       );
     } else {
+      return this.renderFormItems(config);
+    }
+  };
+
+  renderFormItems = (config) => {
+    if (config.length === 0 || !Array.isArray(config)) {
+      return (
+        <form className="form-container form-error">
+          {formContent.noItemsWarning}
+        </form>
+      );
+    } else {
       return (
         <form className="form-container" onSubmit={this.handleSubmit}>
-          <h3>{formContent.formTitle}</h3>
-          {this.renderFormItems(config)}
+          <h3 className="form-subtitle">{formContent.formTitle}</h3>
+          {config.map((item, index) => {
+            return (
+              <div className="form-item" key={index}>
+                <label>
+                  {item.human_label}
+                  {item.is_required ? '*' : ''}
+                </label>
+                <input
+                  id={item.name}
+                  type={item.type}
+                  onChange={this.handleInputChange}
+                ></input>
+              </div>
+            );
+          })}
           <button className="form-button" type="submit">
             {formContent.submitTitle}
           </button>
@@ -120,34 +146,19 @@ class Form extends React.Component {
     }
   };
 
-  renderFormItems = (config) => {
-    if (config.length === 0 || !Array.isArray(config)) {
-      return <div>{formContent.noItemsWarning}</div>;
-    } else {
-      return config.map((item, index) => {
-        return (
-          <div className="form-item" key={index}>
-            <label>
-              {item.human_label}
-              {item.is_required ? '*' : ''}
-            </label>
-            <input
-              id={item.name}
-              type={item.type}
-              onChange={this.handleInputChange}
-            ></input>
-          </div>
-        );
-      });
-    }
-  };
-
   render() {
     return (
       <div>
         <Page>
           <h2 className="form-title">{formContent.title}</h2>
-          <p className="form-description">{formContent.description}</p>
+          <br />
+          <p className="form-description">{formContent.descriptionA}</p>
+          <br />
+          <div className="form-description">{formContent.descriptionB}</div>
+          <br />
+          <p className="form-description">{formContent.descriptionC}</p>
+          <br />
+
           <div className="form-item">
             <label>{formContent.inputTitle}</label>
             <textarea
@@ -157,7 +168,9 @@ class Form extends React.Component {
               onChange={this.handleConfigChange}
             ></textarea>
           </div>
+
           {this.renderForm(this.state.config)}
+
           <div className="form-item">
             <label>{formContent.outputTitle}</label>
             <textarea
@@ -170,8 +183,11 @@ class Form extends React.Component {
               className="form-input"
             ></textarea>
           </div>
+
           <hr></hr>
+
           <NavList></NavList>
+
           <hr></hr>
         </Page>
       </div>

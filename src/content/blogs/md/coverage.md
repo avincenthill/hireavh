@@ -13,7 +13,7 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
  src/components/Footer/           |      100 |      100 |      100 |      100 |                |
   Footer.js                       |      100 |      100 |      100 |      100 |                |
  src/components/Form/             |    53.45 |       50 |    66.67 |    53.45 |                |
-  Form.js                         |    53.45 |       50 |    66.67 |    53.45 |... 100,105,125 |
+  Form.js                         |    53.45 |       50 |    66.67 |    53.45 |... 100,105,117 |
  src/components/Header/           |       50 |      100 |       50 |       50 |                |
   Header.js                       |       50 |      100 |       50 |       50 |             18 |
  src/components/Link/             |      100 |      100 |      100 |      100 |                |
@@ -38,8 +38,8 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   customSyntaxHighlighterStyle.js |      100 |      100 |      100 |      100 |                |
  src/components/SortList/         |      100 |      100 |      100 |      100 |                |
   SortList.js                     |      100 |      100 |      100 |      100 |                |
- src/components/Todo/             |    41.67 |     38.1 |    41.18 |    42.86 |                |
-  Todo.js                         |    41.67 |     38.1 |    41.18 |    42.86 |... 175,176,179 |
+ src/components/Todo/             |    39.74 |    31.03 |    42.11 |    43.06 |                |
+  Todo.js                         |    39.74 |    31.03 |    42.11 |    43.06 |... 183,184,187 |
  src/components/ToggleSwitch/     |      100 |      100 |      100 |      100 |                |
   ToggleSwitch.js                 |      100 |      100 |      100 |      100 |                |
  src/content/                     |      100 |      100 |      100 |      100 |                |
@@ -66,6 +66,6 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
  src/utils/                       |      100 |      100 |      100 |      100 |                |
   utils.js                        |      100 |      100 |      100 |      100 |                |
 ----------------------------------|----------|----------|----------|----------|----------------|
-All files                         |    72.92 |    62.42 |    73.98 |    72.89 |                |
+All files                         |    72.21 |    60.12 |     73.6 |    72.79 |                |
 ----------------------------------|----------|----------|----------|----------|----------------|
 

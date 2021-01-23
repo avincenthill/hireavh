@@ -76,7 +76,7 @@ exports[`Todo snapshot should match the last saved snapshot 1`] = `
       <h3
         className="todo-title"
       >
-        Thu Dec 31 2020
+        Fri Jan 22 2021
       </h3>
       <div
         className="todo-container"
@@ -294,7 +294,7 @@ exports[`Todo snapshot should match the last saved snapshot 1`] = `
           <span
             className="todo-item"
           >
-            WASH DISHES
+            DO DISHES
           </span>
         </button>
         <button
@@ -477,7 +477,7 @@ exports[`Todo snapshot should match the last saved snapshot 1`] = `
       <h3
         className="todo-title todo-bottom-date"
       >
-        Thu Dec 31 2020
+        Fri Jan 22 2021
       </h3>
     </div>
     <div>
@@ -518,7 +518,7 @@ exports[`Todo snapshot should match the last saved snapshot 1`] = `
         href="/about"
       >
         <span>
-          copyright Alex Vincent-Hill 2020 - 🏠 about
+          copyright Alex Vincent-Hill 2021 - 🏠 about
         </span>
       </a>
     </div>

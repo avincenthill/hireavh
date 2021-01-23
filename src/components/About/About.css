@@ -1,12 +1,3 @@
-.about-icons-container {
-  margin-bottom: var(--s-m);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 75vw;
-}
-
 .about-p {
   width: 75vw;
 }
