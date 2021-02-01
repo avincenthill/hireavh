@@ -128,3 +128,6 @@ yarn-error.log*
 
 #env
 .env
+
+# version git hash data
+/src/content/version/version.txt

@@ -49,6 +49,7 @@
     "react-app-polyfill": "^1.0.6",
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "6.1.0",
     "react-icons": "^3.9.0",
     "react-pdf": "^4.1.0",
     "react-router-dom": "^5.1.2",
@@ -76,10 +77,11 @@
     "test:snap": "jest --updateSnapshot",
     "lint": "eslint 'src/**/*.{js,jsx}'",
     "lint:fix": "eslint 'src/**/*.{js,jsx}' --fix",
-    "deploy": "git stash && npm run lint && npm run test && npm run test:int && npm run build && aws s3 sync build/ s3://hire-avh --delete --cache-control max-age=2500",
+    "deploy": "git stash && npm run lint && npm run test && npm run test:int && npm run _printlastgithash & npm run build && aws s3 sync build/ s3://hire-avh --delete --cache-control max-age=2500",
     "updateblogreadme": "cp README.md ./src/content/blogs/md/README.md",
     "newcomponent": "mkdir ${PWD}/src/components/${NAME:-NewComponent}/ && cp -a ${PWD}/src/components/Default/ ${PWD}/src/components/${NAME:-NewComponent}/",
-    "_printcoverage": "istanbul report --include coverage/coverage-final.json text > src/content/blogs/md/coverage.md && tail -n +2 src/content/blogs/md/coverage.md > src/content/blogs/md/coverage.md.tmp && mv src/content/blogs/md/coverage.md.tmp src/content/blogs/md/coverage.md && ghead -n -1 src/content/blogs/md/coverage.md > src/content/blogs/md/coverage.md.tmp && mv src/content/blogs/md/coverage.md.tmp src/content/blogs/md/coverage.md"
+    "_printcoverage": "istanbul report --include coverage/coverage-final.json text > src/content/blogs/md/coverage.md && tail -n +2 src/content/blogs/md/coverage.md > src/content/blogs/md/coverage.md.tmp && mv src/content/blogs/md/coverage.md.tmp src/content/blogs/md/coverage.md && ghead -n -1 src/content/blogs/md/coverage.md > src/content/blogs/md/coverage.md.tmp && mv src/content/blogs/md/coverage.md.tmp src/content/blogs/md/coverage.md",
+    "_printlastgithash": "git rev-parse --short HEAD > 'src/content/version/version.txt'"
   },
   "eslintConfig": {
     "extends": "react-app"

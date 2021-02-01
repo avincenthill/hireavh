@@ -47,7 +47,9 @@ Lints with eslint. The available options are:
 - `npm lint:fix`: runs eslint on .js and .jsx files in fix mode.
 
 ### `npm deploy`
-Syncs `master` branch to S3 bucket. You need to setup and authenticate AWS CLI first. See [https://medium.com/@wolovim/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af](https://medium.com/@wolovim/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af) for more info.
+Builds the project and syncs the build to S3 bucket. During the process tests are run and the last git hash is saved to render as a version meta tag.
+
+You need to setup and authenticate AWS CLI first. See [https://medium.com/@wolovim/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af](https://medium.com/@wolovim/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af) for more info.
 
 ### `npm run updateblogreadme`
 Copies README.md into `src` so it can be imported, parsed, and rendered in the `/blog` section of the web app.
