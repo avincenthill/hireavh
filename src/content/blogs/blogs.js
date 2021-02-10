@@ -24,7 +24,7 @@ const blogs = {
       url: 'blog/marketing',
       displayUrl: 'hireavh.com/blog/marketing',
       description: 'Maximizing your ROI with Google Ads!',
-      longDescription: `Here is a short description of the digital marketing services that I can offer to businesses. Contact me for more info!`,
+      longDescription: `PERSONAL PROJECT: Here is a short description of the digital marketing services that I can offer to businesses. Contact me for more info!`,
       md: marketing,
       img: {
         emoji: '💼',
@@ -34,7 +34,7 @@ const blogs = {
     {
       title: 'hireavh.com README.md',
       url: 'blog/readme',
-      longDescription: `I decided to render the README.md for this website since it was already in markdown. If you'd like to see an example of how I write technical documentation, just click!`,
+      longDescription: `PERSONAL PROJECT: I decided to render the README.md for this website since it was already in markdown. If you'd like to see an example of how I write technical documentation, just click!`,
       md: readme,
       img: {
         emoji: '📒',
@@ -44,7 +44,7 @@ const blogs = {
     {
       title: 'hireavh.com Test Coverage Report',
       url: 'blog/test-coverage',
-      longDescription: `This is the current test coverage for the website you are currently using. Jest and Enzyme are used to unit test this application and Istanbul is used to create the report.`,
+      longDescription: `PERSONAL PROJECT: This is the current test coverage for the website you are currently using. Jest and Enzyme are used to unit test this application and Istanbul is used to create the report.`,
       md: coverage,
       img: {
         emoji: '🧪',

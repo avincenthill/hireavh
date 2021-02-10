@@ -56,9 +56,9 @@ const projects = {
       url: '/todo',
       displayUrl: 'hireavh.com/todo',
       description:
-        'PERSONAL PROJECT: A dopamine-triggering daily to-do list with selections persisting in localStorage.',
+        'A dopamine-triggering daily to-do list with selections persisting in localStorage.',
       longDescription:
-        "Tasks get cleared on date day-changes or when you clear localStorage. That's about all!",
+        "PERSONAL PROJECT: Your basic React.js todo list. Tasks get cleared on date day-changes or when you clear localStorage. That's about all!",
       img: {
         emoji: '☑️',
       },
