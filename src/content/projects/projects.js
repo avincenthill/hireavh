@@ -68,7 +68,7 @@ const projects = {
       title: 'Dynamic Form',
       url: '/dynamic-form',
       displayUrl: 'hireavh.com/form',
-      description: 'PERSONAL PROJECT: Rendering a form based on input JSON.',
+      description: 'Rendering a form based on input JSON.',
       longDescription: form.description,
       img: {
         emoji: '📃',
