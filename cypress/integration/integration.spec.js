@@ -7,7 +7,6 @@ describe('routing', () => {
     '/contact',
     '/sorting-algorithms',
     '/blog',
-    // '/blog/recruiter-faq',
     '/projects',
     '/graphic-design',
     '/dynamic-form',
@@ -20,4 +19,39 @@ describe('routing', () => {
       });
     });
   });
+});
+
+describe('navigation', () => {
+    const elements = [
+      'header',
+      'footer'
+    ]
+    for (let element of elements) {
+      describe(element, () => {
+        it(`should land on /about after click`, () => {
+          cy.visit('/');
+          cy.get(`.${element}-container`).click();
+          cy.url().should('include', '/about')
+        });
+      });
+    }
+
+    describe('nav-list', () => {
+      const navPaths = [
+        'about',
+        'blog',
+        'projects',
+        'resume',
+        'contact',
+      ];
+      for (let path of navPaths) {
+        describe(path, () => {
+          it(`should land on /${path} after click`, () => {
+            cy.visit('/');
+            cy.get(`.nav-list`).contains(path).click();
+            cy.url().should('include', `/${path}`)
+          });
+        });
+      }
+    });
 });
