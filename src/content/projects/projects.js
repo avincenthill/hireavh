@@ -42,7 +42,7 @@ const projects = {
         'https://marketingplatform.google.com/about/resources/fetch-and-aeg-presents-boost-efficiency-with-structured-information-files/',
       displayUrl: 'marketingplatform.google.com',
       description: "100x'ing Google Ads campaign creation...",
-      longDescription: `FETCH: Unprecedented work that I led which automated the creation of digital ad campaigns and featured in a case study written by Google.`,
+      longDescription: `WORK PROJECT (FETCH INC.): Unprecedented work that I led which automated the creation of digital ad campaigns and featured in a case study written by Google.`,
       img: {
         emoji: '⚙️',
       },
@@ -56,7 +56,7 @@ const projects = {
       url: '/todo',
       displayUrl: 'hireavh.com/todo',
       description:
-        'A dopamine-triggering daily to-do list with selections persisting in localStorage.',
+        'PERSONAL PROJECT: A dopamine-triggering daily to-do list with selections persisting in localStorage.',
       longDescription:
         "Tasks get cleared on date day-changes or when you clear localStorage. That's about all!",
       img: {
@@ -68,7 +68,7 @@ const projects = {
       title: 'Dynamic Form',
       url: '/dynamic-form',
       displayUrl: 'hireavh.com/form',
-      description: 'Rendering a form based on input JSON.',
+      description: 'PERSONAL PROJECT: Rendering a form based on input JSON.',
       longDescription: form.description,
       img: {
         emoji: '📃',
@@ -80,7 +80,7 @@ const projects = {
       url: 'https://leetcode.com/avincenthill/',
       displayUrl: 'https://leetcode.com/avincenthill/',
       description: 'My progress through LeetCode questions.',
-      longDescription: `This represents the practice I've done with algorithm questions on leetcode.com, mostly in JavaScript.`,
+      longDescription: `PERSONAL PROJECT: This represents the practice I've done with algorithm questions on leetcode.com, mostly in JavaScript.`,
       img: {
         emoji: '🧩',
       },
@@ -91,7 +91,7 @@ const projects = {
       url: '/graphic-design',
       displayUrl: 'hireavh.com/graphic-design',
       description: 'A collection of my published work.',
-      longDescription: `There are some of my graphic design pieces in the field. I'm experienced with Adobe Photoshop and Illustrator and love to make things look nice!`,
+      longDescription: `PERSONAL PROJECT: There are some of my graphic design pieces in the field. I'm experienced with Adobe Photoshop and Illustrator and love to make things look nice!`,
       img: {
         emoji: '🎨',
       },
@@ -102,7 +102,7 @@ const projects = {
       url: 'https://lichess.org/@/avincenthill/perf/rapid',
       displayUrl: 'lichess.org',
       description: 'Challenge me on lichess.org!',
-      longDescription: `I like to play chess in my spare time - here is a link to my profile on lichess.org!`,
+      longDescription: `PERSONAL PROJECT: I like to play chess in my spare time - here is a link to my profile on lichess.org!`,
       img: {
         emoji: '♟️',
       },
