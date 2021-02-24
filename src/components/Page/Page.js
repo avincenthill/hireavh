@@ -14,7 +14,7 @@ class Page extends React.Component {
     fetch(lastGitHash)
       .then((r) => r.text())
       .then((text) => {
-        this.setState({ version: text.replace(/(\r\n|\n|\r)/gm, "") });
+        this.setState({ version: text.replace(/(\r\n|\n|\r)/gm, '') });
       });
   }
 
