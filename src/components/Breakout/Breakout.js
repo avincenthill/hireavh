@@ -7,6 +7,9 @@ import React from 'react';
 // import utils from '../../utils/utils';
 // import content from "content/content";
 
+// TBD: handle particle to particle collisions
+// TBD: improve particle to paddle collisions
+// TBD: implement game logic for breakout
 // TBD: implement content project link
 
 class Breakout extends React.Component {
@@ -22,7 +25,7 @@ class Breakout extends React.Component {
     this.gravity = 0.05;
     this.drag = 0.001;
     this.wallElasticity = 0.99;
-    this.ballElasticity = 0.99;
+    this.particleElasticity = 0.99;
     this.paddleElasticity = 0.99;
 
     this.particleColor = 'red';
@@ -132,16 +135,17 @@ class Breakout extends React.Component {
         // swap velocities
         let tempVx = particle.vx;
         let tempVy = particle.vy;
-        particle.vx = otherParticle.vx * this.ballElasticity;
-        particle.vy = otherParticle.vy * this.ballElasticity;
-        otherParticle.vx = tempVx * this.ballElasticity;
-        otherParticle.vy = tempVy * this.ballElasticity;
+        particle.vx = otherParticle.vx * this.particleElasticity;
+        particle.vy = otherParticle.vy * this.particleElasticity;
+        otherParticle.vx = tempVx * this.particleElasticity;
+        otherParticle.vy = tempVy * this.particleElasticity;
 
         // TBD: do trig and offset both particles
       }
     }
   }
 
+  // TBD: clean up hardcoded constants
   handleCollisionsWithPaddle(particle, paddle) {
     let overlap;
     if (
