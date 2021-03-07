@@ -42,19 +42,19 @@ class Breakout extends React.Component {
     this.paddleColor = 'white';
     this.paddleStartingX = 300;
     this.paddleWidth = 100;
-    this.paddleThickness = 10;
-    this.paddleHeight = 0;
+    this.paddleThickness = 5;
   }
 
   componentDidMount() {
     this.initCanvas();
+
     this.initGame();
   }
 
   _onMouseMove = (e) => {
     const rect = this.canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    this.updatePaddle(x);
+    const dispX = e.clientX - rect.left;
+    this.updatePaddle(dispX);
   };
 
   _onClick = (e) => {
@@ -71,9 +71,10 @@ class Breakout extends React.Component {
     return new Paddle(this);
   }
 
-  updatePaddle(x) {
-    this.paddle.dispX = x;
-    this.paddle.updateDispProps();
+  updatePaddle(dispX) {
+    this.paddle.dispX = dispX;
+
+    this.paddle.update();
   }
 
   deleteParticle(id) {
@@ -88,9 +89,11 @@ class Breakout extends React.Component {
     // get ref and context of canvas
     this.canvas = this.getRefs('canvas');
     if (this.canvas) {
+      // instantiate vars using canvas
       this.canvas.width = this.canvas.offsetWidth;
       this.canvas.height = this.canvas.offsetHeight;
       this.ctx = this.canvas.getContext('2d');
+      this.paddleHeight = this.canvas.height * 0.9;
 
       // start render loop
       this.interval = setInterval(() => {
@@ -149,13 +152,13 @@ class Breakout extends React.Component {
   handleCollisionsWithPaddle(particle, paddle) {
     let overlap;
     if (
-      particle.y - particle.radius < -(-40 + this.canvas.height * 0.9) / 2 &&
-      particle.x < paddle.x + 50 &&
-      particle.x > paddle.x - 50
+      particle.y - particle.radius < paddle.y &&
+      particle.x - particle.radius < paddle.x + paddle.width/2 &&
+      particle.x + particle.radius > paddle.x - paddle.width/2
     ) {
       overlap =
         Math.abs(Math.abs(particle.y) + particle.radius) -
-        Math.abs((-40 + this.canvas.height * 0.9) / 2);
+        Math.abs((this.paddleHeight) / 2);
       particle.vy = Math.abs(particle.vy * this.paddleElasticity);
     }
   }
@@ -218,7 +221,7 @@ class Breakout extends React.Component {
     this.ctx.beginPath();
     this.ctx.rect(
       paddle.dispX - paddle.width / 2,
-      this.canvas.height * 0.9,
+      paddle.dispY,
       paddle.width,
       paddle.thickness
     );
@@ -237,16 +240,21 @@ class Breakout extends React.Component {
     const { radius, color } = particle;
     this.ctx.beginPath();
     this.ctx.arc(particle.dispX, particle.dispY, radius, 0, 2 * Math.PI);
-    this.ctx.fillStyle = color;
-    this.ctx.fill();
+    // this.ctx.fillStyle = color;
+    // this.ctx.fill();
+    this.ctx.strokeStyle = color;
+    this.ctx.stroke();
     this.ctx.closePath();
-    // this.drawParticleText(particle, particle.health);
+
+    // TBD: enable to write to particles
+    this.drawParticleText(particle, Math.round(particle.x));
   }
 
   drawParticleText(particle, text) {
     this.ctx.font = this.particleTextFont;
     this.ctx.fillStyle = this.particleTextColor;
     this.ctx.textAlign = 'center';
+    // slightly adjust text to center in particle
     this.ctx.fillText(text, particle.dispX - 0.5, particle.dispY + 7);
   }
 
