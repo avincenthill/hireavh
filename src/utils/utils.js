@@ -6,6 +6,10 @@ utils.sleep = (milliseconds) => {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
 };
 
+utils.getRandomArbitrary = (min, max) => {
+  return Math.random() * (max - min) + min;
+};
+
 /*
   return a new shuffled array
   @param {Array} an array containing the items

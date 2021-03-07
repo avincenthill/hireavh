@@ -2,6 +2,7 @@ import 'styles/index.css';
 import 'normalize.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import About from 'components/About/About';
+import Breakout from 'components/Breakout/Breakout';
 import Contact from 'components/Contact/Contact';
 import Form from 'components/Form/Form';
 import { NavList } from 'components/Nav/Nav';
@@ -94,6 +95,9 @@ class App extends React.Component {
 
           {/* /todo */}
           <Route exact path="/todo" component={Todo} />
+
+          {/* /breakout */}
+          <Route exact path="/breakout" component={Breakout} />
 
           {/* /404 */}
           <Route component={NotFound} />
