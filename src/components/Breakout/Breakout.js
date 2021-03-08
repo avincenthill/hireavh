@@ -7,10 +7,7 @@ import Particle from './Particle';
 import React from 'react';
 
 // TBD: handle particle to particle collisions
-// TBD: improve particle to paddle collisions
-// TBD: implement game logic for breakout
-// TBD: implement content project link
-
+// TBD: pull out game text strings
 class Breakout extends React.Component {
   constructor(props) {
     super(props);

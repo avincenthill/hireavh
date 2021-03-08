@@ -13,6 +13,17 @@ const projects = {
     // blogs.data[0],
     // *************************************************************************
     {
+      title: 'Plasma Breakout',
+      url: '/breakout',
+      displayUrl: 'hireavh.com/breakout',
+      description: 'A breakout game meets a particle system in JS.',
+      longDescription: `PERSONAL PROJECT: I implemented a 2D particle system in JS and created a breakout-style game within it. This only works on desktop screen widths, sorry!`,
+      img: {
+        emoji: '🎱',
+      },
+    },
+    // *************************************************************************
+    {
       title: 'Particle Simulation',
       url: 'https://github.com/avincenthill/particle_simulation',
       displayUrl: 'github.com/avincenthill/particle_simulation',
