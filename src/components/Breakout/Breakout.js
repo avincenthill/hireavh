@@ -31,9 +31,9 @@ class Breakout extends React.Component {
     // physical contants
     this.gravity = 0;
     this.drag = 0.001;
-    this.wallElasticity = .5;
-    this.particleElasticity = .99;
-    this.paddleElasticity = .75;
+    this.wallElasticity = 0.5;
+    this.particleElasticity = 0.99;
+    this.paddleElasticity = 0.75;
 
     // particles
     this.particles = [];
@@ -225,10 +225,19 @@ class Breakout extends React.Component {
       particle.x - particle.radius < paddle.x + paddle.width / 2 &&
       particle.x + particle.radius > paddle.x - paddle.width / 2
     ) {
-      particle.vy = (Math.max(Math.abs(this.paddle.vx),this.particleStartingVelocity/10) + Math.abs(particle.vy))*this.paddleElasticity;
-      const dvx = Math.max(Math.abs(this.paddle.vx),this.particleStartingVelocity/10);
+      particle.vy =
+        (Math.max(
+          Math.abs(this.paddle.vx),
+          this.particleStartingVelocity / 10
+        ) +
+          Math.abs(particle.vy)) *
+        this.paddleElasticity;
+      const dvx = Math.max(
+        Math.abs(this.paddle.vx),
+        this.particleStartingVelocity / 10
+      );
       particle.vx += dvx * (this.paddle.vx >= 0 ? 1 : -1);
-      particle.vx*=this.paddleElasticity;
+      particle.vx *= this.paddleElasticity;
     }
   }
 
@@ -247,7 +256,7 @@ class Breakout extends React.Component {
         this.ballInPlay = false;
         this.deleteParticle(particle);
         if (!this.gameNumBalls) {
-          this.gameCenterText = 'GAME OVER'
+          this.gameCenterText = 'GAME OVER';
         } else {
           this.gameCenterText = 'click to release a ball';
         }
@@ -386,7 +395,9 @@ class Breakout extends React.Component {
     return (
       <div>
         <Page>
-          <h3 className="mobile-disclaimer">Sorry, this game is best played on desktop screen widths!</h3>
+          <h3 className="mobile-disclaimer">
+            Sorry, this game is best played on desktop screen widths!
+          </h3>
           <canvas
             className={this.canvasName}
             ref={this.canvasName}

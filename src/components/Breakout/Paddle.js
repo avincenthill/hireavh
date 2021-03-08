@@ -12,7 +12,7 @@ class Paddle {
   }
 
   update() {
-    const prevX = this.x
+    const prevX = this.x;
     const newX = this.dispX - this.context.canvas.width / 2;
 
     this.vx = this.calculateV(prevX, newX);
@@ -21,8 +21,8 @@ class Paddle {
     this.y = -(this.dispY - this.context.canvas.height / 2);
   }
 
-  calculateV(v1,v2) {
-    return v2-v1;
+  calculateV(v1, v2) {
+    return v2 - v1;
   }
 }
 
