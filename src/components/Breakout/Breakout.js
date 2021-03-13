@@ -7,8 +7,7 @@ import Particle from './Particle';
 import React from 'react';
 import utils from '../../utils/utils';
 
-// TBD: handle particle to particle collisions
-// TBD: pull out game text strings
+// TBD: refactor to use content for static text data
 class Breakout extends React.Component {
   constructor(props) {
     super(props);
@@ -275,16 +274,17 @@ class Breakout extends React.Component {
   }
 
   handleCollisionsWithWalls(particle) {
-    let overlap;
+    const xOverlap = Math.abs(Math.abs(particle.x) + particle.radius) -
+    Math.abs(this.canvas.width / 2);
+    const yOverlap = Math.abs(Math.abs(particle.y) + particle.radius) -
+    Math.abs(this.canvas.height / 2);
 
     // with floor
     if (particle.y - particle.radius < -this.canvas.height / 2) {
-      overlap =
-        Math.abs(Math.abs(particle.y) + particle.radius) -
-        Math.abs(this.canvas.height / 2);
-      particle.y += overlap;
+      particle.y += yOverlap;
       particle.vy = Math.abs(particle.vy * this.wallElasticity);
 
+      // delete ball on fall to floor
       if (particle instanceof Ball) {
         this.ballInPlay = false;
         this.deleteParticle(particle);
@@ -298,28 +298,19 @@ class Breakout extends React.Component {
 
     // with ceiling
     if (particle.y + particle.radius > this.canvas.height / 2) {
-      overlap =
-        Math.abs(Math.abs(particle.y) + particle.radius) -
-        Math.abs(this.canvas.height / 2);
-      particle.y -= overlap;
+      particle.y -= yOverlap;
       particle.vy = -Math.abs(particle.vy * this.wallElasticity);
     }
 
     // with right
     if (particle.x + particle.radius > this.canvas.width / 2) {
-      overlap =
-        Math.abs(Math.abs(particle.x) + particle.radius) -
-        Math.abs(this.canvas.width / 2);
-      particle.x -= overlap;
+      particle.x -= xOverlap;
       particle.vx = -Math.abs(particle.vx * this.wallElasticity);
     }
 
     // with left
     if (particle.x - particle.radius < -this.canvas.width / 2) {
-      overlap =
-        Math.abs(Math.abs(particle.x) + particle.radius) -
-        Math.abs(this.canvas.width / 2);
-      particle.x += overlap;
+      particle.x += xOverlap;
       particle.vx = Math.abs(particle.vx * this.wallElasticity);
     }
   }
