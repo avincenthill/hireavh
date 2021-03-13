@@ -81,6 +81,7 @@ export default class Todo extends Component {
 
     this.state = {
       todoTaskArray,
+      currentDay: new Date().toDateString()
     };
 
     const lastSeen = JSON.parse(localStorage.getItem('lastSeen'));
@@ -230,7 +231,7 @@ export default class Todo extends Component {
               },
             }}
           >
-            <h3 className="todo-title">{new Date().toDateString()}</h3>
+            <h3 className="todo-title">{this.state.currentDay}</h3>
             {this.props ? (
               <div className="todo-container">{this.renderArrayOfTodos()}</div>
             ) : null}

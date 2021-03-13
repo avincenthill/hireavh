@@ -5,6 +5,7 @@ import Paddle from './Paddle';
 import Page from 'components/Page/Page';
 import Particle from './Particle';
 import React from 'react';
+import utils from '../../utils/utils';
 
 // TBD: handle particle to particle collisions
 // TBD: pull out game text strings
@@ -15,25 +16,27 @@ class Breakout extends React.Component {
     this.renderFrameDelayMs = 10;
     this.interval = null;
 
-    // theme color
+    // theme color/font
     this.white = '#F2D7BA';
     this.black = '#000000';
     this.color1 = '#230040';
     this.color2 = '#725AC1';
     this.color3 = '#FF5D00';
+    this.textColor = this.white;
+    this.font = '20px Helvetica Neue';
 
     // canvas
     this.canvas = null;
-    this.canvasColor = this.black;
-    this.ctx = null;
     this.canvasName = 'canvas';
+    this.ctx = null;
+    this.canvasColor = this.black;
 
     // physical contants
     this.gravity = 0;
     this.drag = 0.001;
     this.wallElasticity = 0.5;
     this.particleElasticity = 0.99;
-    this.paddleElasticity = 0.75;
+    this.paddleElasticity = 0.99;
 
     // particles
     this.particles = [];
@@ -41,13 +44,11 @@ class Breakout extends React.Component {
 
     // particle
     this.particleColor = this.color1;
-    this.particleTextColor = this.white;
     this.particleRadius = 15;
     this.particleStartingVelocity = 3;
     this.particleStartingX = 200;
     this.particleStartingY = 200;
     this.particleStartingHealth = 3;
-    this.particleTextFont = '20px Arial';
 
     // paddle
     this.paddle = null;
@@ -89,8 +90,12 @@ class Breakout extends React.Component {
   };
 
   initGame() {
+    this.startGameRenderLoop();
+
+    // create paddle
     this.paddle = this.createPaddle();
 
+    // create particles
     for (let i = 0; i < this.numParticles; i += 1) {
       this.createParticle(i);
     }
@@ -101,7 +106,28 @@ class Breakout extends React.Component {
   }
 
   createParticle(id) {
-    this.particles.push(new Particle(id, this, { gravity: -0.005 }));
+    const options = {
+      radius: this.particleRadius,
+      color: this.particleColor,
+      x: utils.getRandomArbitrary(
+        -this.particleStartingX,
+        this.particleStartingX
+      ),
+      y: utils.getRandomArbitrary(0, this.particleStartingY),
+      vx: utils.getRandomArbitrary(
+        -this.particleStartingVelocity,
+        this.particleStartingVelocity
+      ),
+      vy: utils.getRandomArbitrary(
+        -this.particleStartingVelocity,
+        this.particleStartingVelocity
+      ),
+      gravity: 0,
+      drag: this.drag,
+      health: this.particleStartingHealth,
+    };
+
+    this.particles.push(new Particle(id, this, options));
   }
 
   createBall(id) {
@@ -109,18 +135,21 @@ class Breakout extends React.Component {
       this.ballInPlay = true;
       this.gameCenterText = '';
       this.gameNumBalls -= 1;
-      this.particles.push(
-        new Ball(id, this, {
-          x: this.paddle.x,
-          y: this.paddle.y,
-          vx: 0,
-          vy: 10,
-          color: this.ballColor,
-          dontConditionallyColor: true,
-          dontConditionallySize: true,
-          gravity: 0.05,
-        })
-      );
+
+      const options = {
+        radius: this.particleRadius,
+        color: this.ballColor,
+        x: this.paddle.x,
+        y: this.paddle.y,
+        vx: 0,
+        vy: 10,
+        gravity: 0.05,
+        drag: 0,
+        dontConditionallyColor: true,
+        dontConditionallySize: true,
+      };
+
+      this.particles.push(new Ball(id, this, options));
     }
   }
 
@@ -140,15 +169,19 @@ class Breakout extends React.Component {
       this.canvas.width = this.canvas.offsetWidth;
       this.canvas.height = this.canvas.offsetHeight;
       this.ctx = this.canvas.getContext('2d');
-      this.paddleHeight = this.canvas.height * this.paddleHeightPercent;
 
-      // start render loop
-      this.interval = setInterval(() => {
-        this.processGameFrame();
-        this.renderCanvas();
-      }, this.renderFrameDelayMs);
+      // TBD: refactor this paddle logic
+      this.paddleHeight = this.canvas.height * this.paddleHeightPercent;
     }
   };
+
+  startGameRenderLoop() {
+    // start render loop
+    this.interval = setInterval(() => {
+      this.processGameFrame();
+      this.renderCanvas();
+    }, this.renderFrameDelayMs);
+  }
 
   processGameFrame() {
     this.processParticles();
@@ -195,6 +228,7 @@ class Breakout extends React.Component {
           this.gameScore += 1;
         }
 
+        // TBD: represent pos and v with vector arrays
         // TBD: model collisions realistically with conservation of momentum
         // rather than what I'm doing now which is just
         // swap the velocities and dampen
@@ -217,7 +251,6 @@ class Breakout extends React.Component {
     }
   }
 
-  // TBD: store paddle x velocity and impart some to ball on contact
   handleCollisionsWithPaddle(particle, paddle) {
     if (
       particle.y - particle.radius < paddle.y &&
@@ -227,16 +260,16 @@ class Breakout extends React.Component {
     ) {
       particle.vy =
         (Math.max(
-          Math.abs(this.paddle.vx),
+          Math.abs(this.paddle.v[0]),
           this.particleStartingVelocity / 10
         ) +
           Math.abs(particle.vy)) *
         this.paddleElasticity;
       const dvx = Math.max(
-        Math.abs(this.paddle.vx),
+        Math.abs(this.paddle.v[0]),
         this.particleStartingVelocity / 10
       );
-      particle.vx += dvx * (this.paddle.vx >= 0 ? 1 : -1);
+      particle.vx += dvx * (this.paddle.v[0] >= 0 ? 1 : -1);
       particle.vx *= this.paddleElasticity;
     }
   }
@@ -292,6 +325,7 @@ class Breakout extends React.Component {
   }
 
   renderCanvas() {
+    // from lowest to highest z-index
     this.clearCanvas();
     this.drawGameText();
     this.drawParticles();
@@ -307,42 +341,34 @@ class Breakout extends React.Component {
   }
 
   drawGameText() {
-    this.drawGameBallsText();
-    this.drawGameCenterText();
-    this.drawGameScoreText();
-  }
-
-  drawGameBallsText() {
-    this.ctx.font = this.particleTextFont;
-    this.ctx.fillStyle = this.particleTextColor;
-    this.ctx.textAlign = 'right';
-    this.ctx.fillText(
+    // right ball count
+    this.drawCanvasText(
       `Balls: ${this.gameNumBalls}`,
       this.canvas.width * 0.98,
-      this.canvas.height * 0.95
+      this.canvas.height * 0.95,
+      'right'
     );
-  }
-
-  drawGameCenterText() {
-    this.ctx.font = this.particleTextFont;
-    this.ctx.fillStyle = this.particleTextColor;
-    this.ctx.textAlign = 'center';
-    this.ctx.fillText(
+    // center info
+    this.drawCanvasText(
       `${this.gameCenterText}`,
       this.canvas.width / 2,
-      this.canvas.height * 0.95
+      this.canvas.height * 0.95,
+      'center'
+    );
+    // left score count
+    this.drawCanvasText(
+      `Score: ${this.gameScore}`,
+      this.canvas.width * 0.02,
+      this.canvas.height * 0.95,
+      'left'
     );
   }
 
-  drawGameScoreText() {
-    this.ctx.font = this.particleTextFont;
-    this.ctx.fillStyle = this.particleTextColor;
-    this.ctx.textAlign = 'left';
-    this.ctx.fillText(
-      `Score: ${this.gameScore}`,
-      this.canvas.width * 0.02,
-      this.canvas.height * 0.95
-    );
+  drawCanvasText(text, width, height, alignment = 'center') {
+    this.ctx.font = this.font;
+    this.ctx.fillStyle = this.textColor;
+    this.ctx.textAlign = alignment;
+    this.ctx.fillText(text, width, height);
   }
 
   drawPaddle(paddle) {
@@ -365,9 +391,13 @@ class Breakout extends React.Component {
   }
 
   drawParticle(particle) {
+    // convert coordinate system
+    const dispX = particle.x + this.canvas.width / 2;
+    const dispY = -particle.y + this.canvas.height / 2;
+
     const { radius, color } = particle;
     this.ctx.beginPath();
-    this.ctx.arc(particle.dispX, particle.dispY, radius, 0, 2 * Math.PI);
+    this.ctx.arc(dispX, dispY, radius, 0, 2 * Math.PI);
     this.ctx.fillStyle = color;
     this.ctx.fill();
 
@@ -384,11 +414,14 @@ class Breakout extends React.Component {
   }
 
   drawParticleText(particle, text) {
-    this.ctx.font = this.particleTextFont;
-    this.ctx.fillStyle = this.particleTextColor;
+    const dispX = particle.x + this.canvas.width / 2;
+    const dispY = -particle.y + this.canvas.height / 2;
+
+    this.ctx.font = this.font;
+    this.ctx.fillStyle = this.textColor;
     this.ctx.textAlign = 'center';
     // slightly adjust text to center in particle
-    this.ctx.fillText(text, particle.dispX - 0.5, particle.dispY + 7);
+    this.ctx.fillText(text, dispX - 0.5, dispY + 7);
   }
 
   render() {

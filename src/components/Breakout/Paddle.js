@@ -6,7 +6,8 @@ class Paddle {
     this.width = this.context.paddleWidth;
     this.thickness = this.context.paddleThickness;
     this.dispY = this.context.paddleHeight;
-    this.vx = 0;
+
+    this.v = [0, 0];
 
     this.update();
   }
@@ -15,7 +16,7 @@ class Paddle {
     const prevX = this.x;
     const newX = this.dispX - this.context.canvas.width / 2;
 
-    this.vx = this.calculateV(prevX, newX);
+    this.v[0] = this.calculateV(prevX, newX);
 
     this.x = newX;
     this.y = -(this.dispY - this.context.canvas.height / 2);

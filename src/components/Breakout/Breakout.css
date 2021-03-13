@@ -3,7 +3,7 @@
 }
 
 /* large devices */
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .canvas {
     display: block;
     height: 60vh;

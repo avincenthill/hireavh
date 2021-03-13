@@ -1,33 +1,10 @@
-import utils from '../../utils/utils';
-
+// TBD: represent pos and v with vector arrays
 class Particle {
   constructor(id, context, options = {}) {
     this.id = id;
     this.context = context;
 
-    this.radius = this.context.particleRadius;
-    this.color = this.context.particleColor;
-    this.x = utils.getRandomArbitrary(
-      -this.context.particleStartingX,
-      this.context.particleStartingX
-    );
-    this.y = utils.getRandomArbitrary(0, this.context.particleStartingY);
-    this.vx = utils.getRandomArbitrary(
-      -this.context.particleStartingVelocity,
-      this.context.particleStartingVelocity
-    );
-    this.vy = utils.getRandomArbitrary(
-      -this.context.particleStartingVelocity,
-      this.context.particleStartingVelocity
-    );
-    this.gravity = this.context.gravity;
-    this.drag = this.context.drag;
-    this.health = this.context.particleStartingHealth;
-
-    // overwrite properties with options specified at instantiation
-    for (let option in options) {
-      this[option] = options[option];
-    }
+    Object.assign(this, options);
 
     this.update();
   }
@@ -46,8 +23,6 @@ class Particle {
     this.applyDrag();
 
     this.translate();
-
-    this.updateDispProps();
   }
 
   checkIfDead() {
@@ -63,24 +38,11 @@ class Particle {
       '3': this.context.color1,
     };
 
-    const healthColor = colorHealthLookup[this.health];
-    if (healthColor) {
-      this.color = healthColor;
-    }
+    this.color = colorHealthLookup[this.health] || this.color;
   }
 
   conditionallySizeOnHealth() {
     this.radius = 5 + this.health * 7;
-  }
-
-  translate() {
-    this.x += this.vx;
-    this.y += this.vy;
-  }
-
-  updateDispProps() {
-    this.dispX = this.x + this.context.canvas.width / 2;
-    this.dispY = -this.y + this.context.canvas.height / 2;
   }
 
   applyGravity() {
@@ -90,6 +52,11 @@ class Particle {
   applyDrag() {
     this.vy += this.vy > 0 ? -this.drag : this.drag;
     this.vx += this.vx > 0 ? -this.drag : this.drag;
+  }
+
+  translate() {
+    this.x += this.vx;
+    this.y += this.vy;
   }
 }
 
