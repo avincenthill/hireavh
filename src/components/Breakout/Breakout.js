@@ -39,7 +39,8 @@ class Breakout extends React.Component {
 
     // particles
     this.particles = [];
-    this.numParticles = 50;
+    this.numStartingParticles = 50;
+    this.numCurrParticles = 0;
 
     // particle
     this.particleColor = this.color1;
@@ -95,9 +96,9 @@ class Breakout extends React.Component {
     this.paddle = this.createPaddle();
 
     // create particles
-    for (let i = 0; i < this.numParticles; i += 1) {
+    for (let i = 0; i < this.numStartingParticles; i += 1) {
       this.createParticle(i);
-    }
+     }
   }
 
   createPaddle() {
@@ -105,6 +106,8 @@ class Breakout extends React.Component {
   }
 
   createParticle(id) {
+    this.numCurrParticles+=1;
+
     const options = {
       radius: this.particleRadius,
       color: this.particleColor,
@@ -130,6 +133,8 @@ class Breakout extends React.Component {
   }
 
   createBall(id) {
+    this.numCurrParticles+=1;
+
     if (this.gameNumBalls) {
       this.ballInPlay = true;
       this.gameCenterText = '';
@@ -160,6 +165,7 @@ class Breakout extends React.Component {
 
   deleteParticle(particle) {
     this.particles[particle.id] = null;
+    this.numCurrParticles-=1;
   }
 
   initCanvas = () => {
@@ -274,10 +280,12 @@ class Breakout extends React.Component {
   }
 
   handleCollisionsWithWalls(particle) {
-    const xOverlap = Math.abs(Math.abs(particle.x) + particle.radius) -
-    Math.abs(this.canvas.width / 2);
-    const yOverlap = Math.abs(Math.abs(particle.y) + particle.radius) -
-    Math.abs(this.canvas.height / 2);
+    const xOverlap =
+      Math.abs(Math.abs(particle.x) + particle.radius) -
+      Math.abs(this.canvas.width / 2);
+    const yOverlap =
+      Math.abs(Math.abs(particle.y) + particle.radius) -
+      Math.abs(this.canvas.height / 2);
 
     // with floor
     if (particle.y - particle.radius < -this.canvas.height / 2) {
@@ -351,6 +359,22 @@ class Breakout extends React.Component {
       `Score: ${this.gameScore}`,
       this.canvas.width * 0.02,
       this.canvas.height * 0.95,
+      'left'
+    );
+    // TBD: calc temp better
+    // left temperature
+    this.drawCanvasText(
+      `Temp: ${
+        Math.round(1000*this.particles.reduce((acc, curr) => {
+          if (curr) {
+            return acc + Math.sqrt(Math.pow(curr.vx, 2) + Math.pow(curr.vy, 2));
+          } else {
+            return acc;
+          }
+        }, 0) / this.numCurrParticles)/1000
+      }`,
+      this.canvas.width * 0.02,
+      this.canvas.height * 0.05,
       'left'
     );
   }

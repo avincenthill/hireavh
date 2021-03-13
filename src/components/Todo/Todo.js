@@ -81,7 +81,7 @@ export default class Todo extends Component {
 
     this.state = {
       todoTaskArray,
-      currentDay: new Date().toDateString()
+      currentDay: new Date().toDateString(),
     };
 
     const lastSeen = JSON.parse(localStorage.getItem('lastSeen'));
