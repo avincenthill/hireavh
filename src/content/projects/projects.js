@@ -13,6 +13,17 @@ const projects = {
     // blogs.data[0],
     // *************************************************************************
     {
+      title: 'YT Content Tool',
+      url: '/youtube',
+      displayUrl: 'hireavh.com/youtube',
+      description: 'Quickly view most recent videos from channels by category',
+      longDescription: `PERSONAL PROJECT: I wanted a better way to filter my YouTube subscriptions and see my favorite channels' newest videos aggregated by content type. Try not to exceed my API quota please!`,
+      img: {
+        emoji: '▶️',
+      },
+    },
+    // *************************************************************************
+    {
       title: 'Plasma Breakout',
       url: '/breakout',
       displayUrl: 'hireavh.com/breakout',

@@ -98,7 +98,7 @@ class Breakout extends React.Component {
     // create particles
     for (let i = 0; i < this.numStartingParticles; i += 1) {
       this.createParticle(i);
-     }
+    }
   }
 
   createPaddle() {
@@ -106,7 +106,7 @@ class Breakout extends React.Component {
   }
 
   createParticle(id) {
-    this.numCurrParticles+=1;
+    this.numCurrParticles += 1;
 
     const options = {
       radius: this.particleRadius,
@@ -133,7 +133,7 @@ class Breakout extends React.Component {
   }
 
   createBall(id) {
-    this.numCurrParticles+=1;
+    this.numCurrParticles += 1;
 
     if (this.gameNumBalls) {
       this.ballInPlay = true;
@@ -165,7 +165,7 @@ class Breakout extends React.Component {
 
   deleteParticle(particle) {
     this.particles[particle.id] = null;
-    this.numCurrParticles-=1;
+    this.numCurrParticles -= 1;
   }
 
   initCanvas = () => {
@@ -365,13 +365,19 @@ class Breakout extends React.Component {
     // left temperature
     this.drawCanvasText(
       `Temp: ${
-        Math.round(1000*this.particles.reduce((acc, curr) => {
-          if (curr) {
-            return acc + Math.sqrt(Math.pow(curr.vx, 2) + Math.pow(curr.vy, 2));
-          } else {
-            return acc;
-          }
-        }, 0) / this.numCurrParticles)/1000
+        Math.round(
+          (1000 *
+            this.particles.reduce((acc, curr) => {
+              if (curr) {
+                return (
+                  acc + Math.sqrt(Math.pow(curr.vx, 2) + Math.pow(curr.vy, 2))
+                );
+              } else {
+                return acc;
+              }
+            }, 0)) /
+            this.numCurrParticles
+        ) / 1000
       }`,
       this.canvas.width * 0.02,
       this.canvas.height * 0.05,

@@ -1,0 +1,441 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`YouTube snapshot should match the last saved snapshot 1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        className="nav nav-top"
+      >
+        <div
+          className="nav-icon $
+          this.props.isBottom ? \\"nav-icon-bottom\\" : \\"nav-icon-top\\"
+        }"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "var(--c-1)",
+                "height": "3rem",
+                "width": "3rem",
+              }
+            }
+            viewBox="0 0 8 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <a
+        className="header-container"
+        href="/about"
+      >
+        <div
+          className="header-switch-theme"
+        >
+          <div
+            className="toggle-switch"
+          >
+            <input
+              className="toggle-switch-checkbox"
+              defaultChecked={true}
+              id="toggle-switch-theme"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="toggle-switch-label"
+              htmlFor="toggle-switch-theme"
+            >
+              <span
+                className="toggle-switch-inner"
+                data-no="🌙"
+                data-yes="☀️"
+              />
+            </label>
+          </div>
+        </div>
+        🏠 about
+      </a>
+    </div>
+    <div
+      className="page-container"
+    >
+      <div>
+        <label
+          className="dropdown-label"
+        >
+          select content category:
+        </label>
+        <select
+          id="type"
+          name="type"
+          onChange={[Function]}
+          value="Mock (testing)"
+        >
+          <option
+            value="Art and Music"
+          >
+            Art and Music
+          </option>
+          <option
+            value="Programming and Computer Science"
+          >
+            Programming and Computer Science
+          </option>
+          <option
+            value="Infotainment and Commentary"
+          >
+            Infotainment and Commentary
+          </option>
+          <option
+            value="Gaming"
+          >
+            Gaming
+          </option>
+          <option
+            value="True Crime"
+          >
+            True Crime
+          </option>
+          <option
+            value="Business and Law"
+          >
+            Business and Law
+          </option>
+          <option
+            value="Film"
+          >
+            Film
+          </option>
+          <option
+            value="Mock (testing)"
+          >
+            Mock (testing)
+          </option>
+          <option
+            value="Empty (testing)"
+          >
+            Empty (testing)
+          </option>
+          <option
+            value="Null (testing)"
+          >
+            Null (testing)
+          </option>
+        </select>
+      </div>
+      <br />
+      <div
+        className="video-list"
+      >
+        <a
+          className="video button-hover-light"
+          href="http://www.youtube.com/watch?v=FrG4TEcSuRg"
+          target="_blank"
+        >
+          <img
+            alt="video thumbnail img"
+            className="video-img"
+            src="https://i.ytimg.com/vi/FrG4TEcSuRg/default.jpg"
+          />
+          <div
+            className="video-metadata"
+          >
+            <h3
+              className="video-metadata-title"
+            >
+              PSY - DADDY(feat. CL of 2NE1) M/V
+            </h3>
+            <div
+              className="video-metadata-description"
+            >
+              #PSY #DADDY #나팔바지 #NapalBaji #7thALBUM #7집싸이다 More about PSY@ http://www.youtube.com/officialpsy http://www.facebook.com/officialpsy ...
+            </div>
+            <div
+              className="video-metadata-channel-and-date"
+            >
+              <i>
+                officialpsy - Mon Nov 30 2015
+              </i>
+            </div>
+          </div>
+        </a>
+        <a
+          className="video button-hover-light"
+          href="http://www.youtube.com/watch?v=HkMNOlYcpHg"
+          target="_blank"
+        >
+          <img
+            alt="video thumbnail img"
+            className="video-img"
+            src="https://i.ytimg.com/vi/HkMNOlYcpHg/default.jpg"
+          />
+          <div
+            className="video-metadata"
+          >
+            <h3
+              className="video-metadata-title"
+            >
+              PSY - HANGOVER (feat. Snoop Dogg) M/V
+            </h3>
+            <div
+              className="video-metadata-description"
+            >
+              #PSY #HANGOVER More about PSY@ http://www.psypark.com/ http://www.youtube.com/officialpsy http://www.facebook.com/officialpsy ...
+            </div>
+            <div
+              className="video-metadata-channel-and-date"
+            >
+              <i>
+                officialpsy - Sun Jun 08 2014
+              </i>
+            </div>
+          </div>
+        </a>
+        <a
+          className="video button-hover-light"
+          href="http://www.youtube.com/watch?v=ASO_zypdnsQ"
+          target="_blank"
+        >
+          <img
+            alt="video thumbnail img"
+            className="video-img"
+            src="https://i.ytimg.com/vi/ASO_zypdnsQ/default.jpg"
+          />
+          <div
+            className="video-metadata"
+          >
+            <h3
+              className="video-metadata-title"
+            >
+              PSY - GENTLEMAN M/V
+            </h3>
+            <div
+              className="video-metadata-description"
+            >
+              #PSY #싸이 #GENTLEMAN #젠틀맨 More about PSY@ http://www.youtube.com/officialpsy http://www.facebook.com/officialpsy http://twitter.com/psy_oppa ...
+            </div>
+            <div
+              className="video-metadata-channel-and-date"
+            >
+              <i>
+                officialpsy - Sat Apr 13 2013
+              </i>
+            </div>
+          </div>
+        </a>
+        <a
+          className="video button-hover-light"
+          href="http://www.youtube.com/watch?v=wcLNteez3c4"
+          target="_blank"
+        >
+          <img
+            alt="video thumbnail img"
+            className="video-img"
+            src="https://i.ytimg.com/vi/wcLNteez3c4/default.jpg"
+          />
+          <div
+            className="video-metadata"
+          >
+            <h3
+              className="video-metadata-title"
+            >
+              PSY (ft. HYUNA) - 오빤 딱 내 스타일 M/V
+            </h3>
+            <div
+              className="video-metadata-description"
+            >
+              Psy's 2nd Version of "GANGNAM STYLE" by Hyuna Released! Gangnam Style - Hyuna Ver. was discussed during the making of the music video for "Gangnam ...
+            </div>
+            <div
+              className="video-metadata-channel-and-date"
+            >
+              <i>
+                officialpsy - Tue Aug 14 2012
+              </i>
+            </div>
+          </div>
+        </a>
+        <a
+          className="video button-hover-light"
+          href="http://www.youtube.com/watch?v=9bZkp7q19f0"
+          target="_blank"
+        >
+          <img
+            alt="video thumbnail img"
+            className="video-img"
+            src="https://i.ytimg.com/vi/9bZkp7q19f0/default.jpg"
+          />
+          <div
+            className="video-metadata"
+          >
+            <h3
+              className="video-metadata-title"
+            >
+              PSY - GANGNAM STYLE(강남스타일) M/V
+            </h3>
+            <div
+              className="video-metadata-description"
+            >
+              #PSY #싸이 #GANGNAMSTYLE #강남스타일 More about PSY@ http://www.youtube.com/officialpsy http://www.facebook.com/officialpsy ...
+            </div>
+            <div
+              className="video-metadata-channel-and-date"
+            >
+              <i>
+                officialpsy - Sun Jul 15 2012
+              </i>
+            </div>
+          </div>
+        </a>
+      </div>
+      <ul
+        className="channels-list"
+      >
+        <label>
+          featured channels:
+        </label>
+        <li
+          className="channels-list-item"
+        >
+          <a
+            className="channels-list-item-link"
+            href="https://www.youtube.com/channel/UCrDkAvwZum-UTjHmzDI2iIw/videos?view=0&sort=p/"
+          >
+            officialpsy
+          </a>
+        </li>
+      </ul>
+      <br />
+      <div
+        className="nav-list"
+      >
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/about"
+            >
+              <span>
+                🏠 about
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/blog"
+            >
+              <span>
+                ✍️ blog
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/projects"
+            >
+              <span>
+                📦 projects
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/resume"
+            >
+              <span>
+                📄 resume
+              </span>
+            </a>
+          </h2>
+        </div>
+        <div>
+          <h2
+            className="link"
+          >
+            <a
+              className="link-a"
+              href="/contact"
+            >
+              <span>
+                📇 contact
+              </span>
+            </a>
+          </h2>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div>
+      <div
+        className="nav nav-bottom"
+      >
+        <div
+          className="nav-icon $
+          this.props.isBottom ? \\"nav-icon-bottom\\" : \\"nav-icon-top\\"
+        }"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "var(--c-1)",
+                "height": "3rem",
+                "width": "3rem",
+              }
+            }
+            viewBox="0 0 8 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <a
+        className="footer-container"
+        href="/about"
+      >
+        <span>
+          copyright Alex Vincent-Hill 2021 - 🏠 about
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;

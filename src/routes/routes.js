@@ -14,6 +14,7 @@ import Resume from 'components/Resume/Resume';
 import SortList from 'components/SortList/SortList';
 import Todo from 'components/Todo/Todo';
 import VariableBlogPost from 'components/Post/VariableBlogPost';
+import YouTube from 'components/YouTube/YouTube';
 import content from 'content/content';
 import utils from 'utils/utils';
 
@@ -98,6 +99,9 @@ class App extends React.Component {
 
           {/* /breakout */}
           <Route exact path="/breakout" component={Breakout} />
+
+          {/* /youtube */}
+          <Route exact path="/youtube" component={YouTube} />
 
           {/* /404 */}
           <Route component={NotFound} />
