@@ -1,4 +1,3 @@
-// TBD: fill out this content with info below
 export default {
     'Art and Music': [{
             name: 'Marco Bucci',
