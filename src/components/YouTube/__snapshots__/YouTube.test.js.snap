@@ -72,10 +72,14 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
       className="page-container"
     >
       <div>
+        <h1>
+          recent videos by select channels
+        </h1>
+        <br />
         <label
           className="dropdown-label"
         >
-          select content category:
+          choose a content category:
         </label>
         <select
           id="type"
@@ -147,7 +151,7 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
           <img
             alt="video thumbnail img"
             className="video-img"
-            src="https://i.ytimg.com/vi/FrG4TEcSuRg/default.jpg"
+            src="https://i.ytimg.com/vi/FrG4TEcSuRg/hqdefault.jpg"
           />
           <div
             className="video-metadata"
@@ -166,7 +170,7 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
               className="video-metadata-channel-and-date"
             >
               <i>
-                officialpsy - Mon Nov 30 2015
+                Mon Nov 30 2015 - officialpsy
               </i>
             </div>
           </div>
@@ -179,7 +183,7 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
           <img
             alt="video thumbnail img"
             className="video-img"
-            src="https://i.ytimg.com/vi/HkMNOlYcpHg/default.jpg"
+            src="https://i.ytimg.com/vi/HkMNOlYcpHg/hqdefault.jpg"
           />
           <div
             className="video-metadata"
@@ -198,7 +202,7 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
               className="video-metadata-channel-and-date"
             >
               <i>
-                officialpsy - Sun Jun 08 2014
+                Sun Jun 08 2014 - officialpsy
               </i>
             </div>
           </div>
@@ -211,7 +215,7 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
           <img
             alt="video thumbnail img"
             className="video-img"
-            src="https://i.ytimg.com/vi/ASO_zypdnsQ/default.jpg"
+            src="https://i.ytimg.com/vi/ASO_zypdnsQ/hqdefault.jpg"
           />
           <div
             className="video-metadata"
@@ -230,7 +234,7 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
               className="video-metadata-channel-and-date"
             >
               <i>
-                officialpsy - Sat Apr 13 2013
+                Sat Apr 13 2013 - officialpsy
               </i>
             </div>
           </div>
@@ -243,7 +247,7 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
           <img
             alt="video thumbnail img"
             className="video-img"
-            src="https://i.ytimg.com/vi/wcLNteez3c4/default.jpg"
+            src="https://i.ytimg.com/vi/wcLNteez3c4/hqdefault.jpg"
           />
           <div
             className="video-metadata"
@@ -262,7 +266,7 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
               className="video-metadata-channel-and-date"
             >
               <i>
-                officialpsy - Tue Aug 14 2012
+                Tue Aug 14 2012 - officialpsy
               </i>
             </div>
           </div>
@@ -275,7 +279,7 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
           <img
             alt="video thumbnail img"
             className="video-img"
-            src="https://i.ytimg.com/vi/9bZkp7q19f0/default.jpg"
+            src="https://i.ytimg.com/vi/9bZkp7q19f0/hqdefault.jpg"
           />
           <div
             className="video-metadata"
@@ -294,7 +298,7 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
               className="video-metadata-channel-and-date"
             >
               <i>
-                officialpsy - Sun Jul 15 2012
+                Sun Jul 15 2012 - officialpsy
               </i>
             </div>
           </div>

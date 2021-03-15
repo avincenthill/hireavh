@@ -8,9 +8,9 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   About.js                        |      100 |      100 |      100 |      100 |                |
  src/components/Breakout/         |        0 |        0 |        0 |        0 |                |
   Ball.js                         |        0 |        0 |        0 |        0 |              5 |
-  Breakout.js                     |        0 |        0 |        0 |        0 |... 389,391,395 |
-  Paddle.js                       |        0 |      100 |        0 |        0 |... 18,20,21,25 |
-  Particle.js                     |        0 |        0 |        0 |        0 |... 83,87,91,92 |
+  Breakout.js                     |        0 |        0 |        0 |        0 |... 443,445,449 |
+  Paddle.js                       |        0 |      100 |        0 |        0 |... 19,21,22,26 |
+  Particle.js                     |        0 |        0 |        0 |        0 |... 53,54,58,59 |
  src/components/Contact/          |      100 |      100 |      100 |      100 |                |
   Contact.js                      |      100 |      100 |      100 |      100 |                |
  src/components/Default/          |      100 |      100 |      100 |      100 |                |
@@ -43,10 +43,15 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   customSyntaxHighlighterStyle.js |      100 |      100 |      100 |      100 |                |
  src/components/SortList/         |      100 |      100 |      100 |      100 |                |
   SortList.js                     |      100 |      100 |      100 |      100 |                |
- src/components/Todo/             |    39.74 |    31.03 |    42.11 |    43.06 |                |
-  Todo.js                         |    39.74 |    31.03 |    42.11 |    43.06 |... 183,184,187 |
+ src/components/Todo/             |        0 |        0 |        0 |        0 |                |
+  Todo.js                         |        0 |        0 |        0 |        0 |... 219,220,223 |
  src/components/ToggleSwitch/     |      100 |      100 |      100 |      100 |                |
   ToggleSwitch.js                 |      100 |      100 |      100 |      100 |                |
+ src/components/YouTube/          |    56.82 |     62.5 |       55 |    60.98 |                |
+  YouTube.js                      |    56.82 |     62.5 |       55 |    60.98 |... 109,110,117 |
+ src/components/YouTube/data/     |      100 |      100 |      100 |      100 |                |
+  channelsByType.js               |      100 |      100 |      100 |      100 |                |
+  mockVideoData.js                |      100 |      100 |      100 |      100 |                |
  src/content/                     |      100 |      100 |      100 |      100 |                |
   content.js                      |      100 |      100 |      100 |      100 |                |
  src/content/blogs/               |      100 |      100 |      100 |      100 |                |
@@ -65,12 +70,12 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   insertionsort.js                |      100 |      100 |      100 |      100 |                |
   quicksort.js                    |      100 |      100 |      100 |      100 |                |
  src/routes/                      |       50 |      100 |       40 |       50 |                |
-  routes.js                       |       50 |      100 |       40 |       50 |       49,66,82 |
+  routes.js                       |       50 |      100 |       40 |       50 |       50,67,83 |
  src/styles/                      |      100 |      100 |      100 |      100 |                |
   styleconfig.js                  |      100 |      100 |      100 |      100 |                |
  src/utils/                       |    97.22 |      100 |    90.91 |    97.14 |                |
   utils.js                        |    97.22 |      100 |    90.91 |    97.14 |             10 |
 ----------------------------------|----------|----------|----------|----------|----------------|
-All files                         |     48.4 |     44.3 |    53.18 |    48.85 |                |
+All files                         |    45.41 |    41.41 |    49.48 |    45.95 |                |
 ----------------------------------|----------|----------|----------|----------|----------------|
 

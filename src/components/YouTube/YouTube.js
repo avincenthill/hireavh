@@ -141,7 +141,7 @@ class YouTube extends React.Component {
           >
             <img
               className="video-img"
-              src={video.snippet.thumbnails.default.url}
+              src={video.snippet.thumbnails.high.url}
               alt="video thumbnail img"
             />
             <div className="video-metadata">
@@ -154,9 +154,9 @@ class YouTube extends React.Component {
                 {video.snippet.description}
               </div>
               <div className="video-metadata-channel-and-date">
-                <i>{`${video.snippet.channelTitle} - ${new Date(
+                <i>{`${new Date(
                   video.snippet.publishTime
-                ).toDateString()}`}</i>
+                ).toDateString()} - ${video.snippet.channelTitle}`}</i>
               </div>
             </div>
           </a>
@@ -169,7 +169,9 @@ class YouTube extends React.Component {
       <div>
         <Page>
           <div>
-            <label className="dropdown-label">select content category:</label>
+            <h1>recent videos by select channels</h1>
+            <br></br>
+            <label className="dropdown-label">choose a content category:</label>
             <select
               name="type"
               id="type"
