@@ -98,9 +98,29 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
             Programming and Computer Science
           </option>
           <option
-            value="Infotainment and Commentary"
+            value="Hacking and Cybersecurity"
           >
-            Infotainment and Commentary
+            Hacking and Cybersecurity
+          </option>
+          <option
+            value="Infotainment"
+          >
+            Infotainment
+          </option>
+          <option
+            value="Commentary"
+          >
+            Commentary
+          </option>
+          <option
+            value="Mathematics"
+          >
+            Mathematics
+          </option>
+          <option
+            value="Science and Engineering"
+          >
+            Science and Engineering
           </option>
           <option
             value="Gaming"
@@ -121,6 +141,16 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
             value="Film"
           >
             Film
+          </option>
+          <option
+            value="Chess"
+          >
+            Chess
+          </option>
+          <option
+            value="Cooking"
+          >
+            Cooking
           </option>
           <option
             value="Mock (testing)"
