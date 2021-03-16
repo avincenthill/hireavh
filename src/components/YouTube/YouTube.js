@@ -148,15 +148,16 @@ class YouTube extends React.Component {
               <h3 className="video-metadata-title">
                 {video.snippet.title
                   .replace(/&quot;/g, '"')
+                  .replace(/&amp;/g, '&')
                   .replace(/&#39;/g, "'")}
               </h3>
               <div className="video-metadata-description">
                 {video.snippet.description}
               </div>
               <div className="video-metadata-channel-and-date">
-                <i>{`${new Date(
-                  video.snippet.publishTime
-                ).toDateString()} - ${video.snippet.channelTitle}`}</i>
+                <i>{`${new Date(video.snippet.publishTime).toDateString()} - ${
+                  video.snippet.channelTitle
+                }`}</i>
               </div>
             </div>
           </a>
