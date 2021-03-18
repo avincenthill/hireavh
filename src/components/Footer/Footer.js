@@ -8,7 +8,7 @@ function Footer() {
     <div>
       <Nav isBottom={true}></Nav>
       <a href="/about" className="footer-container">
-        <span>{content.footer.copywrite}</span>
+        <span>{content.footer.title}</span>
       </a>
     </div>
   );

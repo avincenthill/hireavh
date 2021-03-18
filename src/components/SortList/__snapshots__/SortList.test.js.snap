@@ -1870,7 +1870,7 @@ exports[`SortList snapshot should match the last saved snapshot 1`] = `
         href="/about"
       >
         <span>
-          copyright Alex Vincent-Hill 2021 - 🏠 about
+          🏠 about
         </span>
       </a>
     </div>

@@ -138,12 +138,12 @@ export default {
             name: 'Captain Disillusion',
             id: 'UCEOXxzW2vU0P-0THehuIIeg'
         },
-    ],
-    'Commentary': [{
+        {
             name: 'Half as Interesting',
             id: 'UCuCkxoKLYO_EQ2GeFtbM_bw'
         },
-        {
+    ],
+    'Commentary': [{
             name: 'Mike Boyd',
             id: 'UCIRiWCPZoUyZDbydIqitHtQ'
         },

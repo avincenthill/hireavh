@@ -11,6 +11,7 @@ class YouTube extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      // TBD: handle credentials better (this should be a heavily restricted API key that will be exposed to the client anyways, however injection during the deploy process would be better than directly committing it into the codebase)
       YOUTUBE_API_KEY: 'AIzaSyBCdXhhkF8p1w-SDM0GFiia2Huhz5WQyR8',
       selectedType: 'Mock (testing)',
       currentVideos: [],
@@ -32,18 +33,20 @@ class YouTube extends React.Component {
     ) {
       return <li className="channels-list-item">NO CHANNELS FOUND</li>;
     }
-    return this.state.channelsByType[this.state.selectedType].map((channel) => {
-      return (
-        <li key={channel.id} className="channels-list-item">
-          <a
-            className="channels-list-item-link"
-            href={`https://www.youtube.com/channel/${channel.id}/videos?view=0&sort=p/`}
-          >
-            {channel.name}
-          </a>
-        </li>
-      );
-    });
+    return this.state.channelsByType[this.state.selectedType]
+      .sort((a, b) => (a.name <= b.name ? -1 : 1))
+      .map((channel) => {
+        return (
+          <li key={channel.id} className="channels-list-item">
+            <a
+              className="channels-list-item-link"
+              href={`https://www.youtube.com/channel/${channel.id}/videos?view=0&sort=p/`}
+            >
+              {channel.name}
+            </a>
+          </li>
+        );
+      });
   };
 
   renderDropdownOptions = () => {

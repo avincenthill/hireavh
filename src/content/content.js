@@ -58,9 +58,7 @@ content.header = {
 };
 
 content.footer = {
-  copywrite: `copyright Alex Vincent-Hill ${currentDate.getFullYear()} - ${
-    content.header.title
-  }`,
+  title: content.header.title,
 };
 
 export default content;
