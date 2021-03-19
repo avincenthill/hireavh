@@ -25,10 +25,6 @@ export default {
             id: 'UCYbK_tjZ2OrIZFBvU6CCMiA'
         },
         {
-            name: 'TechLead',
-            id: 'UC4xKdmAXFh4ACyhpiQ_3qBw'
-        },
-        {
             name: 'Joma Tech',
             id: 'UCV0qA-eDDICsRR9rPcnG7tw'
         },
@@ -148,6 +144,10 @@ export default {
             id: 'UCIRiWCPZoUyZDbydIqitHtQ'
         },
         {
+            name: 'TechLead',
+            id: 'UC4xKdmAXFh4ACyhpiQ_3qBw'
+        },
+        {
             name: 'Drew Gooden',
             id: 'UCTSRIY3GLFYIpkR2QwyeklA'
         },
@@ -163,7 +163,10 @@ export default {
             name: 'ProZD',
             id: 'UC6MFZAOHXlKK1FI7V0XQVeA'
         },
-
+        {
+            name: 'Lindsay Ellis',
+            id: 'UCG1h-Wqjtwz7uUANw6gazRw'
+        },
     ],
     'Mathematics': [{
             name: 'Stand-up Maths',
@@ -305,10 +308,6 @@ export default {
         {
             name: 'Storytellers',
             id: 'UCbphDfwSJmxk1Ny_3Oicrng'
-        },
-        {
-            name: 'Lindsay Ellis',
-            id: 'UCG1h-Wqjtwz7uUANw6gazRw'
         },
         {
             name: 'Georg Rockall-Schmidt',
