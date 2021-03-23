@@ -56,3 +56,29 @@ Copies README.md into `src` so it can be imported, parsed, and rendered in the `
 
 ### `npm run newcomponent`
 Copies `src/components/Default` directory and files and renames directory with input $NAME. For example, run `Name=MyNewComponentName npm run newcomponent` and find and replace `Default` -> `MyNewComponentName` and `default` -> `mynewcomponentname` within `/src/components/MyNewComponentName`.
+
+## Project Ideas
+- Make collisions in Plasma Breakout more physical and realistic
+- Implement a boids algorithm for Plasma Breakout targets
+- Build a random Spanish/English words flashcards app
+- Render lichess.org rating
+- Build a binary math calculator
+- Build a stock ticker tape with largest US equity moves per day
+
+## Refactoring Opportunities
+- Document and refactor how style colors are handled
+- Implement global state solution like Redux
+    - Untoggle all project "?" buttons on click of one
+- Persist todos and other state in DB
+- List blogs by date, and then alphabetically by title
+- Integration test sorting algos implementation
+- Implement server-side rendering
+- Implement open graph tags
+- Set up Stryker mutation testing
+- Add accessibility features like Aria labels
+
+## Bugs
+- Fix issue where changing dark mode to light mode doesn't change icon color
+- Fix npm warning `./node_modules/pdfjs-dist/build/pdf.js Critical dependency: require function is used in a way in which dependencies cannot be statically extracted`
+- Fix flaky 'should sleep correctly' test that fails occasionally
+- Harden dynamic-form user input to stop crashing on bad inputs
