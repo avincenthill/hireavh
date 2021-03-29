@@ -15,6 +15,7 @@ import SortList from 'components/SortList/SortList';
 import Todo from 'components/Todo/Todo';
 import VariableBlogPost from 'components/Post/VariableBlogPost';
 import YouTube from 'components/YouTube/YouTube';
+// import _Default from 'components/_Default/_Default';
 import content from 'content/content';
 import utils from 'utils/utils';
 
@@ -28,6 +29,10 @@ class App extends React.Component {
     return (
       <Router>
         <Switch>
+          {/* TBD: enable to see changes to the _Default template page here: http://localhost:3000/default */}
+          {/* default */}
+          {/* <Route exact path={'/default'} component={_Default} /> */}
+
           {/* /about */}
           <Route exact path={'/'} component={About} />
           <Route exact path={'/home'} component={About} />

@@ -82,6 +82,7 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
           choose a content category:
         </label>
         <select
+          className="dropdown-select"
           id="type"
           name="type"
           onChange={[Function]}

@@ -51,13 +51,15 @@ class YouTube extends React.Component {
   };
 
   renderDropdownOptions = () => {
-    return Object.keys(this.state.channelsByType).sort().map((type) => {
-      return (
-        <option key={type} value={type}>
-          {type + ` (${this.state.channelsByType[type]?.length || 0})`}
-        </option>
-      );
-    });
+    return Object.keys(this.state.channelsByType)
+      .sort()
+      .map((type) => {
+        return (
+          <option key={type} value={type}>
+            {type + ` (${this.state.channelsByType[type]?.length || 0})`}
+          </option>
+        );
+      });
   };
 
   handleSelect = (event) => {
@@ -178,6 +180,7 @@ class YouTube extends React.Component {
             <br></br>
             <label className="dropdown-label">choose a content category:</label>
             <select
+              className="dropdown-select"
               name="type"
               id="type"
               onChange={this.handleSelect}

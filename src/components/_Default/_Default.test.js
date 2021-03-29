@@ -1,11 +1,11 @@
-import Default from './Default';
 import React from 'react';
+import _Default from './_Default';
 import renderer from 'react-test-renderer';
 
-describe('Default', () => {
+describe('_Default', () => {
   describe('snapshot', () => {
     it('should match the last saved snapshot', () => {
-      const tree = renderer.create(<Default />).toJSON();
+      const tree = renderer.create(<_Default />).toJSON();
       expect(tree).toMatchSnapshot();
     });
   });

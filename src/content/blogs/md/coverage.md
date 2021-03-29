@@ -13,8 +13,6 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   Particle.js                     |        0 |        0 |        0 |        0 |... 53,54,58,59 |
  src/components/Contact/          |      100 |      100 |      100 |      100 |                |
   Contact.js                      |      100 |      100 |      100 |      100 |                |
- src/components/Default/          |      100 |      100 |      100 |      100 |                |
-  Default.js                      |      100 |      100 |      100 |      100 |                |
  src/components/Footer/           |      100 |      100 |      100 |      100 |                |
   Footer.js                       |      100 |      100 |      100 |      100 |                |
  src/components/Form/             |    53.45 |       50 |    66.67 |    53.45 |                |
@@ -48,10 +46,12 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
  src/components/ToggleSwitch/     |      100 |      100 |      100 |      100 |                |
   ToggleSwitch.js                 |      100 |      100 |      100 |      100 |                |
  src/components/YouTube/          |    55.56 |       55 |    52.38 |    59.52 |                |
-  YouTube.js                      |    55.56 |       55 |    52.38 |    59.52 |... 113,114,121 |
+  YouTube.js                      |    55.56 |       55 |    52.38 |    59.52 |... 115,116,123 |
  src/components/YouTube/data/     |      100 |      100 |      100 |      100 |                |
   channelsByType.js               |      100 |      100 |      100 |      100 |                |
   mockVideoData.js                |      100 |      100 |      100 |      100 |                |
+ src/components/_Default/         |      100 |      100 |      100 |      100 |                |
+  _Default.js                     |      100 |      100 |      100 |      100 |                |
  src/content/                     |      100 |      100 |      100 |      100 |                |
   content.js                      |      100 |      100 |      100 |      100 |                |
  src/content/blogs/               |      100 |      100 |      100 |      100 |                |
@@ -70,7 +70,7 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   insertionsort.js                |      100 |      100 |      100 |      100 |                |
   quicksort.js                    |      100 |      100 |      100 |      100 |                |
  src/routes/                      |       50 |      100 |       40 |       50 |                |
-  routes.js                       |       50 |      100 |       40 |       50 |       50,67,83 |
+  routes.js                       |       50 |      100 |       40 |       50 |       55,72,88 |
  src/styles/                      |      100 |      100 |      100 |      100 |                |
   styleconfig.js                  |      100 |      100 |      100 |      100 |                |
  src/utils/                       |    97.22 |      100 |    90.91 |    97.14 |                |

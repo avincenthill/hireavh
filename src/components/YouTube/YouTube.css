@@ -2,6 +2,10 @@
   margin-right: 2vmin;
 }
 
+.dropdown-select {
+  max-width: 60vw;
+}
+
 .video-list {
   margin-top: 3vmin;
 }
