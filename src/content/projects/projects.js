@@ -24,6 +24,17 @@ const projects = {
     },
     // *************************************************************************
     {
+      title: 'Pomodoro Timer',
+      url: '/pomodoro',
+      displayUrl: 'hireavh.com/pomodoro',
+      description: 'A custom timer that I use to maximize productivity.',
+      longDescription: `PERSONAL PROJECT: I implemented this pomodoro timer in React.js. It is customized to my specific needs and I use it to make sure I take breaks during tasks like coding.`,
+      img: {
+        emoji: '🍅',
+      },
+    },
+    // *************************************************************************
+    {
       title: 'Plasma Breakout',
       url: '/breakout',
       displayUrl: 'hireavh.com/breakout',

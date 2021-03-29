@@ -8,6 +8,7 @@ import Form from 'components/Form/Form';
 import { NavList } from 'components/Nav/Nav';
 import NotFound from 'components/NotFound/NotFound';
 import Page from 'components/Page/Page';
+import Pomodoro from 'components/Pomodoro/Pomodoro';
 import ProjectList from 'components/ProjectList/ProjectList';
 import React from 'react';
 import Resume from 'components/Resume/Resume';
@@ -107,6 +108,9 @@ class App extends React.Component {
 
           {/* /youtube */}
           <Route exact path="/youtube" component={YouTube} />
+
+          {/* /pomodoro timer */}
+          <Route exact path="/pomodoro" component={Pomodoro} />
 
           {/* /404 */}
           <Route component={NotFound} />

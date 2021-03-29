@@ -1,0 +1,23 @@
+.pomodoro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 80vh;
+  margin-bottom: var(--s-m);
+}
+
+.pomodoro-canvas {
+  width: 85vw;
+  height: 85vw;
+}
+
+.pomodoro-toggle-mode-btn {
+  background-color: transparent;
+  font-size: var(--fs-l);
+}
+
+.pomodoro-toggle-mode-btn:focus {
+  outline: none;
+}
