@@ -1,5 +1,6 @@
 .about-p {
   width: 75vw;
+  margin-bottom: var(--s-m);
 }
 
 .about-hero {
