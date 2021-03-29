@@ -1,8 +1,10 @@
 ._default-container {
+  /* TBD: rm this background color before using */
   background-color: var(--c-4);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 90vw;
   height: 80vh;
   margin-bottom: var(--s-m);
