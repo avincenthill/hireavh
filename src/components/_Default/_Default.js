@@ -2,6 +2,7 @@ import './_Default.css';
 import { NavList } from 'components/Nav/Nav';
 import Page from 'components/Page/Page';
 import React from 'react';
+// TBD: refactor text content into content directory
 // import content from "content/content";
 
 class _Default extends React.Component {

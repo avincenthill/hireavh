@@ -1,10 +1,10 @@
-.canvas {
+.breakout-canvas {
   display: none;
 }
 
 /* large devices */
 @media (min-width: 900px) {
-  .canvas {
+  .breakout-canvas {
     display: block;
     height: 60vh;
     width: 90vw;

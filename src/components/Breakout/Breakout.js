@@ -26,7 +26,7 @@ class Breakout extends React.Component {
 
     // canvas
     this.canvas = null;
-    this.canvasName = 'canvas';
+    this.canvasName = 'breakout-canvas';
     this.ctx = null;
     this.canvasColor = this.black;
 
@@ -73,10 +73,6 @@ class Breakout extends React.Component {
 
     this.initGame();
   }
-
-  _getRefs = (prop) => {
-    return this.refs[prop];
-  };
 
   _onMouseMove = (e) => {
     this.updatePaddle(e);
@@ -169,7 +165,7 @@ class Breakout extends React.Component {
   }
 
   initCanvas = () => {
-    this.canvas = this._getRefs(this.canvasName);
+    this.canvas = this.refs[this.canvasName];
     if (this.canvas) {
       this.canvas.width = this.canvas.offsetWidth;
       this.canvas.height = this.canvas.offsetHeight;
