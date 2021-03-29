@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Page snapshot should match the last saved snapshot 1`] = `
-<div>
+<div
+  className="page"
+>
   <div>
     <div
       className="nav nav-top"
@@ -68,7 +70,7 @@ exports[`Page snapshot should match the last saved snapshot 1`] = `
     </a>
   </div>
   <div
-    className="page-container"
+    className="page-content-container"
   />
   <div>
     <div

@@ -4,7 +4,9 @@ exports[`Contact snapshot should match the last saved snapshot 1`] = `
 <div
   className="contact-container"
 >
-  <div>
+  <div
+    className="page"
+  >
     <div>
       <div
         className="nav nav-top"
@@ -71,7 +73,7 @@ exports[`Contact snapshot should match the last saved snapshot 1`] = `
       </a>
     </div>
     <div
-      className="page-container"
+      className="page-content-container"
     >
       <h3
         className="contact-title"

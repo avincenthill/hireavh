@@ -1,213 +1,213 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`_Default snapshot should match the last saved snapshot 1`] = `
-<div>
+<div
+  className="page"
+>
   <div>
-    <div>
-      <div
-        className="nav nav-top"
-      >
-        <div
-          className="nav-icon $
-          this.props.isBottom ? \\"nav-icon-bottom\\" : \\"nav-icon-top\\"
-        }"
-        >
-          <svg
-            fill="currentColor"
-            height="1em"
-            onClick={[Function]}
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": "var(--c-1)",
-                "height": "3rem",
-                "width": "3rem",
-              }
-            }
-            viewBox="0 0 8 16"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-      <a
-        className="header-container"
-        href="/about"
-      >
-        <div
-          className="header-switch-theme"
-        >
-          <div
-            className="toggle-switch"
-          >
-            <input
-              className="toggle-switch-checkbox"
-              defaultChecked={true}
-              id="toggle-switch-theme"
-              onChange={[Function]}
-              type="checkbox"
-            />
-            <label
-              className="toggle-switch-label"
-              htmlFor="toggle-switch-theme"
-            >
-              <span
-                className="toggle-switch-inner"
-                data-no="🌙"
-                data-yes="☀️"
-              />
-            </label>
-          </div>
-        </div>
-        🏠 about
-      </a>
-    </div>
     <div
-      className="page-container"
+      className="nav nav-top"
     >
       <div
-        className="_default-container"
-      >
-        <h1
-          className="_default-title"
-        >
-          _Default Title
-        </h1>
-        <h2
-          className="_default-subtitle"
-        >
-          _Default Subtitle
-        </h2>
-        <p
-          className="_default-paragraph"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a porta nisi. Mauris auctor porttitor risus non hendrerit. Etiam pulvinar vitae eros eu sodales. Etiam rhoncus mollis blandit. Curabitur at mattis mi, vitae posuere massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-      </div>
-      <div
-        className="nav-list"
-      >
-        <div>
-          <h2
-            className="link"
-          >
-            <a
-              className="link-a"
-              href="/about"
-            >
-              <span>
-                🏠 about
-              </span>
-            </a>
-          </h2>
-        </div>
-        <div>
-          <h2
-            className="link"
-          >
-            <a
-              className="link-a"
-              href="/blog"
-            >
-              <span>
-                ✍️ blog
-              </span>
-            </a>
-          </h2>
-        </div>
-        <div>
-          <h2
-            className="link"
-          >
-            <a
-              className="link-a"
-              href="/projects"
-            >
-              <span>
-                📦 projects
-              </span>
-            </a>
-          </h2>
-        </div>
-        <div>
-          <h2
-            className="link"
-          >
-            <a
-              className="link-a"
-              href="/resume"
-            >
-              <span>
-                📄 resume
-              </span>
-            </a>
-          </h2>
-        </div>
-        <div>
-          <h2
-            className="link"
-          >
-            <a
-              className="link-a"
-              href="/contact"
-            >
-              <span>
-                📇 contact
-              </span>
-            </a>
-          </h2>
-        </div>
-      </div>
-      <hr />
-    </div>
-    <div>
-      <div
-        className="nav nav-bottom"
-      >
-        <div
-          className="nav-icon $
+        className="nav-icon $
           this.props.isBottom ? \\"nav-icon-bottom\\" : \\"nav-icon-top\\"
         }"
-        >
-          <svg
-            fill="currentColor"
-            height="1em"
-            onClick={[Function]}
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": "var(--c-1)",
-                "height": "3rem",
-                "width": "3rem",
-              }
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          onClick={[Function]}
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": "var(--c-1)",
+              "height": "3rem",
+              "width": "3rem",
             }
-            viewBox="0 0 8 16"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          }
+          viewBox="0 0 8 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+    <a
+      className="header-container"
+      href="/about"
+    >
+      <div
+        className="header-switch-theme"
+      >
+        <div
+          className="toggle-switch"
+        >
+          <input
+            className="toggle-switch-checkbox"
+            defaultChecked={true}
+            id="toggle-switch-theme"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="toggle-switch-label"
+            htmlFor="toggle-switch-theme"
           >
-            <path
-              d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"
-              fillRule="evenodd"
+            <span
+              className="toggle-switch-inner"
+              data-no="🌙"
+              data-yes="☀️"
             />
-          </svg>
+          </label>
         </div>
       </div>
-      <a
-        className="footer-container"
-        href="/about"
+      🏠 about
+    </a>
+  </div>
+  <div
+    className="page-content-container"
+  >
+    <div
+      className="_default-container"
+    >
+      <h1
+        className="_default-title"
       >
-        <span>
-          🏠 about
-        </span>
-      </a>
+        _Default Title
+      </h1>
+      <h2
+        className="_default-subtitle"
+      >
+        _Default Subtitle
+      </h2>
+      <p
+        className="_default-paragraph"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a porta nisi. Mauris auctor porttitor risus non hendrerit. Etiam pulvinar vitae eros eu sodales. Etiam rhoncus mollis blandit. Curabitur at mattis mi, vitae posuere massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
     </div>
+    <div
+      className="nav-list"
+    >
+      <div>
+        <h2
+          className="link"
+        >
+          <a
+            className="link-a"
+            href="/about"
+          >
+            <span>
+              🏠 about
+            </span>
+          </a>
+        </h2>
+      </div>
+      <div>
+        <h2
+          className="link"
+        >
+          <a
+            className="link-a"
+            href="/blog"
+          >
+            <span>
+              ✍️ blog
+            </span>
+          </a>
+        </h2>
+      </div>
+      <div>
+        <h2
+          className="link"
+        >
+          <a
+            className="link-a"
+            href="/projects"
+          >
+            <span>
+              📦 projects
+            </span>
+          </a>
+        </h2>
+      </div>
+      <div>
+        <h2
+          className="link"
+        >
+          <a
+            className="link-a"
+            href="/resume"
+          >
+            <span>
+              📄 resume
+            </span>
+          </a>
+        </h2>
+      </div>
+      <div>
+        <h2
+          className="link"
+        >
+          <a
+            className="link-a"
+            href="/contact"
+          >
+            <span>
+              📇 contact
+            </span>
+          </a>
+        </h2>
+      </div>
+    </div>
+    <hr />
+  </div>
+  <div>
+    <div
+      className="nav nav-bottom"
+    >
+      <div
+        className="nav-icon $
+          this.props.isBottom ? \\"nav-icon-bottom\\" : \\"nav-icon-top\\"
+        }"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          onClick={[Function]}
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": "var(--c-1)",
+              "height": "3rem",
+              "width": "3rem",
+            }
+          }
+          viewBox="0 0 8 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+    <a
+      className="footer-container"
+      href="/about"
+    >
+      <span>
+        🏠 about
+      </span>
+    </a>
   </div>
 </div>
 `;

@@ -447,22 +447,20 @@ class Breakout extends React.Component {
 
   render() {
     return (
-      <div>
-        <Page>
-          <h3 className="mobile-disclaimer">
-            Sorry, this game is best played on desktop screen widths!
-          </h3>
-          <canvas
-            className={this.canvasName}
-            ref={this.canvasName}
-            onMouseMove={this._onMouseMove}
-            onClick={this._onClick}
-          ></canvas>
-          <br />
-          <NavList></NavList>
-          <hr></hr>
-        </Page>
-      </div>
+      <Page>
+        <h3 className="mobile-disclaimer">
+          Sorry, this game is best played on desktop screen widths!
+        </h3>
+        <canvas
+          className={this.canvasName}
+          ref={this.canvasName}
+          onMouseMove={this._onMouseMove}
+          onClick={this._onClick}
+        ></canvas>
+        <br />
+        <NavList></NavList>
+        <hr></hr>
+      </Page>
     );
   }
 }

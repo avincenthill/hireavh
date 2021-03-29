@@ -148,49 +148,47 @@ class Form extends React.Component {
 
   render() {
     return (
-      <div>
-        <Page>
-          <h2 className="form-title">{formContent.title}</h2>
-          <br />
-          <p className="form-description">{formContent.descriptionA}</p>
-          <br />
-          <div className="form-description">{formContent.descriptionB}</div>
-          <br />
-          <p className="form-description">{formContent.descriptionC}</p>
-          <br />
+      <Page>
+        <h2 className="form-title">{formContent.title}</h2>
+        <br />
+        <p className="form-description">{formContent.descriptionA}</p>
+        <br />
+        <div className="form-description">{formContent.descriptionB}</div>
+        <br />
+        <p className="form-description">{formContent.descriptionC}</p>
+        <br />
 
-          <div className="form-item">
-            <label>{formContent.inputTitle}</label>
-            <textarea
-              id="config"
-              className="form-input"
-              defaultValue={JSON.stringify(formContent.formConfig, null, 2)}
-              onChange={this.handleConfigChange}
-            ></textarea>
-          </div>
+        <div className="form-item">
+          <label>{formContent.inputTitle}</label>
+          <textarea
+            id="config"
+            className="form-input"
+            defaultValue={JSON.stringify(formContent.formConfig, null, 2)}
+            onChange={this.handleConfigChange}
+          ></textarea>
+        </div>
 
-          {this.renderForm(this.state.config)}
+        {this.renderForm(this.state.config)}
 
-          <div className="form-item">
-            <label>{formContent.outputTitle}</label>
-            <textarea
-              readOnly
-              value={
-                this.state.output
-                  ? JSON.stringify(this.state.output, null, 2)
-                  : formContent.noDataWarning
-              }
-              className="form-input"
-            ></textarea>
-          </div>
+        <div className="form-item">
+          <label>{formContent.outputTitle}</label>
+          <textarea
+            readOnly
+            value={
+              this.state.output
+                ? JSON.stringify(this.state.output, null, 2)
+                : formContent.noDataWarning
+            }
+            className="form-input"
+          ></textarea>
+        </div>
 
-          <hr></hr>
+        <hr></hr>
 
-          <NavList></NavList>
+        <NavList></NavList>
 
-          <hr></hr>
-        </Page>
-      </div>
+        <hr></hr>
+      </Page>
     );
   }
 }

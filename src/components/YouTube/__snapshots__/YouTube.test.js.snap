@@ -2,7 +2,9 @@
 
 exports[`YouTube snapshot should match the last saved snapshot 1`] = `
 <div>
-  <div>
+  <div
+    className="page"
+  >
     <div>
       <div
         className="nav nav-top"
@@ -69,7 +71,7 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
       </a>
     </div>
     <div
-      className="page-container"
+      className="page-content-container"
     >
       <div>
         <h1>

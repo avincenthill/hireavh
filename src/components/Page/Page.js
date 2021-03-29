@@ -20,7 +20,7 @@ class Page extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="page">
         <Helmet>
           <meta
             name="version"
@@ -28,7 +28,7 @@ class Page extends React.Component {
           />
         </Helmet>
         <Header></Header>
-        <div className="page-container">{this.props.children}</div>
+        <div className="page-content-container">{this.props.children}</div>
         <Footer></Footer>
       </div>
     );
