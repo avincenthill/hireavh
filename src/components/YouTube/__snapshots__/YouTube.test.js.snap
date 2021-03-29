@@ -90,82 +90,77 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
           <option
             value="Art and Music"
           >
-            Art and Music
-          </option>
-          <option
-            value="Programming and Computer Science"
-          >
-            Programming and Computer Science
-          </option>
-          <option
-            value="Hacking and Cybersecurity"
-          >
-            Hacking and Cybersecurity
-          </option>
-          <option
-            value="Infotainment"
-          >
-            Infotainment
-          </option>
-          <option
-            value="Commentary"
-          >
-            Commentary
-          </option>
-          <option
-            value="Mathematics"
-          >
-            Mathematics
-          </option>
-          <option
-            value="Science and Engineering"
-          >
-            Science and Engineering
-          </option>
-          <option
-            value="Gaming"
-          >
-            Gaming
-          </option>
-          <option
-            value="True Crime"
-          >
-            True Crime
+            Art and Music (3)
           </option>
           <option
             value="Business and Law"
           >
-            Business and Law
-          </option>
-          <option
-            value="Film"
-          >
-            Film
+            Business and Law (3)
           </option>
           <option
             value="Chess"
           >
-            Chess
+            Chess (8)
+          </option>
+          <option
+            value="Commentary"
+          >
+            Commentary (6)
+          </option>
+          <option
+            value="Computer Simulations and Game Development"
+          >
+            Computer Simulations and Game Development (7)
           </option>
           <option
             value="Cooking"
           >
-            Cooking
+            Cooking (6)
+          </option>
+          <option
+            value="Film"
+          >
+            Film (11)
+          </option>
+          <option
+            value="Gaming"
+          >
+            Gaming (2)
+          </option>
+          <option
+            value="Hacking and Cybersecurity"
+          >
+            Hacking and Cybersecurity (6)
+          </option>
+          <option
+            value="Infotainment"
+          >
+            Infotainment (7)
+          </option>
+          <option
+            value="Mathematics"
+          >
+            Mathematics (7)
           </option>
           <option
             value="Mock (testing)"
           >
-            Mock (testing)
+            Mock (testing) (1)
           </option>
           <option
-            value="Empty (testing)"
+            value="Programming and Computer Science"
           >
-            Empty (testing)
+            Programming and Computer Science (12)
           </option>
           <option
-            value="Null (testing)"
+            value="Science and Engineering"
           >
-            Null (testing)
+            Science and Engineering (18)
+          </option>
+          <option
+            value="True Crime"
+          >
+            True Crime (2)
           </option>
         </select>
       </div>
@@ -346,6 +341,7 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
           <a
             className="channels-list-item-link"
             href="https://www.youtube.com/channel/UCrDkAvwZum-UTjHmzDI2iIw/videos?view=0&sort=p/"
+            target="_blank"
           >
             officialpsy
           </a>

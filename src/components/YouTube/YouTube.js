@@ -41,6 +41,7 @@ class YouTube extends React.Component {
             <a
               className="channels-list-item-link"
               href={`https://www.youtube.com/channel/${channel.id}/videos?view=0&sort=p/`}
+              target="_blank"
             >
               {channel.name}
             </a>
@@ -50,10 +51,10 @@ class YouTube extends React.Component {
   };
 
   renderDropdownOptions = () => {
-    return Object.keys(this.state.channelsByType).map((type) => {
+    return Object.keys(this.state.channelsByType).sort().map((type) => {
       return (
         <option key={type} value={type}>
-          {type}
+          {type + ` (${this.state.channelsByType[type]?.length || 0})`}
         </option>
       );
     });

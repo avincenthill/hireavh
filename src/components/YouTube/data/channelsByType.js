@@ -12,17 +12,38 @@ export default {
             id: 'UCMu5gPmKp5av0QCAajKTMhw',
         }
     ],
-    'Programming and Computer Science': [{
+    'Computer Simulations and Game Development':[{
+            name: 'Primer',
+            id: 'UCKzJFdi57J53Vr_BkTfN3uQ',
+        },
+        {
             name: 'The Coding Train',
             id: 'UCvjgXvBlbQiydffZU7m1_aw'
         },
         {
-            name: 'Ben Awad',
-            id: 'UC-8QAzbLcRglXeN_MY9blyw'
+            name: 'carykh',
+            id: 'UC9z7EZAbkphEMg0SP7rw44A'
+        },
+        {
+            name: 'Two Minute Papers',
+            id: 'UCbfYPyITQ-7l4upoX8nvctg'
+        },
+        {
+            name: 'Sebastian Lague',
+            id: 'UCmtyQOKKmrMVaKuRXz02jbQ'
         },
         {
             name: 'Brackeys',
             id: 'UCYbK_tjZ2OrIZFBvU6CCMiA'
+        },
+        {
+            name: 'suckerpinch',
+            id: 'UC3azLjQuz9s5qk76KEXaTvA'
+        },
+    ],
+    'Programming and Computer Science': [{
+            name: 'Ben Awad',
+            id: 'UC-8QAzbLcRglXeN_MY9blyw'
         },
         {
             name: 'Joma Tech',
@@ -33,16 +54,8 @@ export default {
             id: 'UCoebwHSTvwalADTJhps0emA'
         },
         {
-            name: 'suckerpinch',
-            id: 'UC3azLjQuz9s5qk76KEXaTvA'
-        },
-        {
             name: 'Code Bullet',
             id: 'UC0e3QhIYukixgh5VVpKHH9Q'
-        },
-        {
-            name: 'carykh',
-            id: 'UC9z7EZAbkphEMg0SP7rw44A'
         },
         {
             name: 'interviewing.io',
@@ -61,16 +74,8 @@ export default {
             id: 'UC-vYrOAmtrx9sBzJAf3x_xw'
         },
         {
-            name: 'Sebastian Lague',
-            id: 'UCmtyQOKKmrMVaKuRXz02jbQ'
-        },
-        {
             name: 'Programming with Mosh',
             id: 'UCWv7vMbMWH4-V0ZXdmDpPBA'
-        },
-        {
-            name: 'Two Minute Papers',
-            id: 'UCbfYPyITQ-7l4upoX8nvctg'
         },
         {
             name: 'Chris Greer',
@@ -142,10 +147,6 @@ export default {
     'Commentary': [{
             name: 'Mike Boyd',
             id: 'UCIRiWCPZoUyZDbydIqitHtQ'
-        },
-        {
-            name: 'TechLead',
-            id: 'UC4xKdmAXFh4ACyhpiQ_3qBw'
         },
         {
             name: 'Drew Gooden',
@@ -408,6 +409,4 @@ export default {
         name: 'officialpsy',
         id: 'UCrDkAvwZum-UTjHmzDI2iIw',
     }],
-    'Empty (testing)': null,
-    'Null (testing)': null,
 }
