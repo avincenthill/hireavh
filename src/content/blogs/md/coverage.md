@@ -8,7 +8,7 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   About.js                        |      100 |      100 |      100 |      100 |                |
  src/components/Breakout/         |        0 |        0 |        0 |        0 |                |
   Ball.js                         |        0 |        0 |        0 |        0 |              5 |
-  Breakout.js                     |        0 |        0 |        0 |        0 |... 443,445,449 |
+  Breakout.js                     |        0 |        0 |        0 |        0 |... 439,441,445 |
   Paddle.js                       |        0 |      100 |        0 |        0 |... 19,21,22,26 |
   Particle.js                     |        0 |        0 |        0 |        0 |... 53,54,58,59 |
  src/components/Contact/          |      100 |      100 |      100 |      100 |                |
@@ -27,8 +27,6 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   NotFound.js                     |      100 |      100 |      100 |      100 |                |
  src/components/Page/             |    71.43 |       50 |       50 |    71.43 |                |
   Page.js                         |    71.43 |       50 |       50 |    71.43 |          15,17 |
- src/components/Pomodoro/         |    66.67 |       25 |       50 |    66.67 |                |
-  Pomodoro.js                     |    66.67 |       25 |       50 |    66.67 |       25,29,33 |
  src/components/Post/             |    68.42 |    71.43 |       80 |    68.42 |                |
   Post.js                         |       80 |      100 |      100 |       80 |       16,17,19 |
   VariableBlogPost.js             |       25 |        0 |        0 |       25 |          7,8,9 |
@@ -72,12 +70,12 @@ File                              |  % Stmts | % Branch |  % Funcs |  % Lines |U
   insertionsort.js                |      100 |      100 |      100 |      100 |                |
   quicksort.js                    |      100 |      100 |      100 |      100 |                |
  src/routes/                      |       50 |      100 |       40 |       50 |                |
-  routes.js                       |       50 |      100 |       40 |       50 |       56,73,89 |
+  routes.js                       |       50 |      100 |       40 |       50 |       55,72,88 |
  src/styles/                      |      100 |      100 |      100 |      100 |                |
   styleconfig.js                  |      100 |      100 |      100 |      100 |                |
  src/utils/                       |    97.22 |      100 |    90.91 |    97.14 |                |
   utils.js                        |    97.22 |      100 |    90.91 |    97.14 |             10 |
 ----------------------------------|----------|----------|----------|----------|----------------|
-All files                         |     45.6 |    40.91 |    49.25 |    46.14 |                |
+All files                         |    45.47 |    41.15 |    49.48 |    46.02 |                |
 ----------------------------------|----------|----------|----------|----------|----------------|
 

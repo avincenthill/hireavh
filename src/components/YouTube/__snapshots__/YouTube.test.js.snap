@@ -111,6 +111,16 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
             Commentary (6)
           </option>
           <option
+            value="Computer Hardware"
+          >
+            Computer Hardware (2)
+          </option>
+          <option
+            value="Computer Programming and Science"
+          >
+            Computer Programming and Science (11)
+          </option>
+          <option
             value="Computer Simulations and Game Development"
           >
             Computer Simulations and Game Development (7)
@@ -149,11 +159,6 @@ exports[`YouTube snapshot should match the last saved snapshot 1`] = `
             value="Mock (testing)"
           >
             Mock (testing) (1)
-          </option>
-          <option
-            value="Programming and Computer Science"
-          >
-            Programming and Computer Science (12)
           </option>
           <option
             value="Science and Engineering"
