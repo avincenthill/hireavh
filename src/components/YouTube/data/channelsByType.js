@@ -12,6 +12,15 @@ export default {
             id: 'UCMu5gPmKp5av0QCAajKTMhw',
         }
     ],
+    'Computer Hardware': [{
+            name: 'Ben Eater',
+            id: 'UCS0N5baNlQWJCUrhCEo8WlA',
+        },
+        {
+            name: 'The 8-Bit Guy',
+            id: 'UC8uT9cgJorJPWu7ITLGo9Ww'
+        },
+    ],
     'Computer Simulations and Game Development':[{
             name: 'Primer',
             id: 'UCKzJFdi57J53Vr_BkTfN3uQ',
@@ -41,7 +50,7 @@ export default {
             id: 'UC3azLjQuz9s5qk76KEXaTvA'
         },
     ],
-    'Programming and Computer Science': [{
+    'Computer Programming and Science': [{
             name: 'Ben Awad',
             id: 'UC-8QAzbLcRglXeN_MY9blyw'
         },
@@ -80,10 +89,6 @@ export default {
         {
             name: 'Chris Greer',
             id: 'UCHN1aYRP473xX6Z13H_mxMQ'
-        },
-        {
-            name: 'The 8-Bit Guy',
-            id: 'UC8uT9cgJorJPWu7ITLGo9Ww'
         },
         {
             name: 'freeCodeCamp.org',
