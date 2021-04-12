@@ -148,6 +148,14 @@ export default {
             name: 'Half as Interesting',
             id: 'UCuCkxoKLYO_EQ2GeFtbM_bw'
         },
+        {
+            name: 'Jay Foreman',
+            id: 'UCbbQalJ4OaC0oQ0AqRaOJ9g'
+        },
+        {
+            name: 'Wendover Productions',
+            id: 'UC9RM-iSvTu1uPJb8X5yp3EQ'
+        }
     ],
     'Commentary': [{
             name: 'Mike Boyd',
@@ -203,17 +211,9 @@ export default {
             id: 'UCYO_jab_esuFRV4b17AJtAw'
         },
     ],
-    'Science and Engineering': [{
-            name: 'Steve Mould',
-            id: 'UCEIwxahdLz7bap-VDs9h35A'
-        },
-        {
+    'Engineering and Robotics': [{
             name: 'engineerguy',
             id: 'UC2bkHVIDjXS7sgrgjFtzOXQ'
-        },
-        {
-            name: "Cody'sLab",
-            id: 'UCu6mSoMNzHQiBIOCkHUa2Aw'
         },
         {
             name: 'Practical Engineering',
@@ -240,14 +240,6 @@ export default {
             id: 'UCUHW94eEFW7hkUMVaZz4eDg'
         },
         {
-            name: 'NileRed',
-            id: 'UCFhXFikryT4aFcLkLw2LBLA'
-        },
-        {
-            name: 'Primitive Technology',
-            id: 'UCAL3JXZSzSm8AlZyD3nQdBA'
-        },
-        {
             name: 'Tom Stanton',
             id: 'UC67gfx2Fg7K2NSHqoENVgwA'
         },
@@ -260,6 +252,14 @@ export default {
             id: 'UCJ0-OtVpF0wOKEqT2Z1HEtA'
         },
         {
+          name: 'LockPickingLawyer',
+          id: 'UCm9K6rby98W8JigLoZOh6FQ'
+        },
+        {
+          name: 'Primitive Technology',
+          id: 'UCAL3JXZSzSm8AlZyD3nQdBA'
+        },
+        {
             name: 'TronicsFix',
             id: 'UCfOrKQtC1tDfGf_fFVb8pYw'
         },
@@ -267,14 +267,27 @@ export default {
             name: 'Mark Rober',
             id: 'UCY1kMZp36IQSyNx_9h4mpCg'
         },
+    ],
+    'Science': [{
+            name: 'Steve Mould',
+            id: 'UCEIwxahdLz7bap-VDs9h35A'
+        },
+        {
+            name: "Cody'sLab",
+            id: 'UCu6mSoMNzHQiBIOCkHUa2Aw'
+        },
+        {
+            name: 'NileRed',
+            id: 'UCFhXFikryT4aFcLkLw2LBLA'
+        },
         {
             name: 'This Place',
             id: 'UCViwi-dXACoy9Pee73NvgJw'
         },
         {
-            name: 'LockPickingLawyer',
-            id: 'UCm9K6rby98W8JigLoZOh6FQ'
-        }
+          name: 'Veritasium',
+          id: 'UCHnyfMqiRRG1u-2MsSQLbXA'
+        },
     ],
     'Gaming': [{
             name: 'Summoning Salt',
@@ -408,6 +421,10 @@ export default {
         {
             name: 'Cocktail Chemistry',
             id: 'UC-o0CfpOyFJOfyWKtqS1hZQ'
+        },
+        {
+            name: 'MATTY MATHESON',
+            id: 'UCpqH8-BBNTsluhcOzFKWLuw'
         },
     ],
     'Mock (testing)': [{
