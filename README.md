@@ -64,6 +64,7 @@ Copies `src/components/_Default` directory and files and renames directory with 
 - Render lichess.org rating
 - Build a binary math calculator
 - Build a stock ticker tape with largest US equity moves per day
+- Build a custom pomodoro timer
 
 ## Refactoring Opportunities
 - Document and refactor how style colors are handled
